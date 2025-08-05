@@ -8,12 +8,12 @@ export default function Banner() {
   return (
     <div className="relative">
       <div className="hidden sm:block absolute top-0 left-0 ml-[6rem] mt-[9rem] w-[68rem] xl:mt-[5.63rem] xl:ml-[5.75rem] xl:w-[62.5rem]">
-        <div className="font-bold text-[5.6rem] mb-[1.6rem]  xl:text-[3.5rem]  xl:mb-[2.5rem]">
+        <div className="font-bold text-[5.6rem] mb-[1.6rem]  2xl:text-[5.5rem]  2xl:mb-[2.5rem]">
           {t("primarySlogan")}
           <br />
           {t("secondarySlogan")}
         </div>
-        <div className="xl:text-[1.5rem]  xl:mb-[5.56rem] text-[2rem] mb-[8.9rem] text-[rgba(4,30,84,0.64)]">
+        <div className="2xl:text-[1.5rem]  2xl:mb-[6.62rem] text-[2rem] mb-[8.9rem] text-[rgba(4,30,84,0.64)]">
           {t("heroSubtitle")}
         </div>
         <div className="w-[28.6rem] h-[6.6rem] xl:w-[16rem] xl:h-[4.5rem] rounded-full bg-[rgba(0,204,145,1)] flex items-center justify-center text-white text-[1.5rem]">

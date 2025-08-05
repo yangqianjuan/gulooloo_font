@@ -9,15 +9,15 @@ import google_bestapp from "@/assets/icon/google_bestapp.svg";
 export default function Achievement() {
   const t = useTranslations();
   return (
-    <div className="sm:px-[5rem] w-full text-[rgba(118,61,3,1)] pb-[6rem]">
+    <div className=" w-full text-[rgba(118,61,3,1)] xl:mb-[7.5rem]">
       <div
         // style={{ backgroundImage: `url(${bg.src})` }}
-        className="sm:bg-[url('/images/world_map_bg_2x.webp')] bg-[url('/images/world_map_mobile_2x.webp')] bg-cover  py-[5rem] font-semibold"
+        className="sm:py-[5rem] sm:mx-[5rem] text-[rgba(118,61,3,1)] sm:bg-[url('/images/world_map_bg_2x.webp')] bg-[url('/images/world_map_mobile_2x.webp')] bg-cover font-semibold"
       >
-        <div className="text-center xl:text-[3rem] xl:pb-[5rem] sm:text-[4.8rem] sm:pb-[4rem] text-[2.4rem] pb-[4rem]">
+        <div className="text-center sm:text-[4rem] sm:pb-[5rem]  text-[2.4rem] pb-[4rem]">
           {t("whyUsTitle")}
         </div>
-        <div className="flex sm:flex-row flex-col justify-between items-center h-[48rem]">
+        <div className="flex sm:flex-row flex-col justify-between items-center">
           <div className="flex justify-between items-center">
             <Image src={l_leaf} alt="" className="xl:w-[5.625rem] w-[5.2rem]" />
             <div className="flex flex-col items-center justify-center">
@@ -43,10 +43,10 @@ export default function Achievement() {
             />
             <div className="flex flex-col items-center justify-center">
               <Image src={user_pic} className="xl:w-[13rem] w-[11rem]" alt="" />
-              <div className="xl:text-[5.5rem] text-[2.75rem]">
+              <div className="xl:text-[5.5rem] sm:text-[4.4rem] text-[2.75rem]">
                 {t("downloadCount")}
               </div>
-              <div className="xl:text-[2rem] text-[1.25rem] font-medium">
+              <div className="xl:text-[2rem] sm:text-[2rem] text-[1.25rem] font-medium">
                 {t("trustedUsers")}
               </div>
             </div>

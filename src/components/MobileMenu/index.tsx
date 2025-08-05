@@ -39,8 +39,8 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ items, isOpen, onClose }) => {
         </button>
       </div>
 
-      <nav className="px-6 py-2">
-        <ul className="space-y-4">
+      <nav className="pt-[2.4rem] px-[2.4rem]">
+        <ul className="space-y-[1.6rem]">
           {items.map((item) => (
             <li key={item.key}>
               {item.children ? (

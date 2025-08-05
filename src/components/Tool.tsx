@@ -83,14 +83,14 @@ export default function Tool() {
             className={`flex sm:${d.direct} sm:justify-between sm:flex-row  sm:mb-[7.5rem] sm:px-[7.5rem] text-left flex-col px-[2.4rem] items-center mb-[4rem]`}
             key={d.textInfo.title}
           >
-            <div className="sm:px-[0rem]px-[2.5rem]">
+            <div className="sm:px-[0rem] px-[2.5rem]">
               <Image
                 src={d.img}
                 className="xl:w-[43.25rem] sm:w-[43rem] w-full"
                 alt=""
               />
             </div>
-            <div className="xl:pt-[7.38rem] xl:w-[50rem] pt-[4rem] w-[46rem]">
+            <div className="xl:w-[50rem] pt-[4rem] w-[46rem]">
               <div className="font-semibold sm:text-[4rem] sm:mb-[1.5rem] text-[2.2rem]">
                 {d.textInfo.title}
               </div>

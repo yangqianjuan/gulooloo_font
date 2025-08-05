@@ -7,22 +7,43 @@ import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
 import MobileMenu, { MenuItem } from "@/components/MobileMenu/index";
 import MenuToggleButton from "@/components/MenuToggleButton";
-const menuItems: MenuItem[] = [
-  { label: "首页", key: "home", href: "/" },
-  {
-    label: "产品",
-    key: "products",
-    children: [
-      { label: "手机", key: "phone", href: "/products/phone" },
-      { label: "电脑", key: "laptop", href: "/products/laptop" },
-    ],
-  },
-  { label: "联系我们", key: "contact", href: "/contact" },
-];
+
 const Header: React.FC = () => {
   const t = useTranslations();
   const locale = useLocale();
   const [menuOpen, setMenuOpen] = useState(false);
+  const menuItems: MenuItem[] = useMemo(() => {
+    return [
+      { label: "首页", key: "home", href: "/" },
+      {
+        label: t("navProducts"),
+        key: "products",
+        children: [
+          { label: t("easyNotesTitle"), key: "easyNotesTitle", href: "" },
+          { label: t("invoiceNowTitle"), key: "invoiceNowTitle", href: "" },
+          { label: t("goFastingTitle"), key: "goFastingTitle", href: "" },
+          { label: t("footerProduct4"), key: "footerProduct4", href: "" },
+        ],
+      },
+      { label: t("navResource"), key: "navResource", href: "/" },
+      { label: t("navAbout"), key: "navAbout", href: "/" },
+      {
+        label: "language",
+        key: "language",
+        children: [
+          { label: "English", key: "en", href: "/en" },
+          { label: "Español", key: "es", href: "/es" },
+          { label: "Français", key: "fr", href: "/fr" },
+          { label: "Português", key: "pt", href: "/pt" },
+          { label: "Deutsch", key: "de", href: "/de" },
+          { label: "日本語", key: "ja", href: "/ja" },
+          { label: "한국인", key: "ko", href: "/ko" },
+          { label: "繁體中文", key: "tw", href: "/tw" },
+          { label: "简体中文", key: "cn", href: "/cn" },
+        ],
+      },
+    ];
+  }, []);
   const langList = useMemo(() => {
     return [
       { label: "English", value: "en" },
