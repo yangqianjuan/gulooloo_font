@@ -1,0 +1,39 @@
+import Image from "next/image";
+import explore from "@/assets/image/call_to_action_pc/call_to_action_pc_2x.webp";
+import explore_m from "@/assets/image/call_to_action_mobile/call_to_action_mobile_2x.webp";
+import { useTranslations } from "next-intl";
+export default function Explore() {
+  const t = useTranslations();
+  return (
+    <div className="relative sm:p-[5rem] p-[2.4rem]">
+      <div className="sm:hidden block xl:top-[10rem] xl:left-[10rem] xl:w-[47.5rem] sm:text-left top-[10rem] left-[11rem] sm:w-[36.6rem] text-center">
+        <div className="absolute top-[4.8rem]  left-1/2 transform -translate-x-1/2 font-semibold text-[2.4rem] w-[20rem] break-words">
+          {t("ctaSectionTitle")}
+        </div>
+        <div className="absolute bottom-[6rem] left-1/2 transform -translate-x-1/2  w-[26.8rem] h-[6.4rem] rounded-full bg-[rgba(0,204,145,1)] flex items-center justify-center text-white text-[1.6rem]">
+          {t("ctaButton")}
+        </div>
+      </div>
+      <div className="sm:block absolute hidden xl:top-[10rem] xl:left-[10rem] xl:w-[47.5rem] text-left top-[10rem] left-[11rem] w-[36.6rem]">
+        <div className="font-bold xl:text-[5rem] text-[4.4rem] break-words">
+          {t("ctaSectionTitle")}
+        </div>
+        <div className="text-[1.5rem] xl:mb-[6.62rem] mb-[4.8rem]  text-[rgba(4,30,84,0.64)]">
+          {t("ctaSectionSubtitle")}
+        </div>
+        <div className="xl:w-[16rem] xl:h-[4.5rem] w-[26.8rem] h-[6.4rem] rounded-full bg-[rgba(0,204,145,1)] flex items-center justify-center text-white text-[24px]">
+          {t("ctaButton")}
+        </div>
+      </div>
+
+      <Image
+        src={explore}
+        alt="banner"
+        className="hidden sm:block xl:w-full xl:h-auto h-[38rem] w-auto xl:rounded-[2.5rem] rounded-[4rem]"
+
+        // unoptimized
+      ></Image>
+      <Image src={explore_m} alt="" className="sm:hidden block w-full h-auto" />
+    </div>
+  );
+}
