@@ -1,9 +1,11 @@
 {
   "siteTitle": "Gulooloo Tech Co., Limited",
   "companyName": "Gulooloo Tech",
+  "navHome": "홈",
   "navProducts": "제품",
   "navResource": "블로그",
   "navAbout": "회사소개",
+  "language": "언어",
   "primarySlogan": "오늘을 힘차게",
   "secondarySlogan": "삶을 풍요롭게",
   "heroSubtitle": "매일을 위한 실용·웰니스 앱",
@@ -73,5 +75,19 @@
   "footerDownloadTitle": "앱 다운로드",
   "footerCopyright": "© 2025 Gulooloo Tech Co. Limited. 모든 권리 보유.",
   "footerPrivacy": "개인정보처리방침",
-  "footerTerms": "이용약관"
+  "footerTerms": "이용약관",
+  "seo": {
+    "metaTitle": "Gulooloo Tech – 최고의 메모·단식·인보이스 앱",
+    "metaDescription": "Easy Notes, GoFasting, Invoice Now로 일상을 효율적으로 관리하세요.",
+    "keywords": [
+      "Easy Notes",
+      "GoFasting",
+      "Invoice Now",
+      "메모 앱",
+      "단식 추적기",
+      "인보이스 생성기",
+      "생산성 앱",
+      "QR 코드 생성기"
+    ]
+  }
 }

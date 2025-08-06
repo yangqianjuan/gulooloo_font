@@ -1,9 +1,11 @@
 {
   "siteTitle": "Gulooloo Tech Co., Limited",
   "companyName": "Gulooloo Tech",
+  "navHome": "Início",
   "navProducts": "Produtos",
   "navResource": "Blog",
   "navAbout": "Sobre",
+  "language": "Idioma",
   "primarySlogan": "Viva com poder",
   "secondarySlogan": "Mude sua vida",
   "heroSubtitle": "Apps úteis e saudáveis para o seu dia a dia",
@@ -57,7 +59,7 @@
   "testimonial3Title": "Alta personalização",
   "testimonial3Content": "Eu costumava gastar muito tempo criando faturas. Agora as crio e envio em minutos. É limpo, personalizável e atende todos os meus requisitos de negócio",
   "testimonial3Author": "Jason",
-  "ctaSectionTitle": "Pronto para uma vida melhor?",
+  "ctaSectionTitle": "Pronto Pra Começar?",
   "ctaSectionSubtitle": "Descubra apps para o dia a dia.",
   "ctaButton": "Começar agora",
   "ctaTagline": "Apps para um cotidiano melhor.",
@@ -73,5 +75,19 @@
   "footerDownloadTitle": "Baixe nossos apps",
   "footerCopyright": "© 2025 Gulooloo Tech Co. Limited. Todos os direitos reservados.",
   "footerPrivacy": "Política de privacidade",
-  "footerTerms": "Termos de serviço"
+  "footerTerms": "Termos de serviço",
+  "seo": {
+    "metaTitle": "Gulooloo Tech – Melhores apps de Notas, Jejum e Faturas",
+    "metaDescription": "Baixe Easy Notes, GoFasting e Invoice Now. Ferramentas úteis para um dia mais organizado.",
+    "keywords": [
+      "Easy Notes",
+      "GoFasting",
+      "Invoice Now",
+      "aplicativo de notas",
+      "app de jejum",
+      "criador de faturas",
+      "gerador de QR Code",
+      "produtividade diária"
+    ]
+  }
 }

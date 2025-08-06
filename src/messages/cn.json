@@ -1,9 +1,11 @@
 {
   "siteTitle": "Gulooloo Tech Co., Limited",
   "companyName": "Gulooloo Tech",
+  "navHome": "首页",
   "navProducts": "产品",
   "navResource": "博客",
   "navAbout": "关于我们",
+  "language": "语言",
   "primarySlogan": "为你的一天注入活力",
   "secondarySlogan": "让生活更精彩",
   "heroSubtitle": "实用且健康的应用，助力日常生活",
@@ -57,7 +59,7 @@
   "testimonial3Title": "高度自定义",
   "testimonial3Content": "以前制作发票要花费太多时间。现在我可以在几分钟内创建和发送。界面简洁，可自定义，满足我所有的业务需求",
   "testimonial3Author": "Jason",
-  "ctaSectionTitle": "准备好开始更美好的生活了吗？",
+  "ctaSectionTitle": "准备好开启更美好生活？",
   "ctaSectionSubtitle": "探索我们为简化日常生活而设计的应用。",
   "ctaButton": "立即开始",
   "ctaTagline": "为更美好日常而生的应用。",
@@ -73,5 +75,19 @@
   "footerDownloadTitle": "下载我们的应用",
   "footerCopyright": "© 2025 Gulooloo Tech Co. Limited. 版权所有。",
   "footerPrivacy": "隐私政策",
-  "footerTerms": "服务条款"
+  "footerTerms": "服务条款",
+  "seo": {
+    "metaTitle": "Gulooloo Tech – 笔记、断食、开票工具",
+    "metaDescription": "发现 Easy Notes、GoFasting 与 Invoice Now，提升效率，改善生活。",
+    "keywords": [
+      "Easy Notes",
+      "GoFasting",
+      "Invoice Now",
+      "笔记应用",
+      "断食记录工具",
+      "发票生成器",
+      "效率工具",
+      "二维码生成器"
+    ]
+  }
 }

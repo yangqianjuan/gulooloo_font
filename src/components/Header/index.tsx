@@ -14,7 +14,7 @@ const Header: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuItems: MenuItem[] = useMemo(() => {
     return [
-      { label: "首页", key: "home", href: "/" },
+      { label: t("navHome"), key: "home", href: "/" },
       {
         label: t("navProducts"),
         key: "products",
@@ -28,7 +28,7 @@ const Header: React.FC = () => {
       { label: t("navResource"), key: "navResource", href: "/" },
       { label: t("navAbout"), key: "navAbout", href: "/" },
       {
-        label: "language",
+        label: t("language"),
         key: "language",
         children: [
           { label: "English", key: "en", href: "/en" },

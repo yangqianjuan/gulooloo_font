@@ -1,9 +1,11 @@
 {
   "siteTitle": "Gulooloo Tech Co. Limited",
   "companyName": "Gulooloo Tech",
+  "navHome": "Startseite",
   "navProducts": "Products",
   "navResource": "Blog",
   "navAbout": "Über Uns",
+  "language": "Sprache",
   "primarySlogan": "Starte den Tag",
   "secondarySlogan": "Lebe Mit Power",
   "heroSubtitle": "Praktische Wellness-Apps für deinen Alltag",
@@ -57,7 +59,7 @@
   "testimonial3Title": "Hohe Anpassbarkeit",
   "testimonial3Content": "Jetzt erstelle ich Rechnungen in Minuten – effizient und passend",
   "testimonial3Author": "Jason",
-  "ctaSectionTitle": "Bereit für dein besseres Leben?",
+  "ctaSectionTitle": "Bereit Zu Starten?",
   "ctaSectionSubtitle": "Entdecke Apps für deinen Alltag.",
   "ctaButton": "Jetzt Starten",
   "ctaTagline": "Apps Für Deinen Alltag",
@@ -73,5 +75,19 @@
   "footerDownloadTitle": "Download Our Apps",
   "footerCopyright": "© 2025 Gulooloo Tech Co. Limited. Alle Rechte vorbehalten.",
   "footerPrivacy": "Datenschutzrichtlinie",
-  "footerTerms": "Nutzungsbedingungen"
+  "footerTerms": "Nutzungsbedingungen",
+  "seo": {
+    "metaTitle": "Gulooloo Tech – Beste Apps für Notizen, Fasten und Rechnungen",
+    "metaDescription": "Verwalte dein Leben mit Easy Notes, GoFasting und Invoice Now. Einfach. Schnell. Effizient.",
+    "keywords": [
+      "Easy Notes",
+      "GoFasting",
+      "Invoice Now",
+      "Notizen App",
+      "Intervallfasten App",
+      "Rechnung schreiben App",
+      "Produktivitäts-App",
+      "QR-Code-Generator"
+    ]
+  }
 }

@@ -1,9 +1,11 @@
 {
   "siteTitle": "Gulooloo Tech Co., Limited",
   "companyName": "Gulooloo Tech",
+  "navHome": "ホーム",
   "navProducts": "アプリ",
   "navResource": "ブログ",
   "navAbout": "会社概要",
+  "language": "言語",
   "primarySlogan": "今日を力強く",
   "secondarySlogan": "人生を豊かに",
   "heroSubtitle": "毎日に役立つ健康で実用的なアプリ",
@@ -25,7 +27,7 @@
   "invoiceNowTitle": "Invoice Now",
   "invoiceNowDesc": "美しいテンプレートを豊富に用意し、請求書と見積書を簡単に作成。",
   "invoiceNowFeature1": "プロフェッショナルな請求書を数秒で作成",
-  "invoiceNowFeature2": "あなたのニーズに合わせて細部までカスタマイズ",
+  "invoiceNowFeature2": "あなたのニーズに合わせて細部まで",
   "invoiceNowFeature3": "請求書の追跡と支払い管理を簡単に",
   "goFastingTitle": "GoFasting",
   "goFastingDesc": "あなた専用の断食プランと段階的なガイダンスを提供。",
@@ -73,5 +75,19 @@
   "footerDownloadTitle": "アプリをダウンロード",
   "footerCopyright": "© 2025 Gulooloo Tech Co. Limited. 無断転載禁止。",
   "footerPrivacy": "プライバシーポリシー",
-  "footerTerms": "利用規約"
+  "footerTerms": "利用規約",
+  "seo": {
+    "metaTitle": "Gulooloo Tech – メモ・断食・請求書アプリ",
+    "metaDescription": "Easy Notes、GoFasting、Invoice Now を体験。日常を快適にする便利なツール。",
+    "keywords": [
+      "Easy Notes",
+      "GoFasting",
+      "Invoice Now",
+      "メモアプリ",
+      "断食トラッカー",
+      "請求書作成アプリ",
+      "QRコード作成",
+      "生産性向上アプリ"
+    ]
+  }
 }

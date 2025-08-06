@@ -1,9 +1,11 @@
 {
   "siteTitle": "Gulooloo Tech Co., Limited",
   "companyName": "Gulooloo Tech",
+  "navHome": "Home",
   "navProducts": "Products",
   "navResource": "Blog",
   "navAbout": "About Us",
+  "language": "Language",
   "primarySlogan": "Power Your Day",
   "secondarySlogan": "Empower Your Life",
   "heroSubtitle": "Practical and wellness apps help everyday people",
@@ -73,5 +75,19 @@
   "footerDownloadTitle": "Download Our Apps",
   "footerCopyright": "© 2025 Gulooloo Tech Co. Limited. All rights reserved.",
   "footerPrivacy": "Privacy Policy",
-  "footerTerms": "Terms of Service"
+  "footerTerms": "Terms of Service",
+  "seo": {
+    "metaTitle": "Gulooloo Tech – Best Notes, Fasting & Invoice Apps",
+    "metaDescription": "Discover Easy Notes, GoFasting, Invoice Now and more. Boost your productivity and wellness.",
+    "keywords": [
+      "Easy Notes",
+      "GoFasting",
+      "Invoice Now",
+      "notes app",
+      "fasting tracker",
+      "invoice maker",
+      "productivity tools",
+      "qr code generator"
+    ]
+  }
 }
