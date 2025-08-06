@@ -92,7 +92,10 @@ export default function Footer() {
         </div>
         {list.map((d) => {
           return (
-            <div className="xl:w-[12.7rem] sm:w-[18rem] w-full" key={d.label}>
+            <div
+              className="xl:w-[12.7rem] sm:w-[18rem] w-full mb-[2.4rem]"
+              key={d.label}
+            >
               {d.children && (
                 <div className="sm:block hidden">
                   <div className="xl:text-[1.25rem] text-[1.6rem] font-semibold text-[rgba(4,30,84,1)]  mb-[2rem]">
@@ -113,7 +116,7 @@ export default function Footer() {
                 </div>
               )}
               {d.children && (
-                <div className="sm:hidden">
+                <div className="sm:hidden text-[1.6rem] text-[rgba(4,30,84,1)]">
                   <MenuItemWithSubmenu
                     item={d}
                     isOpen={openKeys.includes(d.key)}
@@ -137,7 +140,7 @@ export default function Footer() {
                           onClick={() => {
                             toAPPStore(item.link);
                           }}
-                          className="w-[8.42rem] mb-[1.25rem] transition-transform duration-300 hover:scale-110"
+                          className="w-[8.42rem] mb-[1.25rem] mr-[2rem] transition-transform duration-300 hover:scale-110"
                         />
                       );
                     })}

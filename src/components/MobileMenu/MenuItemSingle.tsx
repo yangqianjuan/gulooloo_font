@@ -8,11 +8,7 @@ interface Props {
 }
 
 const MenuItemSingle: React.FC<Props> = ({ label, href = "#", onClick }) => (
-  <Link
-    href={href}
-    className="block text-lg  text-[1.5rem] text-[rgba(4,30,84,0.32)]"
-    onClick={onClick}
-  >
+  <Link href={href} className="block text-lg  text-[1.6rem]" onClick={onClick}>
     {label}
   </Link>
 );
