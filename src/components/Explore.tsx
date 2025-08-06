@@ -2,15 +2,36 @@ import Image from "next/image";
 import explore from "@/assets/image/call_to_action_pc/call_to_action_pc_2x.webp";
 import explore_m from "@/assets/image/call_to_action_mobile/call_to_action_mobile_2x.webp";
 import { useTranslations } from "next-intl";
+import { detectDeviceType } from "@/utils/index";
+import { useEffect } from "react";
+import { useMemoizedFn } from "ahooks";
+const iosLink =
+  "https://apps.apple.com/us/developer/gulooloo-tech/id1574018169";
+const andoridLink =
+  "https://play.google.com/store/apps/dev?id=4626225608014895570";
+const otherlink =
+  "https://play.google.com/store/apps/dev?id=4626225608014895570";
 export default function Explore() {
   const t = useTranslations();
+  const toStart = useMemoizedFn(() => {
+    const deviceType = detectDeviceType();
+    if (deviceType === "iOS") {
+      window.open(iosLink);
+      return;
+    }
+    if (deviceType === "Android") {
+      window.open(andoridLink);
+      return;
+    }
+    window.open(otherlink);
+  });
   return (
     <div className="relative sm:p-[5rem] p-[2.4rem]">
       <div className="sm:hidden block xl:top-[10rem] xl:left-[10rem] xl:w-[47.5rem] sm:text-left top-[10rem] left-[11rem] sm:w-[36.6rem] text-center">
         <div className="absolute top-[4.8rem]  left-1/2 transform -translate-x-1/2 font-semibold text-[2.4rem] w-[20rem] break-words">
           {t("ctaSectionTitle")}
         </div>
-        <div className="absolute bottom-[6rem] left-1/2 transform -translate-x-1/2  w-[26.8rem] h-[6.4rem] rounded-full bg-[rgba(0,204,145,1)] flex items-center justify-center text-white text-[1.6rem]">
+        <div className="absolute bottom-[6rem] left-1/2 transform -translate-x-1/2  w-[26.8rem] h-[6.4rem] rounded-full bg-[rgba(0,204,145,1)]  flex items-center justify-center text-white text-[1.6rem] hover:bg-[rgba(82,220,180,1)] transition-transform duration-300 hover:scale-110">
           {t("ctaButton")}
         </div>
       </div>
@@ -21,7 +42,10 @@ export default function Explore() {
         <div className="text-[1.5rem] xl:mb-[6.62rem] mb-[4.8rem]  text-[rgba(4,30,84,0.64)]">
           {t("ctaSectionSubtitle")}
         </div>
-        <div className="xl:w-[16rem] xl:h-[4.5rem] w-[26.8rem] h-[6.4rem] rounded-full bg-[rgba(0,204,145,1)] flex items-center justify-center text-white text-[24px]">
+        <div
+          className="xl:w-[16rem] xl:h-[4.5rem] w-[26.8rem] h-[6.4rem] rounded-full bg-[rgba(0,204,145,1)]  flex items-center justify-center text-white text-[24px] hover:bg-[rgba(82,220,180,1)] transition-transform duration-300 hover:scale-110"
+          onClick={toStart}
+        >
           {t("ctaButton")}
         </div>
       </div>

@@ -3,7 +3,9 @@ import logo from "@/assets/icon/logo_text.svg";
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
 import Appstore_download from "@/assets/icon/Appstore_download.svg";
+import Appstore_download_hover from "@/assets/icon/Appstore_download_hover.svg";
 import googleplay_download from "@/assets/icon/googleplay_download.svg";
+import googleplay_download_hover from "@/assets/icon/googleplay_download_hover.svg";
 import MenuItemWithSubmenu from "@/components/MobileMenu/ MenuItemWithSubmenu";
 export default function Footer() {
   const [openKeys, setOpenKeys] = useState<string[]>([]);
@@ -60,14 +62,22 @@ export default function Footer() {
       {
         label: t("footerDownloadTitle"),
         imgs: [
-          { src: Appstore_download, alt: "Appstore" },
-          { src: googleplay_download, alt: "googleplay" },
+          {
+            src: Appstore_download,
+            hoverSrc: Appstore_download_hover,
+            alt: "Appstore",
+          },
+          {
+            src: googleplay_download,
+            hoverSrc: googleplay_download_hover,
+            alt: "googleplay",
+          },
         ],
       },
     ];
   }, []);
   return (
-    <footer className="text-[rgba(4,30,84,0.64)]  w-full xl:px-[5rem] xl:pt-[5rem] bg-[rgba(246,254,255,1)] px-[4rem] pt-[6rem]">
+    <footer className="text-[rgba(4,30,84,0.64)]   w-full xl:px-[5rem] xl:pt-[5rem] bg-[rgba(246,254,255,1)] px-[4rem] pt-[6rem]">
       <div className="flex flex-wrap sm:justify-between pb-[3.75rem]">
         <div className="lg:w-[31.25rem]  w-full mb-[3.2rem]">
           <Image src={logo} alt="" className="mb-[1rem]"></Image>
@@ -78,12 +88,19 @@ export default function Footer() {
             <div className="xl:w-[12.7rem] sm:w-[18rem] w-full" key={d.label}>
               {d.children && (
                 <div className="sm:block hidden">
-                  <div className="xl:text-[1.25rem] text-[1.6rem] font-semibold text-[rgba(4,30,84,1)] mb-[2rem]">
+                  <div className="xl:text-[1.25rem] text-[1.6rem] font-semibold text-[rgba(4,30,84,1)]  mb-[2rem]">
                     {d.label}
                   </div>
                   <div className="xl:text-[1.25rem] text-[1.6rem] font-medium sm:block hidden">
                     {d.children.map((item) => {
-                      return <div key={item.key}>{item.key}</div>;
+                      return (
+                        <div
+                          key={item.key}
+                          className="hover:text-[rgba(4,30,84,1)]"
+                        >
+                          {item.key}
+                        </div>
+                      );
                     })}
                   </div>
                 </div>
@@ -110,7 +127,7 @@ export default function Footer() {
                           key={item.alt}
                           src={item.src}
                           alt=""
-                          className="w-[8.42rem] mb-[1.25rem]"
+                          className="w-[8.42rem] mb-[1.25rem] transition-transform duration-300 hover:scale-110"
                         />
                       );
                     })}

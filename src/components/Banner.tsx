@@ -16,7 +16,7 @@ export default function Banner() {
         <div className="2xl:text-[1.5rem]  2xl:mb-[6.62rem] text-[2rem] mb-[8.9rem] text-[rgba(4,30,84,0.64)]">
           {t("heroSubtitle")}
         </div>
-        <div className="w-[28.6rem] h-[6.6rem] xl:w-[16rem] xl:h-[4.5rem] rounded-full bg-[rgba(0,204,145,1)] flex items-center justify-center text-white text-[1.5rem]">
+        <div className="w-[28.6rem] h-[6.6rem] xl:w-[16rem] xl:h-[4.5rem] rounded-full bg-[rgba(0,204,145,1)] hover:bg-[rgba(82,220,180,1)] transition-transform duration-300 hover:scale-110 flex items-center justify-center text-white text-[1.5rem]">
           {t("heroCta")}
         </div>
       </div>

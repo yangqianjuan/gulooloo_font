@@ -117,12 +117,12 @@ export default function Tool() {
                 <Image
                   src={Appstore_download}
                   alt=""
-                  className="xl:w-[10rem] xl:mr-[1.25rem] w-[13.5rem] mr-[2rem]"
+                  className="xl:w-[10rem] xl:mr-[1.25rem] w-[13.5rem] mr-[2rem] transition-transform duration-300 hover:scale-110"
                 />
                 <Image
                   src={googleplay_download}
                   alt=""
-                  className="xl:w-[10rem] w-[13.5rem]"
+                  className="xl:w-[10rem] w-[13.5rem] transition-transform duration-300 hover:scale-110"
                 />
               </div>
             </div>

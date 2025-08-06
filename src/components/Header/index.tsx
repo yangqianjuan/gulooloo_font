@@ -77,10 +77,12 @@ const Header: React.FC = () => {
           ]}
           placeholder={t("navProducts")}
         />
-        <div className="mx-16 xl:text-[1.25rem] text-[1.8rem]">
+        <div className="mx-[1.5rem] xl:text-[1.25rem] text-[1.8rem] hover:bg-[rgba(0,204,145,0.078)] hover:text-[rgba(0,204,145,1)] py-[0.81rem] px-[1.56rem]">
           {t("navResource")}
         </div>
-        <div className="xl:text-[1.25rem] text-[1.8rem]">{t("navAbout")}</div>
+        <div className="xl:text-[1.25rem] text-[1.8rem] hover:bg-[rgba(0,204,145,0.078)] hover:text-[rgba(0,204,145,1)] py-[0.81rem] px-[1.56rem]">
+          {t("navAbout")}
+        </div>
       </div>
       <div className="text-xl items-center hidden lg:flex">
         <span className="text-[1.25rem] mr-[1.7rem] ">

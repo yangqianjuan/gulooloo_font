@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ArrowRight } from "lucide-react";
 import article_fasting_pic from "@/assets/image/article_fasting_pic/article_fasting_pic_2x.webp";
 import article_invoce_pic from "@/assets/image/article_invoce_pic/article_invoce_pic_2x.webp";
 import article_notes_pic from "@/assets/image/article_notes_pic/article_notes_pic_2x.webp";
@@ -41,7 +42,7 @@ export default function Blog() {
               <Image
                 src={d.img}
                 alt=""
-                className="xl:w-[35rem] xl:h-[22.5rem] xl:mb-[2.5rem] xl:rounded-[1.5rem] sm:h-[20.6rem] sm:w-[32rem] sm:mb-[2rem] w-full mb-[2rem] rounded-[1.6rem]"
+                className="xl:w-[35rem] xl:h-[22.5rem] xl:mb-[2.5rem] xl:rounded-[1.5rem] sm:h-[20.6rem] sm:w-[32rem] sm:mb-[2rem] w-full mb-[2rem] rounded-[1.6rem] transition-transform duration-300 hover:scale-110"
               ></Image>
               <div className="xl:text-[2rem] font-medium xl:mb-[2.5rem] text-[2rem] mb-[1.6rem]">
                 {d.title}
@@ -49,9 +50,9 @@ export default function Blog() {
               <div className="xl:text-[1.5rem] xl:mb-[2.5rem] text-[1.6rem] mb-[2rem]">
                 {d.desc}
               </div>
-              <div className="font-medium text-[rgba(0,204,145,1)] flex xl:text-[1.5rem] text-[1.6rem] mb-[4rem]">
-                <span>{t("readMoreBtn")}</span>
-                <Image src={ic_arrow_back} alt="" width={24}></Image>
+              <div className="font-medium text-[rgba(0,204,145,1)] hover:text-[rgba(82,220,180,1)] flex items-center xl:text-[1.5rem] text-[1.6rem] mb-[4rem]">
+                <span className="mr-[0.8rem]">{t("readMoreBtn")}</span>
+                <ArrowRight width={24}></ArrowRight>
               </div>
             </div>
           );
