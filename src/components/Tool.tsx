@@ -30,7 +30,7 @@ export default function Tool() {
   const list = useMemo(() => {
     return [
       {
-        direct: "",
+        direct: "flex-row",
         img: apps_easynotes_pic,
         alt: t("apps_easynotes_pic_alt"),
         link_ios: iosLink_easy_notes,
@@ -62,7 +62,7 @@ export default function Tool() {
         },
       },
       {
-        direct: "",
+        direct: "flex-row",
         img: apps_gofasting,
         alt: t("apps_gofasting_pic_alt"),
         link_ios: iosLink_go_fasting,
@@ -106,7 +106,13 @@ export default function Tool() {
       {list.map((d) => {
         return (
           <div
-            className={`flex sm:${d.direct} sm:justify-between sm:flex-row  sm:mb-[7.5rem] sm:px-[7.5rem] text-left flex-col px-[2.4rem] items-center mb-[4rem]`}
+            className={`flex ${
+              d.direct === "flex-row-reverse"
+                ? "sm:flex-row-reverse"
+                : d.direct === "flex-row"
+                ? "sm:flex-row"
+                : ""
+            } sm:justify-between   sm:mb-[7.5rem] sm:px-[7.5rem] text-left flex-col px-[2.4rem] items-center mb-[4rem]`}
             key={d.textInfo.title}
           >
             <div className="sm:px-[0rem] px-[2.5rem]">

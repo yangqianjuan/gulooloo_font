@@ -66,7 +66,7 @@ const Header: React.FC = () => {
   return (
     <header className="w-full h-[80px] justify-between  flex items-center px-6 ">
       <Image src={logo} alt="" width={190} />
-      <div className="text-xl  items-center hidden lg:flex">
+      <div className="text-xl  items-center hidden sm:flex">
         <AnchorDropdown
           isShowArrow={true}
           options={[
@@ -84,7 +84,7 @@ const Header: React.FC = () => {
           {t("navAbout")}
         </div>
       </div>
-      <div className="text-xl items-center hidden lg:flex">
+      <div className="text-xl items-center hidden sm:flex">
         <span className="text-[1.25rem] mr-[1.7rem] ">
           <AnchorDropdown
             options={langList}
@@ -93,7 +93,7 @@ const Header: React.FC = () => {
           />
         </span>
       </div>
-      <div className="relative lg:hidden">
+      <div className="relative sm:hidden">
         <div className="flex justify-between items-center p-4">
           <MenuToggleButton onClick={() => setMenuOpen(true)} />
         </div>

@@ -32,7 +32,7 @@ export default function Banner() {
         className="w-full h-auto block sm:hidden"
         // unoptimized
       ></Image>
-      <div className="block sm:hidden sm:mb-[8rem] mt-[3.25rem]  text-center sm:w-[32.6rem] mx-auto">
+      <div className="block sm:hidden mt-[3.25rem] text-center mx-auto mb-[4rem]">
         <div className="font-bold text-[3rem] mb-[1.2rem]">
           {t("primarySlogan")}
           <br />

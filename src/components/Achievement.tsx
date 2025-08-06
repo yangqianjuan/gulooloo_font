@@ -9,16 +9,16 @@ import google_bestapp from "@/assets/icon/google_bestapp.svg";
 export default function Achievement() {
   const t = useTranslations();
   return (
-    <div className=" w-full text-[rgba(118,61,3,1)] xl:mb-[7.5rem]">
+    <div className=" w-full text-[rgba(118,61,3,1)] xl:mb-[7.5rem] mb-[6rem]">
       <div
         // style={{ backgroundImage: `url(${bg.src})` }}
-        className="sm:py-[5rem] sm:mx-[5rem] text-[rgba(118,61,3,1)] sm:bg-[url('/images/world_map_bg_2x.webp')] bg-[url('/images/world_map_mobile_2x.webp')] bg-cover font-semibold"
+        className="sm:py-[5rem] sm:mx-[5rem] text-[rgba(118,61,3,1)] sm:bg-[url('/images/world_map_bg_2x.webp')] bg-[url('/images/world_map_mobile_2x.webp')] bg-cover font-semibold sm:px-[0rem] px-[5.6rem] py-[4.6rem]"
       >
         <div className="text-center sm:text-[4rem] sm:pb-[5rem]  text-[2.4rem] pb-[4rem]">
           {t("whyUsTitle")}
         </div>
         <div className="flex sm:flex-row flex-col justify-between items-center">
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center sm:w-[30%] w-full sm:mb-[0rem] mb-[3.4rem]">
             <Image src={l_leaf} alt="" className="xl:w-[5.625rem] w-[5.2rem]" />
             <div className="flex flex-col items-center justify-center">
               <Image
@@ -35,7 +35,7 @@ export default function Achievement() {
             </div>
             <Image src={r_leaf} alt="" className="xl:w-[5.625rem] w-[5.2rem]" />
           </div>
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center sm:w-[35%] w-full sm:mb-[0rem] mb-[3.4rem]">
             <Image
               src={l_leaf}
               alt=""
@@ -56,7 +56,7 @@ export default function Achievement() {
               alt=""
             />
           </div>
-          <div className="flex justify-between items-center">
+          <div className="flex justify-between items-center sm:w-[30%] w-full">
             <Image src={l_leaf} alt="" className="xl:w-[5.625rem] w-[5.2rem]" />
             <div className="flex flex-col items-center justify-center">
               <Image
