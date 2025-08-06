@@ -129,13 +129,16 @@ export default function Tool() {
               <ul className="sm:mb-[8.75rem] mb-[4rem]">
                 {d.textInfo.items.map((item) => {
                   return (
-                    <li className="flex items-start w-full" key={item}>
+                    <li
+                      className="flex items-center w-full mb-[1.6rem]"
+                      key={item}
+                    >
                       <Image
                         src={ic}
                         alt=""
-                        className="xl:w-[1.5rem] w-[2.4rem] mr-[1.6rem] shrink-0"
+                        className="xl:w-[1.5rem] w-[2.4rem] mr-[1.6rem]"
                       />
-                      <div className="xl:text-[1.5rem] sm:text-[2rem] text-[1.5rem] leading-snug">
+                      <div className="xl:text-[1.5rem] sm:text-[2rem] text-[1.5rem] ">
                         {item}
                       </div>
                     </li>

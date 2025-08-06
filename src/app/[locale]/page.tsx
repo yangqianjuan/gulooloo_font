@@ -15,16 +15,16 @@ export default function Home() {
 
   return (
     <div className="grid grid-rows-[auto_1fr_auto]  justify-items-center min-h-screen max-w-[1920px] mx-auto sm:min-w-[1080px]">
-      <Header></Header>
+      <Header />
       <main className="flex flex-col  row-start-2 sm:items-start w-full">
-        <Banner></Banner>
-        <Achievement></Achievement>
-        <Tool></Tool>
-        <Blog></Blog>
-        <Rate></Rate>
-        <Explore></Explore>
+        <Banner />
+        <Achievement />
+        <Tool />
+        <Blog />
+        <Rate />
+        <Explore />
       </main>
-      <Footer></Footer>
+      <Footer />
     </div>
   );
 }
