@@ -4,6 +4,9 @@ import Header from "@/components/Header";
 import Banner from "@/components/Banner";
 import Achievement from "@/components/Achievement";
 import Tool from "@/components/Tool";
+import Blog from "@/components/Blog";
+import Rate from "@/components/Rate";
+import Explore from "@/components/Explore";
 import Footer from "@/components/Footer";
 export default function Home() {
   const handleSelect = (value: string) => {
@@ -17,6 +20,9 @@ export default function Home() {
         <Banner></Banner>
         <Achievement></Achievement>
         <Tool></Tool>
+        <Blog></Blog>
+        <Rate></Rate>
+        <Explore></Explore>
       </main>
       <Footer></Footer>
     </div>

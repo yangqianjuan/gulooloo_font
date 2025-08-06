@@ -17,9 +17,6 @@ import {
   andoridLink_qr_generator,
 } from "@/utils/index";
 import { useMemo } from "react";
-import Blog from "@/components/Blog";
-import Rate from "@/components/Rate";
-import Explore from "@/components/Explore";
 import { useTranslations } from "next-intl";
 import { useMemoizedFn } from "ahooks";
 export default function Tool() {
@@ -129,7 +126,7 @@ export default function Tool() {
               <div className="text-[rgba(4,30,84,1)] xl:text-[1.5rem] sm:mb-[2.5rem] sm:text-[2rem] mb-[1.6rem] text-[1.5rem]">
                 {d.textInfo.desc}
               </div>
-              <ul className="mb-[8.75rem]">
+              <ul className="sm:mb-[8.75rem] mb-[4rem]">
                 {d.textInfo.items.map((item) => {
                   return (
                     <li className="flex items-start w-full" key={item}>
@@ -167,9 +164,6 @@ export default function Tool() {
           </div>
         );
       })}
-      <Blog></Blog>
-      <Rate></Rate>
-      <Explore></Explore>
     </div>
   );
 }

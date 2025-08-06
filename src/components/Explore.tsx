@@ -30,7 +30,7 @@ export default function Explore() {
         <div className="absolute top-[4.8rem]  left-1/2 transform -translate-x-1/2 font-semibold text-[2.4rem] w-[20rem] break-words">
           {t("ctaSectionTitle")}
         </div>
-        <div className="absolute bottom-[6rem] left-1/2 transform -translate-x-1/2  w-[26.8rem] h-[6.4rem] rounded-full bg-[rgba(0,204,145,1)]  flex items-center justify-center text-white text-[1.6rem] hover:bg-[rgba(82,220,180,1)] transition-transform duration-300 hover:scale-110">
+        <div className="absolute bottom-[6rem] left-1/2 transform -translate-x-1/2  w-[16.8rem] h-[4.4rem] rounded-full bg-[rgba(0,204,145,1)]  flex items-center justify-center text-white text-[1.6rem] hover:bg-[rgba(82,220,180,1)] transition-transform duration-300 hover:scale-110">
           {t("ctaButton")}
         </div>
       </div>
