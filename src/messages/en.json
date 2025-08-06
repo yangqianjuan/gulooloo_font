@@ -76,18 +76,21 @@
   "footerCopyright": "© 2025 Gulooloo Tech Co. Limited. All rights reserved.",
   "footerPrivacy": "Privacy Policy",
   "footerTerms": "Terms of Service",
-  "seo": {
-    "metaTitle": "Gulooloo Tech – Best Notes, Fasting & Invoice Apps",
-    "metaDescription": "Discover Easy Notes, GoFasting, Invoice Now and more. Boost your productivity and wellness.",
-    "keywords": [
-      "Easy Notes",
-      "GoFasting",
-      "Invoice Now",
-      "notes app",
-      "fasting tracker",
-      "invoice maker",
-      "productivity tools",
-      "qr code generator"
-    ]
-  }
+  "top_banner_alt": "Gulooloo Tech hero banner showcasing top mobile apps",
+  "top_banner_mobile_alt": "Mobile version of Gulooloo Tech hero banner for fasting and productivity",
+  "appstore_logo_alt": "Apple Store logo for downloading Gulooloo Tech apps",
+  "google_bestapp_alt": "Google Play best app badge for Gulooloo Tech",
+  "apps_easynotes_pic_alt": "EasyNotes app screenshot for note-taking and reminders",
+  "appstore_download_alt": "Apple Store download button for EasyNotes, GoFasting, and more",
+  "googleplay_download_alt": "Google Play download button for Gulooloo Tech apps",
+  "apps_invoice_pic_alt": "Invoice Now app interface showing invoice creation features",
+  "apps_gofasting_pic_alt": "GoFasting app preview showing fasting tracker interface",
+  "apps_ar_pic_alt": "QR Generator app showcasing fast QR code creation",
+  "productivity_notetaking_alt": "Blog header image for productivity article on note-taking",
+  "fasting_wellness_alt": "Blog article header image about fasting and wellness",
+  "daily_life_alt": "Header image for blog article on organizing daily life",
+  "download_call_alt": "Final call-to-action image to download Gulooloo Tech apps",
+  "metaTitle": "Gulooloo Tech – Best Notes, Fasting & Invoice Apps",
+  "metaDescription": "Discover Easy Notes, GoFasting, Invoice Now and more. Boost your productivity and wellness.",
+  "keywords": "Easy Notes, GoFasting, Invoice Now, notes app, fasting tracker, invoice maker, productivity tools, QR code generator"
 }

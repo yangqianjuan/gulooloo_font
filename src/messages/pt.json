@@ -59,7 +59,7 @@
   "testimonial3Title": "Alta personalização",
   "testimonial3Content": "Eu costumava gastar muito tempo criando faturas. Agora as crio e envio em minutos. É limpo, personalizável e atende todos os meus requisitos de negócio",
   "testimonial3Author": "Jason",
-  "ctaSectionTitle": "Pronto Pra Começar?",
+  "ctaSectionTitle": "Pronto para uma vida melhor?",
   "ctaSectionSubtitle": "Descubra apps para o dia a dia.",
   "ctaButton": "Começar agora",
   "ctaTagline": "Apps para um cotidiano melhor.",
@@ -76,18 +76,21 @@
   "footerCopyright": "© 2025 Gulooloo Tech Co. Limited. Todos os direitos reservados.",
   "footerPrivacy": "Política de privacidade",
   "footerTerms": "Termos de serviço",
-  "seo": {
-    "metaTitle": "Gulooloo Tech – Melhores apps de Notas, Jejum e Faturas",
-    "metaDescription": "Baixe Easy Notes, GoFasting e Invoice Now. Ferramentas úteis para um dia mais organizado.",
-    "keywords": [
-      "Easy Notes",
-      "GoFasting",
-      "Invoice Now",
-      "aplicativo de notas",
-      "app de jejum",
-      "criador de faturas",
-      "gerador de QR Code",
-      "produtividade diária"
-    ]
-  }
+  "top_banner_alt": "Banner principal da Gulooloo Tech com apps móveis",
+  "top_banner_mobile_alt": "Versão mobile do banner da Gulooloo para jejum e produtividade",
+  "appstore_logo_alt": "Logo da Apple Store para baixar apps da Gulooloo",
+  "google_bestapp_alt": "Selo de melhor app da Gulooloo na Google Play",
+  "apps_easynotes_pic_alt": "Captura de tela do EasyNotes para anotações e lembretes",
+  "appstore_download_alt": "Botão da Apple Store para baixar EasyNotes, GoFasting e outros",
+  "googleplay_download_alt": "Botão do Google Play para baixar apps da Gulooloo",
+  "apps_invoice_pic_alt": "Interface do Invoice Now com recursos de criação de faturas",
+  "apps_gofasting_pic_alt": "Prévia do app GoFasting com rastreador de jejum",
+  "apps_ar_pic_alt": "QR Generator mostrando criação rápida de QR code",
+  "productivity_notetaking_alt": "Imagem de cabeçalho do blog sobre produtividade com anotações",
+  "fasting_wellness_alt": "Imagem de blog sobre jejum e bem-estar",
+  "daily_life_alt": "Imagem do blog sobre organização do dia a dia",
+  "download_call_alt": "Imagem final de incentivo para baixar apps da Gulooloo",
+  "metaTitle": "Gulooloo Tech – Aplicativos de Notas, Jejum e Faturas",
+  "metaDescription": "Descubra Easy Notes, GoFasting, Invoice Now e mais. Melhore sua produtividade e bem-estar.",
+  "keywords": "Easy Notes, GoFasting, Invoice Now, aplicativo de notas, rastreador de jejum, gerador de faturas, ferramentas de produtividade, gerador de QR code"
 }

@@ -32,6 +32,7 @@ export default function Tool() {
       {
         direct: "",
         img: apps_easynotes_pic,
+        alt: t("apps_easynotes_pic_alt"),
         link_ios: iosLink_easy_notes,
         link_android: andoridLink_easy_notes,
         textInfo: {
@@ -47,6 +48,7 @@ export default function Tool() {
       {
         direct: "flex-row-reverse",
         img: apps_invoice_pic,
+        alt: t("apps_invoice_pic_alt"),
         link_ios: iosLink_invoice_now,
         link_android: andoridLink_invoice_now,
         textInfo: {
@@ -62,6 +64,7 @@ export default function Tool() {
       {
         direct: "",
         img: apps_gofasting,
+        alt: t("apps_gofasting_pic_alt"),
         link_ios: iosLink_go_fasting,
         link_android: andoridLink_go_fasting,
         textInfo: {
@@ -77,6 +80,7 @@ export default function Tool() {
       {
         direct: "flex-row-reverse",
         img: apps_ar_pic,
+        alt: t("apps_ar_pic_alt"),
         link_ios: iosLink_qr_generator,
         link_android: andoridLink_qr_generator,
         textInfo: {
@@ -138,7 +142,7 @@ export default function Tool() {
               <div className="flex">
                 <Image
                   src={Appstore_download}
-                  alt=""
+                  alt={t("appstore_download_alt")}
                   onClick={() => {
                     toLink(d.link_ios);
                   }}
@@ -146,7 +150,7 @@ export default function Tool() {
                 />
                 <Image
                   src={googleplay_download}
-                  alt=""
+                  alt={t("googleplay_download_alt")}
                   onClick={() => {
                     toLink(d.link_android);
                   }}

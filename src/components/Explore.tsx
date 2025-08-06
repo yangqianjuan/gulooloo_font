@@ -51,12 +51,16 @@ export default function Explore() {
 
       <Image
         src={explore}
-        alt="banner"
+        alt={t("download_call_alt")}
         className="hidden sm:block xl:w-full xl:h-auto h-[38rem] w-auto xl:rounded-[2.5rem] rounded-[4rem]"
 
         // unoptimized
       ></Image>
-      <Image src={explore_m} alt="" className="sm:hidden block w-full h-auto" />
+      <Image
+        src={explore_m}
+        alt={t("download_call_alt")}
+        className="sm:hidden block w-full h-auto"
+      />
     </div>
   );
 }

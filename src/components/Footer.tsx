@@ -71,13 +71,13 @@ export default function Footer() {
             src: Appstore_download,
             hoverSrc: Appstore_download_hover,
             link: iosLink,
-            alt: "Appstore",
+            alt: t("appstore_download_alt"),
           },
           {
             src: googleplay_download,
             hoverSrc: googleplay_download_hover,
             link: andoridLink,
-            alt: "googleplay",
+            alt: t("googleplay_download_alt"),
           },
         ],
       },
@@ -133,7 +133,7 @@ export default function Footer() {
                         <Image
                           key={item.alt}
                           src={item.src}
-                          alt=""
+                          alt={item.alt}
                           onClick={() => {
                             toAPPStore(item.link);
                           }}

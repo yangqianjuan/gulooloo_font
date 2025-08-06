@@ -59,7 +59,7 @@
   "testimonial3Title": "Hohe Anpassbarkeit",
   "testimonial3Content": "Jetzt erstelle ich Rechnungen in Minuten – effizient und passend",
   "testimonial3Author": "Jason",
-  "ctaSectionTitle": "Bereit Zu Starten?",
+  "ctaSectionTitle": "Bereit für dein besseres Leben?",
   "ctaSectionSubtitle": "Entdecke Apps für deinen Alltag.",
   "ctaButton": "Jetzt Starten",
   "ctaTagline": "Apps Für Deinen Alltag",
@@ -76,18 +76,21 @@
   "footerCopyright": "© 2025 Gulooloo Tech Co. Limited. Alle Rechte vorbehalten.",
   "footerPrivacy": "Datenschutzrichtlinie",
   "footerTerms": "Nutzungsbedingungen",
-  "seo": {
-    "metaTitle": "Gulooloo Tech – Beste Apps für Notizen, Fasten und Rechnungen",
-    "metaDescription": "Verwalte dein Leben mit Easy Notes, GoFasting und Invoice Now. Einfach. Schnell. Effizient.",
-    "keywords": [
-      "Easy Notes",
-      "GoFasting",
-      "Invoice Now",
-      "Notizen App",
-      "Intervallfasten App",
-      "Rechnung schreiben App",
-      "Produktivitäts-App",
-      "QR-Code-Generator"
-    ]
-  }
+  "top_banner_alt": "Gulooloo Tech-Hauptbanner mit mobilen Apps",
+  "top_banner_mobile_alt": "Mobile Version des Gulooloo-Banners für Fasten & Produktivität",
+  "appstore_logo_alt": "Apple Store-Logo zum Herunterladen von Gulooloo-Apps",
+  "google_bestapp_alt": "Gulooloo Tech Google Play Best App-Abzeichen",
+  "apps_easynotes_pic_alt": "EasyNotes-Screenshot für Notizen und Erinnerungen",
+  "appstore_download_alt": "Apple Store-Download-Button für EasyNotes, GoFasting & mehr",
+  "googleplay_download_alt": "Google Play-Download-Button für Gulooloo-Apps",
+  "apps_invoice_pic_alt": "Invoice Now-App-Oberfläche zur Rechnungserstellung",
+  "apps_gofasting_pic_alt": "Vorschau der GoFasting-App mit Fastentracker",
+  "apps_ar_pic_alt": "QR Generator zeigt schnelle QR-Code-Erstellung",
+  "productivity_notetaking_alt": "Blog-Kopfzeilenbild zum Thema Notizen & Produktivität",
+  "fasting_wellness_alt": "Header-Bild zum Blog über Fasten & Wohlbefinden",
+  "daily_life_alt": "Header-Bild zum Blog über Alltagsorganisation",
+  "download_call_alt": "Letztes Aufrufbild zum Herunterladen von Gulooloo-Apps",
+  "metaTitle": "Gulooloo Tech – Beste Notizen-, Fasten- & Rechnungs-Apps",
+  "metaDescription": "Entdecke Easy Notes, GoFasting, Invoice Now und mehr. Für mehr Produktivität und Wohlbefinden.",
+  "keywords": "Easy Notes, GoFasting, Invoice Now, Notizen App, Fastentracker, Rechnungsgenerator, Produktivitätstools, QR-Code Generator"
 }

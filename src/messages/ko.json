@@ -76,18 +76,21 @@
   "footerCopyright": "© 2025 Gulooloo Tech Co. Limited. 모든 권리 보유.",
   "footerPrivacy": "개인정보처리방침",
   "footerTerms": "이용약관",
-  "seo": {
-    "metaTitle": "Gulooloo Tech – 최고의 메모·단식·인보이스 앱",
-    "metaDescription": "Easy Notes, GoFasting, Invoice Now로 일상을 효율적으로 관리하세요.",
-    "keywords": [
-      "Easy Notes",
-      "GoFasting",
-      "Invoice Now",
-      "메모 앱",
-      "단식 추적기",
-      "인보이스 생성기",
-      "생산성 앱",
-      "QR 코드 생성기"
-    ]
-  }
+  "top_banner_alt": "Gulooloo Tech 주요 모바일 앱 배너",
+  "top_banner_mobile_alt": "단식과 생산성을 위한 Gulooloo 모바일 배너",
+  "appstore_logo_alt": "Gulooloo 앱용 Apple Store 다운로드 로고",
+  "google_bestapp_alt": "Gulooloo Google Play 최고 앱 배지",
+  "apps_easynotes_pic_alt": "EasyNotes 앱의 메모 및 알림 스크린샷",
+  "appstore_download_alt": "EasyNotes, GoFasting용 Apple Store 다운로드 버튼",
+  "googleplay_download_alt": "Gulooloo 앱용 Google Play 다운로드 버튼",
+  "apps_invoice_pic_alt": "Invoice Now 앱의 인보이스 생성 화면",
+  "apps_gofasting_pic_alt": "GoFasting 앱의 단식 추적기 화면 미리보기",
+  "apps_ar_pic_alt": "QR Generator 앱의 빠른 QR 코드 생성 기능",
+  "productivity_notetaking_alt": "노트 작성 관련 생산성 블로그 헤더 이미지",
+  "fasting_wellness_alt": "단식 및 건강 관련 블로그 헤더 이미지",
+  "daily_life_alt": "일상 정리 블로그 헤더 이미지",
+  "download_call_alt": "Gulooloo 앱 다운로드 유도용 마지막 이미지",
+  "metaTitle": "Gulooloo Tech – 메모·단식·인보이스 앱",
+  "metaDescription": "Easy Notes, GoFasting, Invoice Now로 일상을 더 효율적으로 관리하세요.",
+  "keywords": "Easy Notes, GoFasting, Invoice Now, 메모 앱, 단식 추적기, 인보이스 생성기, 생산성 도구, QR 코드 생성기"
 }

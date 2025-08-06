@@ -22,13 +22,13 @@ export default function Banner() {
       </div>
       <Image
         src={banner}
-        alt="banner"
+        alt={t("top_banner_alt")}
         className="w-full h-auto hidden sm:block"
         // unoptimized
       ></Image>
       <Image
         src={m_banner}
-        alt="banner"
+        alt={t("top_banner_mobile_alt")}
         className="w-full h-auto block sm:hidden"
         // unoptimized
       ></Image>

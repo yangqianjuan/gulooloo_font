@@ -27,7 +27,7 @@
   "invoiceNowTitle": "Invoice Now",
   "invoiceNowDesc": "美しいテンプレートを豊富に用意し、請求書と見積書を簡単に作成。",
   "invoiceNowFeature1": "プロフェッショナルな請求書を数秒で作成",
-  "invoiceNowFeature2": "あなたのニーズに合わせて細部まで",
+  "invoiceNowFeature2": "あなたのニーズに合わせて細部までカスタマイズ",
   "invoiceNowFeature3": "請求書の追跡と支払い管理を簡単に",
   "goFastingTitle": "GoFasting",
   "goFastingDesc": "あなた専用の断食プランと段階的なガイダンスを提供。",
@@ -76,18 +76,21 @@
   "footerCopyright": "© 2025 Gulooloo Tech Co. Limited. 無断転載禁止。",
   "footerPrivacy": "プライバシーポリシー",
   "footerTerms": "利用規約",
-  "seo": {
-    "metaTitle": "Gulooloo Tech – メモ・断食・請求書アプリ",
-    "metaDescription": "Easy Notes、GoFasting、Invoice Now を体験。日常を快適にする便利なツール。",
-    "keywords": [
-      "Easy Notes",
-      "GoFasting",
-      "Invoice Now",
-      "メモアプリ",
-      "断食トラッカー",
-      "請求書作成アプリ",
-      "QRコード作成",
-      "生産性向上アプリ"
-    ]
-  }
+  "top_banner_alt": "Gulooloo Techのモバイルアプリ紹介バナー",
+  "top_banner_mobile_alt": "断食と生産性を促すGuloolooのモバイルバナー",
+  "appstore_logo_alt": "Guloolooアプリ用Apple Storeロゴ",
+  "google_bestapp_alt": "GuloolooのGoogle Play最優秀アプリバッジ",
+  "apps_easynotes_pic_alt": "EasyNotesのメモとリマインダー用画面",
+  "appstore_download_alt": "EasyNotesやGoFasting用のApple Storeダウンロードボタン",
+  "googleplay_download_alt": "GuloolooアプリのGoogle Playダウンロードボタン",
+  "apps_invoice_pic_alt": "Invoice Nowアプリの請求書作成インターフェース",
+  "apps_gofasting_pic_alt": "GoFastingアプリの断食トラッカー画面",
+  "apps_ar_pic_alt": "QR Generatorの高速QRコード生成",
+  "productivity_notetaking_alt": "ノート術に関するブログのヘッダー画像",
+  "fasting_wellness_alt": "断食と健康に関するブログのヘッダー画像",
+  "daily_life_alt": "日常整理術に関するブログのヘッダー画像",
+  "download_call_alt": "Guloolooアプリをダウンロード促す最終画像",
+  "metaTitle": "Gulooloo Tech – メモ・断食・請求書アプリ",
+  "metaDescription": "Easy Notes、GoFasting、Invoice Now を使って日常をもっとスマートに。",
+  "keywords": "Easy Notes, GoFasting, Invoice Now, メモアプリ, 断食トラッカー, 請求書作成アプリ, 生産性向上ツール, QRコード作成ツール"
 }

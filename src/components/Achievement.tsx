@@ -23,7 +23,7 @@ export default function Achievement() {
             <div className="flex flex-col items-center justify-center">
               <Image
                 src={app_store}
-                alt=""
+                alt={t("appstore_logo_alt")}
                 className="xl:w-[5.875rem] w-[4.8rem]"
               />
               <div className="xl:text-[2.5rem] text-[1.5rem]">
@@ -61,7 +61,7 @@ export default function Achievement() {
             <div className="flex flex-col items-center justify-center">
               <Image
                 src={google_bestapp}
-                alt=""
+                alt={t("google_bestapp_alt")}
                 className="xl:w-[5.875rem] w-[4.8rem]"
               />
               <div className="xl:text-[2.5rem] text-[1.5rem]">

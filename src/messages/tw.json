@@ -59,7 +59,7 @@
   "testimonial3Title": "高度自定義",
   "testimonial3Content": "以前製作發票要花費太多時間。現在我可以在幾分鐘內創建和發送。界面簡潔，可自定義，滿足我所有的業務需求",
   "testimonial3Author": "Jason",
-  "ctaSectionTitle": "準備好展開美好生活嗎？",
+  "ctaSectionTitle": "準備好開始更美好的生活了嗎？",
   "ctaSectionSubtitle": "探索我們為簡化日常生活而設計的應用。",
   "ctaButton": "立即開始",
   "ctaTagline": "為更美好日常而生的應用。",
@@ -76,18 +76,21 @@
   "footerCopyright": "© 2025 Gulooloo Tech Co. Limited. 版權所有。",
   "footerPrivacy": "隱私政策",
   "footerTerms": "服務條款",
-  "seo": {
-    "metaTitle": "Gulooloo Tech – 筆記、斷食與開票應用",
-    "metaDescription": "探索 Easy Notes、GoFasting 與 Invoice Now，打造更有條理的生活。",
-    "keywords": [
-      "Easy Notes",
-      "GoFasting",
-      "Invoice Now",
-      "筆記應用程式",
-      "間歇性斷食紀錄器",
-      "發票產生器",
-      "生產力工具",
-      "QR Code 產生器"
-    ]
-  }
+  "top_banner_alt": "Gulooloo Tech 橫幅展示熱門移動應用",
+  "top_banner_mobile_alt": "Gulooloo Tech 行動版橫幅 - 斷食與效率",
+  "appstore_logo_alt": "Gulooloo Tech 應用的 Apple Store 下載標誌",
+  "google_bestapp_alt": "Gulooloo Tech Google Play 最佳應用徽章",
+  "apps_easynotes_pic_alt": "EasyNotes 應用的筆記與提醒截圖",
+  "appstore_download_alt": "EasyNotes、GoFasting 等的 Apple Store 下載按鈕",
+  "googleplay_download_alt": "Gulooloo Tech 應用的 Google Play 下載按鈕",
+  "apps_invoice_pic_alt": "Invoice Now 應用介面展示發票建立功能",
+  "apps_gofasting_pic_alt": "GoFasting 應用的斷食追蹤介面預覽",
+  "apps_ar_pic_alt": "QR Generator 展示快速二維碼生成",
+  "productivity_notetaking_alt": "關於筆記效率的博客頭圖",
+  "fasting_wellness_alt": "關於斷食與健康的博客頭圖",
+  "daily_life_alt": "關於日常生活整理的博客頭圖",
+  "download_call_alt": "最終號召用戶下載 Gulooloo Tech 應用的圖像",
+  "metaTitle": "Gulooloo Tech – 筆記、斷食與開票工具",
+  "metaDescription": "探索 Easy Notes、GoFasting 與 Invoice Now，提升生產力與生活品質。",
+  "keywords": "Easy Notes, GoFasting, Invoice Now, 筆記應用, 斷食追蹤, 發票工具, 生產力工具, QR Code 產生器"
 }

@@ -59,7 +59,7 @@
   "testimonial3Title": "Haute personnalisation",
   "testimonial3Content": "Je passais trop de temps à créer des factures. Maintenant je les crée et les envoie en quelques minutes. C'est propre, personnalisable et répond à tous mes besoins professionnels",
   "testimonial3Author": "Jason",
-  "ctaSectionTitle": "Prêt À Commencer ?",
+  "ctaSectionTitle": "Prêt pour une vie meilleure ?",
   "ctaSectionSubtitle": "Découvrez des apps pour simplifier la vie.",
   "ctaButton": "Start Now",
   "ctaTagline": "Des apps pour un quotidien meilleur.",
@@ -76,18 +76,21 @@
   "footerCopyright": "© 2025 Gulooloo Tech Co. Limited. Tous droits réservés.",
   "footerPrivacy": "Politique de confidentialité",
   "footerTerms": "Conditions d'utilisation",
-  "seo": {
-    "metaTitle": "Gulooloo Tech – Meilleures apps de Notes, Jeûne & Factures",
-    "metaDescription": "Découvrez Easy Notes, GoFasting et Invoice Now. Des outils simples pour améliorer votre quotidien.",
-    "keywords": [
-      "Easy Notes",
-      "GoFasting",
-      "Invoice Now",
-      "application de notes",
-      "suivi du jeûne",
-      "générateur de factures",
-      "productivité",
-      "générateur de QR code"
-    ]
-  }
+  "top_banner_alt": "Bannière principale de Gulooloo Tech montrant les apps mobiles",
+  "top_banner_mobile_alt": "Bannière mobile de Gulooloo pour jeûne et productivité",
+  "appstore_logo_alt": "Logo de l'Apple Store pour télécharger les apps Gulooloo",
+  "google_bestapp_alt": "Badge de la meilleure app de Gulooloo sur Google Play",
+  "apps_easynotes_pic_alt": "Capture d'écran de EasyNotes pour prise de notes et rappels",
+  "appstore_download_alt": "Bouton de téléchargement Apple Store pour EasyNotes, GoFasting et plus",
+  "googleplay_download_alt": "Bouton Google Play pour télécharger les apps Gulooloo",
+  "apps_invoice_pic_alt": "Interface de Invoice Now avec création de factures",
+  "apps_gofasting_pic_alt": "Aperçu de GoFasting montrant l’interface de jeûne",
+  "apps_ar_pic_alt": "QR Generator montrant la création rapide de QR codes",
+  "productivity_notetaking_alt": "Image d'en-tête du blog sur la productivité et la prise de notes",
+  "fasting_wellness_alt": "Image d'en-tête de blog sur le jeûne et le bien-être",
+  "daily_life_alt": "Image d'en-tête du blog sur l'organisation du quotidien",
+  "download_call_alt": "Dernière image incitant à télécharger les apps Gulooloo",
+  "metaTitle": "Gulooloo Tech – Applications Notes, Jeûne & Factures",
+  "metaDescription": "Découvrez Easy Notes, GoFasting et Invoice Now. Boostez votre productivité et votre bien-être.",
+  "keywords": "Easy Notes, GoFasting, Invoice Now, application de notes, suivi du jeûne, créateur de factures, outils de productivité, générateur de QR code"
 }
