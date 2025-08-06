@@ -28,7 +28,7 @@ const Header: React.FC = () => {
       { label: t("navResource"), key: "navResource", href: "/" },
       { label: t("navAbout"), key: "navAbout", href: "/" },
       {
-        label: t("language"),
+        label: t("navLanguage"),
         key: "language",
         children: [
           { label: "English", key: "en", href: "/en" },
