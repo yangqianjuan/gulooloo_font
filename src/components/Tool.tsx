@@ -6,18 +6,34 @@ import apps_ar_pic from "@/assets/App_image/apps_ar_pic/apps_ar_pic_2x.webp";
 import ic from "@/assets/icon/ic.svg";
 import Appstore_download from "@/assets/icon/Appstore_download.svg";
 import googleplay_download from "@/assets/icon/googleplay_download.svg";
+import {
+  iosLink_easy_notes,
+  iosLink_go_fasting,
+  iosLink_invoice_now,
+  iosLink_qr_generator,
+  andoridLink_easy_notes,
+  andoridLink_go_fasting,
+  andoridLink_invoice_now,
+  andoridLink_qr_generator,
+} from "@/utils/index";
 import { useMemo } from "react";
 import Blog from "@/components/Blog";
 import Rate from "@/components/Rate";
 import Explore from "@/components/Explore";
 import { useTranslations } from "next-intl";
+import { useMemoizedFn } from "ahooks";
 export default function Tool() {
   const t = useTranslations();
+  const toLink = useMemoizedFn((link: string) => {
+    window.open(link);
+  });
   const list = useMemo(() => {
     return [
       {
         direct: "",
         img: apps_easynotes_pic,
+        link_ios: iosLink_easy_notes,
+        link_android: andoridLink_easy_notes,
         textInfo: {
           title: t("easyNotesTitle"),
           desc: t("easyNotesDesc"),
@@ -31,6 +47,8 @@ export default function Tool() {
       {
         direct: "flex-row-reverse",
         img: apps_invoice_pic,
+        link_ios: iosLink_invoice_now,
+        link_android: andoridLink_invoice_now,
         textInfo: {
           title: t("invoiceNowTitle"),
           desc: t("invoiceNowDesc"),
@@ -44,6 +62,8 @@ export default function Tool() {
       {
         direct: "",
         img: apps_gofasting,
+        link_ios: iosLink_go_fasting,
+        link_android: andoridLink_go_fasting,
         textInfo: {
           title: t("goFastingTitle"),
           desc: t("goFastingDesc"),
@@ -57,6 +77,8 @@ export default function Tool() {
       {
         direct: "flex-row-reverse",
         img: apps_ar_pic,
+        link_ios: iosLink_qr_generator,
+        link_android: andoridLink_qr_generator,
         textInfo: {
           title: t("qrGeneratorTitle"),
           desc: t("qrGeneratorDesc"),
@@ -117,11 +139,17 @@ export default function Tool() {
                 <Image
                   src={Appstore_download}
                   alt=""
+                  onClick={() => {
+                    toLink(d.link_ios);
+                  }}
                   className="xl:w-[10rem] xl:mr-[1.25rem] w-[13.5rem] mr-[2rem] transition-transform duration-300 hover:scale-110"
                 />
                 <Image
                   src={googleplay_download}
                   alt=""
+                  onClick={() => {
+                    toLink(d.link_android);
+                  }}
                   className="xl:w-[10rem] w-[13.5rem] transition-transform duration-300 hover:scale-110"
                 />
               </div>

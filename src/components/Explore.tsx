@@ -2,15 +2,14 @@ import Image from "next/image";
 import explore from "@/assets/image/call_to_action_pc/call_to_action_pc_2x.webp";
 import explore_m from "@/assets/image/call_to_action_mobile/call_to_action_mobile_2x.webp";
 import { useTranslations } from "next-intl";
-import { detectDeviceType } from "@/utils/index";
-import { useEffect } from "react";
+import {
+  detectDeviceType,
+  iosLink,
+  andoridLink,
+  otherlink,
+} from "@/utils/index";
 import { useMemoizedFn } from "ahooks";
-const iosLink =
-  "https://apps.apple.com/us/developer/gulooloo-tech/id1574018169";
-const andoridLink =
-  "https://play.google.com/store/apps/dev?id=4626225608014895570";
-const otherlink =
-  "https://play.google.com/store/apps/dev?id=4626225608014895570";
+
 export default function Explore() {
   const t = useTranslations();
   const toStart = useMemoizedFn(() => {

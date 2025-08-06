@@ -7,13 +7,18 @@ import Appstore_download_hover from "@/assets/icon/Appstore_download_hover.svg";
 import googleplay_download from "@/assets/icon/googleplay_download.svg";
 import googleplay_download_hover from "@/assets/icon/googleplay_download_hover.svg";
 import MenuItemWithSubmenu from "@/components/MobileMenu/ MenuItemWithSubmenu";
+import { iosLink, andoridLink } from "@/utils/index";
+import { useMemoizedFn } from "ahooks";
 export default function Footer() {
   const [openKeys, setOpenKeys] = useState<string[]>([]);
 
-  const toggleSubmenu = (key: string) => {
+  const toggleSubmenu = useMemoizedFn((key: string) => {
     setOpenKeys((prev) =>
       prev.includes(key) ? prev.filter((k) => k !== key) : [...prev, key]
     );
+  });
+  const toAPPStore = (link: string) => {
+    window.open(link);
   };
   const t = useTranslations();
   const list = useMemo(() => {
@@ -65,11 +70,13 @@ export default function Footer() {
           {
             src: Appstore_download,
             hoverSrc: Appstore_download_hover,
+            link: iosLink,
             alt: "Appstore",
           },
           {
             src: googleplay_download,
             hoverSrc: googleplay_download_hover,
+            link: andoridLink,
             alt: "googleplay",
           },
         ],
@@ -127,6 +134,9 @@ export default function Footer() {
                           key={item.alt}
                           src={item.src}
                           alt=""
+                          onClick={() => {
+                            toAPPStore(item.link);
+                          }}
                           className="w-[8.42rem] mb-[1.25rem] transition-transform duration-300 hover:scale-110"
                         />
                       );
