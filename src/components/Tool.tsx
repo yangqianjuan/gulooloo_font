@@ -90,7 +90,7 @@ export default function Tool() {
                 alt=""
               />
             </div>
-            <div className="xl:w-[50rem] pt-[4rem] w-[46rem]">
+            <div className="xl:w-[50rem] pt-[4rem] sm:w-[46rem] w-full sm:px-[0rem] px-[2.5rem]">
               <div className="font-semibold sm:text-[4rem] sm:mb-[1.5rem] text-[2.2rem]">
                 {d.textInfo.title}
               </div>
