@@ -68,7 +68,7 @@ export default function AnchorDropdown({
         <span className="mr-2 xl:text-[1.25rem] text-[1.8rem]">
           {placeholder}
         </span>
-        {isShowArrow && <ChevronDown size={16} />}
+        {isShowArrow && <ChevronDown size={24} />}
       </button>
 
       {open && (

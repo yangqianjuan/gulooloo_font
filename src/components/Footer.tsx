@@ -47,20 +47,16 @@ export default function Footer() {
         key: t("footerCompanyTitle"),
         children: [
           {
-            key: t("easyNotesTitle"),
-            label: t("easyNotesTitle"),
+            key: t("footerAboutUs"),
+            label: t("footerAboutUs"),
           },
           {
-            key: t("invoiceNowTitle"),
-            label: t("invoiceNowTitle"),
+            key: t("footerResource"),
+            label: t("footerResource"),
           },
           {
-            key: t("goFastingTitle"),
-            label: t("goFastingTitle"),
-          },
-          {
-            key: t("footerProduct4"),
-            label: t("footerProduct4"),
+            key: t("footerContactUs"),
+            label: t("footerContactUs"),
           },
         ],
       },

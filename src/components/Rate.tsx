@@ -34,10 +34,10 @@ export default function Rate() {
   }, []);
   return (
     <div className="xl:p-[5rem] sm:p-[4rem] px-[2.4rem] py-[6rem]">
-      <div className="xl:text-[4rem] font-semibold sm:text-[4.8rem] text-[2.4rem]">
+      <div className="xl:text-[4rem] font-semibold sm:text-[4.8rem] text-[2.4rem] text-center">
         {t("testimonialTitle")}
       </div>
-      <div className="xl:text-[1.5rem] xl:mb-[5rem] sm:text-[2rem] mb-[4rem] text-[1.5rem]">
+      <div className="xl:text-[1.5rem] xl:mb-[5rem] sm:text-[2rem] mb-[4rem] text-[1.5rem] text-center text-[rgba(4,30,84,0.48)]">
         {t("testimonialSubtitle")}
       </div>
       <div className="flex justify-between sm:flex-row flex-col">

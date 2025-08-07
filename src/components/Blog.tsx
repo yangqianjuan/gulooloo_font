@@ -32,10 +32,10 @@ export default function Blog() {
   }, []);
   return (
     <div className="bg-[rgba(246,254,255,1)] xl:p-[5rem] sm:px-[4rem]  px-[2.4rem] py-[6rem]">
-      <div className="xl:text-[4rem] font-semibold sm:text-[4.8rem] text-[2.4rem]">
+      <div className="xl:text-[4rem] font-semibold sm:text-[4.8rem] text-[2.4rem] text-center">
         {t("blogSectionTitle")}
       </div>
-      <div className="xl:text-[1.5rem] xl:mb-[5rem] sm:text-[2rem] sm:mb-[4.4rem] text-[1.5rem] mb-[3.8rem]">
+      <div className="xl:text-[1.5rem] xl:mb-[5rem] sm:text-[2rem] sm:mb-[4.4rem] text-[1.5rem] mb-[3.8rem] text-center text-[rgba(4,30,84,0.48)]">
         {t("blogSectionSubtitle")}
       </div>
       <div className="flex justify-between flex-wrap">
