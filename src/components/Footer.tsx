@@ -84,7 +84,7 @@ export default function Footer() {
       <div className="flex flex-wrap sm:justify-between pb-[3.75rem]">
         <div className="lg:w-[31.25rem]  w-full mb-[3.2rem]">
           <Image src={logo} alt="" className="mb-[1rem]"></Image>
-          <div className="">{t("ctaTagline")}</div>
+          <div className="text-[1.6rem]">{t("ctaTagline")}</div>
         </div>
         {list.map((d) => {
           return (
