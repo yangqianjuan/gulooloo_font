@@ -109,7 +109,7 @@ export default function Tool() {
                 : d.direct === "flex-row"
                 ? "sm:flex-row"
                 : ""
-            } sm:justify-between   sm:mb-[7.5rem] sm:px-[7.5rem] text-left flex-col px-[2.4rem] items-center mb-[4rem]`}
+            } sm:justify-between  sm:mb-[7.5rem] sm:px-[7.5rem] text-left flex-col px-[2.4rem] items-center mb-[8.8rem]`}
             key={d.textInfo.title}
           >
             <div className="sm:px-[0rem] px-[2.5rem]">

@@ -18,60 +18,76 @@ export default function Achievement() {
           {t("whyUsTitle")}
         </div>
         <div className="flex sm:flex-row flex-col justify-between items-center">
-          <div className="flex justify-between items-center sm:w-[30%] w-full sm:mb-[0rem] mb-[3.4rem]">
-            <Image src={l_leaf} alt="" className="xl:w-[5.625rem] w-[5.2rem]" />
+          <div className="relative sm:w-[31%] w-full sm:mb-[0rem] mb-[3.4rem] sm:order-1 order-2">
+            <Image
+              src={l_leaf}
+              alt=""
+              className="absolute left-0 top-0 xl:w-[5.625rem] w-[5.2rem]"
+            />
             <div className="flex flex-col items-center justify-center">
               <Image
                 src={app_store}
                 alt={t("appstore_logo_alt")}
                 className="xl:w-[5.875rem] w-[4.8rem]"
               />
-              <div className="xl:text-[2.5rem] text-[1.5rem]">
+              <div className="xl:text-[2.5rem]  text-[2rem]">
                 {t("appleAward")}
               </div>
-              <div className="xl:text-[1.5rem] text-[1rem] font-medium">
+              <div className="xl:text-[1.5rem]  text-[1.6rem] font-medium">
                 {t("applePlatform")}
               </div>
             </div>
-            <Image src={r_leaf} alt="" className="xl:w-[5.625rem] w-[5.2rem]" />
+            <Image
+              src={r_leaf}
+              alt=""
+              className="absolute right-0 top-0 xl:w-[5.625rem] w-[5.2rem]"
+            />
           </div>
-          <div className="flex justify-between items-center sm:w-[35%] w-full sm:mb-[0rem] mb-[3.4rem]">
+          <div className="relative sm:w-[34%] w-full sm:mb-[0rem] mb-[3.4rem] sm:order-2 order-1">
             <Image
               src={l_leaf}
               alt=""
-              className="xl:w-[6.875rem] sm:w-[5.8rem] w-[5.2rem]"
+              className="absolute left-0 top-0 xl:w-[6.875rem] sm:w-[5.8rem] w-[5.2rem]"
             />
             <div className="flex flex-col items-center justify-center">
               <Image src={user_pic} className="xl:w-[13rem] w-[11rem]" alt="" />
-              <div className="xl:text-[5.5rem] sm:text-[4.4rem] text-[2.75rem]">
+              <div className="xl:text-[5.5rem] sm:text-[4.4rem] text-[3.2rem]">
                 {t("downloadCount")}
               </div>
-              <div className="xl:text-[2rem] sm:text-[2rem] text-[1.25rem] font-medium">
+              <div className="xl:text-[2rem] sm:text-[2rem] text-[1.6rem] font-medium">
                 {t("trustedUsers")}
               </div>
             </div>
             <Image
               src={r_leaf}
-              className="xl:w-[6.875rem] sm:w-[5.8rem] w-[5.2rem]"
+              className="absolute right-0 top-0 xl:w-[6.875rem] sm:w-[5.8rem] w-[5.2rem]"
               alt=""
             />
           </div>
-          <div className="flex justify-between items-center sm:w-[30%] w-full">
-            <Image src={l_leaf} alt="" className="xl:w-[5.625rem] w-[5.2rem]" />
+          <div className="relative items-center sm:w-[31%] w-full order-3">
+            <Image
+              src={l_leaf}
+              alt=""
+              className="absolute left-0 top-0 xl:w-[5.625rem] w-[5.2rem]"
+            />
             <div className="flex flex-col items-center justify-center">
               <Image
                 src={google_bestapp}
                 alt={t("google_bestapp_alt")}
                 className="xl:w-[5.875rem] w-[4.8rem]"
               />
-              <div className="xl:text-[2.5rem] text-[1.5rem]">
+              <div className="xl:text-[2.5rem]   text-[2rem]">
                 {t("googleAward")}
               </div>
-              <div className="xl:text-[1.5rem] text-[1rem] font-medium">
+              <div className="xl:text-[1.5rem]   text-[1.6rem] font-medium">
                 {t("googlePlatform")}
               </div>
             </div>
-            <Image src={r_leaf} alt="" className="xl:w-[5.625rem] w-[5.2rem]" />
+            <Image
+              src={r_leaf}
+              alt=""
+              className="absolute right-0 top-0 xl:w-[5.625rem] w-[5.2rem]"
+            />
           </div>
         </div>
       </div>
