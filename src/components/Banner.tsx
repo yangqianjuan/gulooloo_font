@@ -1,8 +1,8 @@
 import Image from "next/image";
 import banner from "@/assets/image/top_banner/top_banner_2x.webp";
-import m_banner from "@/assets/image/top_banner_moblie/top_banner_moblie_2x.webp";
+import m_banner from "@/assets/image/top_banner_moblie/top_banner_moblie_3x.webp";
 import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
+
 export default function Banner() {
   const t = useTranslations();
   return (
