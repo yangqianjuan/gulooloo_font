@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import { ChevronDown, Globe } from "lucide-react";
+import { ChevronDown, ChevronUp, Globe } from "lucide-react";
 import Image from "next/image";
 import GlobalIcon from "@/assets/icon/global.svg";
 import { Link } from "@/i18n/navigation";
@@ -60,7 +60,7 @@ export default function AnchorDropdown({
     <div ref={dropdownRef} className="relative inline-block">
       <button
         onClick={() => setOpen(!open)}
-        className="flex items-center justify-between rounded-[0.75rem] hover:bg-[rgba(0,204,145,0.078)] hover:text-[rgba(0,204,145,1)] focus:outline-none py-[0.81rem] px-[1.56rem]"
+        className="flex items-center justify-between rounded-[0.75rem] hover:bg-[rgba(0,204,145,0.078)] hover:text-[rgba(0,204,145,1)] focus:outline-none py-[0.81rem] px-[1.56rem] group"
         aria-haspopup="listbox"
         aria-expanded={open}
       >
@@ -68,7 +68,20 @@ export default function AnchorDropdown({
         <span className="mr-2 xl:text-[1.25rem] text-[1.8rem]">
           {placeholder}
         </span>
-        {isShowArrow && <ChevronDown size={24} />}
+        {isShowArrow &&
+          (open ? (
+            <ChevronUp
+              className="text-[rgba(4,30,84,0.32)] group-hover:text-[rgba(0,204,145,1)]"
+              strokeWidth={1.8}
+              size={28}
+            />
+          ) : (
+            <ChevronDown
+              className="text-[rgba(4,30,84,0.32)] group-hover:text-[rgba(0,204,145,1)]"
+              strokeWidth={1.8}
+              size={28}
+            />
+          ))}
       </button>
 
       {open && (

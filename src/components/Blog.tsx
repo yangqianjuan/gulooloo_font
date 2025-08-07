@@ -47,10 +47,10 @@ export default function Blog() {
                 alt={d.alt}
                 className="xl:w-[35rem] xl:h-[22.5rem] xl:mb-[2.5rem] xl:rounded-[1.5rem] sm:h-[20.6rem] sm:w-[32rem] sm:mb-[2rem] w-full mb-[2rem] rounded-[1.6rem] transition-transform duration-300 hover:scale-110"
               ></Image>
-              <div className="xl:text-[2rem] font-medium xl:mb-[2.5rem] text-[2rem] mb-[1.6rem]">
+              <div className="xl:text-[2rem] font-medium xl:mb-[2.5rem] text-[2rem] mb-[1.6rem] text-[rgba(4,30,84,1)]">
                 {d.title}
               </div>
-              <div className="xl:text-[1.5rem] xl:mb-[2.5rem] text-[1.6rem] mb-[2rem]">
+              <div className="xl:text-[1.5rem] xl:mb-[2.5rem] text-[1.6rem] mb-[2rem] text-[rgba(4,30,84,0.64)]">
                 {d.desc}
               </div>
               <div className="font-medium text-[rgba(0,204,145,1)] hover:text-[rgba(82,220,180,1)] flex items-center xl:text-[1.5rem] text-[1.6rem] mb-[4rem]">
