@@ -72,7 +72,7 @@ export default function AnchorDropdown({
       </button>
 
       {open && (
-        <ul className="absolute z-10 top-[6.25rem] rounded-[1.5rem] left-1/2 -translate-x-1/2 mt-1 px-5 py-8 w-[16rem] bg-white rounded shadow-md transition-all duration-200 text-[1.25rem]">
+        <ul className="absolute z-10 top-[5rem] rounded-[1.5rem] left-1/2 -translate-x-1/2 mt-1 px-5 py-8 w-[16rem] bg-white rounded shadow-md transition-all duration-200 text-[1.25rem]">
           {options.map((opt) => (
             <li
               key={opt.value}
