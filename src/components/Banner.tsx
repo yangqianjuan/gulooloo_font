@@ -16,9 +16,11 @@ export default function Banner() {
         <div className="2xl:text-[1.5rem]  2xl:mb-[6.62rem] text-[2rem] mb-[8.9rem] text-[rgba(4,30,84,0.64)]">
           {t("heroSubtitle")}
         </div>
-        <div className="w-[28.6rem] h-[6.6rem] xl:w-[16rem] xl:h-[4.5rem] rounded-full bg-[rgba(0,204,145,1)] hover:bg-[rgba(82,220,180,1)] transition-transform duration-300 hover:scale-110 flex items-center justify-center text-white text-[1.5rem]">
-          {t("heroCta")}
-        </div>
+        <a href="#appDesc">
+          <div className="w-[28.6rem] h-[6.6rem] xl:w-[16rem] xl:h-[4.5rem] rounded-full bg-[rgba(0,204,145,1)] hover:bg-[rgba(82,220,180,1)] transition-transform duration-300 hover:scale-110 flex items-center justify-center text-white text-[1.5rem]">
+            {t("heroCta")}
+          </div>
+        </a>
       </div>
       <Image
         src={banner}
@@ -41,9 +43,11 @@ export default function Banner() {
         <div className="text-[1.5rem] mb-[4rem] text-[rgba(4,30,84,0.64)]">
           {t("heroSubtitle")}
         </div>
-        <div className="w-[20.4rem] h-[4.8rem] rounded-full bg-[rgba(0,204,145,1)] mx-auto flex items-center justify-center text-white text-[1.6rem]">
-          {t("heroCta")}
-        </div>
+        <a href="#appDesc">
+          <div className="w-[20.4rem] h-[4.8rem] rounded-full bg-[rgba(0,204,145,1)] mx-auto flex items-center justify-center text-white text-[1.6rem]">
+            {t("heroCta")}
+          </div>
+        </a>
       </div>
     </div>
   );

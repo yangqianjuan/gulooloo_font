@@ -9,7 +9,7 @@ import google_bestapp from "@/assets/icon/google_bestapp.svg";
 export default function Achievement() {
   const t = useTranslations();
   return (
-    <div className=" w-full text-[rgba(118,61,3,1)] xl:mb-[7.5rem] mb-[6rem]">
+    <div className=" w-full text-[rgba(118,61,3,1)]">
       <div
         // style={{ backgroundImage: `url(${bg.src})` }}
         className="sm:py-[5rem] sm:mx-[5rem] text-[rgba(118,61,3,1)] sm:bg-[url('/images/world_map_bg_2x.webp')] bg-[url('/images/world_map_mobile_2x.webp')] bg-cover font-semibold sm:px-[0rem] px-[5.6rem] py-[4.6rem]"
