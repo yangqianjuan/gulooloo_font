@@ -93,7 +93,7 @@ export default function Tool() {
     ];
   }, []);
   return (
-    <div className="w-full text-center xl:pt-[7.5rem] pt-[6rem]" id="appDesc">
+    <div className="w-full text-center pt-[7.5rem]" id="appDesc">
       <div className="font-semibold xl:text-[4.125rem] sm:text-[4.8rem] text-[2.4rem]">
         {t("productsMainTitle")}
       </div>
