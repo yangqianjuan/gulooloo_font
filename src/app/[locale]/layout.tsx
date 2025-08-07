@@ -10,7 +10,7 @@ import type { Metadata } from "next";
 // 字体加载
 const poppins = Poppins({
   subsets: ["latin"],
-  weight: ["400", "600", "700"],
+  weight: ["400", "600"],
   display: "swap",
 });
 
