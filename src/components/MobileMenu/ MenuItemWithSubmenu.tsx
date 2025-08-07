@@ -26,7 +26,7 @@ const MenuItemWithSubmenu: React.FC<Props> = ({
   <div>
     <button
       onClick={toggle}
-      className="w-full flex justify-between items-center   font-medium"
+      className="w-full flex justify-between items-center font-medium"
     >
       {item.label}
       {isOpen ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
