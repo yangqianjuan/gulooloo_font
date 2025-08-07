@@ -60,7 +60,7 @@ export default function AnchorDropdown({
     <div ref={dropdownRef} className="relative inline-block">
       <button
         onClick={() => setOpen(!open)}
-        className="flex items-center justify-between rounded hover:bg-[rgba(0,204,145,0.078)] hover:text-[rgba(0,204,145,1)] focus:outline-none py-[0.81rem] px-[1.56rem]"
+        className="flex items-center justify-between rounded-[0.75rem] hover:bg-[rgba(0,204,145,0.078)] hover:text-[rgba(0,204,145,1)] focus:outline-none py-[0.81rem] px-[1.56rem]"
         aria-haspopup="listbox"
         aria-expanded={open}
       >
