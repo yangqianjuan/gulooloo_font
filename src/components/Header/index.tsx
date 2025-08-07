@@ -64,7 +64,7 @@ const Header: React.FC = () => {
   }, []);
 
   return (
-    <header className="w-full h-[80px] justify-between  flex items-center px-6 ">
+    <header className="w-full h-[80px] justify-between  flex items-center px-6 sticky top-0 z-50 bg-white">
       <Image src={logo} alt="" width={190} />
       <div className="text-xl  items-center hidden sm:flex">
         <AnchorDropdown
