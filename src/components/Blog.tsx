@@ -45,6 +45,7 @@ export default function Blog() {
               <Image
                 src={d.img}
                 alt={d.alt}
+                loading="lazy"
                 className="xl:w-[35rem] xl:h-[22.5rem] xl:mb-[2.5rem] xl:rounded-[1.5rem] sm:h-[20.6rem] sm:w-[32rem] sm:mb-[2rem] w-full mb-[2rem] rounded-[1.6rem] transition-transform duration-300 hover:scale-110"
               ></Image>
               <div className="xl:text-[2rem] font-medium xl:mb-[2.5rem] text-[2rem] mb-[1.6rem] text-[rgba(4,30,84,1)]">

@@ -117,6 +117,7 @@ export default function Tool() {
                 src={d.img}
                 className="xl:w-[43.25rem] sm:w-[43rem] w-full"
                 alt=""
+                loading="lazy"
               />
             </div>
             <div className="xl:w-[50rem] pt-[4rem] sm:w-[46rem] w-full sm:px-[0rem] px-[2.5rem]">
@@ -137,6 +138,7 @@ export default function Tool() {
                         src={ic}
                         alt=""
                         className="xl:w-[1.5rem] w-[2.4rem] mr-[1.6rem]"
+                        loading="lazy"
                       />
                       <div className="xl:text-[1.5rem] sm:text-[2rem] text-[1.5rem] ">
                         {item}

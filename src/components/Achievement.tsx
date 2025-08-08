@@ -23,12 +23,14 @@ export default function Achievement() {
               src={l_leaf}
               alt=""
               className="absolute left-0 top-0 xl:w-[5.625rem] w-[5.2rem]"
+              loading="lazy"
             />
             <div className="flex flex-col items-center justify-center">
               <Image
                 src={app_store}
                 alt={t("appstore_logo_alt")}
                 className="xl:w-[5.875rem] w-[4.8rem]"
+                loading="lazy"
               />
               <div className="xl:text-[2.5rem]  text-[2rem]">
                 {t("appleAward")}
@@ -41,6 +43,7 @@ export default function Achievement() {
               src={r_leaf}
               alt=""
               className="absolute right-0 top-0 xl:w-[5.625rem] w-[5.2rem]"
+              loading="lazy"
             />
           </div>
           <div className="relative sm:w-[34%] w-full sm:mb-[0rem] mb-[3.4rem] sm:order-2 order-1">
@@ -48,9 +51,15 @@ export default function Achievement() {
               src={l_leaf}
               alt=""
               className="absolute left-0 top-0 xl:w-[6.875rem] sm:w-[5.8rem] w-[5.2rem]"
+              loading="lazy"
             />
             <div className="flex flex-col items-center justify-center">
-              <Image src={user_pic} className="xl:w-[13rem] w-[11rem]" alt="" />
+              <Image
+                src={user_pic}
+                className="xl:w-[13rem] w-[11rem]"
+                alt=""
+                loading="lazy"
+              />
               <div className="xl:text-[5.5rem] sm:text-[4.4rem] text-[3.2rem]">
                 {t("downloadCount")}
               </div>
@@ -62,6 +71,7 @@ export default function Achievement() {
               src={r_leaf}
               className="absolute right-0 top-0 xl:w-[6.875rem] sm:w-[5.8rem] w-[5.2rem]"
               alt=""
+              loading="lazy"
             />
           </div>
           <div className="relative items-center sm:w-[31%] w-full order-3">
@@ -69,6 +79,7 @@ export default function Achievement() {
               src={l_leaf}
               alt=""
               className="absolute left-0 top-0 xl:w-[5.625rem] w-[5.2rem]"
+              loading="lazy"
             />
             <div className="flex flex-col items-center justify-center">
               <Image
@@ -85,6 +96,7 @@ export default function Achievement() {
             </div>
             <Image
               src={r_leaf}
+              loading="lazy"
               alt=""
               className="absolute right-0 top-0 xl:w-[5.625rem] w-[5.2rem]"
             />
