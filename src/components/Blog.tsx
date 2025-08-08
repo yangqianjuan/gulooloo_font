@@ -6,6 +6,39 @@ import article_notes_pic from "@/assets/image/article_notes_pic/article_notes_pi
 import ic_arrow_back from "@/assets/icon/ic_arrow_back.svg";
 import { useMemo } from "react";
 import { useTranslations } from "next-intl";
+import type { StaticImageData } from "next/image";
+interface CardItemProps {
+  img: StaticImageData;
+  title: string;
+  desc: string;
+  alt: string;
+}
+function CardItem({ d }: { d: CardItemProps }) {
+  const t = useTranslations();
+  return (
+    <article className="sm:w-[32%] w-full text-left">
+      <Image
+        src={d.img}
+        alt={d.alt}
+        width={560}
+        height={360}
+        loading="lazy"
+        sizes="(min-width: 1024px) 32vw, 100vw"
+        className="w-full h-auto mb-[2rem] rounded-[1.6rem] transition-transform duration-300 hover:scale-110"
+      />
+      <div className="text-[2rem] font-medium text-[rgba(4,30,84,1)] mb-[1.6rem]">
+        {d.title}
+      </div>
+      <div className="text-[1.6rem] text-[rgba(4,30,84,0.64)] mb-[2rem]">
+        {d.desc}
+      </div>
+      <div className="font-medium text-[rgba(0,204,145,1)] hover:text-[rgba(82,220,180,1)] flex items-center text-[1.6rem] mb-[4rem]">
+        <span className="mr-[0.8rem]">{t("readMoreBtn")}</span>
+        <ArrowRight width={24} />
+      </div>
+    </article>
+  );
+}
 export default function Blog() {
   const t = useTranslations();
   const list = useMemo(() => {
@@ -40,26 +73,7 @@ export default function Blog() {
       </div>
       <div className="flex justify-between flex-wrap">
         {list.map((d) => {
-          return (
-            <div className="sm:w-[32%] w-full text-left" key={d.title}>
-              <Image
-                src={d.img}
-                alt={d.alt}
-                loading="lazy"
-                className="xl:w-[35rem] xl:h-[22.5rem] xl:mb-[2.5rem] xl:rounded-[1.5rem] sm:h-[20.6rem] sm:w-[32rem] sm:mb-[2rem] w-full mb-[2rem] rounded-[1.6rem] transition-transform duration-300 hover:scale-110"
-              ></Image>
-              <div className="xl:text-[2rem] font-medium xl:mb-[2.5rem] text-[2rem] mb-[1.6rem] text-[rgba(4,30,84,1)]">
-                {d.title}
-              </div>
-              <div className="xl:text-[1.5rem] xl:mb-[2.5rem] text-[1.6rem] mb-[2rem] text-[rgba(4,30,84,0.64)]">
-                {d.desc}
-              </div>
-              <div className="font-medium text-[rgba(0,204,145,1)] hover:text-[rgba(82,220,180,1)] flex items-center xl:text-[1.5rem] text-[1.6rem] mb-[4rem]">
-                <span className="mr-[0.8rem]">{t("readMoreBtn")}</span>
-                <ArrowRight width={24}></ArrowRight>
-              </div>
-            </div>
-          );
+          return <CardItem key={d.title} d={d} />;
         })}
       </div>
     </div>

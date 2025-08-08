@@ -26,8 +26,8 @@ export default function Explore() {
   });
   return (
     <div className="relative sm:p-[5rem] p-[2.4rem]">
-      <div className="sm:hidden block xl:top-[10rem] xl:left-[10rem] xl:w-[47.5rem] sm:text-left top-[10rem] left-[11rem] sm:w-[36.6rem] text-center">
-        <div className="absolute top-[4.8rem]  left-1/2 transform -translate-x-1/2 font-semibold text-[2.4rem] w-[20rem] break-words">
+      <div className="sm:hidden block  top-[10rem] left-[11rem] sm:w-[36.6rem] text-center">
+        <div className="absolute top-[4.8rem]  left-1/2 transform -translate-x-1/2 font-semibold text-[2.4rem] w-[20rem]">
           {t("ctaSectionTitle")}
         </div>
         <div
@@ -38,7 +38,7 @@ export default function Explore() {
         </div>
       </div>
       <div className="sm:block absolute hidden xl:top-[10rem] xl:left-[10rem] xl:w-[47.5rem] text-left top-[10rem] left-[11rem] w-[36.6rem]">
-        <div className="font-bold xl:text-[5rem] text-[4.4rem] break-words">
+        <div className="font-bold xl:text-[5rem] text-[4.4rem]">
           {t("ctaSectionTitle")}
         </div>
         <div className="text-[1.5rem] xl:mb-[6.62rem] mb-[4.8rem]  text-[rgba(4,30,84,0.64)]">
@@ -57,6 +57,7 @@ export default function Explore() {
         alt={t("download_call_alt")}
         className="hidden sm:block xl:w-full xl:h-auto h-[38rem] w-auto xl:rounded-[2.5rem] rounded-[4rem]"
         loading="lazy"
+        sizes="100vw"
         // unoptimized
       ></Image>
       <Image
@@ -64,6 +65,7 @@ export default function Explore() {
         alt={t("download_call_alt")}
         className="sm:hidden block w-full h-auto rounded-[1rem]"
         loading="lazy"
+        sizes="100vw"
       />
     </div>
   );

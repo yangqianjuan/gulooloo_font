@@ -27,12 +27,16 @@ export default function Banner() {
         alt={t("top_banner_alt")}
         className="w-full h-auto hidden sm:block"
         priority
+        width={1920}
+        height={600}
         // unoptimized
       ></Image>
       <Image
         src={m_banner}
         alt={t("top_banner_mobile_alt")}
         className="w-full h-auto block sm:hidden"
+        width={750}
+        height={900}
         priority
         // unoptimized
       ></Image>
