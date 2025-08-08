@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://gulooloo-font.vercel.app
+
+# Sitemaps
+Sitemap: https://gulooloo-font.vercel.app/sitemap.xml
