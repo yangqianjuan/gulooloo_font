@@ -1,6 +1,6 @@
 import Image from "next/image";
-import banner from "@/assets/image/top_banner/top_banner_2x.webp";
-import m_banner from "@/assets/image/top_banner_moblie/top_banner_moblie_3x.webp";
+import banner from "@/assets/image/top_banner/top_banner_2x1.webp";
+import m_banner from "@/assets/image/top_banner_moblie/top_banner_moblie_3x1.webp";
 import { useTranslations } from "next-intl";
 
 export default function Banner() {
