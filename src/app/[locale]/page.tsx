@@ -1,14 +1,16 @@
 "use client";
 export const runtime = "edge";
+import dynamic from "next/dynamic";
 
 import Header from "@/components/Header";
 import Banner from "@/components/Banner";
-import Achievement from "@/components/Achievement";
-import Tool from "@/components/Tool";
-import Blog from "@/components/Blog";
-import Rate from "@/components/Rate";
-import Explore from "@/components/Explore";
-import Footer from "@/components/Footer";
+const Achievement = dynamic(() => import("@/components/Achievement"));
+const Tool = dynamic(() => import("@/components/Tool"));
+const Blog = dynamic(() => import("@/components/Blog"));
+const Rate = dynamic(() => import("@/components/Rate"));
+const Explore = dynamic(() => import("@/components/Explore"));
+const Footer = dynamic(() => import("@/components/Footer"));
+
 export default function Home() {
   const handleSelect = (value: string) => {
     console.log("选中了：", value);
