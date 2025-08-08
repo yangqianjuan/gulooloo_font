@@ -1,15 +1,17 @@
 "use client";
 export const runtime = "edge";
-import dynamic from "next/dynamic";
-
+export const dynamic = "force-static";
+import dynamic_ from "next/dynamic";
 import Header from "@/components/Header";
 import Banner from "@/components/Banner";
-const Achievement = dynamic(() => import("@/components/Achievement"));
-const Tool = dynamic(() => import("@/components/Tool"));
-const Blog = dynamic(() => import("@/components/Blog"));
-const Rate = dynamic(() => import("@/components/Rate"));
-const Explore = dynamic(() => import("@/components/Explore"));
-const Footer = dynamic(() => import("@/components/Footer"));
+const Achievement = dynamic_(() => import("@/components/Achievement"), {
+  ssr: false,
+});
+const Tool = dynamic_(() => import("@/components/Tool"));
+const Blog = dynamic_(() => import("@/components/Blog"), { ssr: false });
+const Rate = dynamic_(() => import("@/components/Rate"), { ssr: false });
+const Explore = dynamic_(() => import("@/components/Explore"), { ssr: false });
+const Footer = dynamic_(() => import("@/components/Footer"), { ssr: false });
 
 export default function Home() {
   const handleSelect = (value: string) => {
