@@ -6,7 +6,7 @@ import star from "@/assets/icon/Star.svg";
 import { useMemo } from "react";
 import { useTranslations } from "next-intl";
 export default function Rate() {
-  const t = useTranslations();
+  const t = useTranslations("home");
   const list = useMemo(() => {
     return [
       {

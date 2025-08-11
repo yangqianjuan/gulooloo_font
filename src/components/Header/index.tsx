@@ -9,7 +9,7 @@ import MobileMenu, { MenuItem } from "@/components/MobileMenu/index";
 import MenuToggleButton from "@/components/MenuToggleButton";
 
 const Header: React.FC = () => {
-  const t = useTranslations();
+  const t = useTranslations("home");
   const locale = useLocale();
   const [menuOpen, setMenuOpen] = useState(false);
   const menuItems: MenuItem[] = useMemo(() => {

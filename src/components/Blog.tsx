@@ -14,7 +14,7 @@ interface CardItemProps {
   alt: string;
 }
 function CardItem({ d }: { d: CardItemProps }) {
-  const t = useTranslations();
+  const t = useTranslations("home");
   return (
     <article className="sm:w-[32%] w-full text-left">
       <Image
@@ -40,7 +40,7 @@ function CardItem({ d }: { d: CardItemProps }) {
   );
 }
 export default function Blog() {
-  const t = useTranslations();
+  const t = useTranslations("home");
   const list = useMemo(() => {
     return [
       {

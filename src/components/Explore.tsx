@@ -11,7 +11,7 @@ import {
 import { useMemoizedFn } from "ahooks";
 
 export default function Explore() {
-  const t = useTranslations();
+  const t = useTranslations("home");
   const toStart = useMemoizedFn(() => {
     const deviceType = detectDeviceType();
     if (deviceType === "iOS") {

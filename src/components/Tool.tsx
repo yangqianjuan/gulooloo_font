@@ -20,7 +20,7 @@ import { useMemo } from "react";
 import { useTranslations } from "next-intl";
 import { useMemoizedFn } from "ahooks";
 export default function Tool() {
-  const t = useTranslations();
+  const t = useTranslations("home");
   const toLink = useMemoizedFn((link: string) => {
     window.open(link);
   });

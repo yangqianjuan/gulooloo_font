@@ -4,7 +4,7 @@ import m_banner from "@/assets/image/top_banner_moblie/top_banner_moblie_3x1.web
 import { useTranslations } from "next-intl";
 
 export default function Banner() {
-  const t = useTranslations();
+  const t = useTranslations("home");
   return (
     <div className="relative">
       <div className="hidden sm:block absolute top-0 left-0 ml-[6rem] mt-[9rem] w-[68rem] xl:mt-[5.63rem] xl:ml-[5.75rem] xl:w-[62.5rem]">

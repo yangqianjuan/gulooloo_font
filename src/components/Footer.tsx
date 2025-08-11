@@ -20,7 +20,7 @@ export default function Footer() {
   const toAPPStore = (link: string) => {
     window.open(link);
   };
-  const t = useTranslations();
+  const t = useTranslations("home");
   const list = useMemo(() => {
     return [
       {

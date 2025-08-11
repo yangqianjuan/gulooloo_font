@@ -7,7 +7,7 @@ import app_store from "@/assets/icon/appstore_logo.svg";
 import user_pic from "@/assets/icon/user_pic/user_pic_2x.webp";
 import google_bestapp from "@/assets/icon/google_bestapp.svg";
 export default function Achievement() {
-  const t = useTranslations();
+  const t = useTranslations("home");
   return (
     <div className=" w-full text-[rgba(118,61,3,1)]">
       <div
