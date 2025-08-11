@@ -58,6 +58,7 @@ export default function Explore() {
         className="hidden sm:block xl:w-full xl:h-auto h-[38rem] w-auto xl:rounded-[2.5rem] rounded-[4rem]"
         loading="lazy"
         sizes="100vw"
+        placeholder="blur"
         // unoptimized
       ></Image>
       <Image
@@ -66,6 +67,7 @@ export default function Explore() {
         className="sm:hidden block w-full h-auto rounded-[1rem]"
         loading="lazy"
         sizes="100vw"
+        placeholder="blur"
       />
     </div>
   );
