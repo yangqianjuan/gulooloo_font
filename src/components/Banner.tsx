@@ -29,6 +29,7 @@ export default function Banner() {
         priority
         width={1920}
         height={600}
+        fetchPriority="high"
         // unoptimized
       ></Image>
       <Image
@@ -38,6 +39,7 @@ export default function Banner() {
         width={750}
         height={900}
         priority
+        fetchPriority="high"
         // unoptimized
       ></Image>
       <div className="block sm:hidden mt-[3.25rem] text-center mx-auto mb-[4rem]">
