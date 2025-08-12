@@ -32,8 +32,8 @@ export async function generateMetadata({
   );
 
   return {
-    title: messages.metaTitle || "Default Title",
-    description: messages.metaDescription || "Default description.",
+    title: messages.home?.metaTitle || "Default Title",
+    description: messages.home?.metaDescription || "Default description.",
   };
 }
 
