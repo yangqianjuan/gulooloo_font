@@ -30,10 +30,22 @@ export async function generateMetadata({
   const messages = await import(`@/messages/${locale}.json`).then(
     (m) => m.default
   );
-
   return {
     title: messages.home?.metaTitle || "Default Title",
     description: messages.home?.metaDescription || "Default description.",
+    alternates: {
+      languages: {
+        en: "https://guloolootech.com/en",
+        zh: "https://guloolootech.com/zh",
+        fr: "https://guloolootech.com/fr",
+        es: "https://guloolootech.com/es",
+        ja: "https://guloolootech.com/ja",
+        ko: "https://guloolootech.com/ko",
+        pt: "https://guloolootech.com/pt",
+        tw: "https://guloolootech.com/tw",
+        de: "https://guloolootech.com/de",
+      },
+    },
   };
 }
 
@@ -59,51 +71,6 @@ export default async function LocaleLayout({
     <html lang={locale} className={poppins.className}>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link
-          rel="alternate"
-          hrefLang="en"
-          href="https://guloolootech.com/en/"
-        />
-        <link
-          rel="alternate"
-          hrefLang="es"
-          href="https://guloolootech.com/es/"
-        />
-        <link
-          rel="alternate"
-          hrefLang="fr"
-          href="https://guloolootech.com/fr/"
-        />
-        <link
-          rel="alternate"
-          hrefLang="ja"
-          href="https://guloolootech.com/ja/"
-        />
-        <link
-          rel="alternate"
-          hrefLang="ko"
-          href="https://guloolootech.com/ko/"
-        />
-        <link
-          rel="alternate"
-          hrefLang="zh-TW"
-          href="https://guloolootech.com/tw/"
-        />
-        <link
-          rel="alternate"
-          hrefLang="zh-CN"
-          href="https://guloolootech.com/cn/"
-        />
-        <link
-          rel="alternate"
-          hrefLang="pt"
-          href="https://guloolootech.com/pt/"
-        />
-        <link
-          rel="alternate"
-          hrefLang="x-default"
-          href="https://guloolootech.com/en/"
-        />
       </head>
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>

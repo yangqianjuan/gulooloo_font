@@ -39,7 +39,7 @@ const Header: React.FC = () => {
           { label: "日本語", key: "ja", href: "/ja" },
           { label: "한국인", key: "ko", href: "/ko" },
           { label: "繁體中文", key: "tw", href: "/tw" },
-          { label: "简体中文", key: "cn", href: "/cn" },
+          { label: "简体中文", key: "zh", href: "/zh" },
         ],
       },
     ];
@@ -54,7 +54,7 @@ const Header: React.FC = () => {
       { label: "日本語", value: "ja" },
       { label: "한국인", value: "ko" },
       { label: "繁體中文", value: "tw" },
-      { label: "简体中文", value: "cn" },
+      { label: "简体中文", value: "zh" },
     ];
   }, []);
 
