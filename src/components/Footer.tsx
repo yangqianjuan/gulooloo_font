@@ -78,7 +78,7 @@ export default function Footer() {
         ],
       },
     ];
-  }, []);
+  }, [t]);
   return (
     <footer className="text-[rgba(4,30,84,0.64)]   w-full xl:px-[5rem] xl:pt-[5rem] bg-[rgba(246,254,255,1)] px-[4rem] pt-[6rem]">
       <div className="flex flex-wrap sm:justify-between pb-[3.75rem]">

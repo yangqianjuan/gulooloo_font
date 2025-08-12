@@ -4,6 +4,7 @@ export const dynamic = "force-static";
 import dynamic_ from "next/dynamic";
 import Header from "@/components/Header";
 import Banner from "@/components/Banner";
+import "./index.css";
 const Achievement = dynamic_(() => import("@/components/Achievement"), {
   ssr: false,
 });

@@ -1,5 +1,6 @@
 // src/app/layout.tsx
 // 字体加载
+// import "./globals.css";
 import { Poppins } from "next/font/google";
 const poppins = Poppins({
   subsets: ["latin"],
