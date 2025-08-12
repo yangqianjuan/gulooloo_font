@@ -118,6 +118,9 @@ export default function Tool() {
                 className="xl:w-[43.25rem] sm:w-[43rem] w-full"
                 alt=""
                 loading="lazy"
+                width={692}
+                height={389}
+                sizes="(max-width: 640px) 100vw, (max-width: 1280px) 43rem, 43.25rem"
               />
             </div>
             <div className="xl:w-[50rem] pt-[4rem] sm:w-[46rem] w-full sm:px-[0rem] px-[2.5rem]">
