@@ -7,7 +7,7 @@ interface MenuToggleButtonProps {
 
 const MenuToggleButton: React.FC<MenuToggleButtonProps> = ({ onClick }) => {
   return (
-    <button onClick={onClick} className="p-2">
+    <button onClick={onClick} className="p-2" aria-label="Toggle menu">
       <Menu size={28} />
     </button>
   );
