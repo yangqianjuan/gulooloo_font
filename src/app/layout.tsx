@@ -2,7 +2,6 @@
 // 字体加载
 // import "./globals.css";
 import { Poppins } from "next/font/google";
-import type { Metadata } from "next";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "600"],
