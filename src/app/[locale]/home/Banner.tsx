@@ -38,11 +38,12 @@ export default function Banner() {
         src={m_banner}
         alt={t("top_banner_mobile_alt")}
         className="w-full h-auto block sm:hidden"
-        width={750}
-        height={900}
+        width={1170}
+        height={1140}
         priority
         fetchPriority="high"
         placeholder="blur"
+        sizes="(max-width: 768px) 100vw, 1170px"
         // unoptimized
       ></Image>
       <div className="block sm:hidden mt-[3.25rem] text-center mx-auto mb-[4rem]">
