@@ -27,8 +27,9 @@ export default function Banner() {
         alt={t("top_banner_alt")}
         className="w-full h-auto hidden sm:block"
         priority
-        width={1920}
-        height={600}
+        width={3840}
+        height={1872}
+        sizes="(max-width: 768px) 100vw, 3840px"
         fetchPriority="high"
         placeholder="blur"
         // unoptimized
