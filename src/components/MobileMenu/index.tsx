@@ -34,7 +34,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ items, isOpen, onClose }) => {
       }`}
     >
       <div className="flex justify-end px-[2.4rem] py-[2rem]">
-        <button onClick={onClose}>
+        <button onClick={onClose} aria-label="closed modal">
           <X size={24} />
         </button>
       </div>

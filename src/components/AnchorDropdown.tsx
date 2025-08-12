@@ -62,6 +62,7 @@ export default function AnchorDropdown({
         onClick={() => setOpen(!open)}
         className="flex items-center justify-between rounded-[0.75rem] hover:bg-[rgba(0,204,145,0.078)] hover:text-[rgba(0,204,145,1)] focus:outline-none py-[0.81rem] px-[1.56rem] group"
         aria-haspopup="listbox"
+        aria-label="Toggle menu"
         aria-expanded={open}
       >
         {isShowGlobal && <Globe size={20} className="mr-[0.25rem]" />}
