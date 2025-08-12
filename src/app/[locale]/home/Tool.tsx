@@ -1,8 +1,8 @@
 import Image from "next/image";
-import apps_easynotes_pic from "@/assets/App_image/apps_easynotes_pic/apps_easynotes_pic_2x.webp";
-import apps_invoice_pic from "@/assets/App_image/apps_invoice_pic/apps_invoice_pic_2x.webp";
-import apps_gofasting from "@/assets/App_image/apps_gofasting_pic/apps_gofasting_pic_2x.webp";
-import apps_ar_pic from "@/assets/App_image/apps_ar_pic/apps_ar_pic_2x.webp";
+import apps_easynotes_pic from "@/assets/App_image/apps_easynotes_pic/apps_easynotes_pic_1x.webp";
+import apps_invoice_pic from "@/assets/App_image/apps_invoice_pic/apps_invoice_pic_1x.webp";
+import apps_gofasting from "@/assets/App_image/apps_gofasting_pic/apps_gofasting_pic_1x.webp";
+import apps_ar_pic from "@/assets/App_image/apps_ar_pic/apps_ar_pic_1x.webp";
 import ic from "@/assets/icon/ic.svg";
 import Appstore_download from "@/assets/icon/Appstore_download.svg";
 import googleplay_download from "@/assets/icon/googleplay_download.svg";
@@ -118,8 +118,8 @@ export default function Tool() {
                 className="xl:w-[43.25rem] sm:w-[43rem] w-full"
                 alt=""
                 loading="lazy"
-                width={1384}
-                height={1560}
+                width={692}
+                height={780}
                 sizes="(max-width: 640px) 100vw, (max-width: 1280px) 43rem, 43.25rem"
               />
             </div>
