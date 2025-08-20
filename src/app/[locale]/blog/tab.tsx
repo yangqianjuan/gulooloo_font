@@ -6,7 +6,7 @@ export default function BlogTab({
   handleTabChange,
 }: BlogTabProps) {
   return (
-    <ul className="flex  xl:mb-[5rem] sm:mb-[2.5rem] mb-[1.5rem]">
+    <ul className="flex sm:w-full w-[calc(100vw-3rem)] xl:mb-[5rem] sm:mb-[2.5rem] mb-[1.5rem] overflow-x-auto  ">
       {list.map((item, index) => (
         <li
           onClick={() => handleTabChange(item.key)}
