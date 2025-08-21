@@ -139,7 +139,7 @@ export default function BlogDetail() {
                 enters your client's payment cycle.
               </div>
             </div>
-            <div className="xl:text-[1.5rem] sm:text-[1.25rem] text-[1rem] xl:mt-[1.5rem] mt-[1rem] xl:mb-[3.75rem] mb-[2.5rem]">
+            <div className="xl:text-[1.5rem] sm:text-[1.25rem] text-[1rem] xl:mt-[2.75rem] mt-[2.5rem] xl:mb-[5rem] sm:mb-[3.75rem] mb-[2.5rem]">
               This is the real game-changer. Using an invoice generator like
               Invoice Now automates the entire process. It can assign invoice
               numbers, calculate totals, and save client information for future
@@ -150,7 +150,7 @@ export default function BlogDetail() {
             </div>
           </div>
           <div className="xl:pt-[5rem] border-t-1 border-[rgba(4,30,84,0.08)]">
-            <div className="flex justify-between xl:mb-[7.5rem]">
+            <div className="flex justify-between xl:mb-[7.5rem] sm:mb-[3.75rem] mb-[2.5rem]">
               <div className="font-semibold xl:text-[2rem] sm:text-[1.75rem] text-[1.25rem]">
                 Share this article
               </div>
