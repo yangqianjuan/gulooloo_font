@@ -139,7 +139,10 @@ export default function BlogList({ activeTab }: BlogListProps) {
   return (
     <ul className="flex flex-wrap justify-between">
       {list?.map((item, index) => (
-        <li className=" bg-white shadow-[0_8px_24px_0_rgba(126,138,163,0.12)]  overflow-hidden xl:rounded-[1.5rem] xl:mb-[2.5rem] sm:w-[29%] rounded-[1rem] w-full mb-[2rem]">
+        <li
+          key={item.title}
+          className=" bg-white shadow-[0_8px_24px_0_rgba(126,138,163,0.12)]  overflow-hidden xl:rounded-[1.5rem] xl:mb-[2.5rem] sm:w-[29%] rounded-[1rem] w-full mb-[2rem]"
+        >
           <Image
             src={item.image}
             alt={"bussniess_01_view"}

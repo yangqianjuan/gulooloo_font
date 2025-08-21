@@ -45,9 +45,9 @@ export default function BlogDetail() {
               step in ensuring a smooth payment process. Yet, many still rely on
               cumbersome spreadsheets or word documents that are prone to errors
               and look unprofessional. An efficient invoicing workflow not only
-              gets you paid faster but also enhances your brand's image. This
-              guide will walk you through the easiest way to create a perfect
-              invoice every time.
+              gets you paid faster but also enhances your brand&apos;s image.
+              This guide will walk you through the easiest way to create a
+              perfect invoice every time.
             </div>
             <div className="xl:text-[2rem] font-semibold xl:mb-[1.5rem] mb-[1rem]">
               1. Start with a Professional Template
@@ -71,7 +71,7 @@ export default function BlogDetail() {
               </div>
               <ul className="list-disc marker:text-[rgba(0,204,145,1)] xl:pl-[2.5rem] sm:pl-[1.5rem] pl-[1.25rem] xl:text-[1.5rem] sm:text-[1.25rem] text-[1rem]">
                 {list.map((item, index) => (
-                  <li key={index} className="xl:mb-[1.5rem] mb-[1rem]">
+                  <li key={item} className="xl:mb-[1.5rem] mb-[1rem]">
                     {item}
                   </li>
                 ))}
@@ -126,7 +126,7 @@ export default function BlogDetail() {
               <div className="text-[rgba(4,30,84,0.70)] xl:text-[1.5rem] sm:text-[1.25rem] text-[0.875rem]">
                 A: Immediately after the work is completed or a project
                 milestone is reached. The sooner you send it, the sooner it
-                enters your client's payment cycle.
+                enters your client&apos;s payment cycle.
               </div>
             </div>
             <div className="bg-[rgba(246,254,255,1)] border-[rgba(0,204,145,0.48)] rounded-lg sm:pl-[3rem] sm:pr-[3.5rem] sm:py-[2rem] sm:mb-[1rem] sm:border-l-[0.5rem] pl-[1.12rem] pr-[1rem] py-[1.25rem] mb-[0.75rem] border-l-[0.375rem] ">
@@ -136,7 +136,7 @@ export default function BlogDetail() {
               <div className="text-[rgba(4,30,84,0.70)] xl:text-[1.5rem] sm:text-[1.25rem] text-[0.875rem]">
                 A: Immediately after the work is completed or a project
                 milestone is reached. The sooner you send it, the sooner it
-                enters your client's payment cycle.
+                enters your client&apos;s payment cycle.
               </div>
             </div>
             <div className="xl:text-[1.5rem] sm:text-[1.25rem] text-[1rem] xl:mt-[2.75rem] mt-[2.5rem] xl:mb-[5rem] sm:mb-[3.75rem] mb-[2.5rem]">
