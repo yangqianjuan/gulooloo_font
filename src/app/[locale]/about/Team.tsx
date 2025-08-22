@@ -7,7 +7,7 @@ export default function Team() {
         Our Team Values
       </div>
       <ul className="flex justify-between flex-wrap">
-        <li className="sm:w-[29%] w-full flex flex-col items-center text-center rounded-3xl shadow-[0_8px_24px_0_rgba(126,138,163,0.12)] xl:px-[3.75rem] xl:py-[5rem] sm:px-[1.5rem] sm:py-[2.5rem] px-[2rem] py-[2rem] sm:mb-[0rem] mb-[1.5rem]">
+        <li className="sm:w-[32%] w-full flex flex-col items-center text-center rounded-3xl shadow-[0_8px_24px_0_rgba(126,138,163,0.12)] xl:px-[3.75rem] xl:py-[5rem] sm:px-[1.5rem] sm:py-[2.5rem] px-[2rem] py-[2rem] sm:mb-[0rem] mb-[1.5rem]">
           <Image
             src={ic_user}
             alt=""
@@ -24,7 +24,7 @@ export default function Team() {
             you&apos;ll not only use, but love.
           </div>
         </li>
-        <li className="sm:w-[29%] w-full flex flex-col items-center text-center rounded-3xl shadow-[0_8px_24px_0_rgba(126,138,163,0.12)] xl:px-[3.75rem] xl:py-[5rem] sm:px-[1.5rem] sm:py-[2.5rem] px-[2rem] py-[2rem] sm:mb-[0rem] mb-[1.5rem]">
+        <li className="sm:w-[32%] w-full flex flex-col items-center text-center rounded-3xl shadow-[0_8px_24px_0_rgba(126,138,163,0.12)] xl:px-[3.75rem] xl:py-[5rem] sm:px-[1.5rem] sm:py-[2.5rem] px-[2rem] py-[2rem] sm:mb-[0rem] mb-[1.5rem]">
           <Image
             src={ic_user}
             alt=""
@@ -41,7 +41,7 @@ export default function Team() {
             you&apos;ll not only use, but love.
           </div>
         </li>
-        <li className="sm:w-[29%] w-full flex flex-col items-center text-center  rounded-3xl shadow-[0_8px_24px_0_rgba(126,138,163,0.12)] xl:px-[3.75rem] xl:py-[5rem] sm:px-[1.5rem] sm:py-[2.5rem] px-[2rem] py-[2rem] sm:mb-[0rem] mb-[1.5rem]">
+        <li className="sm:w-[32%] w-full flex flex-col items-center text-center  rounded-3xl shadow-[0_8px_24px_0_rgba(126,138,163,0.12)] xl:px-[3.75rem] xl:py-[5rem] sm:px-[1.5rem] sm:py-[2.5rem] px-[2rem] py-[2rem] sm:mb-[0rem] mb-[1.5rem]">
           <Image
             src={ic_user}
             alt=""
