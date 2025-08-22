@@ -15,9 +15,9 @@ export default function AboutPage() {
           At Gulooloo Tech, our journey began with a simple question: what if
           the tools on our phones could be smarter, more intuitive, and
           genuinely make life easier? This question drives our passionate,
-          global team of creators. We don't chase trends; we focus on crafting
-          simple, beautiful, and useful apps that solve real problems for real
-          people—for you.
+          global team of creators. We don&apos;t chase trends; we focus on
+          crafting simple, beautiful, and useful apps that solve real problems
+          for real people—for you.
         </div>
         <Team />
         <ContactAs />

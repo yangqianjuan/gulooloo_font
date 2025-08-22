@@ -20,8 +20,8 @@ export default function Explore() {
           get in touch
         </div>
         <div className="xl:text-[1.5rem] sm:text-[1.5rem] text-[1rem] xl:mb-[6.38rem] sm:mb-[1.88rem] mb-[0.75rem]">
-          Have questions, feedback, or just want to say hello? We'd love to hear
-          from you.
+          Have questions, feedback, or just want to say hello? We&apos;d love to
+          hear from you.
         </div>
         <div
           className="rounded-full inline-block bg-[rgba(0,204,145,1)]  items-center justify-center text-white  hover:bg-[rgba(82,220,180,1)] transition-transform duration-300 hover:scale-110 sm:text-[1.5rem] text-[1rem] xl:px-[5.25rem] xl:py-[1.13rem] sm:px-[4.16rem] sm:py-[0.88rem] px-[2.25rem] py-[0.62rem]"

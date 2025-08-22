@@ -8,7 +8,7 @@ export default function Banner() {
   return (
     <div className="relative">
       <div className="absolute top-1/2  -translate-y-1/2 text-center w-full text-white font-bold  xl:text-[4.5rem] sm:text-[2.75rem] text-[1.5rem]">
-        We're a Passionate Team Crafting Nice Apps
+        We&apos;re a Passionate Team Crafting Nice Apps
       </div>
       <Image
         src={banner}
