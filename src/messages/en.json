@@ -458,5 +458,22 @@
     "article18FaqQ2": "What if my work requires constant availability?",
     "article18FaqA2": "Use scheduled availability blocks and batched responses to stay responsive without being always on.",
     "article18Conclusion": "A gentle detox builds awareness and boundaries so technology serves your goals instead of steering them."
+  },
+  "about": {
+    "metaTitleAbout": "About Us - Gulooloo Tech",
+    "metaDescriptionAbout": "Gulooloo Tech helps small businesses and freelancers work smarter with tools for invoicing, note-taking, and productivity. Learn our mission and story.",
+    "keywordsAbout": "Gulooloo Tech, about us, company mission, small business, freelancers, invoicing tools, productivity tools, notes app, digital solutions",
+    "aboutHeroTitle": "We're a Passionate Team Crafting Nice Apps",
+    "aboutIntro": "At Gulooloo Tech, our journey began with a simple question: what if the tools on our phones could be smarter, more intuitive, and genuinely make life easier? This question drives our passionate, global team of creators. We don't chase trends; we focus on crafting simple, beautiful, and useful apps that solve real problems for real people—for you.",
+    "aboutValuesTitle": "Our Team Values",
+    "aboutValue1Title": "User-First",
+    "aboutValue1Desc": "You are at the center of everything we do. We listen to your feedback, learn from your experiences, and build products that solve your real-world problems. Our goal is to create something you'll not only use, but love.",
+    "aboutValue2Title": "Craftsmanship & Quality",
+    "aboutValue2Desc": "We believe great design isn't just how it looks—it's how it feels. We are passionate about creating clean, beautiful interfaces that are a joy to interact with. We sweat the small stuff so you don't have to.",
+    "aboutValue3Title": "Stronger Together",
+    "aboutValue3Desc": "Our team is fully remote and spread across the globe. This isn't just a work style; it's our strength. Different perspectives help us build better, more inclusive products for everyone, everywhere.",
+    "aboutFinalCtaTitle": "Get In Touch",
+    "aboutFinalCtaDesc": "Have questions, feedback, or just want to say hello? We'd love to hear from you.",
+    "aboutFinalCtaBtn": "Contact Us"
   }
 }

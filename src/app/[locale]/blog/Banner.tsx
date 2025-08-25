@@ -24,7 +24,7 @@ export default function Banner() {
       ></Image>
       <Image
         src={m_banner}
-        alt={t("top_banner_mobile_alt")}
+        alt=""
         className="w-full h-auto block sm:hidden"
         width={3840}
         height={1360}

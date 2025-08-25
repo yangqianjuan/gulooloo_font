@@ -4,15 +4,15 @@ import m_banner from "@/assets/about/aboutus_banner/aboutus_banner_3x.webp";
 import { useTranslations } from "next-intl";
 
 export default function Banner() {
-  const t = useTranslations("home");
+  const t = useTranslations("about");
   return (
     <div className="relative">
       <div className="absolute top-1/2  -translate-y-1/2 text-center w-full text-white font-bold  xl:text-[4.5rem] sm:text-[2.75rem] text-[1.5rem]">
-        We&apos;re a Passionate Team Crafting Nice Apps
+        {t("aboutHeroTitle")}
       </div>
       <Image
         src={banner}
-        alt={t("top_banner_alt")}
+        alt=""
         className="w-full h-auto hidden sm:block"
         priority
         width={3840}
@@ -24,7 +24,7 @@ export default function Banner() {
       ></Image>
       <Image
         src={m_banner}
-        alt={t("top_banner_mobile_alt")}
+        alt=""
         className="w-full h-auto block sm:hidden"
         width={3840}
         height={1360}
