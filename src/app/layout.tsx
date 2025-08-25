@@ -1,6 +1,7 @@
 // src/app/layout.tsx
 // 字体加载
 // import "./globals.css";
+import RefreshOnBack from "./provider/RefreshOnBack";
 import { Poppins } from "next/font/google";
 const poppins = Poppins({
   subsets: ["latin"],
@@ -24,7 +25,9 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
-      <body>{children}</body>
+      <body>
+        <RefreshOnBack>{children}</RefreshOnBack>
+      </body>
     </html>
   );
 }

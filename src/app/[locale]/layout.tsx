@@ -68,16 +68,10 @@ export default async function LocaleLayout({
   );
 
   return (
-    <html lang={locale} className={poppins.className}>
-      <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </head>
-      <body>
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          {children}
-          <SpeedInsights />
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <NextIntlClientProvider locale={locale} messages={messages}>
+      {children}
+
+      <SpeedInsights />
+    </NextIntlClientProvider>
   );
 }
