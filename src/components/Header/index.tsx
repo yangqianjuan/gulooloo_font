@@ -7,11 +7,17 @@ import Image from "next/image";
 import { useTranslations, useLocale } from "next-intl";
 import MobileMenu, { MenuItem } from "@/components/MobileMenu/index";
 import MenuToggleButton from "@/components/MenuToggleButton";
+import { useRouter, usePathname } from "next/navigation";
 
 const Header: React.FC = () => {
   const t = useTranslations("home");
   const locale = useLocale();
   const [menuOpen, setMenuOpen] = useState(false);
+  const router = useRouter();
+  const switchPath = (path: string) => {
+    // 把路径改成新语言
+    router.push(`/${locale}/${path}`);
+  };
   const menuItems: MenuItem[] = useMemo(() => {
     return [
       { label: t("navHome"), key: "home", href: "/" },
@@ -77,10 +83,16 @@ const Header: React.FC = () => {
           ]}
           placeholder={t("navProducts")}
         />
-        <div className="rounded-[0.75rem] mx-[1.5rem] xl:text-[1.25rem] text-[1.8rem] hover:bg-[rgba(0,204,145,0.078)] hover:text-[rgba(0,204,145,1)] py-[0.81rem] px-[1.56rem]">
+        <div
+          onClick={() => switchPath("blog")}
+          className="rounded-[0.75rem] mx-[1.5rem] xl:text-[1.25rem] text-[1.8rem] hover:bg-[rgba(0,204,145,0.078)] hover:text-[rgba(0,204,145,1)] py-[0.81rem] px-[1.56rem]"
+        >
           {t("navResource")}
         </div>
-        <div className="rounded-[0.75rem] xl:text-[1.25rem] text-[1.8rem] hover:bg-[rgba(0,204,145,0.078)] hover:text-[rgba(0,204,145,1)] py-[0.81rem] px-[1.56rem]">
+        <div
+          onClick={() => switchPath("about")}
+          className="rounded-[0.75rem] xl:text-[1.25rem] text-[1.8rem] hover:bg-[rgba(0,204,145,0.078)] hover:text-[rgba(0,204,145,1)] py-[0.81rem] px-[1.56rem]"
+        >
           {t("navAbout")}
         </div>
       </div>

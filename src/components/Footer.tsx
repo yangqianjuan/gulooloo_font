@@ -1,7 +1,7 @@
 import Image from "next/image";
 import logo from "@/assets/icon/logo_text.svg";
 import { useMemo, useState } from "react";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import Appstore_download from "@/assets/icon/Appstore_download.svg";
 import Appstore_download_hover from "@/assets/icon/Appstore_download_hover.svg";
 import googleplay_download from "@/assets/icon/googleplay_download.svg";
@@ -9,8 +9,14 @@ import googleplay_download_hover from "@/assets/icon/googleplay_download_hover.s
 import MenuItemWithSubmenu from "@/components/MobileMenu/ MenuItemWithSubmenu";
 import { iosLink, andoridLink } from "@/utils/index";
 import { useMemoizedFn } from "ahooks";
+import { useRouter } from "next/navigation";
 export default function Footer() {
+  const router = useRouter();
   const [openKeys, setOpenKeys] = useState<string[]>([]);
+  const switchPath = (path: string) => {
+    // 把路径改成新语言
+    router.push(`${path}`);
+  };
 
   const toggleSubmenu = useMemoizedFn((key: string) => {
     setOpenKeys((prev) =>
@@ -150,8 +156,10 @@ export default function Footer() {
       <div className="xl:py-[3.75rem] sm:flex justify-between border-t border-[rgba(4,30,84,0.08)] text-[1.6rem] pt-[4rem] pb-[2rem]">
         <div className="mb-[2rem]">{t("footerCopyright")}</div>
         <div className="flex">
-          <span className="mr-[3.75rem]">{t("footerPrivacy")}</span>
-          <span>{t("footerTerms")}</span>
+          <span onClick={() => switchPath("/policy")} className="mr-[3.75rem]">
+            {t("footerPrivacy")}
+          </span>
+          <span onClick={() => switchPath("/term")}>{t("footerTerms")}</span>
         </div>
       </div>
     </footer>
