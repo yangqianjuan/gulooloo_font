@@ -87,7 +87,7 @@ export default function BlogList({ activeTab }: BlogListProps) {
       {list?.map((item, index) => (
         <li
           key={item.row}
-          className=" bg-white shadow-[0_8px_24px_0_rgba(126,138,163,0.12)]  overflow-hidden xl:rounded-[1.5rem] xl:mb-[2.5rem] sm:w-[29%] rounded-[1rem] w-full mb-[2rem]"
+          className=" bg-white shadow-[0_8px_24px_0_rgba(126,138,163,0.12)]  overflow-hidden xl:rounded-[1.5rem] xl:mb-[2.5rem] sm:w-[32%] rounded-[1rem] w-full mb-[2rem]"
         >
           <Image
             src={images[item.row]}

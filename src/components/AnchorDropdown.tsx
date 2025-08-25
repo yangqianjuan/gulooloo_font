@@ -5,6 +5,7 @@ import { ChevronDown, ChevronUp, Globe } from "lucide-react";
 import Image from "next/image";
 import GlobalIcon from "@/assets/icon/global.svg";
 import { Link } from "@/i18n/navigation";
+import { useRouter, usePathname } from "next/navigation";
 
 interface Option {
   label: string;
@@ -29,6 +30,14 @@ export default function AnchorDropdown({
   const [open, setOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const [curentLocale, setCurentLocale] = useState("en");
+  const router = useRouter();
+  const pathname = usePathname();
+  const switchLang = (locale: string) => {
+    // 把路径改成新语言
+    const segments = pathname.split("/");
+    segments[1] = locale; // 第一个 segment 是 locale
+    router.push(segments.join("/"));
+  };
 
   // 点击外部关闭
   useEffect(() => {
@@ -86,7 +95,7 @@ export default function AnchorDropdown({
       </button>
 
       {open && (
-        <ul className="absolute z-10 top-[5rem] rounded-[1.5rem] left-1/2 -translate-x-1/2 px-[1.25rem]  py-[2rem] w-[16rem] bg-white rounded shadow-md transition-all duration-200 text-[1.25rem]">
+        <ul className="absolute z-10 top-[5rem] rounded-[1.5rem] left-1/2 -translate-x-1/2 px-[1.25rem]  py-[2rem] w-[16rem] bg-white  shadow-md transition-all duration-200 text-[1.25rem]">
           {options.map((opt) => (
             <li
               key={opt.value}
@@ -95,10 +104,11 @@ export default function AnchorDropdown({
               role="option"
             >
               {isShowGlobal ? (
-                <Link href="/" locale={opt.value}>
-                  {opt.label}
-                </Link>
+                <div onClick={() => switchLang(opt.value)}>{opt.label} </div>
               ) : (
+                // <Link href="/" locale={opt.value}>
+                //   {opt.label}
+                // </Link>
                 opt.label
               )}
             </li>
