@@ -294,7 +294,7 @@ export default function Terms() {
             the Payment Method.
           </p>
 
-          <div className="legal-notice">
+          <div className="highlight-box">
             <p>
               IMPORTANT: You may cancel your use of Service at any time;
               however, there are no refunds for cancellation.
@@ -360,7 +360,7 @@ export default function Terms() {
 
         <div className="content-section">
           <h2>Disclaimer of Warranty</h2>
-          <div className="legal-notice">
+          <div className="highlight-box">
             <p>
               THE GULOOLOO TECH SERVICE IS PROVIDED &quot;AS IS&quot; AND
               &quot;AS AVAILABLE,&quot; WITHOUT EXPRESS OR IMPLIED WARRANTY OR
@@ -386,7 +386,7 @@ export default function Terms() {
 
         <div className="content-section">
           <h2>Limitation of Liability</h2>
-          <div className="legal-notice">
+          <div className="highlight-box">
             <p>
               TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT
               WILL GULOOLOO TECH BE LIABLE FOR ANY INDIRECT, CONSEQUENTIAL,

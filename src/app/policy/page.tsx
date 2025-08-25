@@ -143,7 +143,7 @@ export default function Policy() {
           <li>Custom health goals and preferences</li>
         </ul>
 
-        <div className="legal-notice">
+        <div className="highlight-box">
           <p>
             IMPORTANT: We integrate with third-party health platforms (Apple
             HealthKit, Google Fit) only with your explicit authorization. All
@@ -428,7 +428,7 @@ export default function Policy() {
           <li>Incident response procedures for potential breaches</li>
         </ul>
 
-        <div className="legal-notice">
+        <div className="highlight-box">
           <p>
             IMPORTANT: While we strive to use commercially acceptable means of
             protecting your information, no method of transmission over the
@@ -533,7 +533,7 @@ export default function Policy() {
           </li>
         </ul>
 
-        <div className="legal-notice">
+        <div className="highlight-box">
           <p>
             If you believe we have collected information from a child under 13,
             please contact us immediately at the email address provided below.
