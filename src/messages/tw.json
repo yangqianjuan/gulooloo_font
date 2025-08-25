@@ -96,6 +96,15 @@
     "keywords": "Easy Notes, GoFasting, Invoice Now, 筆記應用, 斷食追蹤, 發票工具, 生產力工具, QR Code 產生器"
   },
   "blog": {
+    "metaTitleBlog": "部落格 - Gulooloo Tech",
+    "metaDescriptionBlog": "在Gulooloo Tech部落格獲取生產力技巧、商業指南和應用程式教學。我們的專家文章幫助你更智能、更快速、更高效地工作。",
+    "keywordsBlog": "部落格, 生產力技巧, 商業指南, 應用程式教學, 智能工作, 效率, 自由工作者, 小型企業",
+    "blogHeroTitle": "提升日常的洞見",
+    "blogBack": "返回部落格",
+    "blogFilterAll": "全部",
+    "blogFilterProductivity": "生產力",
+    "blogFilterBusiness": "商業",
+    "blogFilterWellness": "健康",
     "articleShared": "分享本文",
     "articleCopied": "連結已複製！",
     "article1Title": "記錄靈感的5個簡單方法",

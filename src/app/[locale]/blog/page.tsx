@@ -6,15 +6,18 @@ import Banner from "./Banner";
 import Tab from "./tab";
 import BlogList from "./BlogList";
 import { ActiveTab, BlogTabItem } from "@/type";
+import { useTranslations } from "next-intl";
 
 const Footer = dynamic_(() => import("@/components/Footer"), { ssr: false });
 export default function BlogPage() {
+  const t = useTranslations("blog");
   const [activeTab, setActiveTab] = useState<ActiveTab>("all");
+
   const tabList: BlogTabItem[] = [
-    { label: "All", key: "all" },
-    { label: "Productivity", key: "productivity" },
-    { label: "Business", key: "busniess" },
-    { label: "Wellness", key: "wellness" },
+    { label: t("blogFilterAll"), key: "all" },
+    { label: t("blogFilterProductivity"), key: "productivity" },
+    { label: t("blogFilterBusiness"), key: "busniess" },
+    { label: t("blogFilterWellness"), key: "wellness" },
   ];
   const handleTabChange = (key: ActiveTab) => {
     setActiveTab(key);

@@ -13,6 +13,7 @@ export default function BlogList({ activeTab }: BlogListProps) {
   const locale = useLocale();
   const router = useRouter();
   const t = useTranslations("blog");
+  const tc = useTranslations("home");
   const allList = {
     productivity: [
       {
@@ -115,7 +116,7 @@ export default function BlogList({ activeTab }: BlogListProps) {
               </p>
             </div>
             <div className="font-medium text-[rgba(0,204,145,1)] hover:text-[rgba(82,220,180,1)] flex items-center text-[1.6rem]">
-              <span className="mr-[0.8rem]">Read more</span>
+              <span className="mr-[0.8rem]">{tc("readMoreBtn")}</span>
               <ArrowRight width={24} />
             </div>
           </div>

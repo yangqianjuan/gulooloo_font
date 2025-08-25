@@ -96,6 +96,15 @@
     "keywords": "Easy Notes, GoFasting, Invoice Now, aplicativo de notas, rastreador de jejum, gerador de faturas, ferramentas de produtividade, gerador de QR code"
   },
   "blog": {
+    "metaTitleBlog": "Blog - Gulooloo Tech",
+    "metaDescriptionBlog": "Obtenha dicas de produtividade, guias de negócios e tutoriais de aplicativos no blog da Gulooloo Tech. Nossos artigos de especialistas ajudam você a trabalhar de forma mais inteligente, rápida e eficiente.",
+    "keywordsBlog": "blog, dicas de produtividade, guias de negócios, tutoriais de aplicativos, trabalhar mais inteligente, eficiência, dicas para freelancers, pequena empresa",
+    "blogHeroTitle": "Insights para um dia melhor",
+    "blogBack": "Voltar ao blog",
+    "blogFilterAll": "Todos",
+    "blogFilterProductivity": "Produtividade",
+    "blogFilterBusiness": "Negócios",
+    "blogFilterWellness": "Bem-estar",
     "articleShared": "Compartilhe este artigo",
     "articleCopied": "Link copiado!",
     "article1Title": "5 maneiras simples de registrar sua inspiração com notas",

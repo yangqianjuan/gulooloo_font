@@ -96,6 +96,15 @@
     "keywords": "Easy Notes, GoFasting, Invoice Now, 메모 앱, 단식 추적기, 인보이스 생성기, 생산성 도구, QR 코드 생성기"
   },
   "blog": {
+    "metaTitleBlog": "블로그 - Gulooloo Tech",
+    "metaDescriptionBlog": "Gulooloo Tech 블로그에서 생산성 팁, 비즈니스 가이드, 앱 튜토리얼을 얻으세요. 전문가의 글이 더 스마트하고, 빠르고, 효율적으로 일하도록 도와줍니다.",
+    "keywordsBlog": "블로그, 생산성 팁, 비즈니스 가이드, 앱 튜토리얼, 스마트하게 일하기, 효율, 프리랜서, 소규모 기업",
+    "blogHeroTitle": "더 나은 일상을 위한 통찰",
+    "blogBack": "블로그로 돌아가기",
+    "blogFilterAll": "모두",
+    "blogFilterProductivity": "생산성",
+    "blogFilterBusiness": "비즈니스",
+    "blogFilterWellness": "웰빙",
     "articleShared": "이 글 공유하기",
     "articleCopied": "링크가 복사되었습니다!",
     "article1Title": "영감을 기록하는 5가지 간단한 방법",

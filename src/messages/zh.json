@@ -96,6 +96,15 @@
     "keywords": "Easy Notes, GoFasting, Invoice Now, 笔记应用, 断食记录工具, 发票生成器, 效率工具, 二维码生成器"
   },
   "blog": {
+    "metaTitleBlog": "博客 - Gulooloo Tech",
+    "metaDescriptionBlog": "在Gulooloo Tech博客获取生产力技巧、商业指南和应用教程。我们的专家文章帮助你更智能、更快速、更高效地工作。",
+    "keywordsBlog": "博客, 生产力技巧, 商业指南, 应用教程, 智能工作, 效率, 自由职业者, 小型企业",
+    "blogHeroTitle": "提升日常的洞见",
+    "blogBack": "返回博客",
+    "blogFilterAll": "全部",
+    "blogFilterProductivity": "生产力",
+    "blogFilterBusiness": "商业",
+    "blogFilterWellness": "健康",
     "articleShared": "分享本文",
     "articleCopied": "链接已复制！",
     "article1Title": "记录灵感的5个简单方法",

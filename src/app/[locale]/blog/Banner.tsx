@@ -4,11 +4,11 @@ import m_banner from "@/assets/blog_banner/blog_banner_Q40.webp";
 import { useTranslations } from "next-intl";
 
 export default function Banner() {
-  const t = useTranslations("home");
+  const t = useTranslations("blog");
   return (
     <div className="relative">
       <div className="absolute top-1/2  -translate-y-1/2 text-center w-full text-white font-bold  xl:text-[4.5rem] sm:text-[2.75rem] text-[1.5rem]">
-        Insights for a Better Everyday
+        {t("blogHeroTitle")}
       </div>
       <Image
         src={banner}

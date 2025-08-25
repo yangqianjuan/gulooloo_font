@@ -96,6 +96,15 @@
     "keywords": "Easy Notes, GoFasting, Invoice Now, メモアプリ, 断食トラッカー, 請求書作成アプリ, 生産性向上ツール, QRコード作成ツール"
   },
   "blog": {
+    "metaTitleBlog": "ブログ - Gulooloo Tech",
+    "metaDescriptionBlog": "Gulooloo Techのブログで、生産性向上、ビジネスガイド、アプリのチュートリアルを手に入れましょう。専門家による記事が、よりスマートで速く、効率的な働き方をサポートします。",
+    "keywordsBlog": "ブログ, 生産性向上, ビジネスガイド, アプリチュートリアル, スマートな働き方, 効率, フリーランス, 中小企業",
+    "blogHeroTitle": "より良い毎日の洞察",
+    "blogBack": "ブログに戻る",
+    "blogFilterAll": "全て",
+    "blogFilterProductivity": "生産性",
+    "blogFilterBusiness": "ビジネス",
+    "blogFilterWellness": "ウェルネス",
     "articleShared": "この記事をシェアする",
     "articleCopied": "リンクをコピーしました！",
     "article1Title": "インスピレーションを記録する5つのシンプルな方法",
