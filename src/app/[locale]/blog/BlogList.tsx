@@ -3,12 +3,15 @@ import { ArrowRight } from "lucide-react";
 import images from "./image";
 import { useEffect, useState } from "react";
 import { ActiveTab } from "@/type";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
+import { useRouter } from "next/navigation";
 
 type BlogListProps = {
   activeTab: ActiveTab;
 };
 export default function BlogList({ activeTab }: BlogListProps) {
+  const locale = useLocale();
+  const router = useRouter();
   const t = useTranslations("blog");
   const allList = {
     productivity: [
@@ -82,10 +85,18 @@ export default function BlogList({ activeTab }: BlogListProps) {
     setList(sortedList);
   }, [activeTab]);
 
+  const switchPath = (path: number) => {
+    // 把路径改成新语言
+    router.push(`/${locale}/blog/${path}`);
+  };
+
   return (
     <ul className="flex flex-wrap justify-between">
       {list?.map((item, index) => (
         <li
+          onClick={() => {
+            switchPath(item.row);
+          }}
           key={item.row}
           className=" bg-white shadow-[0_8px_24px_0_rgba(126,138,163,0.12)]  overflow-hidden xl:rounded-[1.5rem] xl:mb-[2.5rem] sm:w-[32%] rounded-[1rem] w-full mb-[2rem]"
         >
