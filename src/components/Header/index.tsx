@@ -68,10 +68,19 @@ const Header: React.FC = () => {
     const item = langList.find((item) => item.value === locale);
     return item ? item.label : locale.toLocaleUpperCase();
   }, []);
+  const toHome = () => {
+    router.push(`/`);
+  };
 
   return (
     <header className="w-full h-[80px] justify-between  flex items-center px-6 sticky top-0 z-50 bg-white">
-      <Image src={logo} alt="" width={190} />
+      <Image
+        className="cursor-pointer"
+        onClick={toHome}
+        src={logo}
+        alt=""
+        width={190}
+      />
       <div className="text-xl  items-center hidden sm:flex">
         <AnchorDropdown
           isShowArrow={true}
