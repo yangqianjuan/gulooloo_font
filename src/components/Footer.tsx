@@ -156,10 +156,15 @@ export default function Footer() {
       <div className="xl:py-[3.75rem] sm:flex justify-between border-t border-[rgba(4,30,84,0.08)] text-[1.6rem] pt-[4rem] pb-[2rem]">
         <div className="mb-[2rem]">{t("footerCopyright")}</div>
         <div className="flex">
-          <span onClick={() => switchPath("/policy")} className="mr-[3.75rem]">
+          <span
+            onClick={() => switchPath("/policy")}
+            className="cursor-pointer mr-[3.75rem]"
+          >
             {t("footerPrivacy")}
           </span>
-          <span onClick={() => switchPath("/term")}>{t("footerTerms")}</span>
+          <span className="cursor-pointer" onClick={() => switchPath("/term")}>
+            {t("footerTerms")}
+          </span>
         </div>
       </div>
     </footer>

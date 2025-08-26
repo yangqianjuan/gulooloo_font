@@ -13,6 +13,8 @@ import images from "./image";
 import { useMemo } from "react";
 import { useParams } from "next/navigation";
 import productivity_01_detail from "@/assets/blog/productivity_01_detail/productivity_01_detail_2x.webp";
+import { useMemoizedFn } from "ahooks";
+import { useRouter } from "next/navigation";
 
 type PageProps = {
   params: {
@@ -23,8 +25,11 @@ type PageProps = {
 const Footer = dynamic_(() => import("@/components/Footer"), { ssr: false });
 
 // 🔹 复用小组件
-const BackButton = ({ text = "Back to Blog" }) => (
-  <div className="font-medium text-[rgba(0,204,145,1)] hover:text-[rgba(82,220,180,1)] flex items-center text-[1.6rem] cursor-pointer">
+const BackButton = ({ text = "Back to Blog", BackToBlog = () => {} }) => (
+  <div
+    onClick={BackToBlog}
+    className="font-medium text-[rgba(0,204,145,1)] hover:text-[rgba(82,220,180,1)] flex items-center text-[1.6rem] cursor-pointer"
+  >
     <ArrowLeft width={24} />
     <span className="ml-2">{text}</span>
   </div>
@@ -76,6 +81,7 @@ const QABox = ({ q, a }: { q: string; a: string }) => (
 );
 
 export default function BlogDetail() {
+  const router = useRouter();
   const { id, locale } = useParams<{ id: string; locale: string }>();
   console.log(id);
   const t = useTranslations("blog");
@@ -88,6 +94,9 @@ export default function BlogDetail() {
 
     return [content, list];
   }, []);
+  const BackToBlog = useMemoizedFn(() => {
+    router.push(`/${locale}/blog`);
+  });
 
   return (
     <div className="grid grid-rows-[auto_1fr_auto] justify-items-center min-h-screen max-w-[1920px] mx-auto sm:min-w-[1080px]">
@@ -95,7 +104,7 @@ export default function BlogDetail() {
       <main className="flex flex-col row-start-2 sm:items-start w-full">
         <div className="leading-[1.5] xl:px-[12.5rem] xl:py-[5rem] sm:px-[5rem] sm:py-[2.5rem] px-[1.5rem] py-[1.25rem]">
           <div className="xl:mb-[7.5rem] sm:mb-[5rem] mb-[2.5rem]">
-            <BackButton />
+            <BackButton text={t("blogBack")} BackToBlog={BackToBlog} />
           </div>
 
           {/* 标题 */}
@@ -164,7 +173,7 @@ export default function BlogDetail() {
                 )}
               </div>
             </div>
-            <BackButton />
+            <BackButton text={t("blogBack")} onClick={BackToBlog} />
           </div>
         </div>
       </main>

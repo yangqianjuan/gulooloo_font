@@ -12,7 +12,7 @@ export default function Banner() {
       </div>
       <Image
         src={banner}
-        alt={t("top_banner_alt")}
+        alt=""
         className="w-full h-auto hidden sm:block"
         priority
         width={3840}
