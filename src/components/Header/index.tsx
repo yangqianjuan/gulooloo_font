@@ -32,8 +32,8 @@ const Header: React.FC = () => {
           { label: t("footerProduct4"), key: "footerProduct4", href: "" },
         ],
       },
-      { label: t("navResource"), key: "navResource", href: "/" },
-      { label: t("navAbout"), key: "navAbout", href: "/" },
+      { label: t("navResource"), key: "navResource", href: "/blog" },
+      { label: t("navAbout"), key: "navAbout", href: "/about" },
       {
         label: t("navLanguage"),
         key: "language",
@@ -123,6 +123,7 @@ const Header: React.FC = () => {
         <MobileMenu
           items={menuItems}
           isOpen={menuOpen}
+          switchPath={switchPath}
           onClose={() => setMenuOpen(false)}
         />
       </div>

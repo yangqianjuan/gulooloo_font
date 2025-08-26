@@ -10,6 +10,7 @@ interface MobileMenuProps {
   items: MenuItem[];
   isOpen: boolean;
   onClose: () => void;
+  switchPath: (path: string) => void;
 }
 // types/menu.ts
 export interface MenuItem {
@@ -19,13 +20,22 @@ export interface MenuItem {
   children?: MenuItem[];
 }
 
-const MobileMenu: React.FC<MobileMenuProps> = ({ items, isOpen, onClose }) => {
+const MobileMenu: React.FC<MobileMenuProps> = ({
+  items,
+  isOpen,
+  onClose,
+  switchPath,
+}) => {
   const [openKeys, setOpenKeys] = useState<string[]>([]);
 
   const toggleSubmenu = useMemoizedFn((key: string) => {
     setOpenKeys((prev) =>
       prev.includes(key) ? prev.filter((k) => k !== key) : [...prev, key]
     );
+  });
+  const toPath = useMemoizedFn((path: string) => {
+    onClose();
+    switchPath(path);
   });
 
   return (
@@ -45,7 +55,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ items, isOpen, onClose }) => {
           {items.map((item) => (
             <li
               key={item.key}
-              className="py-[1.6rem] border-b border-b-[1px] border-[rgba(4,30,84,0.08)]  text-[rgba(4,30,84,0.48)] hover:text-[rgba(4,30,84,1)]"
+              className="py-[1.6rem] border-b-[1px] border-[rgba(4,30,84,0.08)]  text-[rgba(4,30,84,0.48)] hover:text-[rgba(4,30,84,1)]"
             >
               {item.children ? (
                 <MenuItemWithSubmenu
@@ -58,7 +68,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ items, isOpen, onClose }) => {
                 <MenuItemSingle
                   label={item.label}
                   href={item.href}
-                  onClick={onClose}
+                  onClick={() => toPath(item.href || "/")}
                 />
               )}
             </li>
