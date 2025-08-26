@@ -6,6 +6,7 @@ import Image from "next/image";
 import GlobalIcon from "@/assets/icon/global.svg";
 import { Link } from "@/i18n/navigation";
 import { useRouter, usePathname } from "next/navigation";
+import { useMemoizedFn } from "ahooks";
 
 interface Option {
   label: string;
@@ -32,12 +33,12 @@ export default function AnchorDropdown({
   const [curentLocale, setCurentLocale] = useState("en");
   const router = useRouter();
   const pathname = usePathname();
-  const switchLang = (locale: string) => {
+  const switchLang = useMemoizedFn((locale: string) => {
     // 把路径改成新语言
     const segments = pathname.split("/");
     segments[1] = locale; // 第一个 segment 是 locale
     router.push(segments.join("/"));
-  };
+  });
 
   // 点击外部关闭
   useEffect(() => {

@@ -9,25 +9,24 @@ import googleplay_download_hover from "@/assets/icon/googleplay_download_hover.s
 import MenuItemWithSubmenu from "@/components/MobileMenu/ MenuItemWithSubmenu";
 import { iosLink, andoridLink } from "@/utils/index";
 import { useMemoizedFn } from "ahooks";
-import { useRouter } from "next/navigation";
 export default function Footer() {
-  const router = useRouter();
+  const t = useTranslations("home");
   const [openKeys, setOpenKeys] = useState<string[]>([]);
-  const switchPath = (path: string) => {
+  const switchPath = useMemoizedFn((path: string) => {
     // 把路径改成新语言
     // router.push(`${path}`);
     window.open(`${path}`, "_blank", "noopener,noreferrer");
-  };
+  });
 
   const toggleSubmenu = useMemoizedFn((key: string) => {
     setOpenKeys((prev) =>
       prev.includes(key) ? prev.filter((k) => k !== key) : [...prev, key]
     );
   });
-  const toAPPStore = (link: string) => {
+  const toAPPStore = useMemoizedFn((link: string) => {
     window.open(link);
-  };
-  const t = useTranslations("home");
+  });
+
   const list = useMemo(() => {
     return [
       {

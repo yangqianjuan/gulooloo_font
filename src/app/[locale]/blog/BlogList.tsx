@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import { ActiveTab } from "@/type";
 import { useTranslations, useLocale } from "next-intl";
 import { useRouter } from "next/navigation";
+import { useMemoizedFn } from "ahooks";
 
 type BlogListProps = {
   activeTab: ActiveTab;
@@ -86,10 +87,10 @@ export default function BlogList({ activeTab }: BlogListProps) {
     setList(sortedList);
   }, [activeTab]);
 
-  const switchPath = (path: number) => {
+  const switchPath = useMemoizedFn((path: number) => {
     // 把路径改成新语言
     router.push(`/${locale}/blog/${path}`);
-  };
+  });
 
   return (
     <ul className="flex flex-wrap justify-between">

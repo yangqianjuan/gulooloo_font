@@ -7,6 +7,7 @@ import Tab from "./tab";
 import BlogList from "./BlogList";
 import { ActiveTab, BlogTabItem } from "@/type";
 import { useTranslations } from "next-intl";
+import { useMemoizedFn } from "ahooks";
 
 const Footer = dynamic_(() => import("@/components/Footer"), { ssr: false });
 export default function BlogPage() {
@@ -19,9 +20,9 @@ export default function BlogPage() {
     { label: t("blogFilterBusiness"), key: "busniess" },
     { label: t("blogFilterWellness"), key: "wellness" },
   ];
-  const handleTabChange = (key: ActiveTab) => {
+  const handleTabChange = useMemoizedFn((key: ActiveTab) => {
     setActiveTab(key);
-  };
+  });
   return (
     <div className="grid grid-rows-[auto_1fr_auto]  justify-items-center min-h-screen max-w-[1920px] mx-auto sm:min-w-[1080px]">
       <Header />

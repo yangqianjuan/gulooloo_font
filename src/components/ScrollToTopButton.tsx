@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import "../app/index.css"; // 引入样式
+import { useMemoizedFn } from "ahooks";
 
 const ScrollToTopButton: React.FC = () => {
   const [visible, setVisible] = useState(false);
@@ -17,9 +18,9 @@ const ScrollToTopButton: React.FC = () => {
   }, []);
 
   // 点击滚动回顶部
-  const scrollToTop = () => {
+  const scrollToTop = useMemoizedFn(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
-  };
+  });
 
   return (
     <>

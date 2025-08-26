@@ -8,16 +8,17 @@ import { useTranslations, useLocale } from "next-intl";
 import MobileMenu, { MenuItem } from "@/components/MobileMenu/index";
 import MenuToggleButton from "@/components/MenuToggleButton";
 import { useRouter, usePathname } from "next/navigation";
+import { useMemoizedFn } from "ahooks";
 
 const Header: React.FC = () => {
   const t = useTranslations("home");
   const locale = useLocale();
   const [menuOpen, setMenuOpen] = useState(false);
   const router = useRouter();
-  const switchPath = (path: string) => {
+  const switchPath = useMemoizedFn((path: string) => {
     // 把路径改成新语言
     router.push(`/${locale}/${path}`);
-  };
+  });
   const menuItems: MenuItem[] = useMemo(() => {
     return [
       { label: t("navHome"), key: "home", href: "/" },
@@ -68,9 +69,10 @@ const Header: React.FC = () => {
     const item = langList.find((item) => item.value === locale);
     return item ? item.label : locale.toLocaleUpperCase();
   }, []);
-  const toHome = () => {
+
+  const toHome = useMemoizedFn(() => {
     router.push(`/`);
-  };
+  });
 
   return (
     <header className="w-full h-[80px] justify-between  flex items-center px-6 sticky top-0 z-50 bg-white">
