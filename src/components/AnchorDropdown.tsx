@@ -76,7 +76,7 @@ export default function AnchorDropdown({
         aria-expanded={open}
       >
         {isShowGlobal && <Globe size={20} className="mr-[0.25rem]" />}
-        <span className="mr-2 xl:text-[1.25rem] text-[1.8rem]">
+        <span className="mr-2 2xl:text-[1.25rem] text-[1.125rem]">
           {placeholder}
         </span>
         {isShowArrow &&

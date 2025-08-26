@@ -44,18 +44,18 @@ const MobileMenu: React.FC<MobileMenuProps> = ({
         isOpen ? "translate-x-0" : "translate-x-full"
       }`}
     >
-      <div className="flex justify-end px-[2.4rem] py-[2rem]">
+      <div className="flex justify-end px-[1.5rem] py-[1.25rem]">
         <button onClick={onClose} aria-label="closed modal">
           <X size={24} />
         </button>
       </div>
 
-      <nav className="pt-[2.4rem] px-[2.4rem] text-[1.6rem]">
+      <nav className="pt-[1.25rem] px-[1.5rem] text-[1rem]">
         <ul>
           {items.map((item) => (
             <li
               key={item.key}
-              className="py-[1.6rem] border-b-[1px] border-[rgba(4,30,84,0.08)]  text-[rgba(4,30,84,0.48)] hover:text-[rgba(4,30,84,1)]"
+              className="py-[1rem] border-b-[1px] border-[rgba(4,30,84,0.08)]  text-[rgba(4,30,84,0.48)] hover:text-[rgba(4,30,84,1)]"
             >
               {item.children ? (
                 <MenuItemWithSubmenu

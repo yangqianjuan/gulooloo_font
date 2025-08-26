@@ -90,7 +90,9 @@ export default function Footer() {
       <div className="flex flex-wrap sm:justify-between pb-[3.75rem]">
         <div className="lg:w-[31.25rem]  w-full mb-[3.2rem]">
           <Image src={logo} alt="" className="mb-[1rem]"></Image>
-          <div className="text-[1.6rem]">{t("ctaTagline")}</div>
+          <div className="2xl:text-[1.25rem] text-[1.125rem]">
+            {t("ctaTagline")}
+          </div>
         </div>
         {list.map((d) => {
           return (
@@ -100,10 +102,10 @@ export default function Footer() {
             >
               {d.children && (
                 <div className="sm:block hidden">
-                  <div className="xl:text-[1.25rem] text-[1.6rem] font-semibold text-[rgba(4,30,84,1)]  mb-[2rem]">
+                  <div className="2xl:text-[1.25rem] text-[1.125rem] font-semibold text-[rgba(4,30,84,1)]  mb-[2rem]">
                     {d.label}
                   </div>
-                  <div className="xl:text-[1.25rem] text-[1.6rem] font-medium sm:block hidden">
+                  <div className="2xl:text-[1.25rem] text-[1.125rem] font-medium sm:block hidden">
                     {d.children.map((item) => {
                       return (
                         <div
@@ -118,7 +120,7 @@ export default function Footer() {
                 </div>
               )}
               {d.children && (
-                <div className="sm:hidden text-[1.6rem] text-[rgba(4,30,84,1)]">
+                <div className="sm:hidden 2xl:text-[1.25rem] text-[1.125rem] text-[rgba(4,30,84,1)]">
                   <MenuItemWithSubmenu
                     item={d}
                     isOpen={openKeys.includes(d.key)}
@@ -129,7 +131,7 @@ export default function Footer() {
 
               {d.imgs && (
                 <>
-                  <div className="xl:text-[1.25rem] text-[1.6rem] sm:font-semibold text-[rgba(4,30,84,1)] mb-[2rem] font-medium">
+                  <div className="2xl:text-[1.25rem] text-[1.125rem] sm:font-semibold text-[rgba(4,30,84,1)] mb-[2rem] font-medium">
                     {d.label}
                   </div>
                   <div className="sm:block flex">
@@ -153,7 +155,7 @@ export default function Footer() {
           );
         })}
       </div>
-      <div className="xl:py-[3.75rem] sm:flex justify-between border-t border-[rgba(4,30,84,0.08)] text-[1.6rem] pt-[4rem] pb-[2rem]">
+      <div className="xl:py-[3.75rem] sm:flex justify-between border-t border-[rgba(4,30,84,0.08)] 2xl:text-[1.25rem] text-[1.125rem] pt-[4rem] pb-[2rem]">
         <div className="mb-[2rem]">{t("footerCopyright")}</div>
         <div className="flex">
           <span
