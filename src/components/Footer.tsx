@@ -15,7 +15,8 @@ export default function Footer() {
   const [openKeys, setOpenKeys] = useState<string[]>([]);
   const switchPath = (path: string) => {
     // 把路径改成新语言
-    router.push(`${path}`);
+    // router.push(`${path}`);
+    window.open(`${path}`, "_blank", "noopener,noreferrer");
   };
 
   const toggleSubmenu = useMemoizedFn((key: string) => {
