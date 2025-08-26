@@ -173,7 +173,7 @@ export default function BlogDetail() {
                 )}
               </div>
             </div>
-            <BackButton text={t("blogBack")} onClick={BackToBlog} />
+            <BackButton text={t("blogBack")} BackToBlog={BackToBlog} />
           </div>
         </div>
       </main>
