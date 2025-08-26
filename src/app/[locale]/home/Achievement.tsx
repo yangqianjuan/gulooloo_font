@@ -9,40 +9,40 @@ import google_bestapp from "@/assets/icon/google_bestapp.svg";
 export default function Achievement() {
   const t = useTranslations("home");
   return (
-    <div className=" w-full text-[rgba(118,61,3,1)]">
+    <div className="w-full text-[rgba(118,61,3,1)]">
       <div
         // style={{ backgroundImage: `url(${bg.src})` }}
-        className="sm:py-[5rem] sm:mx-[5rem] text-[rgba(118,61,3,1)] sm:bg-[url('/images/world_map_bg_2x.webp')] bg-[url('/images/world_map_mobile_2x.webp')] bg-cover font-semibold sm:px-[0rem] px-[5.6rem] py-[4.6rem]"
+        className="sm:py-[5rem] 2xl:px-[5rem]  sm:px-[3.75rem] text-[rgba(118,61,3,1)] sm:bg-[url('/images/world_map_bg_2x.webp')] bg-[url('/images/world_map_mobile_2x.webp')] bg-cover font-semibold px-[3.5rem] py-[2.5rem]"
       >
-        <div className="text-center sm:text-[4rem] sm:pb-[5rem]  text-[2.4rem] pb-[4rem]">
+        <div className="text-center 2xl:text-[4rem] 2xl:pb-[5rem] sm:text-[3rem] sm:pb-[2.5rem]  text-[1.5rem] pb-[4rem]">
           {t("whyUsTitle")}
         </div>
         <div className="flex sm:flex-row flex-col justify-between items-center">
-          <div className="relative sm:w-[31%] w-full sm:mb-[0rem] mb-[3.4rem] sm:order-1 order-2">
+          <div className="relative sm:w-[31%] w-full sm:mb-[0rem] mb-[2rem] sm:order-1 order-2">
             <Image
               src={l_leaf}
               alt=""
-              className="absolute left-0 top-0 xl:w-[5.625rem] w-[5.2rem]"
+              className="absolute left-0 top-0 2xl:w-[5.625rem] w-[3.25rem]"
               loading="lazy"
             />
             <div className="flex flex-col items-center justify-center">
               <Image
                 src={app_store}
                 alt={t("appstore_logo_alt")}
-                className="xl:w-[5.875rem] w-[4.8rem]"
+                className="2xl:w-[5.875rem] w-[3rem]"
                 loading="lazy"
               />
-              <div className="xl:text-[2.5rem]  text-[2rem]">
+              <div className="2xl:text-[2.5rem]  text-[1.5rem]">
                 {t("appleAward")}
               </div>
-              <div className="xl:text-[1.5rem]  text-[1.6rem] font-medium">
+              <div className="sm:text-[1.5rem]   text-[1rem] font-medium">
                 {t("applePlatform")}
               </div>
             </div>
             <Image
               src={r_leaf}
               alt=""
-              className="absolute right-0 top-0 xl:w-[5.625rem] w-[5.2rem]"
+              className="absolute right-0 top-0 2xl:w-[5.625rem] w-[3.25rem]"
               loading="lazy"
             />
           </div>
@@ -50,26 +50,26 @@ export default function Achievement() {
             <Image
               src={l_leaf}
               alt=""
-              className="absolute left-0 top-0 xl:w-[6.875rem] sm:w-[5.8rem] w-[5.2rem]"
+              className="absolute left-0 top-0 2xl:w-[6.875rem] sm:w-[3.625rem] w-[3.25rem]"
               loading="lazy"
             />
             <div className="flex flex-col items-center justify-center">
               <Image
                 src={user_pic}
-                className="xl:w-[13rem] w-[11rem]"
+                className="2xl:w-[13rem] w-[7.125rem]"
                 alt=""
                 loading="lazy"
               />
-              <div className="xl:text-[5.5rem] sm:text-[4.4rem] text-[3.2rem]">
+              <div className="2xl:text-[5.5rem] sm:text-[2.75rem] text-[2rem]">
                 {t("downloadCount")}
               </div>
-              <div className="xl:text-[2rem] sm:text-[2rem] text-[1.6rem] font-medium">
+              <div className="2xl:text-[2rem] sm:text-[1.25rem] text-[1rem] font-medium">
                 {t("trustedUsers")}
               </div>
             </div>
             <Image
               src={r_leaf}
-              className="absolute right-0 top-0 xl:w-[6.875rem] sm:w-[5.8rem] w-[5.2rem]"
+              className="absolute right-0 top-0 2xl:w-[6.875rem] sm:w-[3.625rem] w-[3.25rem]"
               alt=""
               loading="lazy"
             />
@@ -78,19 +78,19 @@ export default function Achievement() {
             <Image
               src={l_leaf}
               alt=""
-              className="absolute left-0 top-0 xl:w-[5.625rem] w-[5.2rem]"
+              className="absolute left-0 top-0 2xl:w-[5.625rem] w-[3.25rem]"
               loading="lazy"
             />
             <div className="flex flex-col items-center justify-center">
               <Image
                 src={google_bestapp}
                 alt={t("google_bestapp_alt")}
-                className="xl:w-[5.875rem] w-[4.8rem]"
+                className="2xl:w-[5.875rem] w-[3rem]"
               />
-              <div className="xl:text-[2.5rem]   text-[2rem]">
+              <div className="2xl:text-[2.5rem]  text-[1.5rem]">
                 {t("googleAward")}
               </div>
-              <div className="xl:text-[1.5rem]   text-[1.6rem] font-medium">
+              <div className="sm:text-[1.5rem]   text-[1rem] font-medium">
                 {t("googlePlatform")}
               </div>
             </div>
@@ -98,7 +98,7 @@ export default function Achievement() {
               src={r_leaf}
               loading="lazy"
               alt=""
-              className="absolute right-0 top-0 xl:w-[5.625rem] w-[5.2rem]"
+              className="absolute right-0 top-0 2xl:w-[5.625rem] w-[3.25rem]"
             />
           </div>
         </div>

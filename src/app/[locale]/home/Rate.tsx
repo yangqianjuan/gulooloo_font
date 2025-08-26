@@ -33,11 +33,11 @@ export default function Rate() {
     ];
   }, []);
   return (
-    <div className="xl:p-[5rem] sm:p-[4rem] px-[2.4rem] py-[6rem]">
-      <div className="xl:text-[4rem] font-semibold sm:text-[4.8rem] text-[2.4rem] text-center">
+    <div className="2xl:p-[5rem] sm:p-[2.5rem] p-[1.5rem]">
+      <div className="2xl:text-[4rem] font-semibold sm:text-[3rem] text-[1.5rem] text-center">
         {t("testimonialTitle")}
       </div>
-      <div className="xl:text-[1.5rem] xl:mb-[5rem] sm:text-[2rem] mb-[4rem] text-[1.5rem] text-center text-[rgba(4,30,84,0.48)]">
+      <div className="sm:text-[1.5rem] 2xl:mb-[5rem] text-[1.25rem] mb-[4rem]  text-center text-[rgba(4,30,84,0.48)]">
         {t("testimonialSubtitle")}
       </div>
       <div className="flex justify-between sm:flex-row flex-col">
@@ -47,10 +47,10 @@ export default function Rate() {
               className="flex flex-col justify-between sm:w-[32%] text-left xl:p-[2.5rem] bg-[rgba(245,248,252,1)] p-[2.4rem] mb-[2rem] xl:rounded-[24px] rounded-[16px]"
               key={d.title}
             >
-              <div className="mb-[1.6rem] text-[2rem] font-medium">
+              <div className="mb-[1.6rem] 2xl:text-[2rem] text-[1.25rem] font-medium">
                 {d.title}
               </div>
-              <div className="xl:text-[1.5rem]  mb-[2rem] text-[rgba(4,30,84,0.64)] text-[1.6rem]">
+              <div className="2xl:text-[1.5rem] text-[1rem]  2xl:mb-[1rem] mb-[0.5rem] text-[rgba(4,30,84,0.64)]">
                 {d.desc}
               </div>
               <div className="flex justify-between ">
@@ -59,11 +59,9 @@ export default function Rate() {
                     width={32}
                     src={d.user_img}
                     alt=""
-                    className="mr-[0.8rem]"
+                    className="2xl:mr-[0.8rem] mr-[0.25rem]"
                   ></Image>
-                  <span className="xl:ml-[0.12rem] ml-[0.16rem]">
-                    {d.user_name}
-                  </span>
+                  <span>{d.user_name}</span>
                 </div>
                 <div className="flex">
                   {Array.from({ length: d.star_num }, (_, i) => (
@@ -72,7 +70,7 @@ export default function Rate() {
                       alt=""
                       key={i}
                       width={24}
-                      className="ml-[0.32rem]"
+                      className="2xl:ml-[0.25rem] ml-[0.2rem]"
                     ></Image>
                   ))}
                 </div>

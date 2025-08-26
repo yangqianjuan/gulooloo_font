@@ -94,10 +94,10 @@ export default function Tool() {
   }, []);
   return (
     <div className="w-full text-center pt-[7.5rem]" id="appDesc">
-      <div className="font-semibold xl:text-[4.125rem] sm:text-[4.8rem] text-[2.4rem]">
+      <div className="font-semibold 2xl:text-[4.125rem] sm:text-[3rem] text-[1.5rem]">
         {t("productsMainTitle")}
       </div>
-      <div className="text-[rgba(4,30,84,0.48)] xl:text-[1.5rem] xl:mb-[5rem] sm:text-[2rem] sm:mb-[8rem] text-[1.5rem] mb-[4rem]">
+      <div className="text-[rgba(4,30,84,0.48)] 2xl:text-[1.5rem] sm:mb-[5rem] sm:text-[1.25rem]  text-[0.9375rem] mb-[3rem]">
         {t("productsSubtitle")}
       </div>
       {list.map((d) => {
@@ -109,41 +109,41 @@ export default function Tool() {
                 : d.direct === "flex-row"
                 ? "sm:flex-row"
                 : ""
-            } sm:justify-between  sm:mb-[7.5rem] sm:px-[7.5rem] text-left flex-col px-[2.4rem] items-center mb-[8.8rem]`}
+            } sm:justify-between text-left flex-col items-center  sm:mb-[7.5rem] 2xl:px-[7.5rem] sm:px-[3.75rem] px-[3.15rem]  mb-[6rem]`}
             key={d.textInfo.title}
           >
-            <div className="sm:px-[0rem] px-[2.5rem]">
+            <div>
               <Image
                 src={d.img}
-                className="xl:w-[43.25rem] sm:w-[43rem] w-full"
+                className="2xl:w-[43.25rem] sm:w-[26.875rem] w-full sm:mb-[0rem] mb-[2.5rem]"
                 alt=""
                 loading="lazy"
                 width={1384}
                 height={1560}
-                sizes="(max-width: 640px) 100vw, (max-width: 1280px) 43rem, 43.25rem"
+                sizes="(max-width: 640px) 100vw, (max-width: 1280px) 26.875, 43.25rem"
               />
             </div>
-            <div className="xl:w-[50rem] pt-[4rem] sm:w-[46rem] w-full sm:px-[0rem] px-[2.5rem]">
-              <div className="font-semibold sm:text-[4rem] sm:mb-[1.5rem] text-[2.2rem]">
+            <div className="2xl:w-[50rem] 2xl:pt-[7.37rem]  sm:w-[28.75rem] sm:pt-[2.5rem]  w-full sm:px-[0rem] px-[2.5rem]">
+              <div className="font-semibold 2xl:text-[4rem] sm:text-[2.5rem] 2xl:mb-[1.5rem] sm:mb-[1rem] mb-[0.5rem] text-[1.375rem]">
                 {d.textInfo.title}
               </div>
-              <div className="text-[rgba(4,30,84,1)] xl:text-[1.5rem] sm:mb-[2.5rem] sm:text-[2rem] mb-[1.6rem] text-[1.5rem]">
+              <div className="text-[rgba(4,30,84,1)] 2xl:text-[1.5rem] sm:text-[1.25rem] axl:mb-[2.5rem]  sm:mb-[1.6rem] mb-[1rem] text-[0.9735rem]">
                 {d.textInfo.desc}
               </div>
               <ul className="sm:mb-[8.75rem] mb-[4rem]">
                 {d.textInfo.items.map((item) => {
                   return (
                     <li
-                      className="flex items-center w-full mb-[1.6rem]"
+                      className="flex items-center w-full mb-[1rem]"
                       key={item}
                     >
                       <Image
                         src={ic}
                         alt=""
-                        className="xl:w-[1.5rem] w-[2.4rem] mr-[1.6rem]"
+                        className="w-[1.5rem] mr-[1.6rem]"
                         loading="lazy"
                       />
-                      <div className="xl:text-[1.5rem] sm:text-[2rem] text-[1.5rem] ">
+                      <div className="2xl:text-[1.5rem] sm:text-[1.25rem] text-[0.9375rem] ">
                         {item}
                       </div>
                     </li>
@@ -157,7 +157,7 @@ export default function Tool() {
                   onClick={() => {
                     toLink(d.link_ios);
                   }}
-                  className="xl:w-[10rem] xl:mr-[1.25rem] w-[13.5rem] mr-[2rem] transition-transform duration-300 hover:scale-110"
+                  className="2xl:w-[10.125rem] 2xl:mr-[1.5rem] w-[8.4375rem] mr-[1.25rem] transition-transform duration-300 hover:scale-110"
                 />
                 <Image
                   src={googleplay_download}
@@ -165,7 +165,7 @@ export default function Tool() {
                   onClick={() => {
                     toLink(d.link_android);
                   }}
-                  className="xl:w-[10rem] w-[13.5rem] transition-transform duration-300 hover:scale-110"
+                  className="2xl:w-[10.125rem] w-[8.4375rem] transition-transform duration-300 hover:scale-110"
                 />
               </div>
             </div>
