@@ -16,16 +16,18 @@ interface CardItemProps {
 function CardItem({ d }: { d: CardItemProps }) {
   const t = useTranslations("home");
   return (
-    <article className="sm:w-[32%] w-full text-left">
-      <Image
-        src={d.img}
-        alt={d.alt}
-        width={560}
-        height={360}
-        loading="lazy"
-        sizes="(min-width: 1024px) 32vw, 100vw"
-        className="w-full h-auto mb-[2rem] rounded-[1.6rem] transition-transform duration-300 hover:scale-110"
-      />
+    <article className="sm:w-[32%] w-full text-left ">
+      <div className="w-full h-auto rounded-[1.6rem] overflow-hidden mb-[2rem]">
+        <Image
+          src={d.img}
+          alt={d.alt}
+          width={560}
+          height={360}
+          loading="lazy"
+          sizes="(min-width: 1024px) 32vw, 100vw"
+          className="w-full h-auto   transition-transform duration-300 hover:scale-110"
+        />
+      </div>
       <div className="text-[2rem] font-medium text-[rgba(4,30,84,1)] mb-[1.6rem]">
         {d.title}
       </div>
