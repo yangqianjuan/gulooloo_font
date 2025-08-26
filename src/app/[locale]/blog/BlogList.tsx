@@ -99,19 +99,19 @@ export default function BlogList({ activeTab }: BlogListProps) {
             switchPath(item.row);
           }}
           key={item.row}
-          className=" bg-white shadow-[0_8px_24px_0_rgba(126,138,163,0.12)]  overflow-hidden xl:rounded-[1.5rem] xl:mb-[2.5rem] sm:w-[32%] rounded-[1rem] w-full mb-[2rem]"
+          className=" bg-white shadow-[0_8px_24px_0_rgba(126,138,163,0.12)]  overflow-hidden 2xl:rounded-[1.5rem] 2xl:mb-[2.5rem] sm:w-[32%] rounded-[1rem] w-full mb-[2rem]"
         >
           <Image
             src={images[item.row]}
             alt={"bussniess_01_view"}
             className="w-full"
           />
-          <div className="xl:px-[2.5rem] xl:py-[2.5rem] px-[1.5rem] pb-[1.5rem] pt-[1.25rem]">
-            <div className="xl:mb-[2.5rem] mb-[1.25rem]">
-              <h3 className="text-[rgba(4,30,84,1)] font-medium xl:text-[2rem] xl:mb-[2rem] text-[1.25rem] mb-[1rem]">
+          <div className="2xl:px-[2.5rem] 2xl:py-[2.5rem] px-[1.5rem] pb-[1.5rem] pt-[1.25rem]">
+            <div className="2xl:mb-[2.5rem] mb-[1.25rem]">
+              <h3 className="text-[rgba(4,30,84,1)] font-medium 2xl:text-[2rem] 2xl:mb-[2rem] text-[1.25rem] mb-[1rem]">
                 {t(`article${item.row}Title`)}
               </h3>
-              <p className="text-[rgba(4,30,84,0.64)] xl:text-[1.5rem] text-[1rem]">
+              <p className="text-[rgba(4,30,84,0.64)] 2xl:text-[1.5rem] text-[1rem]">
                 {t(`article${item.row}MetaDesc`)}
               </p>
             </div>
