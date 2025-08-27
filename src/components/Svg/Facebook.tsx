@@ -1,0 +1,34 @@
+// components/icons/Facebook.tsx
+import { FC, SVGProps } from "react";
+
+interface IconProps extends SVGProps<SVGSVGElement> {
+  className?: string; // 支持 Tailwind 类
+  hoverColor?: string; // 可选 hover 颜色
+}
+
+const Facebook: FC<IconProps> = ({
+  className = "",
+  hoverColor = "#22c55e",
+}) => {
+  return (
+    <svg
+      width="48"
+      height="48"
+      viewBox="0 0 48 48"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={`transition-colors duration-300 ${className}`}
+    >
+      <path
+        d="M48 24C48 37.2551 37.2551 48 24 48C10.7449 48 0 37.2551 0 24C0 10.7449 10.7449 0 24 0C37.2551 0 48 10.7449 48 24Z"
+        fill="currentColor"
+      />
+      <path
+        d="M31.1113 22.1364L30.7114 25.3472C30.6438 25.8836 30.1896 26.287 29.6508 26.287H24.4505V39.7112C23.9021 39.7608 23.3464 39.7861 22.7847 39.7861C21.5284 39.7861 20.3023 39.6605 19.1173 39.4213V26.287H15.1177C14.7505 26.287 14.4509 25.9863 14.4509 25.6178V21.6001C14.4509 21.2317 14.7505 20.9309 15.1177 20.9309H19.1173V14.9055C19.1173 11.2079 22.1022 8.21094 25.7853 8.21094H30.4517C30.819 8.21094 31.1185 8.51172 31.1185 8.88015V12.8979C31.1185 13.2663 30.819 13.5671 30.4517 13.5671H27.1177C25.6452 13.5671 24.4517 14.7654 24.4517 16.2452V20.9321H30.0519C30.6945 20.9321 31.191 21.4974 31.1125 22.1377L31.1113 22.1364Z"
+        fill="white"
+      />
+    </svg>
+  );
+};
+
+export default Facebook;

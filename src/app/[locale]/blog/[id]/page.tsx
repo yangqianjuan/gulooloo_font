@@ -3,14 +3,14 @@ import Header from "@/components/Header";
 import { ArrowLeft } from "lucide-react";
 import dynamic_ from "next/dynamic";
 import ic_dot from "@/assets/blog/ic_dot.svg";
-import twitter from "@/assets/blog/twitter.svg";
-import facebook_icon from "@/assets/blog/facebook.svg";
-import linke_icon from "@/assets/blog/linke.svg";
-import link_icon from "@/assets/blog/link.svg";
+import Twitter from "@/components/Svg/Twitter";
+import Facebook from "@/components/Svg/Facebook";
+import Link from "@/components/Svg/Link";
+import Linke from "@/components/Svg/Linke";
 import { useTranslations } from "next-intl";
 import Image, { StaticImageData } from "next/image";
 import images from "./image";
-import { useMemo, useEffect, useState } from "react";
+import { useMemo, useEffect, useState, ReactNode } from "react";
 import { useParams } from "next/navigation";
 import productivity_01_detail from "@/assets/blog/productivity_01_detail/productivity_01_detail_2x.webp";
 import { useMemoizedFn } from "ahooks";
@@ -105,31 +105,44 @@ export default function BlogDetail() {
       ?.setAttribute("content", t("metaDescriptionBlog"));
   }, [t]);
   type LinkItem = {
-    img: StaticImageData;
+    img: ReactNode;
     link: string;
     isCopy: boolean;
   };
   const link_list: LinkItem[] = useMemo(() => {
     const herf = window?.location?.href;
+
     return [
       {
-        img: twitter,
+        img: (
+          <Twitter className="hover:text-[rgba(0,0,0,1)] mr-[1.5rem] 2xl:w-[3rem]  sm:w-[2.5rem]  w-[2.25rem]" />
+        ),
         link: `https://twitter.com/intent/tweet?text=${t(
           `article${id}Title`
         )}&url=${herf}`,
         isCopy: false,
       },
       {
-        img: facebook_icon,
+        img: (
+          <Facebook className="hover:text-[rgba(8,102,255,1)] mr-[1.5rem] 2xl:w-[3rem]  sm:w-[2.5rem]  w-[2.25rem]" />
+        ),
         link: `https://www.facebook.com/sharer/sharer.php?u=${herf}`,
         isCopy: false,
       },
       {
-        img: linke_icon,
+        img: (
+          <Linke className="hover:text-[rgba(10,102,194,1)] mr-[1.5rem] 2xl:w-[3rem]  sm:w-[2.5rem]  w-[2.25rem]" />
+        ),
         link: `https://www.linkedin.com/sharing/share-offsite/?url=${herf}`,
         isCopy: false,
       },
-      { img: link_icon, link: herf, isCopy: true },
+      {
+        img: (
+          <Link className="hover:text-[rgba(0,204,145,1)] 2xl:w-[3rem]  sm:w-[2.5rem]  w-[2.25rem]" />
+        ),
+        link: herf,
+        isCopy: true,
+      },
     ];
   }, [t, id, window]);
 
@@ -206,28 +219,19 @@ export default function BlogDetail() {
               </div>
               <div className="flex relative">
                 {link_list.map((item, i) => {
+                  const IconComp = item.img;
                   if (item.isCopy) {
                     return (
                       <div key={i} className="flex items-center justify-center">
                         <CopyPopover
                           text={t("articleCopied")}
-                          label={item.img}
+                          label={IconComp}
                           url={item.link}
                         />
                       </div>
                     );
                   } else {
-                    return (
-                      <Image
-                        key={i}
-                        src={item.img}
-                        alt=""
-                        onClick={() => {
-                          handle_link(item);
-                        }}
-                        className="mr-[1.5rem] 2xl:w-[3rem] 2xl:h-[3rem] sm:w-[2.5rem] sm:h-[2.5rem] w-[2.25rem] h-[2.25rem]"
-                      />
-                    );
+                    return <span key={i}>{IconComp}</span>;
                   }
                 })}
               </div>

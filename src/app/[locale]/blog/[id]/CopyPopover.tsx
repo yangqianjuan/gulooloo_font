@@ -1,12 +1,13 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, ReactNode } from "react";
 import ic_success from "@/assets/blog/ic_success.svg";
 import Image, { StaticImageData } from "next/image";
+import Link from "@/components/Svg/Link";
 
 interface CopyPopoverProps {
   url: string; // 需要复制的文字
-  label: StaticImageData; // 按钮文案
+  label: ReactNode; // 按钮文案
   text: string;
 }
 
@@ -51,15 +52,8 @@ export default function CopyPopover({ url, text, label }: CopyPopoverProps) {
       )}
 
       {/* 复制按钮 */}
-      <button
-        onClick={copyToClipboard}
-        className="rounded-lg text-white transition"
-      >
-        <Image
-          src={label}
-          alt=""
-          className="2xl:w-[3rem] 2xl:h-[3rem] sm:w-[2.5rem] sm:h-[2.5rem]  w-[2.25rem] h-[2.25rem]"
-        />
+      <button onClick={copyToClipboard} className="rounded-lg transition">
+        {label}
       </button>
     </div>
   );
