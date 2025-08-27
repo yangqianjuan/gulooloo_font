@@ -231,7 +231,11 @@ export default function BlogDetail() {
                       </div>
                     );
                   } else {
-                    return <span key={i}>{IconComp}</span>;
+                    return (
+                      <span key={i} onClick={() => handle_link(item)}>
+                        {IconComp}
+                      </span>
+                    );
                   }
                 })}
               </div>
