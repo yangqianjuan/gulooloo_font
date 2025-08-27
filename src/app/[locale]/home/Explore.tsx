@@ -31,7 +31,7 @@ export default function Explore() {
           {t("ctaSectionTitle")}
         </div>
         <div
-          className="absolute bottom-[2.25rem] left-1/2 transform -translate-x-1/2  w-[10.125rem] h-[2.75rem] rounded-full bg-[rgba(0,204,145,1)]  flex items-center justify-center text-white text-[1rem] hover:bg-[rgba(82,220,180,1)] transition-transform duration-300 hover:scale-110"
+          className="absolute bottom-[2.25rem] left-1/2 transform -translate-x-1/2  w-[10.125rem] h-[2.75rem] rounded-full bg-[rgba(0,204,145,1)]  flex items-center justify-center text-white text-[1rem] hover:bg-[rgba(16,185,129,1)] transition-transform duration-300 hover:scale-110"
           onClick={toStart}
         >
           {t("ctaButton")}
@@ -45,7 +45,7 @@ export default function Explore() {
           {t("ctaSectionSubtitle")}
         </div>
         <div
-          className="2xl:w-[19rem] 2xl:h-[4.5rem] w-[16.75rem] h-[4rem] rounded-full bg-[rgba(0,204,145,1)]  flex items-center justify-center text-white text-[24px] hover:bg-[rgba(82,220,180,1)] transition-transform duration-300 hover:scale-110"
+          className="2xl:w-[19rem] 2xl:h-[4.5rem] w-[16.75rem] h-[4rem] rounded-full bg-[rgba(0,204,145,1)]  flex items-center justify-center text-white text-[24px] hover:bg-[rgba(16,185,129,1)] transition-transform duration-300 hover:scale-110"
           onClick={toStart}
         >
           {t("ctaButton")}

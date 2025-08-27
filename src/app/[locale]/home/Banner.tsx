@@ -17,7 +17,7 @@ export default function Banner() {
           {t("heroSubtitle")}
         </div>
         <a href="#appDesc">
-          <div className="2xl:text-[1.5rem] 2xl:w-[19rem] 2xl:h-[4.5rem] w-[17.875rem] h-[4.125rem] text-[1.375rem]  rounded-full bg-[rgba(0,204,145,1)] hover:bg-[rgba(82,220,180,1)] transition-transform duration-300 hover:scale-110 flex items-center justify-center text-white ">
+          <div className="2xl:text-[1.5rem] 2xl:w-[19rem] 2xl:h-[4.5rem] w-[17.875rem] h-[4.125rem] text-[1.375rem]  rounded-full bg-[rgba(0,204,145,1)] hover:bg-[rgba(16,185,129,1)] transition-transform duration-300 hover:scale-110 flex items-center justify-center text-white ">
             {t("heroCta")}
           </div>
         </a>
