@@ -118,6 +118,7 @@ export default function Footer() {
                       return (
                         <div>
                           <Link
+                            key={item.key}
                             className="hover:text-[rgba(4,30,84,1)]"
                             href={item.href ?? "#"}
                           >
