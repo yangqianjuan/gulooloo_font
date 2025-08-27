@@ -8,7 +8,7 @@ export default function Banner() {
   return (
     <div className="relative w-full">
       <div className="hidden sm:block absolute top-0 left-0 2xl:w-[68rem] 2xl:ml-[7.5rem] 2xl:mt-[11.25rem] sm:w-[42.5rem]  sm:mt-[5.63rem] sm:ml-[3.75rem]">
-        <div className="font-bold  2xl:text-[5.5rem] 2xl:mb-[2.5rem] sm:text-[3.5] sm:mb-[1rem] mb-[1.6rem] text-[1.875rem]">
+        <div className="font-bold  2xl:text-[5.5rem] 2xl:mb-[2.5rem] sm:text-[3.5rem] sm:mb-[1rem] mb-[1.6rem] text-[1.875rem]">
           {t("primarySlogan")}
           <br />
           {t("secondarySlogan")}
