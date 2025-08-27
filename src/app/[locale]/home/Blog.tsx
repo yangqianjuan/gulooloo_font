@@ -37,7 +37,7 @@ function CardItem({ d }: { d: CardItemProps }) {
         </div>
         <div className="font-medium text-[rgba(0,204,145,1)] hover:text-[rgba(82,220,180,1)] flex items-center 2xl:text-[1.5rem] text-[1rem] ">
           <span className="mr-[0.5rem]">{t("readMoreBtn")}</span>
-          <ArrowRight className="2xl:w-[1.5rem] w-[1rem]" />
+          <ArrowRight className="w-[1.5rem]" />
         </div>
       </div>
     </article>

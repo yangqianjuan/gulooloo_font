@@ -2,17 +2,13 @@ import Image from "next/image";
 import explore from "@/assets/about/contact_us_bg/contact_us_bg_3x.webp";
 import explore_m from "@/assets/about/contact_us_mobile_bg/contact_us_mobile_bg_3x.webp";
 import { useTranslations } from "next-intl";
-import {
-  detectDeviceType,
-  iosLink,
-  andoridLink,
-  otherlink,
-} from "@/utils/index";
 import { useMemoizedFn } from "ahooks";
 
 export default function Explore() {
   const t = useTranslations("about");
-  const toStart = useMemoizedFn(() => {});
+  const toStart = useMemoizedFn(() => {
+    window.location.href = "mailto:support@guloolootech.com";
+  });
   return (
     <div className="relative 2xl:px-[5rem] 2xl:py-[7.5rem] sm:px-[2.5rem] sm:py-[5rem] px-[1.5rem] py-[2.5rem] text-[#fff]">
       <div className=" absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2  text-center">

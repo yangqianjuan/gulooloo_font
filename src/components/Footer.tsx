@@ -2,6 +2,7 @@ import Image from "next/image";
 import logo from "@/assets/icon/logo_text.svg";
 import { useMemo, useState } from "react";
 import { useTranslations, useLocale } from "next-intl";
+import Link from "next/link";
 import Appstore_download_hover from "@/assets/icon/Appstore_download_hover.svg";
 import GooglePlay from "@/components/Svg/GooglePlay";
 import AppStore from "@/components/Svg/AppStore";
@@ -55,14 +56,17 @@ export default function Footer() {
           {
             key: t("footerAboutUs"),
             label: t("footerAboutUs"),
+            href: "/about",
           },
           {
             key: t("footerResource"),
             label: t("footerResource"),
+            href: "/blog",
           },
           {
             key: t("footerContactUs"),
             label: t("footerContactUs"),
+            href: "mailto:support@guloolootech.com",
           },
         ],
       },
@@ -112,12 +116,23 @@ export default function Footer() {
                   <div className="2xl:text-[1.25rem] text-[1.125rem] font-medium sm:block hidden">
                     {d.children.map((item) => {
                       return (
-                        <div
-                          key={item.key}
-                          className="hover:text-[rgba(4,30,84,1)]"
-                        >
-                          {item.key}
+                        <div>
+                          <Link
+                            className="hover:text-[rgba(4,30,84,1)]"
+                            href={item.href ?? "#"}
+                          >
+                            {item.key}
+                          </Link>
                         </div>
+                        // <div
+                        //   key={item.key}
+                        //   className="hover:text-[rgba(4,30,84,1)]"
+                        //   onClick={() => {
+                        //     toLink(item?.href);
+                        //   }}
+                        // >
+                        //   {item.key}
+                        // </div>
                       );
                     })}
                   </div>
