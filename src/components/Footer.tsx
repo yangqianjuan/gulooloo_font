@@ -2,9 +2,9 @@ import Image from "next/image";
 import logo from "@/assets/icon/logo_text.svg";
 import { useMemo, useState } from "react";
 import { useTranslations, useLocale } from "next-intl";
-import Appstore_download from "@/assets/icon/Appstore_download.svg";
 import Appstore_download_hover from "@/assets/icon/Appstore_download_hover.svg";
-import googleplay_download from "@/assets/icon/googleplay_download.svg";
+import GooglePlay from "@/components/Svg/GooglePlay";
+import AppStore from "@/components/Svg/AppStore";
 import googleplay_download_hover from "@/assets/icon/googleplay_download_hover.svg";
 import MenuItemWithSubmenu from "@/components/MobileMenu/ MenuItemWithSubmenu";
 import { iosLink, andoridLink } from "@/utils/index";
@@ -70,13 +70,17 @@ export default function Footer() {
         label: t("footerDownloadTitle"),
         imgs: [
           {
-            src: Appstore_download,
+            src: (
+              <AppStore className="text-[rgba(0,0,0,1)] hover:text-[rgba(4,30,84,1)] w-[8.42rem] mb-[1.25rem] mr-[2rem] transition-transform duration-300 hover:scale-110" />
+            ),
             hoverSrc: Appstore_download_hover,
             link: iosLink,
             alt: t("appstore_download_alt"),
           },
           {
-            src: googleplay_download,
+            src: (
+              <GooglePlay className="text-[rgba(0,0,0,1)] hover:text-[rgba(4,30,84,1)] w-[8.42rem] mb-[1.25rem] mr-[2rem] transition-transform duration-300 hover:scale-110" />
+            ),
             hoverSrc: googleplay_download_hover,
             link: andoridLink,
             alt: t("googleplay_download_alt"),
@@ -137,15 +141,19 @@ export default function Footer() {
                   <div className="sm:block flex">
                     {d.imgs.map((item) => {
                       return (
-                        <Image
-                          key={item.alt}
-                          src={item.src}
-                          alt={item.alt}
-                          onClick={() => {
-                            toAPPStore(item.link);
-                          }}
-                          className="w-[8.42rem] mb-[1.25rem] mr-[2rem] transition-transform duration-300 hover:scale-110"
-                        />
+                        <div onClick={() => toAPPStore(item.link)}>
+                          {item.src}
+                        </div>
+
+                        // <Image
+                        //   key={item.alt}
+                        //   src={item.src}
+                        //   alt={item.alt}
+                        //   onClick={() => {
+                        //     toAPPStore(item.link);
+                        //   }}
+                        //   className="w-[8.42rem] mb-[1.25rem] mr-[2rem] transition-transform duration-300 hover:scale-110"
+                        // />
                       );
                     })}
                   </div>

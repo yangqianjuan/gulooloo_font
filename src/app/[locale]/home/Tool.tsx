@@ -4,8 +4,8 @@ import apps_invoice_pic from "@/assets/App_image/apps_invoice_pic/apps_invoice_p
 import apps_gofasting from "@/assets/App_image/apps_gofasting_pic/apps_gofasting_pic_2x.webp";
 import apps_ar_pic from "@/assets/App_image/apps_ar_pic/apps_ar_pic_2x.webp";
 import ic from "@/assets/icon/ic.svg";
-import Appstore_download from "@/assets/icon/Appstore_download.svg";
-import googleplay_download from "@/assets/icon/googleplay_download.svg";
+import GooglePlay from "@/components/Svg/GooglePlay";
+import AppStore from "@/components/Svg/AppStore";
 import {
   iosLink_easy_notes,
   iosLink_go_fasting,
@@ -151,22 +151,36 @@ export default function Tool() {
                 })}
               </ul>
               <div className="flex">
-                <Image
+                <span
+                  onClick={() => {
+                    toLink(d.link_ios);
+                  }}
+                >
+                  <AppStore className="text-[rgba(0,0,0,1)] hover:text-[rgba(4,30,84,1)] 2xl:w-[10.125rem] 2xl:mr-[1.5rem] w-[8.4375rem] mr-[1.25rem] transition-transform duration-300 hover:scale-110" />
+                </span>
+                <span
+                  onClick={() => {
+                    toLink(d.link_android);
+                  }}
+                >
+                  <GooglePlay className="text-[rgba(0,0,0,1)] hover:text-[rgba(4,30,84,1)] 2xl:w-[10.125rem] 2xl:mr-[1.5rem] w-[8.4375rem] mr-[1.25rem] transition-transform duration-300 hover:scale-110" />
+                </span>
+                {/* <Image
                   src={Appstore_download}
                   alt={t("appstore_download_alt")}
                   onClick={() => {
                     toLink(d.link_ios);
                   }}
                   className="2xl:w-[10.125rem] 2xl:mr-[1.5rem] w-[8.4375rem] mr-[1.25rem] transition-transform duration-300 hover:scale-110"
-                />
-                <Image
+                /> */}
+                {/* <Image
                   src={googleplay_download}
                   alt={t("googleplay_download_alt")}
                   onClick={() => {
                     toLink(d.link_android);
                   }}
                   className="2xl:w-[10.125rem] w-[8.4375rem] transition-transform duration-300 hover:scale-110"
-                />
+                /> */}
               </div>
             </div>
           </div>
