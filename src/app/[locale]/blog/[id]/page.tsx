@@ -10,11 +10,12 @@ import link_icon from "@/assets/blog/link.svg";
 import { useTranslations } from "next-intl";
 import Image, { StaticImageData } from "next/image";
 import images from "./image";
-import { useMemo, useEffect } from "react";
+import { useMemo, useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import productivity_01_detail from "@/assets/blog/productivity_01_detail/productivity_01_detail_2x.webp";
 import { useMemoizedFn } from "ahooks";
 import { useRouter } from "next/navigation";
+import CopyPopover from "./CopyPopover";
 
 type PageProps = {
   params: {
@@ -30,7 +31,7 @@ const BackButton = ({ text = "Back to Blog", BackToBlog = () => {} }) => (
     onClick={BackToBlog}
     className="font-medium text-[rgba(0,204,145,1)] hover:text-[rgba(82,220,180,1)] flex items-center text-[1.6rem] cursor-pointer"
   >
-    <ArrowLeft width={24} />
+    <ArrowLeft className="2xl:w-[2rem] sm:w-[1.875rem] w-[1.5rem]" />
     <span className="ml-2">{text}</span>
   </div>
 );
@@ -103,6 +104,38 @@ export default function BlogDetail() {
       .querySelector('meta[name="description"]')
       ?.setAttribute("content", t("metaDescriptionBlog"));
   }, [t]);
+  type LinkItem = {
+    img: StaticImageData;
+    link: string;
+    isCopy: boolean;
+  };
+  const link_list: LinkItem[] = useMemo(() => {
+    const herf = window?.location?.href;
+    return [
+      {
+        img: twitter,
+        link: `https://twitter.com/intent/tweet?text=${t(
+          `article${id}Title`
+        )}&url=${herf}`,
+        isCopy: false,
+      },
+      {
+        img: facebook_icon,
+        link: `https://www.facebook.com/sharer/sharer.php?u=${herf}`,
+        isCopy: false,
+      },
+      {
+        img: linke_icon,
+        link: `https://www.linkedin.com/sharing/share-offsite/?url=${herf}`,
+        isCopy: false,
+      },
+      { img: link_icon, link: herf, isCopy: true },
+    ];
+  }, [t, id, window]);
+
+  const handle_link = useMemoizedFn((item: LinkItem) => {
+    window.open(`${item.link}`, "_blank");
+  });
 
   return (
     <div className="grid grid-rows-[auto_1fr_auto] justify-items-center min-h-screen max-w-[1920px] mx-auto sm:min-w-[1080px]">
@@ -166,17 +199,37 @@ export default function BlogDetail() {
           </div>
 
           {/* 底部分享 */}
-          <div className="2xl:pt-[5rem] border-t border-[rgba(4,30,84,0.08)]">
+          <div className="2xl:pt-[5rem] sm:pt-[3.75rem] pt-[2.5rem] border-t border-[rgba(4,30,84,0.08)]">
             <div className="flex justify-between 2xl:mb-[7.5rem] sm:mb-[3.75rem] mb-[2.5rem]">
               <div className="font-semibold 2xl:text-[2rem] sm:text-[1.75rem] text-[1.25rem]">
                 {t(`articleShared`)}
               </div>
-              <div className="flex">
-                {[twitter, facebook_icon, linke_icon, link_icon].map(
-                  (icon, i) => (
-                    <Image key={i} src={icon} alt="" className="ml-[1.5rem]" />
-                  )
-                )}
+              <div className="flex relative">
+                {link_list.map((item, i) => {
+                  if (item.isCopy) {
+                    return (
+                      <div className="flex h-screen items-center justify-center">
+                        <CopyPopover
+                          text={t("articleCopied")}
+                          label={item.img}
+                          url={item.link}
+                        />
+                      </div>
+                    );
+                  } else {
+                    return (
+                      <Image
+                        key={i}
+                        src={item.img}
+                        alt=""
+                        onClick={() => {
+                          handle_link(item);
+                        }}
+                        className="mr-[1.5rem] 2xl:w-[3rem] 2xl:h-[3rem] sm:w-[2.5rem] sm:h-[2.5rem] w-[2.25rem] h-[2.25rem]"
+                      />
+                    );
+                  }
+                })}
               </div>
             </div>
             <BackButton text={t("blogBack")} BackToBlog={BackToBlog} />
