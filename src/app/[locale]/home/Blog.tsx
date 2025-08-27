@@ -16,8 +16,8 @@ interface CardItemProps {
 function CardItem({ d }: { d: CardItemProps }) {
   const t = useTranslations("home");
   return (
-    <article className="sm:w-[32%] w-full text-left ">
-      <div className="w-full h-auto 2xl:rounded-[1.5rem] rounded-[1rem] overflow-hidden 2xl:mb-[2.5rem] mb-[1.25rem]">
+    <article className="shadow-[0_8px_24px_rgba(126,138,163,0.12)] bg-white sm:w-[32%] w-full text-left 2xl:rounded-[1.5rem] rounded-[1rem]">
+      <div className="w-full h-auto  overflow-hidden 2xl:rounded-t-[1.5rem] rounded-t-[1rem]">
         <Image
           src={d.img}
           alt={d.alt}
@@ -25,18 +25,20 @@ function CardItem({ d }: { d: CardItemProps }) {
           height={360}
           loading="lazy"
           sizes="(min-width: 1024px) 32vw, 100vw"
-          className="w-full h-auto   transition-transform duration-300 hover:scale-110"
+          className="w-full h-auto  transition-transform duration-300 hover:scale-110"
         />
       </div>
-      <div className="2xl:text-[2rem] text-[1.25rem] font-medium text-[rgba(4,30,84,1)] 2xl:mb-[2rem] mb-[1rem]">
-        {d.title}
-      </div>
-      <div className="2xl:text-[1.5rem] text-[1rem] text-[rgba(4,30,84,0.64)] 2xl:mb-[2rem] mb-[1.25rem]">
-        {d.desc}
-      </div>
-      <div className="font-medium text-[rgba(0,204,145,1)] hover:text-[rgba(82,220,180,1)] flex items-center 2xl:text-[1.5rem] text-[1rem] 2xl:mb-[2.5rem] mb-[1.5rem]">
-        <span className="mr-[0.5rem]">{t("readMoreBtn")}</span>
-        <ArrowRight className="2xl:w-[1.5rem] w-[1rem]" />
+      <div className="2xl:p-[2.5rem] px-[1.5rem] py-[1.25rem] ">
+        <div className="2xl:text-[2rem] text-[1.25rem] font-medium text-[rgba(4,30,84,1)] 2xl:mb-[2rem] mb-[1rem]">
+          {d.title}
+        </div>
+        <div className="2xl:text-[1.5rem] text-[1rem] text-[rgba(4,30,84,0.64)] 2xl:mb-[2.5rem] mb-[1.25rem]">
+          {d.desc}
+        </div>
+        <div className="font-medium text-[rgba(0,204,145,1)] hover:text-[rgba(82,220,180,1)] flex items-center 2xl:text-[1.5rem] text-[1rem] ">
+          <span className="mr-[0.5rem]">{t("readMoreBtn")}</span>
+          <ArrowRight className="2xl:w-[1.5rem] w-[1rem]" />
+        </div>
       </div>
     </article>
   );
@@ -66,7 +68,7 @@ export default function Blog() {
     ];
   }, []);
   return (
-    <div className="bg-[rgba(246,254,255,1)] 2xl:p-[5rem] sm:p-[2.5rem]  p-[1.5rem]">
+    <div className=" 2xl:p-[5rem] sm:p-[2.5rem]  p-[1.5rem]">
       <div className="2xl:text-[4rem] font-semibold sm:text-[3rem] text-[1.5rem] text-center">
         {t("blogSectionTitle")}
       </div>

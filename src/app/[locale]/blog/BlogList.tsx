@@ -102,12 +102,18 @@ export default function BlogList({ activeTab }: BlogListProps) {
           key={item.row}
           className=" bg-white shadow-[0_8px_24px_0_rgba(126,138,163,0.12)]  overflow-hidden 2xl:rounded-[1.5rem] 2xl:mb-[2.5rem] sm:w-[32%] rounded-[1rem] w-full mb-[2rem]"
         >
-          <Image
-            src={images[item.row]}
-            alt={"bussniess_01_view"}
-            className="w-full"
-          />
-          <div className="2xl:px-[2.5rem] 2xl:py-[2.5rem] px-[1.5rem] pb-[1.5rem] pt-[1.25rem]">
+          <div className="w-full h-auto  overflow-hidden 2xl:rounded-t-[1.5rem] rounded-t-[1rem]">
+            <Image
+              src={images[item.row]}
+              alt={"bussniess_01_view"}
+              width={560}
+              height={360}
+              loading="lazy"
+              sizes="(min-width: 1024px) 32vw, 100vw"
+              className="w-full h-auto  transition-transform duration-300 hover:scale-110"
+            />
+          </div>
+          <div className="2xl:p-[2.5rem] px-[1.5rem] pb-[1.5rem] pt-[1.25rem]">
             <div className="2xl:mb-[2.5rem] mb-[1.25rem]">
               <h3 className="text-[rgba(4,30,84,1)] font-medium 2xl:text-[2rem] 2xl:mb-[2rem] text-[1.25rem] mb-[1rem]">
                 {t(`article${item.row}Title`)}
@@ -116,7 +122,7 @@ export default function BlogList({ activeTab }: BlogListProps) {
                 {t(`article${item.row}MetaDesc`)}
               </p>
             </div>
-            <div className="font-medium text-[rgba(0,204,145,1)] hover:text-[rgba(82,220,180,1)] flex items-center 2xl:text-[1.5rem] text-[1rem] 2xl:mb-[2.5rem] mb-[1.5rem]">
+            <div className="font-medium text-[rgba(0,204,145,1)] hover:text-[rgba(82,220,180,1)] flex items-center 2xl:text-[1.5rem] text-[1rem] ">
               <span className="mr-[0.5rem]">{tc("readMoreBtn")}</span>
               <ArrowRight className="2xl:w-[1.5rem] w-[1rem]" />
             </div>

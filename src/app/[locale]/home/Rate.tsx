@@ -44,7 +44,7 @@ export default function Rate() {
         {list.map((d) => {
           return (
             <div
-              className="flex flex-col justify-between sm:w-[32%] text-left xl:p-[2.5rem] bg-[rgba(245,248,252,1)] p-[2.4rem] mb-[2rem] xl:rounded-[24px] rounded-[16px]"
+              className="flex flex-col justify-between shadow-[0_8px_24px_rgba(126,138,163,0.12)] bg-white sm:w-[32%] text-left xl:p-[2.5rem]  p-[2.4rem] mb-[2rem] xl:rounded-[24px] rounded-[16px]"
               key={d.title}
             >
               <div className="mb-[1.6rem] 2xl:text-[2rem] text-[1.25rem] font-medium">
