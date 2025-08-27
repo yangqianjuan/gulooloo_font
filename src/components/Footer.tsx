@@ -116,9 +116,8 @@ export default function Footer() {
                   <div className="2xl:text-[1.25rem] text-[1.125rem] font-medium sm:block hidden">
                     {d.children.map((item) => {
                       return (
-                        <div>
+                        <div key={item.key}>
                           <Link
-                            key={item.key}
                             className="hover:text-[rgba(4,30,84,1)]"
                             href={item.href ?? "#"}
                           >
