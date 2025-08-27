@@ -10,7 +10,7 @@ import link_icon from "@/assets/blog/link.svg";
 import { useTranslations } from "next-intl";
 import Image, { StaticImageData } from "next/image";
 import images from "./image";
-import { useMemo } from "react";
+import { useMemo, useEffect } from "react";
 import { useParams } from "next/navigation";
 import productivity_01_detail from "@/assets/blog/productivity_01_detail/productivity_01_detail_2x.webp";
 import { useMemoizedFn } from "ahooks";
@@ -97,6 +97,12 @@ export default function BlogDetail() {
   const BackToBlog = useMemoizedFn(() => {
     router.push(`/${locale}/blog`);
   });
+  useEffect(() => {
+    document.title = t("metaTitleBlog");
+    document
+      .querySelector('meta[name="description"]')
+      ?.setAttribute("content", t("metaDescriptionBlog"));
+  }, [t]);
 
   return (
     <div className="grid grid-rows-[auto_1fr_auto] justify-items-center min-h-screen max-w-[1920px] mx-auto sm:min-w-[1080px]">

@@ -1,4 +1,5 @@
 "use client";
+import { useEffect } from "react";
 import Header from "@/components/Header";
 import Banner from "./Banner";
 import Team from "./Team";
@@ -8,6 +9,12 @@ const ContactAs = dynamic_(() => import("./ContactAs"), { ssr: false });
 const Footer = dynamic_(() => import("@/components/Footer"), { ssr: false });
 export default function AboutPage() {
   const t = useTranslations("about");
+  useEffect(() => {
+    document.title = t("metaTitleAbout");
+    document
+      .querySelector('meta[name="description"]')
+      ?.setAttribute("content", t("metaDescriptionAbout"));
+  }, [t]);
   return (
     <div className="grid grid-rows-[auto_1fr_auto] justify-items-center min-h-screen max-w-[1920px] mx-auto sm:min-w-[1080px]">
       <Header />
