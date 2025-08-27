@@ -157,7 +157,10 @@ export default function Footer() {
                   <div className="sm:block flex">
                     {d.imgs.map((item) => {
                       return (
-                        <div onClick={() => toAPPStore(item.link)}>
+                        <div
+                          key={item.link}
+                          onClick={() => toAPPStore(item.link)}
+                        >
                           {item.src}
                         </div>
 
