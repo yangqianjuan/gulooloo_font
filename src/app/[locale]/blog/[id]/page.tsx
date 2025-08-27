@@ -208,7 +208,7 @@ export default function BlogDetail() {
                 {link_list.map((item, i) => {
                   if (item.isCopy) {
                     return (
-                      <div className="flex h-screen items-center justify-center">
+                      <div key={i} className="flex items-center justify-center">
                         <CopyPopover
                           text={t("articleCopied")}
                           label={item.img}
