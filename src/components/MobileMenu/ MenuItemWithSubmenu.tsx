@@ -33,11 +33,11 @@ const MenuItemWithSubmenu: React.FC<Props> = ({
       {isOpen ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
     </button>
     {isOpen && (
-      <ul className="ml-4 mt-2  text-base text-gray-700 pb-[5.4rem]">
+      <ul className="ml-4 mt-2  text-base text-gray-700 mb-[2rem]">
         {item.children?.map((child) => (
           <li
             key={child.key}
-            className="sm:text-[rgba(4,30,84,1)] text-[rgba(4,30,84,0.32)] hover:text-[rgba(4,30,84,1)] 2xl:text-[1.25rem] sm:text-[1.125rem] text-[1rem] mt-[2.4rem]"
+            className="sm:text-[rgba(4,30,84,1)] text-[rgba(4,30,84,0.32)] hover:text-[rgba(4,30,84,1)] 2xl:text-[1.25rem] sm:text-[1.125rem] text-[1rem] mt-[1.5rem]"
           >
             <Link href={child.href ?? "#"} onClick={onClose}>
               {child.label}

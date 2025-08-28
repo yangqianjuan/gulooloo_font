@@ -97,9 +97,9 @@ export default function Footer() {
     ];
   }, [t]);
   return (
-    <footer className="text-[rgba(4,30,84,0.64)]   w-full xl:px-[5rem] xl:pt-[5rem] bg-[rgba(246,254,255,1)] px-[1.5rem] pt-[2.5rem]">
-      <div className="flex flex-wrap sm:justify-between pb-[3.75rem]">
-        <div className="lg:w-[31.25rem]  w-full mb-[3.2rem]">
+    <footer className="text-[rgba(4,30,84,0.64)]   w-full xl:px-[5rem] 2xl:pt-[4.44rem] sm:pt-[3.75rem] bg-[rgba(246,254,255,1)] px-[1.5rem] pt-[2.5rem]">
+      <div className="flex flex-wrap sm:justify-between 2xl:pb-[3.75rem] sm:pb-[2.5rem] pb-[2rem]">
+        <div className="2xl:w-[31.25rem] sm:w-[20rem]  w-full sm:mb-[0rem] mb-[2rem]">
           <Image src={logo} alt="" className="mb-[1rem]"></Image>
           <div className="2xl:text-[1.25rem] text-[1.125rem]">
             {t("ctaTagline")}
@@ -107,16 +107,13 @@ export default function Footer() {
         </div>
         {list.map((d) => {
           return (
-            <div
-              className="xl:w-[12.7rem] sm:w-[18rem] w-full mb-[2.4rem]"
-              key={d.label}
-            >
+            <div className="2xl:w-[20rem] sm:w-[11.25rem] w-full" key={d.label}>
               {d.children && (
                 <div className="sm:block hidden">
-                  <div className="2xl:text-[1.25rem] text-[1.125rem] font-semibold text-[rgba(4,30,84,1)]  mb-[2rem]">
+                  <div className="2xl:text-[1.25rem] text-[1rem] font-semibold text-[rgba(4,30,84,1)]  mb-[2rem]">
                     {d.label}
                   </div>
-                  <div className="2xl:text-[1.25rem] text-[1.125rem] font-medium sm:block hidden">
+                  <div className="2xl:text-[1.25rem] text-[1rem] font-medium sm:block hidden">
                     {d.children.map((item) => {
                       return (
                         <div key={item.key}>
@@ -142,7 +139,7 @@ export default function Footer() {
                 </div>
               )}
               {d.children && (
-                <div className="sm:hidden 2xl:text-[1.25rem] text-[1.125rem] text-[rgba(4,30,84,1)]">
+                <div className="sm:hidden 2xl:text-[1.25rem] text-[1.125rem] text-[rgba(4,30,84,1)] mb-[1.5rem]">
                   <MenuItemWithSubmenu
                     item={d}
                     isOpen={openKeys.includes(d.key)}
