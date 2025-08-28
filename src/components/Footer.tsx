@@ -189,11 +189,14 @@ export default function Footer() {
         <div className="flex">
           <span
             onClick={() => switchPath("/policy")}
-            className="cursor-pointer mr-[3.75rem]"
+            className="cursor-pointer  max-w-[40vw] sm:mr-[3.75rem] mr-[1.5rem] break-words"
           >
             {t("footerPrivacy")}
           </span>
-          <span className="cursor-pointer" onClick={() => switchPath("/term")}>
+          <span
+            className="cursor-pointer  max-w-[40vw] break-words"
+            onClick={() => switchPath("/term")}
+          >
             {t("footerTerms")}
           </span>
         </div>
