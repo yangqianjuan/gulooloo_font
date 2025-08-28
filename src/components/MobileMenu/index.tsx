@@ -41,7 +41,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({
 
   return (
     <div
-      className={`fixed inset-0 z-50 bg-[rgba(246,254,255,1)] transition-transform duration-300 ${
+      className={`fixed h-full overflow-y-auto inset-0 z-50 bg-[rgba(246,254,255,1)] transition-transform duration-300 ${
         isOpen ? "translate-x-0" : "translate-x-full"
       }`}
     >

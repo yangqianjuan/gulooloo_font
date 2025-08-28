@@ -25,7 +25,7 @@ function CardItem({ d }: { d: CardItemProps }) {
     router.push(`/${locale}/blog/${path}`);
   });
   return (
-    <article className="shadow-[0_8px_24px_rgba(126,138,163,0.12)] bg-white sm:w-[32%] w-full text-left 2xl:rounded-[1.5rem] rounded-[1rem]">
+    <article className="shadow-[0_8px_24px_rgba(126,138,163,0.12)] bg-white sm:w-[32%] w-full text-left 2xl:rounded-[1.5rem] rounded-[1rem] sm:mb-[0rem] mb-[2rem]">
       <div className="w-full h-auto  overflow-hidden 2xl:rounded-t-[1.5rem] rounded-t-[1rem]">
         <Image
           src={d.img}
