@@ -54,12 +54,12 @@ export default function Rate() {
                 {d.desc}
               </div>
               <div className="flex justify-between ">
-                <div className="text-[1.6rem] flex items-center">
+                <div className="sm:text-[1.5rem] text-[1rem] flex items-center">
                   <Image
                     width={32}
                     src={d.user_img}
                     alt=""
-                    className="2xl:mr-[0.8rem] mr-[0.25rem]"
+                    className="2xl:mr-[0.8rem] mr-[0.25rem] 2xl:w-[2.5rem] w-[2rem]"
                   ></Image>
                   <span>{d.user_name}</span>
                 </div>
@@ -68,9 +68,9 @@ export default function Rate() {
                     <Image
                       src={star}
                       alt=""
-                      key={i}
                       width={24}
-                      className="2xl:ml-[0.25rem] ml-[0.2rem]"
+                      key={i}
+                      className="2xl:ml-[0.25rem] ml-[0.2rem] 2xl:w-[1.875rem] w-[1.5rem]"
                     ></Image>
                   ))}
                 </div>
