@@ -11,7 +11,7 @@ export default function BlogTab({
         <li
           onClick={() => handleTabChange(item.key)}
           key={item.key}
-          className={`rounded-[2.5rem]  2xl:mr-[2.69rem] sm:mr-[2rem] mr-[1.25rem] 2xl:px-[2.5rem] 2xl:py-[0.63rem]  sm:px-[1.5rem] sm:py-[0.5rem] px-[1.25rem] py-[0.38rem] ${
+          className={`whitespace-nowrap sm:rounded-[2.5rem] rounded-[1.25rem] 2xl:mr-[2.69rem] sm:mr-[2rem] mr-[1.25rem] 2xl:px-[2.5rem] 2xl:py-[0.63rem]  sm:px-[1.5rem] sm:py-[0.5rem] px-[1.25rem] py-[0.38rem] ${
             activeTab === item.key
               ? "bg-[#00CC91] text-[rgba(255,255,255,1)]"
               : "bg-[rgba(241,245,249,1)]"
