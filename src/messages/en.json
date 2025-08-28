@@ -25,7 +25,7 @@
     "easyNotesFeature1": "Write in Style With Rich Text Formatting",
     "easyNotesFeature2": "Choose From A Wide Range Of Beautiful Backgrounds",
     "easyNotesFeature3": "Use Widget And Hand-Drawing For Creative Freedom",
-    "invoiceNowTitle": "Invoice Now",
+    "invoiceNowTitle": "Invoice Maker",
     "invoiceNowDesc": "Make invoices and estimates easily with a wide selection of beautiful templates.",
     "invoiceNowFeature1": "Create professional invoices in seconds",
     "invoiceNowFeature2": "Customize every detail to fit your needs",
@@ -66,7 +66,7 @@
     "ctaTagline": "Apps or a better everyday.",
     "footerProductsTitle": "Products",
     "footerProduct1": "Easy Notes",
-    "footerProduct2": "Invoice Now",
+    "footerProduct2": "Invoice Maker",
     "footerProduct3": "GoFasting",
     "footerProduct4": "QR Generator",
     "footerCompanyTitle": "Company",
@@ -84,7 +84,7 @@
     "apps_easynotes_pic_alt": "EasyNotes app screenshot for note-taking and reminders",
     "appstore_download_alt": "Apple Store download button for EasyNotes, GoFasting, and more",
     "googleplay_download_alt": "Google Play download button for Gulooloo Tech apps",
-    "apps_invoice_pic_alt": "Invoice Now app interface showing invoice creation features",
+    "apps_invoice_pic_alt": "Invoice Maker app interface showing invoice creation features",
     "apps_gofasting_pic_alt": "GoFasting app preview showing fasting tracker interface",
     "apps_ar_pic_alt": "QR Generator app showcasing fast QR code creation",
     "productivity_notetaking_alt": "Blog header image for productivity article on note-taking",
@@ -92,8 +92,8 @@
     "daily_life_alt": "Header image for blog article on organizing daily life",
     "download_call_alt": "Final call-to-action image to download Gulooloo Tech apps",
     "metaTitle": "Gulooloo Tech – Best Notes, Fasting & Invoice Apps",
-    "metaDescription": "Discover Easy Notes, GoFasting, Invoice Now and more. Boost your productivity and wellness.",
-    "keywords": "Easy Notes, GoFasting, Invoice Now, notes app, fasting tracker, invoice maker, productivity tools, QR code generator"
+    "metaDescription": "Discover Easy Notes, GoFasting, Invoice Maker and more. Boost your productivity and wellness.",
+    "keywords": "Easy Notes, GoFasting, Invoice Maker, notes app, fasting tracker, invoice maker, productivity tools, QR code generator"
   },
   "blog": {
     "metaTitleBlog": "Blog - Gulooloo Tech",

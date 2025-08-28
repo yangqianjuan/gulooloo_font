@@ -25,7 +25,7 @@
     "easyNotesFeature1": "Escribe con estilo usando formato de texto enriquecido",
     "easyNotesFeature2": "Elige entre una amplia gama de fondos hermosos",
     "easyNotesFeature3": "Usa widgets y dibujo a mano para libertad creativa",
-    "invoiceNowTitle": "Invoice Now",
+    "invoiceNowTitle": "Invoice Maker",
     "invoiceNowDesc": "Crea facturas y presupuestos fácilmente con una amplia selección de plantillas hermosas.",
     "invoiceNowFeature1": "Crea facturas profesionales en segundos",
     "invoiceNowFeature2": "Personaliza cada detalle para adaptarse a tus necesidades",
@@ -66,7 +66,7 @@
     "ctaTagline": "Apps para un mejor día a día.",
     "footerProductsTitle": "Productos",
     "footerProduct1": "Easy Notes",
-    "footerProduct2": "Invoice Now",
+    "footerProduct2": "Invoice Maker",
     "footerProduct3": "GoFasting",
     "footerProduct4": "Generador QR",
     "footerCompanyTitle": "Empresa",
@@ -84,7 +84,7 @@
     "apps_easynotes_pic_alt": "Captura de pantalla de EasyNotes para notas y recordatorios",
     "appstore_download_alt": "Botón de descarga en Apple Store para EasyNotes y GoFasting",
     "googleplay_download_alt": "Botón de descarga en Google Play para apps de Gulooloo",
-    "apps_invoice_pic_alt": "Interfaz de Invoice Now mostrando funciones de creación de facturas",
+    "apps_invoice_pic_alt": "Interfaz de Invoice Maker mostrando funciones de creación de facturas",
     "apps_gofasting_pic_alt": "Vista previa de GoFasting mostrando rastreador de ayuno",
     "apps_ar_pic_alt": "QR Generator mostrando creación rápida de códigos QR",
     "productivity_notetaking_alt": "Imagen de encabezado de blog sobre productividad y notas",
@@ -92,8 +92,8 @@
     "daily_life_alt": "Imagen de encabezado del blog sobre organización diaria",
     "download_call_alt": "Imagen final de llamada a la acción para descargar apps Gulooloo",
     "metaTitle": "Gulooloo Tech – Apps de Notas, Ayuno y Facturas",
-    "metaDescription": "Descubre Easy Notes, GoFasting, Invoice Now y más. Mejora tu productividad y bienestar.",
-    "keywords": "Easy Notes, GoFasting, Invoice Now, aplicación de notas, seguimiento de ayuno, generador de facturas, herramientas de productividad, generador de códigos QR"
+    "metaDescription": "Descubre Easy Notes, GoFasting, Invoice Maker y más. Mejora tu productividad y bienestar.",
+    "keywords": "Easy Notes, GoFasting, Invoice Maker, aplicación de notas, seguimiento de ayuno, generador de facturas, herramientas de productividad, generador de códigos QR"
   },
   "blog": {
     "metaTitleBlog": "Blog - Gulooloo Tech",

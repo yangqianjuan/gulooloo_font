@@ -25,7 +25,7 @@
     "easyNotesFeature1": "リッチテキスト機能でスタイリッシュに執筆",
     "easyNotesFeature2": "美しい背景の豊富なコレクションから選択",
     "easyNotesFeature3": "ウィジェットと手描き機能でクリエイティブな自由を",
-    "invoiceNowTitle": "Invoice Now",
+    "invoiceNowTitle": "Invoice Maker",
     "invoiceNowDesc": "美しいテンプレートを豊富に用意し、請求書と見積書を簡単に作成。",
     "invoiceNowFeature1": "プロフェッショナルな請求書を数秒で作成",
     "invoiceNowFeature2": "あなたのニーズに合わせて細部までカスタマイズ",
@@ -66,7 +66,7 @@
     "ctaTagline": "より良い日常のためのアプリ。",
     "footerProductsTitle": "製品",
     "footerProduct1": "Easy Notes",
-    "footerProduct2": "Invoice Now",
+    "footerProduct2": "Invoice Maker",
     "footerProduct3": "GoFasting",
     "footerProduct4": "QRジェネレーター",
     "footerCompanyTitle": "会社",
@@ -84,7 +84,7 @@
     "apps_easynotes_pic_alt": "EasyNotesのメモとリマインダー用画面",
     "appstore_download_alt": "EasyNotesやGoFasting用のApple Storeダウンロードボタン",
     "googleplay_download_alt": "GuloolooアプリのGoogle Playダウンロードボタン",
-    "apps_invoice_pic_alt": "Invoice Nowアプリの請求書作成インターフェース",
+    "apps_invoice_pic_alt": "Invoice Makerアプリの請求書作成インターフェース",
     "apps_gofasting_pic_alt": "GoFastingアプリの断食トラッカー画面",
     "apps_ar_pic_alt": "QR Generatorの高速QRコード生成",
     "productivity_notetaking_alt": "ノート術に関するブログのヘッダー画像",
@@ -92,8 +92,8 @@
     "daily_life_alt": "日常整理術に関するブログのヘッダー画像",
     "download_call_alt": "Guloolooアプリをダウンロード促す最終画像",
     "metaTitle": "Gulooloo Tech – メモ・断食・請求書アプリ",
-    "metaDescription": "Easy Notes、GoFasting、Invoice Now を使って日常をもっとスマートに。",
-    "keywords": "Easy Notes, GoFasting, Invoice Now, メモアプリ, 断食トラッカー, 請求書作成アプリ, 生産性向上ツール, QRコード作成ツール"
+    "metaDescription": "Easy Notes、GoFasting、Invoice Maker を使って日常をもっとスマートに。",
+    "keywords": "Easy Notes, GoFasting, Invoice Maker, メモアプリ, 断食トラッカー, 請求書作成アプリ, 生産性向上ツール, QRコード作成ツール"
   },
   "blog": {
     "metaTitleBlog": "ブログ - Gulooloo Tech",

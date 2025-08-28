@@ -12,7 +12,7 @@ const poppins = Poppins({
 export const metadata = {
   title: "Gulooloo Tech – Best Notes, Fasting & Invoice Apps",
   description:
-    "Discover Easy Notes, GoFasting, Invoice Now and more. Boost your productivity and wellness.",
+    "Discover Easy Notes, GoFasting, Invoice Maker and more. Boost your productivity and wellness.",
 };
 
 export default function RootLayout({

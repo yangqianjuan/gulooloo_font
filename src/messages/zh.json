@@ -25,7 +25,7 @@
     "easyNotesFeature1": "丰富文本格式，尽显写作风格",
     "easyNotesFeature2": "精选多款精美背景供你选择",
     "easyNotesFeature3": "运用小工具和手绘功能，释放创意",
-    "invoiceNowTitle": "Invoice Now",
+    "invoiceNowTitle": "Invoice Maker",
     "invoiceNowDesc": "精美模板丰富选择，轻松制作发票和报价单。",
     "invoiceNowFeature1": "数秒内创建专业发票",
     "invoiceNowFeature2": "根据需求自定义每个细节",
@@ -66,7 +66,7 @@
     "ctaTagline": "为更美好日常而生的应用。",
     "footerProductsTitle": "产品",
     "footerProduct1": "Easy Notes",
-    "footerProduct2": "Invoice Now",
+    "footerProduct2": "Invoice Maker",
     "footerProduct3": "GoFasting",
     "footerProduct4": "二维码生成器",
     "footerCompanyTitle": "公司",
@@ -84,7 +84,7 @@
     "apps_easynotes_pic_alt": "EasyNotes 应用的笔记与提醒截图",
     "appstore_download_alt": "EasyNotes、GoFasting 等的 Apple Store 下载按钮",
     "googleplay_download_alt": "Gulooloo Tech 应用的 Google Play 下载按钮",
-    "apps_invoice_pic_alt": "Invoice Now 应用界面展示发票创建功能",
+    "apps_invoice_pic_alt": "Invoice Maker 应用界面展示发票创建功能",
     "apps_gofasting_pic_alt": "GoFasting 应用的断食追踪界面预览",
     "apps_ar_pic_alt": "QR Generator 展示快速二维码生成",
     "productivity_notetaking_alt": "关于记笔记效率的博客头图",
@@ -92,8 +92,8 @@
     "daily_life_alt": "关于日常生活整理的博客头图",
     "download_call_alt": "最终号召用户下载 Gulooloo Tech 应用的图像",
     "metaTitle": "Gulooloo Tech – 笔记、断食与开票应用",
-    "metaDescription": "发现 Easy Notes、GoFasting 与 Invoice Now，提升效率，改善生活。",
-    "keywords": "Easy Notes, GoFasting, Invoice Now, 笔记应用, 断食记录工具, 发票生成器, 效率工具, 二维码生成器"
+    "metaDescription": "发现 Easy Notes、GoFasting 与 Invoice Maker，提升效率，改善生活。",
+    "keywords": "Easy Notes, GoFasting, Invoice Maker, 笔记应用, 断食记录工具, 发票生成器, 效率工具, 二维码生成器"
   },
   "blog": {
     "metaTitleBlog": "博客 - Gulooloo Tech",

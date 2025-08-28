@@ -25,7 +25,7 @@
     "easyNotesFeature1": "리치 텍스트 포맷으로 스타일리시하게 작성",
     "easyNotesFeature2": "다양하고 아름다운 배경에서 선택",
     "easyNotesFeature3": "위젯과 손그리기로 창의적 자유를 경험",
-    "invoiceNowTitle": "Invoice Now",
+    "invoiceNowTitle": "Invoice Maker",
     "invoiceNowDesc": "다양하고 아름다운 템플릿으로 송장과 견적서를 쉽게 작성하세요.",
     "invoiceNowFeature1": "몇 초 만에 전문적인 송장 작성",
     "invoiceNowFeature2": "필요에 맞게 모든 세부사항을 커스터마이징",
@@ -66,7 +66,7 @@
     "ctaTagline": "더 나은 일상을 위한 앱.",
     "footerProductsTitle": "제품",
     "footerProduct1": "Easy Notes",
-    "footerProduct2": "Invoice Now",
+    "footerProduct2": "Invoice Maker",
     "footerProduct3": "GoFasting",
     "footerProduct4": "QR 생성기",
     "footerCompanyTitle": "회사",
@@ -84,7 +84,7 @@
     "apps_easynotes_pic_alt": "EasyNotes 앱의 메모 및 알림 스크린샷",
     "appstore_download_alt": "EasyNotes, GoFasting용 Apple Store 다운로드 버튼",
     "googleplay_download_alt": "Gulooloo 앱용 Google Play 다운로드 버튼",
-    "apps_invoice_pic_alt": "Invoice Now 앱의 인보이스 생성 화면",
+    "apps_invoice_pic_alt": "Invoice Maker 앱의 인보이스 생성 화면",
     "apps_gofasting_pic_alt": "GoFasting 앱의 단식 추적기 화면 미리보기",
     "apps_ar_pic_alt": "QR Generator 앱의 빠른 QR 코드 생성 기능",
     "productivity_notetaking_alt": "노트 작성 관련 생산성 블로그 헤더 이미지",
@@ -92,8 +92,8 @@
     "daily_life_alt": "일상 정리 블로그 헤더 이미지",
     "download_call_alt": "Gulooloo 앱 다운로드 유도용 마지막 이미지",
     "metaTitle": "Gulooloo Tech – 메모·단식·인보이스 앱",
-    "metaDescription": "Easy Notes, GoFasting, Invoice Now로 일상을 더 효율적으로 관리하세요.",
-    "keywords": "Easy Notes, GoFasting, Invoice Now, 메모 앱, 단식 추적기, 인보이스 생성기, 생산성 도구, QR 코드 생성기"
+    "metaDescription": "Easy Notes, GoFasting, Invoice Maker로 일상을 더 효율적으로 관리하세요.",
+    "keywords": "Easy Notes, GoFasting, Invoice Maker, 메모 앱, 단식 추적기, 인보이스 생성기, 생산성 도구, QR 코드 생성기"
   },
   "blog": {
     "metaTitleBlog": "블로그 - Gulooloo Tech",
