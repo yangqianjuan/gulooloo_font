@@ -29,7 +29,7 @@ const Footer = dynamic_(() => import("@/components/Footer"), { ssr: false });
 const BackButton = ({ text = "Back to Blog", BackToBlog = () => {} }) => (
   <div
     onClick={BackToBlog}
-    className="font-medium text-[rgba(0,204,145,1)] hover:text-[rgba(82,220,180,1)] flex items-center text-[1.6rem] cursor-pointer"
+    className="font-medium text-[rgba(0,204,145,1)] hover:text-[rgba(82,220,180,1)] flex items-center 2xl:text-[1.5rem] sm:text-[1.25rem] text-[1rem] cursor-pointer"
   >
     <ArrowLeft className="2xl:w-[2rem] sm:w-[1.875rem] w-[1.5rem]" />
     <span className="ml-2">{text}</span>
