@@ -41,7 +41,7 @@ export default function Explore() {
         <div className="font-bold 2xl:text-[5rem] text-[2.75rem]">
           {t("ctaSectionTitle")}
         </div>
-        <div className="text-[1.5rem] 3xl:mb-[5.5rem]  mb-[3rem]  text-[rgba(4,30,84,0.64)]">
+        <div className="2xl:text-[1.5rem] text-[1rem] 2xl:mb-[5.5rem]  mb-[3rem]  text-[rgba(4,30,84,0.64)]">
           {t("ctaSectionSubtitle")}
         </div>
         <div
@@ -55,7 +55,7 @@ export default function Explore() {
       <Image
         src={explore}
         alt={t("download_call_alt")}
-        className="hidden sm:block xl:w-full xl:h-auto h-[36.5rem] w-auto 2xl:rounded-[2.5rem] sm:rounded-[1.4rem]"
+        className="hidden sm:block xl:w-full xl:h-auto h-[23.75rem] w-auto object-cover object-right 2xl:rounded-[2.5rem] sm:rounded-[1.4rem]"
         loading="lazy"
         sizes="100vw"
         placeholder="blur"
