@@ -10,12 +10,12 @@ export default function Explore() {
     window.location.href = "mailto:support@guloolootech.com";
   });
   return (
-    <div className="relative 2xl:px-[5rem] 2xl:py-[7.5rem] sm:px-[2.5rem] sm:py-[5rem] px-[1.5rem] py-[2.5rem] text-[#fff]">
+    <div className="w-full relative 2xl:px-[5rem] 2xl:py-[7.5rem] sm:px-[2.5rem] sm:py-[5rem] px-[1.5rem] py-[2.5rem] text-[#fff]">
       <div className=" absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2  text-center">
-        <div className="font-bold 2xl:text-[4.5rem] sm:text-[2.5rem] text-[1.5rem] mb-[1rem]">
+        <div className="font-bold 2xl:text-[4.5rem] sm:text-[2.5rem] text-[1.5rem] sm:mb-[1rem] mb-[0.25rem]">
           {t("aboutFinalCtaTitle")}
         </div>
-        <div className="2xl:text-[1.5rem] sm:text-[1.5rem] text-[1rem] 2xl:mb-[6.38rem] sm:mb-[1.88rem] mb-[0.75rem]">
+        <div className="2xl:text-[1.5rem] sm:text-[1.25rem] text-[1rem] 2xl:mb-[6.38rem] sm:mb-[1.88rem] mb-[0.75rem]">
           {t("aboutFinalCtaDesc")}
         </div>
         <div
@@ -29,7 +29,7 @@ export default function Explore() {
       <Image
         src={explore}
         alt=""
-        className="hidden sm:block 2xl:w-full 2xl:h-auto h-[38rem] w-auto 2xl:rounded-[2.5rem] rounded-[4rem]"
+        className="hidden sm:block w-full  h-auto object-cover 2xl:rounded-[2.5rem] rounded-[1rem]"
         loading="lazy"
         sizes="100vw"
         placeholder="blur"
