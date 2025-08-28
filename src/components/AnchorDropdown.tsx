@@ -57,15 +57,6 @@ export default function AnchorDropdown({
     };
   }, []);
 
-  const handleSelect = (value: string) => {
-    setOpen(false);
-    setCurentLocale(value);
-    // const el = document.getElementById(anchorId);
-    // if (el) {
-    //   el.scrollIntoView({ behavior: "smooth" });
-    // }
-  };
-
   return (
     <div ref={dropdownRef} className="relative inline-block">
       <button
@@ -100,17 +91,14 @@ export default function AnchorDropdown({
           {options.map((opt) => (
             <li
               key={opt.value}
-              // onClick={() => handleSelect(opt.value)}
               className="px-4 py-2 rounded-[16px] hover:bg-[rgba(245,248,252,1)] cursor-pointer"
               role="option"
             >
               {isShowGlobal ? (
                 <div onClick={() => switchLang(opt.value)}>{opt.label} </div>
               ) : (
-                // <Link href="/" locale={opt.value}>
-                //   {opt.label}
-                // </Link>
-                opt.label
+                <Link href={`/${opt.value}`}>{opt.label}</Link>
+                // opt.label
               )}
             </li>
           ))}

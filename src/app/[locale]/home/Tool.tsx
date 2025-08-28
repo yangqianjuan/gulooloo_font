@@ -41,6 +41,7 @@ export default function Tool() {
             t("easyNotesFeature3"),
           ],
         },
+        id: "easyNotes",
       },
       {
         direct: "flex-row-reverse",
@@ -57,6 +58,7 @@ export default function Tool() {
             t("invoiceNowFeature3"),
           ],
         },
+        id: "invoiceNow",
       },
       {
         direct: "flex-row",
@@ -73,6 +75,7 @@ export default function Tool() {
             t("goFastingFeature3"),
           ],
         },
+        id: "goFasting",
       },
       {
         direct: "flex-row-reverse",
@@ -89,27 +92,32 @@ export default function Tool() {
             t("qrGeneratorFeature3"),
           ],
         },
+        id: "Qrgenerator",
       },
     ];
   }, []);
   return (
-    <div className="w-full text-center pt-[7.5rem]" id="appDesc">
+    <div
+      className="w-full text-center pt-[7.5rem] xl:mb-[7rem] sm:mb-[8rem] mb-[6rem]"
+      id="appDesc"
+    >
       <div className="font-semibold 2xl:text-[4.125rem] sm:text-[3rem] text-[1.5rem]">
         {t("productsMainTitle")}
       </div>
-      <div className="text-[rgba(4,30,84,0.48)] 2xl:text-[1.5rem] sm:mb-[5rem] sm:text-[1.25rem]  text-[0.9375rem] mb-[3rem]">
+      <div className="text-[rgba(4,30,84,0.48)] 2xl:text-[1.5rem]  sm:text-[1.25rem]  text-[0.9375rem]">
         {t("productsSubtitle")}
       </div>
       {list.map((d) => {
         return (
           <div
+            id={d.id}
             className={`flex ${
               d.direct === "flex-row-reverse"
                 ? "sm:flex-row-reverse"
                 : d.direct === "flex-row"
                 ? "sm:flex-row"
                 : ""
-            } sm:justify-between text-left flex-col items-center  sm:mb-[7.5rem] 2xl:px-[7.5rem] sm:px-[3.75rem] px-[3.15rem]  mb-[6rem]`}
+            } sm:justify-between text-left flex-col items-center  sm:pt-[7.5rem] 2xl:px-[7.5rem] sm:px-[3.75rem] px-[3.15rem]  pt-[6rem]`}
             key={d.textInfo.title}
           >
             <div className="2xl:w-[42%] sm:w-[44%] w-full">

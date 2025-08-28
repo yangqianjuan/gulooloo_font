@@ -26,10 +26,26 @@ const Header: React.FC = () => {
         label: t("navProducts"),
         key: "products",
         children: [
-          { label: t("easyNotesTitle"), key: "easyNotesTitle", href: "" },
-          { label: t("invoiceNowTitle"), key: "invoiceNowTitle", href: "" },
-          { label: t("goFastingTitle"), key: "goFastingTitle", href: "" },
-          { label: t("footerProduct4"), key: "footerProduct4", href: "" },
+          {
+            label: t("easyNotesTitle"),
+            key: "easyNotesTitle",
+            href: "/#easyNotes",
+          },
+          {
+            label: t("invoiceNowTitle"),
+            key: "invoiceNowTitle",
+            href: "/#invoiceNow",
+          },
+          {
+            label: t("goFastingTitle"),
+            key: "goFastingTitle",
+            href: "/#goFasting",
+          },
+          {
+            label: t("footerProduct4"),
+            key: "footerProduct4",
+            href: "/#Qrgenerator",
+          },
         ],
       },
       { label: t("navResource"), key: "navResource", href: "/blog" },
@@ -87,10 +103,10 @@ const Header: React.FC = () => {
         <AnchorDropdown
           isShowArrow={true}
           options={[
-            { label: t("easyNotesTitle"), value: "1" },
-            { label: t("invoiceNowTitle"), value: "2" },
-            { label: t("goFastingTitle"), value: "3" },
-            { label: t("footerProduct4"), value: "4" },
+            { label: t("easyNotesTitle"), value: "#easyNotes" },
+            { label: t("invoiceNowTitle"), value: "#invoiceNow" },
+            { label: t("goFastingTitle"), value: "#goFasting" },
+            { label: t("footerProduct4"), value: "#Qrgenerator" },
           ]}
           placeholder={t("navProducts")}
         />
