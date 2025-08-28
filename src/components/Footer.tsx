@@ -37,19 +37,23 @@ export default function Footer() {
           {
             key: t("easyNotesTitle"),
             label: t("easyNotesTitle"),
-            href: "",
+            href: "/#easyNotes",
           },
           {
             key: t("invoiceNowTitle"),
             label: t("invoiceNowTitle"),
-            href: "",
+            href: "/#invoiceNow",
           },
           {
             key: t("goFastingTitle"),
             label: t("goFastingTitle"),
-            href: "",
+            href: "/#goFasting",
           },
-          { key: t("footerProduct4"), label: t("footerProduct4"), href: "" },
+          {
+            key: t("footerProduct4"),
+            label: t("footerProduct4"),
+            href: "/#Qrgenerator",
+          },
         ],
       },
       {

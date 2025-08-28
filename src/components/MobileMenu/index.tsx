@@ -17,6 +17,7 @@ export interface MenuItem {
   label: string;
   key: string;
   href?: string;
+  isLang?: boolean;
   children?: MenuItem[];
 }
 

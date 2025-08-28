@@ -53,6 +53,7 @@ const Header: React.FC = () => {
       {
         label: t("navLanguage"),
         key: "language",
+        isLang: true,
         children: [
           { label: "English", key: "en", href: "/en" },
           { label: "Español", key: "es", href: "/es" },
