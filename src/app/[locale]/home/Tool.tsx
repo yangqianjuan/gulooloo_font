@@ -117,7 +117,7 @@ export default function Tool() {
                 : d.direct === "flex-row"
                 ? "sm:flex-row"
                 : ""
-            } sm:justify-between text-left flex-col items-center  sm:pt-[7.5rem] 2xl:px-[7.5rem] sm:px-[3.75rem] px-[3.15rem]  pt-[6rem]`}
+            } sm:justify-between text-left flex-col items-center  sm:pt-[7.5rem] 2xl:px-[7.5rem] sm:px-[3.75rem] px-[2rem]  pt-[6rem]`}
             key={d.textInfo.title}
           >
             <div className="2xl:w-[42%] sm:w-[44%] w-full">
@@ -131,7 +131,7 @@ export default function Tool() {
                 sizes="(max-width: 640px) 100vw, (max-width: 1280px) 26.875rem, 43.25rem"
               />
             </div>
-            <div className="2xl:w-[47%]  sm:w-[48%]  w-full sm:px-[0rem] px-[2.5rem] flex items-center">
+            <div className="2xl:w-[47%]  sm:w-[48%]  w-full px-[0rem] flex items-center">
               <div>
                 <div className="font-semibold 2xl:text-[4rem] sm:text-[2.5rem] 2xl:mb-[1.5rem] sm:mb-[1rem] mb-[0.5rem] text-[1.375rem]">
                   {d.textInfo.title}
@@ -172,7 +172,7 @@ export default function Tool() {
                       toLink(d.link_android);
                     }}
                   >
-                    <GooglePlay className="text-[rgba(0,0,0,1)] hover:text-[rgba(4,30,84,1)] 2xl:w-[10.125rem] 2xl:mr-[1.5rem] w-[8.4375rem] mr-[1.25rem] transition-transform duration-300 hover:scale-110" />
+                    <GooglePlay className="text-[rgba(0,0,0,1)] hover:text-[rgba(4,30,84,1)] 2xl:w-[10.125rem]  w-[8.4375rem]  transition-transform duration-300 hover:scale-110" />
                   </span>
                 </div>
               </div>

@@ -86,7 +86,7 @@ export default function Footer() {
           },
           {
             src: (
-              <GooglePlay className="text-[rgba(0,0,0,1)] hover:text-[rgba(4,30,84,1)] w-[8.42rem] mb-[1.25rem] mr-[2rem] transition-transform duration-300 hover:scale-110" />
+              <GooglePlay className="text-[rgba(0,0,0,1)] hover:text-[rgba(4,30,84,1)] w-[8.42rem] mb-[1.25rem] transition-transform duration-300 hover:scale-110" />
             ),
             hoverSrc: googleplay_download_hover,
             link: andoridLink,
@@ -97,7 +97,7 @@ export default function Footer() {
     ];
   }, [t]);
   return (
-    <footer className="text-[rgba(4,30,84,0.64)]   w-full xl:px-[5rem] xl:pt-[5rem] bg-[rgba(246,254,255,1)] px-[4rem] pt-[6rem]">
+    <footer className="text-[rgba(4,30,84,0.64)]   w-full xl:px-[5rem] xl:pt-[5rem] bg-[rgba(246,254,255,1)] px-[1.5rem] pt-[2.5rem]">
       <div className="flex flex-wrap sm:justify-between pb-[3.75rem]">
         <div className="lg:w-[31.25rem]  w-full mb-[3.2rem]">
           <Image src={logo} alt="" className="mb-[1rem]"></Image>
