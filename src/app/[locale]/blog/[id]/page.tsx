@@ -131,14 +131,14 @@ export default function BlogDetail() {
       },
       {
         img: (
-          <Linke className="hover:text-[rgba(10,102,194,1)] mr-[1.5rem] 2xl:w-[3rem]  sm:w-[2.5rem]  w-[2.25rem]" />
+          <Linke className="hover:text-[rgba(10,102,194,1)]  mr-[1.5rem] 2xl:w-[3rem]  sm:w-[2.5rem]  w-[2.25rem]" />
         ),
         link: `https://www.linkedin.com/sharing/share-offsite/?url=${herf}`,
         isCopy: false,
       },
       {
         img: (
-          <Link className="hover:text-[rgba(0,204,145,1)] 2xl:w-[3rem]  sm:w-[2.5rem]  w-[2.25rem]" />
+          <Link className="hover:text-[rgba(0,204,145,1)]  2xl:w-[3rem]  sm:w-[2.5rem]  w-[2.25rem]" />
         ),
         link: herf,
         isCopy: true,
@@ -213,8 +213,8 @@ export default function BlogDetail() {
 
           {/* 底部分享 */}
           <div className="2xl:pt-[5rem] sm:pt-[3.75rem] pt-[2.5rem] border-t border-[rgba(4,30,84,0.08)]">
-            <div className="flex justify-between 2xl:mb-[7.5rem] sm:mb-[3.75rem] mb-[2.5rem]">
-              <div className="font-semibold 2xl:text-[2rem] sm:text-[1.75rem] text-[1.25rem]">
+            <div className="flex justify-between flex-wrap 2xl:mb-[7.5rem] sm:mb-[3.75rem] mb-[2.5rem]">
+              <div className="font-semibold 2xl:text-[2rem] sm:text-[1.75rem] text-[1.25rem] sm:w-auto w-full sm:mb-[0rem] mb-[1rem]">
                 {t(`articleShared`)}
               </div>
               <div className="flex relative">
