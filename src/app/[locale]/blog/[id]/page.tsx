@@ -60,12 +60,12 @@ const ListBlock = ({ items }: { items: string[] }) => (
 
 const QuoteBox = ({ children }: { children: React.ReactNode }) => (
   <div className="bg-[rgba(246,254,255,1)] italic relative 2xl:px-[5.37rem] 2xl:py-[3.75rem] sm:px-[3.5rem] sm:py-[2.5rem] px-[2.13rem] py-[2rem]">
-    <span className="absolute 2xl:top-[2.5rem] 2xl:left-[2.5rem] sm:top-[1.5rem] sm:left-[1.5rem] top-[1rem] left-[1rem]">
-      <Image src={ic_dot} alt="" />
+    <span className="absolute 2xl:top-[2.5rem] 2xl:left-[2.5rem] sm:top-[1.5rem] sm:left-[1.5rem] top-[1rem] left-[1rem] 2xl:w-[1.8rem] w-[1.3rem]">
+      <Image src={ic_dot} alt="" className="w-full" />
     </span>
     <div>{children}</div>
-    <span className="absolute 2xl:bottom-[2.5rem] 2xl:right-[2.5rem] sm:bottom-[1.5rem] sm:right-[1.5rem] bottom-[1rem] right-[1rem]">
-      <Image src={ic_dot} alt="" />
+    <span className="absolute 2xl:bottom-[2.5rem] 2xl:right-[2.5rem] sm:bottom-[1.5rem] sm:right-[1.5rem] bottom-[1rem] right-[1rem] 2xl:w-[1.8rem] w-[1.3rem]">
+      <Image src={ic_dot} className="w-full" alt="" />
     </span>
   </div>
 );
