@@ -327,7 +327,7 @@
     "article11FaqQ2": "Wie lange sollten die Zahlungsbedingungen sein?",
     "article11FaqA2": "Netto 7–14 Tage sind bei Freelancern üblich; passen Sie sich den Zyklen des Kunden an, ohne Ihren Cashflow zu gefährden.",
     "article11Conclusion": "Die Zahlungsgeschwindigkeit ist eine Prozessentscheidung; durch die Klärung von Bedingungen und die Beseitigung von Reibungen machen Sie die Rechnungsstellung zu einem reibungslosen, schnellen Schritt.",
-    "article12Title": "Wie QR-Codes Ihr Kleinunternehmensmarketing aufladen können",
+    "article12Title": "QR-Codes, die Ihr Business voranbringen",
     "article12MetaDesc": "Nutzen Sie QR-Codes, um Offline und Online zu verbinden—leiten Sie den Traffic mit einem schnellen Scan zu Menüs, Bewertungen, Gutscheinen und Apps.",
     "article12BodyIntro": "Dieser Leitfaden zeigt, wo Codes platziert werden, wie man einen klaren Call-to-Action erstellt, was gemessen wird und wie man Kampagnen für einen besseren ROI iteriert.",
     "article12Section1Title": "Den richtigen Anwendungsfall wählen",
@@ -472,7 +472,7 @@
     "metaTitleAbout": "Über uns - Gulooloo Tech",
     "metaDescriptionAbout": "Gulooloo Tech hilft Kleinunternehmen und Freelancern, smarter zu arbeiten, mit Tools für Rechnungsstellung, Notizen und Produktivität. Erfahren Sie mehr über unsere Mission und Geschichte.",
     "keywordsAbout": "Gulooloo Tech, über uns, Unternehmensmission, Kleinunternehmen, Freelancer, Rechnungsstellungstools, Produktivitätstools, Notizen-App, digitale Lösungen",
-    "aboutHeroTitle": "Wir sind ein leidenschaftliches Team, das tolle Apps entwickelt",
+    "aboutHeroTitle": "Ein leidenschaftliches Team für großartige Apps.",
     "aboutIntro": "Bei Gulooloo Tech begann unsere Reise mit einer Frage: Was, wenn die Tools auf unseren Telefonen schneller, intuitiver und wirklich hilfreich wären? Diese Frage treibt unser globales Team an. Wir jagen keinen Trends hinterher, sondern entwickeln einfache, schöne und nützliche Apps für Sie.",
     "aboutValuesTitle": "Unsere Teamwerte",
     "aboutValue1Title": "Nutzerorientiert",
@@ -481,8 +481,8 @@
     "aboutValue2Desc": "Gutes Design ist nicht nur Optik, sondern Gefühl. Wir lieben es, klare, schöne Schnittstellen zu schaffen, die Freude bereiten. Wir kümmern uns um die Details.",
     "aboutValue3Title": "Gemeinsam stärker",
     "aboutValue3Desc": "Unser Team arbeitet komplett remote und global. Das ist nicht nur ein Arbeitsstil, sondern unsere Stärke. Verschiedene Perspektiven helfen uns, bessere, inklusive Produkte zu entwickeln.",
-    "aboutFinalCtaTitle": "Kontaktieren Sie uns",
-    "aboutFinalCtaDesc": "Fragen, Feedback oder einfach nur hallo sagen? Wir freuen uns auf Ihre Nachricht.",
-    "aboutFinalCtaBtn": "Kontaktieren Sie uns"
+    "aboutFinalCtaTitle": "Sagen Sie hallo",
+    "aboutFinalCtaDesc": "Fragen, Feedback oder Hallo? Sagen Sie hallo!",
+    "aboutFinalCtaBtn": "Sagen Sie hallo"
   }
 }

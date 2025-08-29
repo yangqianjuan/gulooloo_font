@@ -472,7 +472,7 @@
     "metaTitleAbout": "À Propos de Nous - Gulooloo Tech",
     "metaDescriptionAbout": "Gulooloo Tech aide les petites entreprises et les freelances à travailler plus intelligemment avec des outils de facturation, de prise de notes et de productivité. Découvrez notre mission et notre histoire.",
     "keywordsAbout": "Gulooloo Tech, à propos de nous, mission de l'entreprise, petites entreprises, freelances, outils de facturation, outils de productivité, application de notes, solutions numériques",
-    "aboutHeroTitle": "Nous sommes une équipe passionnée créant de superbes apps",
+    "aboutHeroTitle": "Une équipe passionnée créant de superbes apps",
     "aboutIntro": "Chez Gulooloo Tech, tout a commencé avec une question : et si les outils sur nos téléphones étaient plus intelligents, intuitifs et facilitaient vraiment la vie ? Cette question guide notre équipe mondiale. Pas de tendances, juste des apps simples, belles et utiles pour vous.",
     "aboutValuesTitle": "Nos valeurs d’équipe",
     "aboutValue1Title": "Priorité utilisateur",
@@ -481,8 +481,8 @@
     "aboutValue2Desc": "Nous croyons qu’un bon design, ce n’est pas seulement l’apparence, c’est la sensation. Nous aimons créer des interfaces épurées et belles, agréables à utiliser. On s’occupe des détails pour vous.",
     "aboutValue3Title": "Plus forts ensemble",
     "aboutValue3Desc": "Notre équipe est entièrement à distance et mondiale. Ce n’est pas juste un style de travail, c’est notre force. Des perspectives variées nous aident à créer des produits inclusifs pour tous.",
-    "aboutFinalCtaTitle": "Contactez-nous",
-    "aboutFinalCtaDesc": "Des questions, des retours ou juste envie de dire bonjour ? On adorerait avoir de vos nouvelles.",
-    "aboutFinalCtaBtn": "Contactez-nous"
+    "aboutFinalCtaTitle": "Écrivez-nous",
+    "aboutFinalCtaDesc": "Des retours ou juste dire bonjour ?Écrivez-nous!",
+    "aboutFinalCtaBtn": "Écrivez-nous"
   }
 }

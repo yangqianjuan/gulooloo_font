@@ -38,12 +38,10 @@ export default function CopyPopover({ url, text, label }: CopyPopoverProps) {
       {/* Popover 提示在上方 */}
       {open && (
         <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 whitespace-nowrap rounded-[1.75rem] bg-[rgba(4,30,84,1)] text-white shadow-lg">
-          <span className="flex pl-[1rem] py-[0.75rem] pr-[2.25rem] text-[1.25rem]">
-            <Image
-              src={ic_success}
-              className="w-[1.25rem] mr-[0.62rem]"
-              alt=""
-            />
+          <span className="flex sm:px-[1rem] px-[0.75rem] sm:py-[0.75rem] py-[0.62rem]  2xl:text-[1.25rem] sm:text-[1rem] text-[0.875rem]">
+            <div className="2xl:w-[1.25rem]  w-[1rem] mr-[0.62rem] flex items-center">
+              <Image src={ic_success} className="w-full" alt="" />
+            </div>
             <span>{text}</span>
           </span>
 
