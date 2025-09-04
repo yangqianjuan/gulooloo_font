@@ -14,7 +14,7 @@ export default function Achievement() {
         // style={{ backgroundImage: `url(${bg.src})` }}
         className="sm:py-[5rem] 2xl:px-[5rem]  sm:px-[3.75rem] text-[rgba(118,61,3,1)] sm:bg-[url('/images/world_map_bg_2x.webp')] bg-[url('/images/world_map_mobile_2x.webp')] bg-cover font-semibold px-[3.5rem] py-[2.5rem]"
       >
-        <div className="text-center 2xl:text-[4rem] 2xl:pb-[5rem] sm:text-[3rem] sm:pb-[2.5rem]  text-[1.5rem] pb-[4rem]">
+        <div className="text-center 2xl:text-[4rem] 2xl:pb-[5rem] sm:text-[2.75rem] sm:pb-[2.5rem]  text-[1.5rem] pb-[4rem]">
           {t("whyUsTitle")}
         </div>
         <div className="flex sm:flex-row flex-col justify-between items-center">

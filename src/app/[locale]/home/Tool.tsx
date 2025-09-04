@@ -101,7 +101,7 @@ export default function Tool() {
       className="w-full text-center pt-[7.5rem] xl:mb-[7rem] sm:mb-[8rem] mb-[6rem]"
       id="appDesc"
     >
-      <div className="font-semibold 2xl:text-[4.125rem] sm:text-[3rem] text-[1.5rem]">
+      <div className="font-semibold 2xl:text-[4.125rem] sm:text-[2.75rem] text-[1.5rem]">
         {t("productsMainTitle")}
       </div>
       <div className="text-[rgba(4,30,84,0.48)] 2xl:text-[1.5rem]  sm:text-[1.25rem]  text-[0.9375rem]">

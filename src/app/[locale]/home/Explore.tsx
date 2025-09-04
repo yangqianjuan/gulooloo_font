@@ -37,8 +37,8 @@ export default function Explore() {
           {t("ctaButton")}
         </div>
       </div>
-      <div className="sm:block absolute hidden 3xl:top-[5rem] 3xl:left-[5rem] 2xl:w-[47.5rem] w-[22.875rem] text-left sm:top-[3.12rem] sm:left-[3.75rem]">
-        <div className="font-bold 2xl:text-[5rem] text-[2.75rem]">
+      <div className="sm:block absolute hidden 3xl:top-[5rem] 3xl:left-[5rem] 2xl:w-[47.5rem] w-[28.375rem] text-left sm:top-[3.12rem] sm:left-[3.75rem]">
+        <div className="font-bold 2xl:text-[4rem] text-[2.5rem]">
           {t("ctaSectionTitle")}
         </div>
         <div className="2xl:text-[1.5rem] text-[1rem] 3xl:mb-[5.5rem] 2xl:mb-[4rem] lg:mb-[3.5rem]  mb-[3rem]  text-[rgba(4,30,84,0.64)]">

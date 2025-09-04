@@ -7,7 +7,7 @@ export default function Team() {
   const t = useTranslations("about");
   return (
     <div className="2xl:px-[5rem] 2xl:py-[7.5rem] sm:px-[2.5rem] sm:py-[5rem] px-[1.5rem] py-[2.5rem]">
-      <div className="text-center 2xl:mb-[5rem] sm:mb-[2.5rem] mb-[1.25rem] font-semibold 2xl:text-[4.125rem] sm:text-[3rem] text-[1.5rem]">
+      <div className="text-center 2xl:mb-[5rem] sm:mb-[2.5rem] mb-[1.25rem] font-semibold 2xl:text-[4.125rem] sm:text-[2.75rem] text-[1.5rem]">
         {t("aboutValuesTitle")}
       </div>
       <ul className="flex justify-between flex-wrap">
