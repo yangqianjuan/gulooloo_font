@@ -37,7 +37,7 @@ const BackButton = ({ text = "Back to Blog", BackToBlog = () => {} }) => (
 );
 
 const SectionTitle = ({ children }: { children: React.ReactNode }) => (
-  <div className="2xl:text-[2rem] font-semibold 2xl:mb-[1.5rem] mb-[1rem]">
+  <div className="2xl:text-[2rem] sm:text-[1.75rem] text-[1.25rem] font-semibold 2xl:mb-[1.5rem] mb-[1rem]">
     {children}
   </div>
 );
