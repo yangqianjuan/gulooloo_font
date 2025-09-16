@@ -3,7 +3,7 @@ import { useState } from "react";
 import { X } from "lucide-react";
 // import { MenuItem } from "./MobileMenu"; // 可选导出位置优化
 import MenuItemSingle from "./MenuItemSingle";
-import MenuItemWithSubmenu from "./ MenuItemWithSubmenu";
+import MenuItemWithSubmenu from "./MenuItemWithSubmenu";
 import { useMemoizedFn } from "ahooks";
 
 interface MobileMenuProps {

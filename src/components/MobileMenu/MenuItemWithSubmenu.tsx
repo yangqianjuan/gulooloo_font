@@ -1,0 +1,75 @@
+// components/MenuItemWithSubmenu.tsx
+import { ChevronDown, ChevronUp } from "lucide-react";
+import Link from "next/link";
+import { useRouter, usePathname } from "next/navigation";
+import { useMemoizedFn } from "ahooks";
+
+export interface MenuItem {
+  label: string;
+  key: string;
+  href?: string;
+  isLang?: boolean;
+  children?: MenuItem[];
+}
+interface Props {
+  item: MenuItem;
+  isOpen: boolean;
+  toggle: () => void;
+  onClose?: () => void;
+}
+
+const MenuItemWithSubmenu: React.FC<Props> = ({ item, isOpen, toggle, onClose }) => {
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const switchLang = useMemoizedFn((locale: string) => {
+    if (!locale) return;
+    const new_locale = locale.split("/");
+    const segments = pathname.split("/");
+    // 第一个 segment 是 locale
+    segments[1] = new_locale[1];
+    router.push(segments.join("/"));
+  });
+
+  return (
+    <div>
+      <button
+        onClick={toggle}
+        className="w-full flex justify-between items-center font-medium"
+        aria-expanded={isOpen}
+        aria-controls={`submenu-${item.key}`}
+        aria-label={`toggle submenu ${item.label}`}
+        type="button"
+      >
+        {item.label}
+        {isOpen ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
+      </button>
+      {isOpen && (
+        <ul id={`submenu-${item.key}`} className="ml-4 mt-2 text-base text-gray-700 mb-[2rem]">
+          {item.children?.map((child) => (
+            <li
+              key={child.key}
+              className="sm:text-[rgba(4,30,84,1)] text-[rgba(4,30,84,0.32)] hover:text-[rgba(4,30,84,1)] 2xl:text-[1.25rem] sm:text-[1.125rem] text-[1rem] mt-[1.5rem]"
+            >
+              {item.isLang ? (
+                <button
+                  type="button"
+                  onClick={() => switchLang(child.href || "")}
+                  className="text-left"
+                >
+                  {child.label}
+                </button>
+              ) : (
+                <Link href={child.href ?? "#"} onClick={onClose}>
+                  {child.label}
+                </Link>
+              )}
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  );
+};
+
+export default MenuItemWithSubmenu;
