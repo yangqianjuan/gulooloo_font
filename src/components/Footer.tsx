@@ -72,14 +72,14 @@ export default function Footer() {
         imgs: [
           {
             node: (
-              <AppStore className="text-[rgba(0,0,0,1)] hover:text-[rgba(4,30,84,1)] w-[8.42rem] mb-[1.25rem] mr-[2rem] transition-transform duration-300 hover:scale-110" />
+              <AppStore className="text-[rgba(0,0,0,1)] hover:text-[rgba(4,30,84,1)] w-[135px] mb-[20px] mr-[32px] transition-transform duration-300 hover:scale-110" />
             ),
             link: iosLink,
             alt: t("appstore_download_alt"),
           },
           {
             node: (
-              <GooglePlay className="text-[rgba(0,0,0,1)] hover:text-[rgba(4,30,84,1)] w-[8.42rem] mb-[1.25rem] transition-transform duration-300 hover:scale-110" />
+              <GooglePlay className="text-[rgba(0,0,0,1)] hover:text-[rgba(4,30,84,1)] w-[135px] mb-[20px] transition-transform duration-300 hover:scale-110" />
             ),
             link: andoridLink,
             alt: t("googleplay_download_alt"),
@@ -91,29 +91,24 @@ export default function Footer() {
   );
   return (
     <footer
-      className="text-[rgba(4,30,84,0.64)] w-full xl:px-[5rem] 2xl:pt-[4.44rem] sm:pt-[3.75rem] bg-[rgba(246,254,255,1)] px-[1.5rem] pt-[2.5rem]"
+      className="text-[rgba(4,30,84,0.64)] w-full xl:px-[80px] 2xl:pt-[71px] sm:pt-[60px] bg-[rgba(246,254,255,1)] px-[24px] pt-[40px]"
       aria-label="site footer"
     >
-      <div className="flex flex-wrap sm:justify-between 2xl:pb-[3.75rem] sm:pb-[2.5rem] pb-[2rem]">
-        <div className="2xl:w-[31.25rem] sm:w-[20rem]  w-full sm:mb-[0rem] mb-[2rem]">
-          <Image src={logo} alt="" className="mb-[1rem]"></Image>
-          <div className="2xl:text-[1.25rem] text-[1.125rem]">
-            {t("ctaTagline")}
-          </div>
+      <div className="flex flex-wrap sm:justify-between 2xl:pb-[60px] sm:pb-[40px] pb-[32px]">
+        <div className="2xl:w-[500px] sm:w-[320px]  w-full sm:mb-[0px] mb-[32px]">
+          <Image src={logo} alt="" className="mb-[16px]"></Image>
+          <div className="2xl:text-[20px] text-[18px]">{t("ctaTagline")}</div>
         </div>
         {list.map((section) => (
-          <div
-            className="2xl:w-[20rem] sm:w-[11.25rem] w-full"
-            key={section.key}
-          >
+          <div className="2xl:w-[320px] sm:w-[180px] w-full" key={section.key}>
             {section.children && (
               <div className="sm:block hidden">
-                <h2 className="2xl:text-[1.25rem] text-[1rem] font-semibold text-[rgba(4,30,84,1)] mb-[2rem]">
+                <h2 className="2xl:text-[20px] text-[16px] font-semibold text-[rgba(4,30,84,1)] mb-[32px]">
                   {section.label}
                 </h2>
                 <nav
                   aria-label={section.label}
-                  className="2xl:text-[1.25rem] text-[1rem] font-medium"
+                  className="2xl:text-[20px] text-[16px] font-medium"
                 >
                   {section.children.map((item) => (
                     <div key={item.key}>
@@ -129,7 +124,7 @@ export default function Footer() {
               </div>
             )}
             {section.children && (
-              <div className="sm:hidden 2xl:text-[1.25rem] text-[1.125rem] text-[rgba(4,30,84,1)] mb-[1.5rem]">
+              <div className="sm:hidden 2xl:text-[20px] text-[18px] text-[rgba(4,30,84,1)] mb-[24px]">
                 <MenuItemWithSubmenu
                   // 复用移动端组件
                   item={{
@@ -148,7 +143,7 @@ export default function Footer() {
             )}
             {section.imgs && (
               <div>
-                <h2 className="2xl:text-[1.25rem] text-[1.125rem] sm:font-semibold text-[rgba(4,30,84,1)] mb-[2rem] font-medium">
+                <h2 className="2xl:text-[20px] text-[18px] sm:font-semibold text-[rgba(4,30,84,1)] mb-[32px] font-medium">
                   {section.label}
                 </h2>
                 <div className="sm:block flex">
@@ -169,12 +164,12 @@ export default function Footer() {
           </div>
         ))}
       </div>
-      <div className="xl:py-[3.75rem] sm:flex justify-between border-t border-[rgba(4,30,84,0.08)] 2xl:text-[1.25rem] text-[1.125rem] pt-[4rem] pb-[2rem]">
-        <div className="mb-[2rem]">{t("footerCopyright")}</div>
+      <div className="xl:py-[60px] sm:flex justify-between border-t border-[rgba(4,30,84,0.08)] 2xl:text-[20px] text-[18px] pt-[64px] pb-[32px]">
+        <div className="mb-[32px]">{t("footerCopyright")}</div>
         <div className="flex">
           <span
             onClick={() => switchPath("/privacy-policy")}
-            className="cursor-pointer  max-w-[40vw] sm:mr-[3.75rem] mr-[1.5rem] break-words"
+            className="cursor-pointer  max-w-[40vw] sm:mr-[60px] mr-[24px] break-words"
           >
             {t("footerPrivacy")}
           </span>

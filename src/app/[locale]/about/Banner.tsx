@@ -7,7 +7,7 @@ export default function Banner() {
   const t = useTranslations("about");
   return (
     <div className="relative w-full">
-      <div className="absolute top-[30.5%]  text-center w-full text-white font-bold  2xl:text-[4.5rem] sm:text-[2.75rem] text-[1.5rem]">
+      <div className="absolute top-[30.5%]  text-center w-full text-white font-bold  2xl:text-[72px] sm:text-[44px] text-[24px]">
         {t("aboutHeroTitle")}
       </div>
       <Image

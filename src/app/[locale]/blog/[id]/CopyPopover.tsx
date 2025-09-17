@@ -37,9 +37,9 @@ export default function CopyPopover({ url, text, label }: CopyPopoverProps) {
     <div className="relative inline-block">
       {/* Popover 提示在上方 */}
       {open && (
-        <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 whitespace-nowrap rounded-[1.75rem] bg-[rgba(4,30,84,1)] text-white shadow-lg">
-          <span className="flex sm:px-[1rem] px-[0.75rem] sm:py-[0.75rem] py-[0.62rem]  2xl:text-[1.25rem] sm:text-[1rem] text-[0.875rem]">
-            <div className="2xl:w-[1.25rem]  w-[1rem] mr-[0.62rem] flex items-center">
+        <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 whitespace-nowrap rounded-[28px] bg-[rgba(4,30,84,1)] text-white shadow-lg">
+          <span className="flex sm:px-[16px] px-[12px] sm:py-[12px] py-[10px]  2xl:text-[20px] sm:text-[16px] text-[14px]">
+            <div className="2xl:w-[20px]  w-[16px] mr-[10px] flex items-center">
               <Image src={ic_success} className="w-full" alt="" />
             </div>
             <span>{text}</span>

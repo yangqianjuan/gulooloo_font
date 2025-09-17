@@ -113,19 +113,19 @@ const Header: React.FC = () => {
         />
         <div
           onClick={() => switchPath("blog")}
-          className="cursor-pointer rounded-[0.75rem] mx-[1.5rem] 2xl:text-[1.25rem] text-[1.125rem] hover:bg-[rgba(0,204,145,0.078)] hover:text-[rgba(0,204,145,1)] py-[0.81rem] px-[1.56rem]"
+          className="cursor-pointer rounded-[12px] mx-[24px] 2xl:text-[20px] text-[18px] hover:bg-[rgba(0,204,145,0.078)] hover:text-[rgba(0,204,145,1)] py-[13px] px-[25px]"
         >
           {t("navResource")}
         </div>
         <div
           onClick={() => switchPath("about")}
-          className="cursor-pointer rounded-[0.75rem] 2xl:text-[1.25rem] text-[1.125rem] hover:bg-[rgba(0,204,145,0.078)] hover:text-[rgba(0,204,145,1)] py-[0.81rem] px-[1.56rem]"
+          className="cursor-pointer rounded-[12px] 2xl:text-[20px] text-[18px] hover:bg-[rgba(0,204,145,0.078)] hover:text-[rgba(0,204,145,1)] py-[13px] px-[25px]"
         >
           {t("navAbout")}
         </div>
       </div>
       <div className="text-xl items-center hidden sm:flex">
-        <span className="text-[1.25rem] mr-[1.7rem] ">
+        <span className="text-[20px] mr-[27px] ">
           <AnchorDropdown
             options={langList}
             placeholder={showLang}

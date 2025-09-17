@@ -20,7 +20,7 @@ export default function AboutPage() {
       <Header />
       <main className="flex flex-col row-start-2 sm:items-start w-full">
         <Banner />
-        <div className="bg-[rgba(222,251,255,1)] text-center 2xl:text-[1.5rem] 2xl:px-[22.5rem] 2xl:py-[3.75rem] sm:text-[1.125rem] sm:px-[7.5rem] sm:py-[2.5rem] text-[0.875rem] px-[1.5rem] py-[1.25rem]">
+        <div className="bg-[rgba(222,251,255,1)] text-center 2xl:text-[24px] 2xl:px-[360px] 2xl:py-[60px] sm:text-[18px] sm:px-[120px] sm:py-[40px] text-[14px] px-[24px] py-[20px]">
           {t("aboutIntro")}
         </div>
         <Team />

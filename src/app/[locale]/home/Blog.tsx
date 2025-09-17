@@ -25,8 +25,8 @@ function CardItem({ d }: { d: CardItemProps }) {
     router.push(`/${locale}/blog/${path}`);
   });
   return (
-    <article className="shadow-[0_8px_24px_rgba(126,138,163,0.12)] bg-white sm:w-[32%] w-full text-left 2xl:rounded-[1.5rem] rounded-[1rem] sm:mb-[0rem] mb-[2rem]">
-      <div className="w-full h-auto  overflow-hidden 2xl:rounded-t-[1.5rem] rounded-t-[1rem]">
+    <article className="shadow-[0_8px_24px_rgba(126,138,163,0.12)] bg-white sm:w-[32%] w-full text-left 2xl:rounded-[24px] rounded-[16px] sm:mb-[0px] mb-[32px]">
+      <div className="w-full h-auto  overflow-hidden 2xl:rounded-t-[24px] rounded-t-[16px]">
         <Image
           src={d.img}
           alt={d.alt}
@@ -37,19 +37,19 @@ function CardItem({ d }: { d: CardItemProps }) {
           className="w-full h-auto  transition-transform duration-300 hover:scale-110"
         />
       </div>
-      <div className="2xl:p-[2.5rem] px-[1.5rem] py-[1.25rem] ">
-        <div className="2xl:text-[2rem] text-[1.25rem] font-medium text-[rgba(4,30,84,1)] 2xl:mb-[2rem] mb-[1rem]">
+      <div className="2xl:p-[40px] px-[24px] py-[20px] ">
+        <div className="2xl:text-[32px] text-[20px] font-medium text-[rgba(4,30,84,1)] 2xl:mb-[32px] mb-[16px]">
           {d.title}
         </div>
-        <div className="2xl:text-[1.5rem] text-[1rem] text-[rgba(4,30,84,0.64)] 2xl:mb-[2.5rem] mb-[1.25rem]">
+        <div className="2xl:text-[24px] text-[16px] text-[rgba(4,30,84,0.64)] 2xl:mb-[40px] mb-[20px]">
           {d.desc}
         </div>
         <div
           onClick={() => switchPath(d.row)}
-          className="cursor-pointer font-medium text-[rgba(0,204,145,1)] hover:text-[rgba(82,220,180,1)] flex items-center 2xl:text-[1.5rem] text-[1rem]"
+          className="cursor-pointer font-medium text-[rgba(0,204,145,1)] hover:text-[rgba(82,220,180,1)] flex items-center 2xl:text-[24px] text-[16px]"
         >
-          <span className="mr-[0.5rem]">{t("readMoreBtn")}</span>
-          <ArrowRight className="w-[1.5rem]" />
+          <span className="mr-[8px]">{t("readMoreBtn")}</span>
+          <ArrowRight className="w-[24px]" />
         </div>
       </div>
     </article>
@@ -83,11 +83,11 @@ export default function Blog() {
     ];
   }, []);
   return (
-    <div className=" 2xl:p-[5rem] sm:p-[2.5rem]  p-[1.5rem]">
-      <div className="2xl:text-[4rem] font-semibold sm:text-[3rem] text-[1.5rem] text-center">
+    <div className=" 2xl:p-[80px] sm:p-[40px]  p-[24px]">
+      <div className="2xl:text-[64px] font-semibold sm:text-[48px] text-[24px] text-center">
         {t("blogSectionTitle")}
       </div>
-      <div className="2xl:text-[1.5rem] 2xl:mb-[5rem] sm:text-[1.25rem] sm:mb-[2.5rem] text-[0.9735rem] mb-[2.37rem] text-center text-[rgba(4,30,84,0.48)]">
+      <div className="2xl:text-[24px] 2xl:mb-[80px] sm:text-[20px] sm:mb-[40px] text-[16px] mb-[38px] text-center text-[rgba(4,30,84,0.48)]">
         {t("blogSectionSubtitle")}
       </div>
       <div className="flex justify-between flex-wrap">

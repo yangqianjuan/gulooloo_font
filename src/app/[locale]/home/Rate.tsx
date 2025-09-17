@@ -33,33 +33,33 @@ export default function Rate() {
     ];
   }, []);
   return (
-    <div className="2xl:p-[5rem] sm:p-[2.5rem] p-[1.5rem]">
-      <div className="2xl:text-[4rem] font-semibold sm:text-[3rem] text-[1.5rem] text-center">
+    <div className="2xl:p-[80px] sm:p-[40px] p-[24px]">
+      <div className="2xl:text-[64px] font-semibold sm:text-[48px] text-[24px] text-center">
         {t("testimonialTitle")}
       </div>
-      <div className="sm:text-[1.5rem] 2xl:mb-[5rem] text-[1.25rem] mb-[4rem]  text-center text-[rgba(4,30,84,0.48)]">
+      <div className="sm:text-[24px] 2xl:mb-[80px] text-[20px] mb-[64px]  text-center text-[rgba(4,30,84,0.48)]">
         {t("testimonialSubtitle")}
       </div>
       <div className="flex justify-between sm:flex-row flex-col">
         {list.map((d) => {
           return (
             <div
-              className="flex flex-col justify-between shadow-[0_8px_24px_rgba(126,138,163,0.12)] bg-white sm:w-[32%] text-left xl:p-[2.5rem]  p-[2.4rem] mb-[2rem] xl:rounded-[24px] rounded-[16px]"
+              className="flex flex-col justify-between shadow-[0_8px_24px_rgba(126,138,163,0.12)] bg-white sm:w-[32%] text-left xl:p-[40px]  p-[38px] mb-[32px] xl:rounded-[24px] rounded-[16px]"
               key={d.title}
             >
-              <div className="mb-[1.6rem] 2xl:text-[2rem] text-[1.25rem] font-medium">
+              <div className="mb-[26px] 2xl:text-[32px] text-[20px] font-medium">
                 {d.title}
               </div>
-              <div className="2xl:text-[1.5rem] text-[1rem]  2xl:mb-[1rem] mb-[0.5rem] text-[rgba(4,30,84,0.64)]">
+              <div className="2xl:text-[24px] text-[16px]  2xl:mb-[16px] mb-[8px] text-[rgba(4,30,84,0.64)]">
                 {d.desc}
               </div>
               <div className="flex justify-between ">
-                <div className="sm:text-[1.5rem] text-[1rem] flex items-center">
+                <div className="sm:text-[24px] text-[16px] flex items-center">
                   <Image
                     width={32}
                     src={d.user_img}
                     alt=""
-                    className="2xl:mr-[0.8rem] mr-[0.25rem] 2xl:w-[2.5rem] w-[2rem]"
+                    className="2xl:mr-[13px] mr-[4px] 2xl:w-[40px] w-[32px]"
                   ></Image>
                   <span>{d.user_name}</span>
                 </div>
@@ -70,7 +70,7 @@ export default function Rate() {
                       alt=""
                       width={24}
                       key={i}
-                      className="2xl:ml-[0.25rem] ml-[0.2rem] 2xl:w-[1.875rem] w-[1.5rem]"
+                      className="2xl:ml-[4px] ml-[3px] 2xl:w-[30px] w-[24px]"
                     ></Image>
                   ))}
                 </div>

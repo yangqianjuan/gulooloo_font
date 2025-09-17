@@ -29,29 +29,29 @@ const Footer = dynamic_(() => import("@/components/Footer"), { ssr: false });
 const BackButton = ({ text = "Back to Blog", BackToBlog = () => {} }) => (
   <div
     onClick={BackToBlog}
-    className="font-medium text-[rgba(0,204,145,1)] hover:text-[rgba(82,220,180,1)] flex items-center 2xl:text-[1.5rem] sm:text-[1.25rem] text-[1rem] cursor-pointer"
+    className="font-medium text-[rgba(0,204,145,1)] hover:text-[rgba(82,220,180,1)] flex items-center 2xl:text-[24px] sm:text-[20px] text-[16px] cursor-pointer"
   >
-    <ArrowLeft className="2xl:w-[2rem] sm:w-[1.875rem] w-[1.5rem]" />
+    <ArrowLeft className="2xl:w-[32px] sm:w-[30px] w-[24px]" />
     <span className="ml-2">{text}</span>
   </div>
 );
 
 const SectionTitle = ({ children }: { children: React.ReactNode }) => (
-  <div className="2xl:text-[2rem] sm:text-[1.75rem] text-[1.25rem] font-semibold 2xl:mb-[1.5rem] mb-[1rem]">
+  <div className="2xl:text-[32px] sm:text-[28px] text-[20px] font-semibold 2xl:mb-[24px] mb-[16px]">
     {children}
   </div>
 );
 
 const Paragraph = ({ children }: { children: React.ReactNode }) => (
-  <div className="2xl:text-[1.5rem] sm:text-[1.25rem] text-[1rem] 2xl:mt-[1.5rem] mt-[1rem] 2xl:mb-[3.75rem] mb-[2.5rem]">
+  <div className="2xl:text-[24px] sm:text-[20px] text-[16px] 2xl:mt-[24px] mt-[16px] 2xl:mb-[60px] mb-[40px]">
     {children}
   </div>
 );
 
 const ListBlock = ({ items }: { items: string[] }) => (
-  <ul className="list-disc marker:text-[rgba(0,204,145,1)] 2xl:pl-[2.5rem] sm:pl-[1.5rem] pl-[1.25rem] 2xl:text-[1.5rem] sm:text-[1.25rem] text-[1rem]">
+  <ul className="list-disc marker:text-[rgba(0,204,145,1)] 2xl:pl-[40px] sm:pl-[24px] pl-[20px] 2xl:text-[24px] sm:text-[20px] text-[16px]">
     {items.map((item, index) => (
-      <li key={index} className="2xl:mb-[1.5rem] mb-[1rem]">
+      <li key={index} className="2xl:mb-[24px] mb-[16px]">
         {item}
       </li>
     ))}
@@ -59,23 +59,23 @@ const ListBlock = ({ items }: { items: string[] }) => (
 );
 
 const QuoteBox = ({ children }: { children: React.ReactNode }) => (
-  <div className="bg-[rgba(246,254,255,1)] italic relative 2xl:px-[5.37rem] 2xl:py-[3.75rem] sm:px-[3.5rem] sm:py-[2.5rem] px-[2.13rem] py-[2rem]">
-    <span className="absolute 2xl:top-[2.5rem] 2xl:left-[2.5rem] sm:top-[1.5rem] sm:left-[1.5rem] top-[1rem] left-[1rem] 2xl:w-[1.8rem] w-[1.3rem]">
+  <div className="bg-[rgba(246,254,255,1)] italic relative 2xl:px-[86px] 2xl:py-[60px] sm:px-[56px] sm:py-[40px] px-[34px] py-[32px]">
+    <span className="absolute 2xl:top-[40px] 2xl:left-[40px] sm:top-[24px] sm:left-[24px] top-[16px] left-[16px] 2xl:w-[29px] w-[21px]">
       <Image src={ic_dot} alt="" className="w-full" />
     </span>
     <div>{children}</div>
-    <span className="absolute 2xl:bottom-[2.5rem] 2xl:right-[2.5rem] sm:bottom-[1.5rem] sm:right-[1.5rem] bottom-[1rem] right-[1rem] 2xl:w-[1.8rem] w-[1.3rem]">
+    <span className="absolute 2xl:bottom-[40px] 2xl:right-[40px] sm:bottom-[24px] sm:right-[24px] bottom-[16px] right-[16px] 2xl:w-[29px] w-[21px]">
       <Image src={ic_dot} className="w-full" alt="" />
     </span>
   </div>
 );
 
 const QABox = ({ q, a }: { q: string; a: string }) => (
-  <div className="bg-[rgba(246,254,255,1)] border-[rgba(0,204,145,0.48)] rounded-lg sm:pl-[3rem] sm:pr-[3.5rem] sm:py-[2rem] sm:mb-[1rem] sm:border-l-[0.5rem] pl-[1.12rem] pr-[1rem] py-[1.25rem] mb-[0.75rem] border-l-[0.375rem] ">
-    <h3 className="font-medium 2xl:text-[1.5rem] sm:mb-[1rem] sm:text-[1.25rem] text-[0.875rem] mb-[0.75rem]">
+  <div className="bg-[rgba(246,254,255,1)] border-[rgba(0,204,145,0.48)] rounded-lg sm:pl-[48px] sm:pr-[56px] sm:py-[32px] sm:mb-[16px] sm:border-l-[8px] pl-[18px] pr-[16px] py-[20px] mb-[12px] border-l-[6px] ">
+    <h3 className="font-medium 2xl:text-[24px] sm:mb-[16px] sm:text-[20px] text-[14px] mb-[12px]">
       Q: {q}
     </h3>
-    <div className="text-[rgba(4,30,84,0.70)] 2xl:text-[1.5rem] sm:text-[1.25rem] text-[0.875rem]">
+    <div className="text-[rgba(4,30,84,0.70)] 2xl:text-[24px] sm:text-[20px] text-[14px]">
       A: {a}
     </div>
   </div>
@@ -115,7 +115,7 @@ export default function BlogDetail() {
     return [
       {
         img: (
-          <Twitter className="hover:text-[rgba(0,0,0,1)] mr-[1.5rem] 2xl:w-[3rem]  sm:w-[2.5rem]  w-[2.25rem]" />
+          <Twitter className="hover:text-[rgba(0,0,0,1)] mr-[24px] 2xl:w-[48px]  sm:w-[40px]  w-[36px]" />
         ),
         link: `https://twitter.com/intent/tweet?text=${t(
           `article${id}Title`
@@ -124,21 +124,21 @@ export default function BlogDetail() {
       },
       {
         img: (
-          <Facebook className="hover:text-[rgba(8,102,255,1)] mr-[1.5rem] 2xl:w-[3rem]  sm:w-[2.5rem]  w-[2.25rem]" />
+          <Facebook className="hover:text-[rgba(8,102,255,1)] mr-[24px] 2xl:w-[48px]  sm:w-[40px]  w-[36px]" />
         ),
         link: `https://www.facebook.com/sharer/sharer.php?u=${herf}`,
         isCopy: false,
       },
       {
         img: (
-          <Linke className="hover:text-[rgba(10,102,194,1)]  mr-[1.5rem] 2xl:w-[3rem]  sm:w-[2.5rem]  w-[2.25rem]" />
+          <Linke className="hover:text-[rgba(10,102,194,1)]  mr-[24px] 2xl:w-[48px]  sm:w-[40px]  w-[36px]" />
         ),
         link: `https://www.linkedin.com/sharing/share-offsite/?url=${herf}`,
         isCopy: false,
       },
       {
         img: (
-          <Link className="hover:text-[rgba(0,204,145,1)]  2xl:w-[3rem]  sm:w-[2.5rem]  w-[2.25rem]" />
+          <Link className="hover:text-[rgba(0,204,145,1)]  2xl:w-[48px]  sm:w-[40px]  w-[36px]" />
         ),
         link: herf,
         isCopy: true,
@@ -154,13 +154,13 @@ export default function BlogDetail() {
     <div className="grid grid-rows-[auto_1fr_auto] justify-items-center min-h-screen max-w-[1920px] mx-auto sm:min-w-[1080px]">
       <Header />
       <main className="flex flex-col row-start-2 sm:items-start w-full">
-        <div className="leading-[1.5] 2xl:px-[12.5rem] 2xl:py-[5rem] sm:px-[5rem] sm:py-[2.5rem] px-[1.5rem] py-[1.25rem]">
-          <div className="2xl:mb-[7.5rem] sm:mb-[5rem] mb-[2.5rem]">
+        <div className="leading-[1.5] 2xl:px-[200px] 2xl:py-[80px] sm:px-[80px] sm:py-[40px] px-[24px] py-[20px]">
+          <div className="2xl:mb-[120px] sm:mb-[80px] mb-[40px]">
             <BackButton text={t("blogBack")} BackToBlog={BackToBlog} />
           </div>
 
           {/* 标题 */}
-          <div className="font-semibold 2xl:text-[4rem] 2xl:mb-[5rem] sm:text-[2.5rem] sm:mb-[2.5rem] mb-[1.25rem] text-[1.5rem]">
+          <div className="font-semibold 2xl:text-[64px] 2xl:mb-[80px] sm:text-[40px] sm:mb-[40px] mb-[20px] text-[24px]">
             {t(`article${id}Title`)}
           </div>
 
@@ -168,10 +168,10 @@ export default function BlogDetail() {
           <Image
             src={banner_image}
             alt="bussniess_01_view"
-            className="w-full 2xl:rounded-[1rem]"
+            className="w-full 2xl:rounded-[16px]"
           />
 
-          <div className="2xl:px-[13.65rem] 2xl:pt-[2.5rem]">
+          <div className="2xl:px-[218px] 2xl:pt-[40px]">
             <Paragraph>{t(`article${id}BodyIntro`)}</Paragraph>
 
             <SectionTitle>1. {t(`article${id}Section1Title`)}</SectionTitle>
@@ -179,13 +179,13 @@ export default function BlogDetail() {
 
             <SectionTitle>2. {t(`article${id}Section2Title`)}</SectionTitle>
             <Paragraph>
-              <div className="2xl:mb-[1.5rem] mb-[1rem]">{setion2_content}</div>
+              <div className="2xl:mb-[24px] mb-[16px]">{setion2_content}</div>
               {section2_list.length > 0 && <ListBlock items={section2_list} />}
             </Paragraph>
 
             <SectionTitle>3. {t(`article${id}Section3Title`)}</SectionTitle>
             <Paragraph>
-              <div className="2xl:mb-[1.5rem] mb-[1rem]">
+              <div className="2xl:mb-[24px] mb-[16px]">
                 {t(`article${id}Section3Content`)}
               </div>
               <QuoteBox>{t(`article${id}Section3Highlight`)}</QuoteBox>
@@ -202,7 +202,7 @@ export default function BlogDetail() {
             )}
 
             {/* Q&A */}
-            <div className="font-semibold 2xl:text-[2rem] 2xl:mb-[1.5rem] text-[1.25rem] sm:mb-[1.87rem] mb-[1rem]">
+            <div className="font-semibold 2xl:text-[32px] 2xl:mb-[24px] text-[20px] sm:mb-[30px] mb-[16px]">
               {t(`article1FaqTitle`)}
             </div>
             <QABox q={t(`article${id}FaqQ1`)} a={t(`article${id}FaqA1`)} />
@@ -212,9 +212,9 @@ export default function BlogDetail() {
           </div>
 
           {/* 底部分享 */}
-          <div className="2xl:pt-[5rem] sm:pt-[3.75rem] pt-[2.5rem] border-t border-[rgba(4,30,84,0.08)]">
-            <div className="flex justify-between flex-wrap 2xl:mb-[7.5rem] sm:mb-[3.75rem] mb-[2.5rem]">
-              <div className="font-semibold 2xl:text-[2rem] sm:text-[1.75rem] text-[1.25rem] sm:w-auto w-full sm:mb-[0rem] mb-[1rem]">
+          <div className="2xl:pt-[80px] sm:pt-[60px] pt-[40px] border-t border-[rgba(4,30,84,0.08)]">
+            <div className="flex justify-between flex-wrap 2xl:mb-[120px] sm:mb-[60px] mb-[40px]">
+              <div className="font-semibold 2xl:text-[32px] sm:text-[28px] text-[20px] sm:w-auto w-full sm:mb-[0px] mb-[16px]">
                 {t(`articleShared`)}
               </div>
               <div className="flex relative">

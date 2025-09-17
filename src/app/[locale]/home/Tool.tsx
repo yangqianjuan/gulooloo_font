@@ -98,13 +98,13 @@ export default function Tool() {
   }, []);
   return (
     <div
-      className="w-full text-center pt-[7.5rem] xl:mb-[7rem] sm:mb-[8rem] mb-[6rem]"
+      className="w-full text-center pt-[120px] xl:mb-[112px] sm:mb-[128px] mb-[96px]"
       id="appDesc"
     >
-      <div className="font-semibold 2xl:text-[4.125rem] sm:text-[2.75rem] text-[1.5rem]">
+      <div className="font-semibold 2xl:text-[66px] sm:text-[44px] text-[24px]">
         {t("productsMainTitle")}
       </div>
-      <div className="text-[rgba(4,30,84,0.48)] 2xl:text-[1.5rem]  sm:text-[1.25rem]  text-[0.9375rem]">
+      <div className="text-[rgba(4,30,84,0.48)] 2xl:text-[24px]  sm:text-[20px]  text-[15px]">
         {t("productsSubtitle")}
       </div>
       {list.map((d) => {
@@ -117,42 +117,42 @@ export default function Tool() {
                 : d.direct === "flex-row"
                 ? "sm:flex-row"
                 : ""
-            } sm:justify-between text-left flex-col items-center  sm:pt-[7.5rem] 2xl:px-[7.5rem] sm:px-[3.75rem] px-[2rem]  pt-[6rem]`}
+            } sm:justify-between text-left flex-col items-center  sm:pt-[120px] 2xl:px-[120px] sm:px-[60px] px-[32px]  pt-[96px]`}
             key={d.textInfo.title}
           >
             <div className="2xl:w-[42%] sm:w-[44%] w-full">
               <Image
                 src={d.img}
-                className="w-full sm:mb-[0rem] mb-[2.5rem]"
+                className="w-full sm:mb-[0px] mb-[40px]"
                 alt=""
                 loading="lazy"
                 width={1384}
                 height={1560}
-                sizes="(max-width: 640px) 100vw, (max-width: 1280px) 26.875rem, 43.25rem"
+                sizes="(max-width: 640px) 100vw, (max-width: 1280px) 430px, 692px"
               />
             </div>
-            <div className="2xl:w-[47%]  sm:w-[48%]  w-full px-[0rem] flex items-center">
+            <div className="2xl:w-[47%]  sm:w-[48%]  w-full px-[0px] flex items-center">
               <div>
-                <div className="font-semibold 2xl:text-[4rem] sm:text-[2.5rem] 2xl:mb-[1.5rem] sm:mb-[1rem] mb-[0.5rem] text-[1.375rem]">
+                <div className="font-semibold 2xl:text-[64px] sm:text-[40px] 2xl:mb-[24px] sm:mb-[16px] mb-[8px] text-[22px]">
                   {d.textInfo.title}
                 </div>
-                <div className="text-[rgba(4,30,84,1)] 2xl:text-[1.5rem] sm:text-[1.25rem] 2xl:mb-[2.5rem]  sm:mb-[1.6rem] mb-[1rem] text-[0.9735rem]">
+                <div className="text-[rgba(4,30,84,1)] 2xl:text-[24px] sm:text-[20px] 2xl:mb-[40px]  sm:mb-[26px] mb-[16px] text-[16px]">
                   {d.textInfo.desc}
                 </div>
-                <ul className="2xl:mb-[8.75rem] sm:mb-[5rem] mb-[4rem]">
+                <ul className="2xl:mb-[140px] sm:mb-[80px] mb-[64px]">
                   {d.textInfo.items.map((item) => {
                     return (
                       <li
-                        className="flex items-center w-full mb-[1rem]"
+                        className="flex items-center w-full mb-[16px]"
                         key={item}
                       >
                         <Image
                           src={ic}
                           alt=""
-                          className="w-[1.5rem] mr-[1.6rem]"
+                          className="w-[24px] mr-[26px]"
                           loading="lazy"
                         />
-                        <div className="2xl:text-[1.5rem] sm:text-[1.25rem] text-[0.9375rem] ">
+                        <div className="2xl:text-[24px] sm:text-[20px] text-[15px] ">
                           {item}
                         </div>
                       </li>
@@ -165,14 +165,14 @@ export default function Tool() {
                       toLink(d.link_ios);
                     }}
                   >
-                    <AppStore className="text-[rgba(0,0,0,1)] hover:text-[rgba(4,30,84,1)] 2xl:w-[10.125rem] 2xl:mr-[1.5rem] w-[8.4375rem] mr-[1.25rem] transition-transform duration-300 hover:scale-110" />
+                    <AppStore className="text-[rgba(0,0,0,1)] hover:text-[rgba(4,30,84,1)] 2xl:w-[162px] 2xl:mr-[24px] w-[135px] mr-[20px] transition-transform duration-300 hover:scale-110" />
                   </span>
                   <span
                     onClick={() => {
                       toLink(d.link_android);
                     }}
                   >
-                    <GooglePlay className="text-[rgba(0,0,0,1)] hover:text-[rgba(4,30,84,1)] 2xl:w-[10.125rem]  w-[8.4375rem]  transition-transform duration-300 hover:scale-110" />
+                    <GooglePlay className="text-[rgba(0,0,0,1)] hover:text-[rgba(4,30,84,1)] 2xl:w-[162px]  w-[135px]  transition-transform duration-300 hover:scale-110" />
                   </span>
                 </div>
               </div>

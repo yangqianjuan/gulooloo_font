@@ -61,13 +61,13 @@ export default function AnchorDropdown({
     <div ref={dropdownRef} className="relative inline-block">
       <button
         onClick={() => setOpen(!open)}
-        className="flex items-center justify-between rounded-[0.75rem] hover:bg-[rgba(0,204,145,0.078)] hover:text-[rgba(0,204,145,1)] focus:outline-none py-[0.81rem] px-[1.56rem] group"
+        className="flex items-center justify-between rounded-[12px] hover:bg-[rgba(0,204,145,0.078)] hover:text-[rgba(0,204,145,1)] focus:outline-none py-[13px] px-[25px] group"
         aria-haspopup="listbox"
         aria-label="Toggle menu"
         aria-expanded={open}
       >
-        {isShowGlobal && <Globe size={20} className="mr-[0.25rem]" />}
-        <span className="mr-2 2xl:text-[1.25rem] text-[1.125rem]">
+        {isShowGlobal && <Globe size={20} className="mr-[4px]" />}
+        <span className="mr-2 2xl:text-[20px] text-[18px]">
           {placeholder}
         </span>
         {isShowArrow &&
@@ -87,7 +87,7 @@ export default function AnchorDropdown({
       </button>
 
       {open && (
-        <ul className="absolute z-10 top-[5rem] rounded-[1.5rem] left-1/2 -translate-x-1/2 px-[1.25rem]  py-[2rem] w-[16rem] bg-white  shadow-md transition-all duration-200 text-[1.25rem]">
+        <ul className="absolute z-10 top-[80px] rounded-[24px] left-1/2 -translate-x-1/2 px-[20px]  py-[32px] w-[256px] bg-white  shadow-md transition-all duration-200 text-[20px]">
           {options.map((opt) => (
             <li
               key={opt.value}

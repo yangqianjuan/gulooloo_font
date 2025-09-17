@@ -34,7 +34,7 @@ export default function BlogPage() {
       <Header />
       <main className="flex flex-col  row-start-2 sm:items-start w-full">
         <Banner />
-        <div className="2xl:pt-[7.5rem] 2xl:pb-[5rem] 2xl:px-[5rem] sm:pt-[3.75rem] sm:pb-[1.75rem] sm:px-[2.5rem] pt-[2.5rem] pb-[0.5rem] px-[1.5rem]">
+        <div className="2xl:pt-[120px] 2xl:pb-[80px] 2xl:px-[80px] sm:pt-[60px] sm:pb-[28px] sm:px-[40px] pt-[40px] pb-[8px] px-[24px]">
           <Tab
             activeTab={activeTab}
             list={tabList}
