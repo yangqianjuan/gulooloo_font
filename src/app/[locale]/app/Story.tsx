@@ -72,7 +72,7 @@ export default function Rate() {
                       alt=""
                       className="2xl:mr-[13px] mr-[4px] 2xl:w-[40px] w-[32px]"
                     ></Image>
-                    <div className="2xl:text-[24px] text-[16px] font-medium">
+                    <div className="2xl:text-[24px] text-[16px] font-medium text-[rgba(4,30,84,1)]">
                       {d.user_name}
                     </div>
                   </div>
@@ -80,7 +80,7 @@ export default function Rate() {
                     8kg
                   </div>
                 </div>
-                <div className="2xl:text-[24px] text-[16px]   text-[rgba(4,30,84,0.64)]">
+                <div className="2xl:text-[24px] text-[16px]  text-[rgba(4,30,84,1)] font-normal not-italic">
                   {d.desc}
                 </div>
               </div>
