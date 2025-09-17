@@ -68,15 +68,15 @@ export default function Tool() {
   }, []);
   return (
     <div
-      className="w-full text-center xl:mb-[7rem] sm:mb-[8rem] mb-[6rem]"
+      className="w-full text-center xl:mb-[112px] sm:mb-[128px] mb-[96px]"
       id="appDesc"
     >
-      <div className="py-[60px] bg-[rgba(209,249,233,1)]">
+      <div className="py-[60px] bg-[rgba(209,249,233,1)] sm:mb-[120px]  mb-[60px]">
         <div className="font-semibold 2xl:text-[64px] sm:text-[40px] text-[24px]">
-          {t("productsMainTitle")}
+          All The Features You Need
         </div>
         <div className="text-[rgba(4,30,84,0.48)] 2xl:text-[24px]  sm:text-[16px]  text-[15px]">
-          {t("productsSubtitle")}
+          Explore the core features that make GoFasting so powerful.
         </div>
       </div>
       {list.map((d) => {
@@ -89,21 +89,21 @@ export default function Tool() {
                 : d.direct === "flex-row"
                 ? "sm:flex-row"
                 : ""
-            } sm:justify-between text-left flex-col items-center  sm:pt-[7.5rem] 2xl:px-[7.5rem] sm:px-[3.75rem] px-[2rem]  pt-[6rem]`}
+            } sm:justify-between text-left flex-col items-center  sm:pb-[80px] 2xl:px-[200px] sm:px-[60px] px-[32px]  pb-[60px]`}
             key={d.textInfo.title}
           >
-            <div className="2xl:w-[42%] sm:w-[44%] w-full">
+            <div className="2xl:w-[40%] sm:w-[44%] w-full">
               <Image
                 src={d.img}
-                className="w-full sm:mb-[0rem] mb-[2.5rem]"
+                className="w-full sm:mb-[0px] mb-[40px]"
                 alt=""
                 loading="lazy"
                 width={1384}
                 height={1560}
-                sizes="(max-width: 640px) 100vw, (max-width: 1280px) 26.875rem, 43.25rem"
+                sizes="(max-width: 640px) 100vw, (max-width: 1280px) 430px, 692px"
               />
             </div>
-            <div className="2xl:w-[47%]  sm:w-[48%]  w-full px-[0rem] flex items-center">
+            <div className="2xl:w-[49%]  sm:w-[48%]  w-full px-[0px] flex items-center">
               <div>
                 <Image
                   src={d.icon}
@@ -111,10 +111,10 @@ export default function Tool() {
                   loading="lazy"
                   className="2xl:w-[80px] sm:w-[48px]  2xl:mb-[48px] sm:mb-[32px] sm:block hidden"
                 />
-                <div className="font-semibold 2xl:text-[4rem] sm:text-[2.5rem] 2xl:mb-[1.5rem] sm:mb-[1rem] mb-[0.5rem] text-[1.375rem]">
+                <div className="font-semibold 2xl:text-[64px] sm:text-[40px] text-[22px] 2xl:mb-[24px] sm:mb-[16px] mb-[8px]">
                   {d.textInfo.title}
                 </div>
-                <div className="text-[rgba(4,30,84,1)] 2xl:text-[1.5rem] sm:text-[1.25rem] 2xl:mb-[2.5rem]  sm:mb-[1.6rem] mb-[1rem] text-[0.9735rem]">
+                <div className="text-[rgba(4,30,84,1)] 2xl:text-[24px] text-[16px] 2xl:mb-[40px] ">
                   {d.textInfo.desc}
                 </div>
               </div>

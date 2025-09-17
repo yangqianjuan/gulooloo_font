@@ -22,10 +22,11 @@ export default function Banner() {
           // unoptimized
         ></Image>
         <div className="font-bold  2xl:text-[88px]  sm:text-[56px]  text-[30px] 2xl:my-[24px] sm:my-[16px] my-[8px]">
-          {t("primarySlogan")}
+          GoFasting
         </div>
         <div className="2xl:text-[32px]  sm:text-[20px] text-[15px] 2xl:mb-[96px] sm:mb-[60px] mb-[20px]">
-          {t("heroSubtitle")}
+          Your personal guide to intermittent fasting for health and weight
+          loss.
         </div>
 
         <div className="flex">
@@ -34,14 +35,14 @@ export default function Banner() {
               // toLink(d.link_ios);
             }}
           >
-            <AppStore className="text-[rgba(0,0,0,1)] hover:text-[rgba(4,30,84,1)] 2xl:w-[10.125rem] 2xl:mr-[1.5rem] w-[8.4375rem] mr-[1.25rem] transition-transform duration-300 hover:scale-110" />
+            <AppStore className="text-[rgba(0,0,0,1)] hover:text-[rgba(4,30,84,1)] 2xl:w-[270px] sm:w-[162px] 2xl:mr-[24px] w-[135px] mr-[20px] transition-transform duration-300 hover:scale-110" />
           </span>
           <span
             onClick={() => {
               // toLink(d.link_android);
             }}
           >
-            <GooglePlay className="text-[rgba(0,0,0,1)] hover:text-[rgba(4,30,84,1)] 2xl:w-[10.125rem]  w-[8.4375rem]  transition-transform duration-300 hover:scale-110" />
+            <GooglePlay className="text-[rgba(0,0,0,1)] hover:text-[rgba(4,30,84,1)] 2xl:w-[270px] sm:w-[162px]  w-[135px]  transition-transform duration-300 hover:scale-110" />
           </span>
         </div>
       </div>
@@ -70,12 +71,12 @@ export default function Banner() {
         // unoptimized
       ></Image>
       {/* <div className="block sm:hidden mt-[24px] ml-[24px]">
-        <div className="font-bold text-[1.875rem] mb-[0.75rem]">
+        <div className="font-bold text-[30px] mb-[12px]">
           {t("primarySlogan")}
           <br />
           {t("secondarySlogan")}
         </div>
-        <div className="text-[0.9375rem] mb-[2.5rem] text-[rgba(4,30,84,0.64)]">
+        <div className="text-[15px] mb-[40px] text-[rgba(4,30,84,0.64)]">
           {t("heroSubtitle")}
         </div>
         <div className="flex">
@@ -84,14 +85,14 @@ export default function Banner() {
               // toLink(d.link_ios);
             }}
           >
-            <AppStore className="text-[rgba(0,0,0,1)] hover:text-[rgba(4,30,84,1)] 2xl:w-[10.125rem] 2xl:mr-[1.5rem] w-[8.4375rem] mr-[1.25rem] transition-transform duration-300 hover:scale-110" />
+            <AppStore className="text-[rgba(0,0,0,1)] hover:text-[rgba(4,30,84,1)] 2xl:w-[162px] 2xl:mr-[24px] w-[135px] mr-[20px] transition-transform duration-300 hover:scale-110" />
           </span>
           <span
             onClick={() => {
               // toLink(d.link_android);
             }}
           >
-            <GooglePlay className="text-[rgba(0,0,0,1)] hover:text-[rgba(4,30,84,1)] 2xl:w-[10.125rem]  w-[8.4375rem]  transition-transform duration-300 hover:scale-110" />
+            <GooglePlay className="text-[rgba(0,0,0,1)] hover:text-[rgba(4,30,84,1)] 2xl:w-[162px]  w-[135px]  transition-transform duration-300 hover:scale-110" />
           </span>
         </div>
       </div> */}
