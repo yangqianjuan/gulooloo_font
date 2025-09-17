@@ -9,7 +9,7 @@ import GooglePlay from "@/components/Svg/GooglePlay";
 export default function Start() {
   const t = useTranslations("home");
   return (
-    <div className="relative 2xl:m-[80px] sm:m-[40px] m-[30px]">
+    <div className="relative 2xl:my-[160px] sm:my-[80px] my-[60px]">
       <div className="absolute top-0 left-0 w-full h-full  2xl:p-[80px] p-[40px]  text-center">
         <div className="font-bold  2xl:text-[64px]  sm:text-[40px]  text-[24px] sm:mb-[16px] mb-[12px]">
           Ready to Get Started?

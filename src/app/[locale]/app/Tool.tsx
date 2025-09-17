@@ -68,10 +68,10 @@ export default function Tool() {
   }, []);
   return (
     <div
-      className="w-full text-center xl:mb-[112px] sm:mb-[128px] mb-[96px]"
+      className="w-full text-center 2xl:pb-[80px] sm:pb-[40px] pb-[20px]"
       id="appDesc"
     >
-      <div className="py-[60px] bg-[rgba(209,249,233,1)] sm:mb-[120px]  mb-[60px]">
+      <div className="2xl:py-[60px] sm:py-[40px] py-[32px] bg-[rgba(209,249,233,1)] sm:mb-[120px]  mb-[60px]">
         <div className="font-semibold 2xl:text-[64px] sm:text-[40px] text-[24px]">
           All The Features You Need
         </div>
@@ -89,10 +89,10 @@ export default function Tool() {
                 : d.direct === "flex-row"
                 ? "sm:flex-row"
                 : ""
-            } sm:justify-between text-left flex-col items-center  sm:pb-[80px] 2xl:px-[200px] sm:px-[60px] px-[32px]  pb-[60px]`}
+            } sm:justify-between text-left flex-col items-center  sm:pb-[80px] pb-[60px] 2xl:px-[200px] sm:px-[80px] px-[40px]`}
             key={d.textInfo.title}
           >
-            <div className="2xl:w-[40%] sm:w-[44%] w-full">
+            <div className="2xl:w-[38%] sm:w-[41%] w-full">
               <Image
                 src={d.img}
                 className="w-full sm:mb-[0px] mb-[40px]"
@@ -103,7 +103,7 @@ export default function Tool() {
                 sizes="(max-width: 640px) 100vw, (max-width: 1280px) 430px, 692px"
               />
             </div>
-            <div className="2xl:w-[49%]  sm:w-[48%]  w-full px-[0px] flex items-center">
+            <div className="2xl:w-[51%]  sm:w-[50%]  w-full px-[0px] flex items-center">
               <div>
                 <Image
                   src={d.icon}
@@ -114,7 +114,7 @@ export default function Tool() {
                 <div className="font-semibold 2xl:text-[64px] sm:text-[40px] text-[22px] 2xl:mb-[24px] sm:mb-[16px] mb-[8px]">
                   {d.textInfo.title}
                 </div>
-                <div className="text-[rgba(4,30,84,1)] 2xl:text-[24px] text-[16px] 2xl:mb-[40px] ">
+                <div className="text-[rgba(4,30,84,1)] 2xl:text-[24px] text-[16px]">
                   {d.textInfo.desc}
                 </div>
               </div>

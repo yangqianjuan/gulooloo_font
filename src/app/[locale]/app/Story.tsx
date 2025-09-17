@@ -6,7 +6,6 @@ import story3 from "@/assets/app/Gofasting/story-sarah/sarah_2x.webp";
 import u1 from "@/assets/icon/u1.svg";
 import u2 from "@/assets/icon/u2.svg";
 import u3 from "@/assets/icon/u3.svg";
-import star from "@/assets/icon/Star.svg";
 import { useMemo } from "react";
 import { useTranslations } from "next-intl";
 export default function Rate() {
@@ -40,7 +39,7 @@ export default function Rate() {
     ];
   }, []);
   return (
-    <div className="2xl:p-[80px] sm:p-[40px] p-[24px]">
+    <div className="2xl:px-[80px] sm:px-[40px] px-[24px]">
       <div className="2xl:text-[64px] font-semibold sm:text-[40px] text-[24px] text-center">
         Success Stories
       </div>
@@ -73,7 +72,9 @@ export default function Rate() {
                       alt=""
                       className="2xl:mr-[13px] mr-[4px] 2xl:w-[40px] w-[32px]"
                     ></Image>
-                    <span>{d.user_name}</span>
+                    <div className="2xl:text-[24px] text-[16px] font-medium">
+                      {d.user_name}
+                    </div>
                   </div>
                   <div className="text-[rgba(0,204,145,1)] font-bold 2xl:text-[32px] text-[20px]">
                     8kg

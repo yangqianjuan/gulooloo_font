@@ -14,7 +14,7 @@ export default function Banner() {
         <Image
           src={banner_icon}
           alt="Fasting Tracker Icon"
-          className="2xl:w-[75px]  sm:w-[48px]  w-[40px]"
+          className="2xl:w-[88px]  sm:w-[48px]  w-[40px]"
           width={100}
           height={100}
           priority

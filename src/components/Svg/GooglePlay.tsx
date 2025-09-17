@@ -23,7 +23,7 @@ const Twitter: FC<IconProps> = ({ className = "", hoverColor = "#22c55e" }) => {
           width="268.333"
           height="78.3333"
           rx="14.1667"
-          fill="black"
+          fill="currentColor"
           stroke="#A6A6A6"
           strokeWidth="1.66667"
         />
