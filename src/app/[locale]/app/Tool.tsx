@@ -14,7 +14,7 @@ import ic_calorie from "@/assets/app/Gofasting/ic_calorie.svg";
 import ic_weight from "@/assets/app/Gofasting/ic_weight.svg";
 
 export default function Tool() {
-  const t = useTranslations("home");
+  const t = useTranslations("app");
   const toLink = useMemoizedFn((link: string) => {
     window.open(link);
   });
@@ -24,10 +24,9 @@ export default function Tool() {
         direct: "flex-row",
         icon: ic_fasting_tracker,
         img: function_tracker_pic_2x,
-        alt: t("apps_easynotes_pic_alt"),
         textInfo: {
-          title: "Smart Fasting Tracker",
-          desc: "Easily start, pause, and track your fasting windows with clear progress visuals that keep you motivated every day.",
+          title: t("app_gofasting_feature_title_1"),
+          desc: t("app_gofasting_feature_description1"),
         },
         id: "ic_fasting_tracker",
       },
@@ -35,10 +34,9 @@ export default function Tool() {
         direct: "flex-row-reverse",
         img: function_plan_pic_2x,
         icon: ic_plan,
-        alt: t("apps_invoice_pic_alt"),
         textInfo: {
-          title: "Tailored Fasting Plans",
-          desc: "Get customized fasting schedules designed around your lifestyle, making weight loss simple, safe, and effective.",
+          title: t("app_gofasting_feature_title_2"),
+          desc: t("app_gofasting_feature_description2"),
         },
         id: "ic_plan",
       },
@@ -46,10 +44,9 @@ export default function Tool() {
         direct: "flex-row",
         img: function_calorie_pic,
         icon: ic_calorie,
-        alt: t("apps_gofasting_pic_alt"),
         textInfo: {
-          title: "AI Calorie Scanner",
-          desc: "Snap a photo of your meal to instantly identify foods, calories, and nutrients with AI-powered recognition.",
+          title: t("app_gofasting_feature_title_3"),
+          desc: t("app_gofasting_feature_description3"),
         },
         id: "ic_calorie",
       },
@@ -57,10 +54,9 @@ export default function Tool() {
         direct: "flex-row-reverse",
         img: function_weight_record_pic_2x,
         icon: ic_weight,
-        alt: t("apps_ar_pic_alt"),
         textInfo: {
-          title: "Comprehensive Weight Monitor",
-          desc: "Track weight changes with detailed charts and insights, helping you stay on top of your health journey.",
+          title: t("app_gofasting_feature_title_4"),
+          desc: t("app_gofasting_feature_description4"),
         },
         id: "ic_weight",
       },
@@ -73,10 +69,10 @@ export default function Tool() {
     >
       <div className="2xl:py-[60px] sm:py-[40px] py-[32px] bg-[rgba(209,249,233,1)] sm:mb-[120px]  mb-[60px]">
         <div className="font-semibold 2xl:text-[64px] sm:text-[40px] text-[24px]">
-          All The Features You Need
+          {t("app_gofasting_hero_title")}
         </div>
         <div className="text-[rgba(4,30,84,0.48)] 2xl:text-[24px]  sm:text-[16px]  text-[15px]">
-          Explore the core features that make GoFasting so powerful.
+          {t("app_gofasting_hero_description")}
         </div>
       </div>
       {list.map((d) => {

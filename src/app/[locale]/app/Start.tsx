@@ -38,7 +38,7 @@ export default function Start() {
       </div>
       <Image
         src={banner}
-        alt={t("top_banner_alt")}
+        alt="top_banner_alt"
         className="w-full h-auto hidden sm:block"
         priority
         width={3840}
@@ -50,7 +50,7 @@ export default function Start() {
       ></Image>
       <Image
         src={m_banner}
-        alt={t("top_banner_mobile_alt")}
+        alt=""
         className="w-full h-auto block sm:hidden"
         width={1170}
         height={1140}

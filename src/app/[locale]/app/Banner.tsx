@@ -7,7 +7,7 @@ import AppStore from "@/components/Svg/AppStore";
 import GooglePlay from "@/components/Svg/GooglePlay";
 
 export default function Banner() {
-  const t = useTranslations("home");
+  const t = useTranslations("app");
   return (
     <div className="relative w-full">
       <div className="absolute top-0 left-0 2xl:w-[828px] 2xl:ml-[120px] 2xl:mt-[120px] sm:w-[500px]  sm:pt-[60px] sm:pl-[60px] mt-[24px] ml-[24px] ">
@@ -22,11 +22,10 @@ export default function Banner() {
           // unoptimized
         ></Image>
         <div className="font-bold  2xl:text-[88px]  sm:text-[56px]  text-[30px] 2xl:my-[24px] sm:my-[16px] my-[8px]">
-          GoFasting
+          {t("app_gofasting_title")}
         </div>
         <div className="2xl:text-[32px]  sm:text-[20px] text-[15px] 2xl:mb-[96px] sm:mb-[60px] mb-[20px]">
-          Your personal guide to intermittent fasting for health and weight
-          loss.
+          {t("app_gofasting_slogan")}
         </div>
 
         <div className="flex">
@@ -48,7 +47,7 @@ export default function Banner() {
       </div>
       <Image
         src={banner}
-        alt={t("top_banner_alt")}
+        alt="top_banner_alt"
         className="w-full h-auto hidden sm:block"
         priority
         width={3840}
@@ -60,7 +59,7 @@ export default function Banner() {
       ></Image>
       <Image
         src={m_banner}
-        alt={t("top_banner_mobile_alt")}
+        alt=""
         className="w-full h-auto block sm:hidden"
         width={1170}
         height={1140}

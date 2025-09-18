@@ -9,32 +9,30 @@ import u3 from "@/assets/icon/u3.svg";
 import { useMemo } from "react";
 import { useTranslations } from "next-intl";
 export default function Rate() {
-  const t = useTranslations("home");
+  const t = useTranslations("app");
+  const t_h = useTranslations("home");
   const list = useMemo(() => {
     return [
       {
-        title: t("testimonial1Title"),
-        desc: t("testimonial1Content"),
+        desc: t("app_gofasting_user_description1"),
         img: story1,
         user_img: u1,
-        user_name: t("testimonial1Author"),
-        star_num: 5,
+        user_name: t("app_gofasting_user_name1"),
+        kg: t("app_gofasting_user_title1"),
       },
       {
-        title: t("testimonial2Title"),
-        desc: t("testimonial2Content"),
+        desc: t("app_gofasting_user_description2"),
         img: story2,
         user_img: u2,
-        user_name: t("testimonial2Author"),
-        star_num: 5,
+        user_name: t("app_gofasting_user_name2"),
+        kg: t("app_gofasting_user_title2"),
       },
       {
-        title: t("testimonial3Title"),
-        desc: t("testimonial3Content"),
+        desc: t("app_gofasting_user_description3"),
         img: story3,
         user_img: u3,
-        user_name: t("testimonial3Author"),
-        star_num: 5,
+        user_name: t("app_gofasting_user_name3"),
+        kg: t("app_gofasting_user_title3"),
       },
     ];
   }, []);
@@ -44,14 +42,14 @@ export default function Rate() {
         Success Stories
       </div>
       <div className="2xl:text-[24px] sm:text-[18px] text-[15px] 2xl:mb-[80px] sm:mb-[40px] mb-[32px] text-center text-[rgba(4,30,84,0.48)]">
-        Real stories from people who use Gulooloo Tech every day
+        {t_h("testimonialSubtitle")}
       </div>
       <div className="flex justify-between sm:flex-row flex-col">
         {list.map((d) => {
           return (
             <div
               className="flex flex-col shadow-[0_8px_24px_rgba(126,138,163,0.12)] bg-white sm:w-[32%] text-left  xl:rounded-[24px] rounded-[16px] sm:mb-[0] mb-[32px]"
-              key={d.title}
+              key={d.user_name}
             >
               <div className="w-full h-auto  overflow-hidden 2xl:rounded-t-[24px] rounded-t-[16px]">
                 <Image
@@ -77,7 +75,7 @@ export default function Rate() {
                     </div>
                   </div>
                   <div className="text-[rgba(0,204,145,1)] font-bold 2xl:text-[32px] text-[20px]">
-                    8kg
+                    {d.kg}
                   </div>
                 </div>
                 <div className="2xl:text-[24px] text-[16px]  text-[rgba(4,30,84,1)] font-normal not-italic">
