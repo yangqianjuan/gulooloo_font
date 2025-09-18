@@ -1,11 +1,11 @@
 import Image from "next/image";
-import story1 from "@/assets/app/Gofasting/story-james/james_2x.webp";
-import story2 from "@/assets/app/Gofasting/story-linda/linda_2x.webp";
-import story3 from "@/assets/app/Gofasting/story-sarah/sarah_2x.webp";
+import gofasting_story1 from "@/assets/app/Gofasting/story-james/james_2x.webp";
+import gofasting_story2 from "@/assets/app/Gofasting/story-linda/linda_2x.webp";
+import gofasting_story3 from "@/assets/app/Gofasting/story-sarah/sarah_2x.webp";
+import gofasting_u1 from "@/assets/icon/u1.svg";
+import gofasting_u2 from "@/assets/icon/u2.svg";
+import gofasting_u3 from "@/assets/icon/u3.svg";
 
-import u1 from "@/assets/icon/u1.svg";
-import u2 from "@/assets/icon/u2.svg";
-import u3 from "@/assets/icon/u3.svg";
 import { useMemo } from "react";
 import { useTranslations } from "next-intl";
 export default function Rate() {
@@ -15,22 +15,22 @@ export default function Rate() {
     return [
       {
         desc: t("app_gofasting_user_description1"),
-        img: story1,
-        user_img: u1,
+        img: gofasting_story1,
+        user_img: gofasting_u1,
         user_name: t("app_gofasting_user_name1"),
         kg: t("app_gofasting_user_title1"),
       },
       {
         desc: t("app_gofasting_user_description2"),
-        img: story2,
-        user_img: u2,
+        img: gofasting_story2,
+        user_img: gofasting_u2,
         user_name: t("app_gofasting_user_name2"),
         kg: t("app_gofasting_user_title2"),
       },
       {
         desc: t("app_gofasting_user_description3"),
-        img: story3,
-        user_img: u3,
+        img: gofasting_story3,
+        user_img: gofasting_u3,
         user_name: t("app_gofasting_user_name3"),
         kg: t("app_gofasting_user_title3"),
       },
