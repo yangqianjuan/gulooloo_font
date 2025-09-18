@@ -1,18 +1,61 @@
 import Image from "next/image";
-import banner from "@/assets/app/Gofasting/top_banner/top_banner_2x.webp";
-import m_banner from "@/assets/app/Gofasting/top_banner_mobile/group_2610165_2x.webp";
-import banner_icon from "@/assets/app/Gofasting/logo.png";
+import gofasting_banner from "@/assets/app/Gofasting/top_banner/top_banner_2x.webp";
+import gofasting_m_banner from "@/assets/app/Gofasting/top_banner_mobile/group_2610165_2x.webp";
+import gofasting_banner_icon from "@/assets/app/Gofasting/logo.png";
+
+import invoicemaker_banner from "@/assets/app/invoice/top_banner/top_banner_2x.webp";
+import invoicemaker_m_banner from "@/assets/app/invoice/top_banner_mobile/banner_2x.webp";
+import invoicemaker_banner_icon from "@/assets/app/invoice/logo.png";
+
+import easynotes_banner from "@/assets/app/EasyNote/top_banner/top_banner_2x.webp";
+import easynotes_m_banner from "@/assets/app/EasyNote/top_banner_mobile/top_banner_pic_notes_2x.webp";
+import easynotes_banner_icon from "@/assets/app/EasyNote/logo.png";
+
+import QRgenerator_banner from "@/assets/app/QR/top_banner_qr/top_banner_qr_2x.webp";
+import QRgenerator_m_banner from "@/assets/app/QR/top_banner_mobile/group_2610166_2x.webp";
+import QRgenerator_banner_icon from "@/assets/app/QR/logo.png";
+
 import { useTranslations } from "next-intl";
+import { useParams } from "next/navigation";
 import AppStore from "@/components/Svg/AppStore";
 import GooglePlay from "@/components/Svg/GooglePlay";
 
+const imagesMap = {
+  gofasting: {
+    banner: gofasting_banner,
+    m_banner: gofasting_m_banner,
+    banner_icon: gofasting_banner_icon,
+  },
+  invoicemaker: {
+    banner: invoicemaker_banner,
+    m_banner: invoicemaker_m_banner,
+    banner_icon: invoicemaker_banner_icon,
+  },
+  easynotes: {
+    banner: easynotes_banner,
+    m_banner: easynotes_m_banner,
+    banner_icon: easynotes_banner_icon,
+  },
+  QRgenerator: {
+    banner: QRgenerator_banner,
+    m_banner: QRgenerator_m_banner,
+    banner_icon: QRgenerator_banner_icon,
+  },
+};
+
 export default function Banner() {
+  const { id, locale } = useParams<{
+    id: keyof typeof imagesMap;
+    locale: string;
+  }>();
+  console.log("id", id);
+
   const t = useTranslations("app");
   return (
     <div className="relative w-full">
       <div className="absolute top-0 left-0 2xl:w-[828px] 2xl:ml-[120px] 2xl:mt-[120px] sm:w-[500px]  sm:pt-[60px] sm:pl-[60px] mt-[24px] ml-[24px] ">
         <Image
-          src={banner_icon}
+          src={imagesMap[id]?.banner_icon}
           alt="Fasting Tracker Icon"
           className="2xl:w-[88px]  sm:w-[48px]  w-[40px]"
           width={100}
@@ -46,7 +89,7 @@ export default function Banner() {
         </div>
       </div>
       <Image
-        src={banner}
+        src={imagesMap[id]?.banner}
         alt="top_banner_alt"
         className="w-full h-auto hidden sm:block"
         priority
@@ -58,7 +101,7 @@ export default function Banner() {
         // unoptimized
       ></Image>
       <Image
-        src={m_banner}
+        src={imagesMap[id]?.m_banner}
         alt=""
         className="w-full h-auto block sm:hidden"
         width={1170}
