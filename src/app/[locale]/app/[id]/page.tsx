@@ -3,11 +3,13 @@ export const runtime = "edge";
 export const dynamic = "force-static";
 import dynamic_ from "next/dynamic";
 import { useParams } from "next/navigation";
+import { notFound } from "next/navigation";
 import Header from "@/components/Header";
 import Banner from "./Banner";
 import Story from "./Story";
 import Rate from "./Rate";
 import Start from "./Start";
+import { use, useEffect } from "react";
 
 // import "./index.css";
 // const Achievement = dynamic_(() => import("./Achievement"), {
@@ -27,6 +29,12 @@ export default function App() {
   const { id } = useParams<{
     id: "gofasting" | "invoicemaker" | "easynotes" | "QRgenerator";
   }>();
+
+  const validIds = ["gofasting", "invoicemaker", "easynotes", "QRgenerator"];
+
+  if (!id || !validIds.includes(id)) {
+    notFound();
+  }
 
   return (
     <div className="grid grid-rows-[auto_1fr_auto]  justify-items-center min-h-screen max-w-[1920px] mx-auto sm:min-w-[1080px]">

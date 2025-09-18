@@ -39,17 +39,25 @@ export default function Footer() {
         label: t("footerProductsTitle"),
         key: "products", // 使用稳定 key 而不是翻译文本
         children: [
-          { key: "easyNotes", label: t("easyNotesTitle"), href: "/#easyNotes" },
+          {
+            key: "easyNotes",
+            label: t("easyNotesTitle"),
+            href: "/app/easynotes",
+          },
           {
             key: "invoiceNow",
             label: t("invoiceNowTitle"),
-            href: "/#invoiceNow",
+            href: "/app/invoicemaker",
           },
-          { key: "goFasting", label: t("goFastingTitle"), href: "/#goFasting" },
+          {
+            key: "goFasting",
+            label: t("goFastingTitle"),
+            href: "/app/gofasting",
+          },
           {
             key: "qrGenerator",
             label: t("footerProduct4"),
-            href: "/#Qrgenerator",
+            href: "/app/QRgenerator",
           },
         ],
       },

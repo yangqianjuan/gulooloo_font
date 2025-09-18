@@ -171,7 +171,7 @@ export default function Tool() {
       className="w-full text-center 2xl:pb-[80px] sm:pb-[40px] pb-[20px]"
       id="appDesc"
     >
-      <div className="2xl:py-[60px] sm:py-[40px] py-[32px] bg-[rgba(209,249,233,1)] sm:mb-[120px]  mb-[60px]">
+      <div className="2xl:py-[60px] sm:py-[40px] py-[32px] bg-[rgba(209,249,233,1)] sm:mb-[120px]  mb-[60px] sm:px-[120px] px-[24px]">
         <div className="font-semibold 2xl:text-[64px] sm:text-[40px] text-[24px]">
           {t(`app_${id}_hero_title`)}
         </div>

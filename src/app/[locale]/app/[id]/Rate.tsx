@@ -70,7 +70,7 @@ export default function Rate() {
       <div className="sm:text-[24px] 2xl:mb-[80px] text-[20px] mb-[64px]  text-center text-[rgba(4,30,84,0.48)]">
         {t_h("testimonialSubtitle")}
       </div>
-      <div className="flex justify-between sm:flex-row flex-col">
+      <div className="flex justify-between sm:flex-row flex-col w-full">
         {list.map((d) => {
           return (
             <div

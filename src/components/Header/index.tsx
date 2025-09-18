@@ -29,22 +29,22 @@ const Header: React.FC = () => {
           {
             label: t("easyNotesTitle"),
             key: "easyNotesTitle",
-            href: "/#easyNotes",
+            href: "/app/easynotes",
           },
           {
             label: t("invoiceNowTitle"),
             key: "invoiceNowTitle",
-            href: "/#invoiceNow",
+            href: "/app/invoicemaker",
           },
           {
             label: t("goFastingTitle"),
             key: "goFastingTitle",
-            href: "/#goFasting",
+            href: "/app/gofasting",
           },
           {
             label: t("footerProduct4"),
             key: "footerProduct4",
-            href: "/#Qrgenerator",
+            href: "/app/qRgenerator",
           },
         ],
       },
@@ -104,10 +104,10 @@ const Header: React.FC = () => {
         <AnchorDropdown
           isShowArrow={true}
           options={[
-            { label: t("easyNotesTitle"), value: "#easyNotes" },
-            { label: t("invoiceNowTitle"), value: "#invoiceNow" },
-            { label: t("goFastingTitle"), value: "#goFasting" },
-            { label: t("footerProduct4"), value: "#Qrgenerator" },
+            { label: t("easyNotesTitle"), value: "/app/easynotes" },
+            { label: t("invoiceNowTitle"), value: "/app/invoicemaker" },
+            { label: t("goFastingTitle"), value: "/app/gofasting" },
+            { label: t("footerProduct4"), value: "/app/QRgenerator" },
           ]}
           placeholder={t("navProducts")}
         />

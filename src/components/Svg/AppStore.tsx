@@ -10,7 +10,7 @@ const Twitter: FC<IconProps> = ({ className = "", hoverColor = "#22c55e" }) => {
   return (
     <svg
       width="270"
-      height="80"
+      // height="80"
       viewBox="0 0 270 80"
       fill="currentColor"
       xmlns="http://www.w3.org/2000/svg"
