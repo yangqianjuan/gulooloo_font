@@ -65,10 +65,10 @@ export default function Banner() {
           // unoptimized
         ></Image>
         <div className="font-bold  2xl:text-[88px]  sm:text-[56px]  text-[30px] 2xl:my-[24px] sm:my-[16px] my-[8px]">
-          {t("app_gofasting_title")}
+          {t(`app_${id}_title`)}
         </div>
         <div className="2xl:text-[32px]  sm:text-[20px] text-[15px] 2xl:mb-[96px] sm:mb-[60px] mb-[20px]">
-          {t("app_gofasting_slogan")}
+          {t(`app_${id}_slogan`)}
         </div>
 
         <div className="flex">

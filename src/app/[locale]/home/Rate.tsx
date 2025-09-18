@@ -34,7 +34,7 @@ export default function Rate() {
   }, []);
   return (
     <div className="2xl:p-[80px] sm:p-[40px] p-[24px]">
-      <div className="2xl:text-[64px] font-semibold sm:text-[48px] text-[24px] text-center">
+      <div className="2xl:text-[64px] font-semibold sm:text-[40px] text-[24px] text-center">
         {t("testimonialTitle")}
       </div>
       <div className="sm:text-[24px] 2xl:mb-[80px] text-[20px] mb-[64px]  text-center text-[rgba(4,30,84,0.48)]">

@@ -129,8 +129,8 @@ export default function Tool() {
         icon: imagesMap[id]?.feature1.icon,
         img: imagesMap[id]?.feature1.img,
         textInfo: {
-          title: t("app_gofasting_feature_title_1"),
-          desc: t("app_gofasting_feature_description1"),
+          title: t(`app_${id}_feature_title_1`),
+          desc: t(`app_${id}_feature_description1`),
         },
         id: "ic_fasting_tracker",
       },
@@ -139,8 +139,8 @@ export default function Tool() {
         img: imagesMap[id]?.feature2.img,
         icon: imagesMap[id]?.feature2.icon,
         textInfo: {
-          title: t("app_gofasting_feature_title_2"),
-          desc: t("app_gofasting_feature_description2"),
+          title: t(`app_${id}_feature_title_2`),
+          desc: t(`app_${id}_feature_description2`),
         },
         id: "ic_plan",
       },
@@ -149,8 +149,8 @@ export default function Tool() {
         img: imagesMap[id]?.feature3.img,
         icon: imagesMap[id]?.feature3.icon,
         textInfo: {
-          title: t("app_gofasting_feature_title_3"),
-          desc: t("app_gofasting_feature_description3"),
+          title: t(`app_${id}_feature_title_3`),
+          desc: t(`app_${id}_feature_description3`),
         },
         id: "ic_calorie",
       },
@@ -159,8 +159,8 @@ export default function Tool() {
         img: imagesMap[id]?.feature4.img,
         icon: imagesMap[id]?.feature4.icon,
         textInfo: {
-          title: t("app_gofasting_feature_title_4"),
-          desc: t("app_gofasting_feature_description4"),
+          title: t(`app_${id}_feature_title_4`),
+          desc: t(`app_${id}_feature_description4`),
         },
         id: "ic_weight",
       },
@@ -173,10 +173,10 @@ export default function Tool() {
     >
       <div className="2xl:py-[60px] sm:py-[40px] py-[32px] bg-[rgba(209,249,233,1)] sm:mb-[120px]  mb-[60px]">
         <div className="font-semibold 2xl:text-[64px] sm:text-[40px] text-[24px]">
-          {t("app_gofasting_hero_title")}
+          {t(`app_${id}_hero_title`)}
         </div>
         <div className="text-[rgba(4,30,84,0.48)] 2xl:text-[24px]  sm:text-[16px]  text-[15px]">
-          {t("app_gofasting_hero_description")}
+          {t(`app_${id}_hero_description`)}
         </div>
       </div>
       {list.map((d) => {
