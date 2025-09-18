@@ -48,7 +48,7 @@ export default function Rate() {
         {list.map((d) => {
           return (
             <div
-              className="flex flex-col shadow-[0_8px_24px_rgba(126,138,163,0.12)] bg-white sm:w-[32%] text-left  xl:rounded-[24px] rounded-[16px] sm:mb-[0] mb-[32px]"
+              className="flex flex-col shadow-[0_8px_24px_rgba(126,138,163,0.12)] bg-white sm:w-[32%] text-left  xl:rounded-[24px] rounded-[16px] sm:mb-[0] mb-[32px] last:mb-[0px]"
               key={d.user_name}
             >
               <div className="w-full h-auto  overflow-hidden 2xl:rounded-t-[24px] rounded-t-[16px]">

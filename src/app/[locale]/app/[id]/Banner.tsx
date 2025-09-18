@@ -53,7 +53,7 @@ export default function Banner() {
   const t = useTranslations("app");
   return (
     <div className="relative w-full">
-      <div className="absolute top-0 left-0 2xl:w-[828px] 2xl:ml-[120px] 2xl:mt-[120px] sm:w-[500px]  sm:pt-[60px] sm:pl-[60px] mt-[24px] ml-[24px] ">
+      <div className="absolute top-0 left-0 2xl:w-[954px] 2xl:ml-[120px] 2xl:mt-[120px] sm:w-[568px]  sm:pt-[60px] sm:pl-[60px] mt-[24px] ml-[24px]">
         <Image
           src={imagesMap[id]?.banner_icon}
           alt="Fasting Tracker Icon"
