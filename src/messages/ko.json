@@ -569,6 +569,11 @@
     "app_QRgenerator_user_description3": "빠르고 안정적, 고객이 문제없이 스캔 가능.",
     "app_QRgenerator_user_name1": "Michael",
     "app_QRgenerator_user_name2": "Emily",
-    "app_QRgenerator_user_name3": "David"
+    "app_QRgenerator_user_name3": "David",
+    "app_final_CTA": "시작할 준비되셨나요?",
+    "app_gofasting_final_CTA_subtitle": "지금 GoFasting을 다운로드하고 더 간단하고 효율적인 생활을 경험하세요.",
+    "app_invociemakerfinal_CTA_subtitle": "지금 Invoice를 다운로드하고 더 간단하고 효율적인 생활을 경험하세요.",
+    "app_QRgenerator_final_CTA_subtitle": "QR 코드 생성기를 다운로드하여 더 전문적인 QR 제작을 경험하세요.",
+    "app_easynotes_final_CTA_subtitle": "지금 EasyNotes를 다운로드하고 더 간단하고 효율적인 생활을 경험하세요."
   }
 }

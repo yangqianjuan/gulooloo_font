@@ -7,16 +7,15 @@ import AppStore from "@/components/Svg/AppStore";
 import GooglePlay from "@/components/Svg/GooglePlay";
 
 export default function Start() {
-  const t = useTranslations("home");
+  const t = useTranslations("app");
   return (
     <div className="relative 2xl:my-[160px] sm:my-[80px] my-[60px] 2xl:px-[80px] sm:px-[40px] px-[24px]">
       <div className="absolute top-0 left-0 w-full h-full  2xl:p-[80px] p-[40px]  text-center">
         <div className="font-bold  2xl:text-[64px]  sm:text-[40px]  text-[24px] sm:mb-[16px] mb-[12px]">
-          Ready to Get Started?
+          {t("app_final_CTA")}
         </div>
         <div className="2xl:text-[24px]  sm:text-[18px] text-[16px] 2xl:mb-[80px] sm:mb-[49px] mb-[40px]">
-          Download GoFasting today and experience a simpler, more efficient way
-          of life.
+          {t("app_gofasting_final_CTA_subtitle")}
         </div>
 
         <div className="flex justify-center">

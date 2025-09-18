@@ -569,6 +569,11 @@
     "app_QRgenerator_user_description3": "快速、简单、可靠，客户扫码毫无障碍。",
     "app_QRgenerator_user_name1": "Michael",
     "app_QRgenerator_user_name2": "Emily",
-    "app_QRgenerator_user_name3": "David"
+    "app_QRgenerator_user_name3": "David",
+    "app_final_CTA": "准备好开始了吗？",
+    "app_gofasting_final_CTA_subtitle": "立即下载 GoFasting，体验更简单高效的生活方式。",
+    "app_invociemakerfinal_CTA_subtitle": "立即下载 Invoice，体验更简单高效的生活方式。",
+    "app_QRgenerator_final_CTA_subtitle": "下载二维码生成器，体验更专业的二维码制作。",
+    "app_easynotes_final_CTA_subtitle": "立即下载 EasyNotes，体验更简单高效的生活方式。"
   }
 }

@@ -569,6 +569,11 @@
     "app_QRgenerator_user_description3": "Rapide, simple et fiable. Mes clients les scannent sans aucun problème.",
     "app_QRgenerator_user_name1": "Michael",
     "app_QRgenerator_user_name2": "Emily",
-    "app_QRgenerator_user_name3": "David"
+    "app_QRgenerator_user_name3": "David",
+    "app_final_CTA": "Prêt à commencer ?",
+    "app_gofasting_final_CTA_subtitle": "Téléchargez GoFasting dès aujourd’hui et découvrez une vie plus simple et efficace.",
+    "app_invociemakerfinal_CTA_subtitle": "Téléchargez Invoice dès aujourd’hui et découvrez une vie plus simple et efficace.",
+    "app_QRgenerator_final_CTA_subtitle": "Téléchargez le générateur de QR codes et profitez d’une création plus professionnelle.",
+    "app_easynotes_final_CTA_subtitle": "Téléchargez EasyNotes dès aujourd’hui et découvrez une vie plus simple et efficace."
   }
 }

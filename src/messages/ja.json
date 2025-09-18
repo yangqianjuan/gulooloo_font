@@ -569,6 +569,11 @@
     "app_QRgenerator_user_description3": "シンプルで確実、顧客が問題なくスキャン可能。",
     "app_QRgenerator_user_name1": "Michael",
     "app_QRgenerator_user_name2": "Emily",
-    "app_QRgenerator_user_name3": "David"
+    "app_QRgenerator_user_name3": "David",
+    "app_final_CTA": "準備はできましたか？",
+    "app_gofasting_final_CTA_subtitle": "今すぐ GoFasting をダウンロードして、よりシンプルで効率的な生活を体験しましょう。",
+    "app_invociemakerfinal_CTA_subtitle": "今すぐ Invoice をダウンロードして、よりシンプルで効率的な生活を体験しましょう。",
+    "app_QRgenerator_final_CTA_subtitle": "QRコード生成アプリをダウンロードして、よりプロフェッショナルなQR作成を体験しましょう。",
+    "app_easynotes_final_CTA_subtitle": "今すぐ EasyNotes をダウンロードして、よりシンプルで効率的な生活を体験しましょう。"
   }
 }

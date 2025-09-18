@@ -39,7 +39,7 @@ export default function Rate() {
   return (
     <div className="2xl:px-[80px] sm:px-[40px] px-[24px]">
       <div className="2xl:text-[64px] font-semibold sm:text-[40px] text-[24px] text-center">
-        Success Stories
+        {t_h("testimonialTitle")}
       </div>
       <div className="2xl:text-[24px] sm:text-[18px] text-[15px] 2xl:mb-[80px] sm:mb-[40px] mb-[32px] text-center text-[rgba(4,30,84,0.48)]">
         {t_h("testimonialSubtitle")}
