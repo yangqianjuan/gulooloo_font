@@ -164,7 +164,7 @@ export default function Tool() {
                     );
                   })}
                 </ul>
-                <div className="flex sm:flex-col flex-row  sm:items-start items-center">
+                <div className="flex sm:flex-col flex-row-reverse  sm:items-start justify-end items-center">
                   <div className="flex 2xl:mb-[88px] sm:mb-[48px] mb-[0px]">
                     <span
                       className="2xl:w-[72px] 2xl:h-[72px] sm:w-[56px] sm:h-[56px] w-[48px] h-[48px] flex justify-center items-center border border-[#0000001F]  rounded-[16px] mr-[16px] cursor-pointer group hover:bg-[#10B981] hover:border-[#10B981]"
@@ -206,8 +206,8 @@ export default function Tool() {
                     </span>
                   </div>
                   <a href={d.more_link}>
-                    <div className="2xl:text-[24px] 2xl:w-[260px] 2xl:h-[64px] sm:w-[228px] sm:h-[56px] w-[190px] h-[48px] text-[22px]  rounded-full bg-[rgba(0,204,145,1)] hover:bg-[rgba(16,185,129,1)] transition-transform duration-300 hover:scale-110 flex items-center justify-center text-white ">
-                      {t("heroCta")}
+                    <div className="2xl:text-[24px] 2xl:w-[260px] 2xl:h-[64px] sm:w-[228px] sm:h-[56px] w-[190px] h-[48px] sm:text-[20px] text-[16px]  rounded-full bg-[rgba(0,204,145,1)] hover:bg-[rgba(16,185,129,1)] transition-transform duration-300 hover:scale-110 flex items-center justify-center text-white mr-[24px]">
+                      {t("productsLearnMore")}
                     </div>
                   </a>
                 </div>
