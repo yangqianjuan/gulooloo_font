@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import "../app/index.css"; // 引入样式
+import "./index.css"; // 引入样式
 import { useMemoizedFn } from "ahooks";
 
 const ScrollToTopButton: React.FC = () => {
