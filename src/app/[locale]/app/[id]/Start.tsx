@@ -41,12 +41,12 @@ export default function Start() {
   const { id } = useParams<{ id: keyof typeof imagesMap }>();
   const t = useTranslations("app");
   return (
-    <div className="relative 2xl:my-[160px] sm:my-[80px] my-[60px] 2xl:px-[80px] sm:px-[40px] px-[24px]">
-      <div className="absolute top-0 left-0 w-full h-full  2xl:p-[80px] p-[40px]  text-center">
-        <div className="font-bold  2xl:text-[64px]  sm:text-[40px]  text-[24px] sm:mb-[16px] mb-[12px]">
+    <div className="relative 2xl:my-[160px] sm:my-[80px] my-[60px] 2xl:px-[80px] sm:px-[40px] px-[24px] w-full">
+      <div className="absolute top-0 left-0  2xl:pt-[80px] pt-[40px]  text-center px-[56px] w-full">
+        <div className="font-bold  2xl:text-[64px] 2xl:leading-[83px] sm:leading-[60px] 2xl:mb-[16px] sm:mb-[12px] sm:text-[40px]  text-[24px] ">
           {t("app_final_CTA")}
         </div>
-        <div className="2xl:text-[24px]  sm:text-[18px] text-[16px] 2xl:mb-[80px] sm:mb-[49px] mb-[40px]">
+        <div className="2xl:text-[24px]  sm:text-[18px] text-[16px] 2xl:mb-[60px]  sm:mb-[49px] mb-[40px]">
           {t(`app_${id}_final_CTA_subtitle`)}
         </div>
 
