@@ -44,7 +44,7 @@ const Header: React.FC = () => {
           {
             label: t("footerProduct4"),
             key: "footerProduct4",
-            href: "/app/qRgenerator",
+            href: "/app/QRgenerator",
           },
         ],
       },

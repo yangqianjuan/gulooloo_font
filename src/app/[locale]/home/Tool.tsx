@@ -4,8 +4,9 @@ import apps_invoice_pic from "@/assets/App_image/apps_invoice_pic/apps_invoice_p
 import apps_gofasting from "@/assets/App_image/apps_gofasting_pic/apps_gofasting_pic_2x.webp";
 import apps_ar_pic from "@/assets/App_image/apps_ar_pic/apps_ar_pic_2x.webp";
 import ic from "@/assets/icon/ic.svg";
-import GooglePlay from "@/components/Svg/GooglePlay";
-import AppStore from "@/components/Svg/AppStore";
+import GooglePlay from "@/assets/icon/google.svg";
+import AppStore from "@/assets/icon/app.svg";
+import Download from "@/assets/icon/download.svg";
 import {
   iosLink_easy_notes,
   iosLink_go_fasting,
@@ -32,6 +33,7 @@ export default function Tool() {
         alt: t("apps_easynotes_pic_alt"),
         link_ios: iosLink_easy_notes,
         link_android: andoridLink_easy_notes,
+        more_link: "/app/easynotes",
         textInfo: {
           title: t("easyNotesTitle"),
           desc: t("easyNotesDesc"),
@@ -47,6 +49,7 @@ export default function Tool() {
         direct: "flex-row-reverse",
         img: apps_invoice_pic,
         alt: t("apps_invoice_pic_alt"),
+        more_link: "/app/invoicemaker",
         link_ios: iosLink_invoice_now,
         link_android: andoridLink_invoice_now,
         textInfo: {
@@ -64,6 +67,7 @@ export default function Tool() {
         direct: "flex-row",
         img: apps_gofasting,
         alt: t("apps_gofasting_pic_alt"),
+        more_link: "/app/gofasting",
         link_ios: iosLink_go_fasting,
         link_android: andoridLink_go_fasting,
         textInfo: {
@@ -81,6 +85,7 @@ export default function Tool() {
         direct: "flex-row-reverse",
         img: apps_ar_pic,
         alt: t("apps_ar_pic_alt"),
+        more_link: "/app/QRgenerator",
         link_ios: iosLink_qr_generator,
         link_android: andoridLink_qr_generator,
         textInfo: {
@@ -139,7 +144,7 @@ export default function Tool() {
                 <div className="text-[rgba(4,30,84,1)] 2xl:text-[24px] sm:text-[20px] 2xl:mb-[40px]  sm:mb-[26px] mb-[16px] text-[16px]">
                   {d.textInfo.desc}
                 </div>
-                <ul className="2xl:mb-[140px] sm:mb-[80px] mb-[64px]">
+                <ul className="2xl:mb-[24px] sm:mb-[16px] mb-[40px]">
                   {d.textInfo.items.map((item) => {
                     return (
                       <li
@@ -159,21 +164,52 @@ export default function Tool() {
                     );
                   })}
                 </ul>
-                <div className="flex">
-                  <span
-                    onClick={() => {
-                      toLink(d.link_ios);
-                    }}
-                  >
-                    <AppStore className="text-[rgba(0,0,0,1)] hover:text-[rgba(4,30,84,1)] 2xl:w-[162px] 2xl:mr-[24px] w-[135px] mr-[20px] transition-transform duration-300 hover:scale-110" />
-                  </span>
-                  <span
-                    onClick={() => {
-                      toLink(d.link_android);
-                    }}
-                  >
-                    <GooglePlay className="text-[rgba(0,0,0,1)] hover:text-[rgba(4,30,84,1)] 2xl:w-[162px]  w-[135px]  transition-transform duration-300 hover:scale-110" />
-                  </span>
+                <div className="flex sm:flex-col flex-row  sm:items-start items-center">
+                  <div className="flex 2xl:mb-[88px] sm:mb-[48px] mb-[0px]">
+                    <span
+                      className="2xl:w-[72px] 2xl:h-[72px] sm:w-[56px] sm:h-[56px] w-[48px] h-[48px] flex justify-center items-center border border-[#0000001F]  rounded-[16px] mr-[16px] cursor-pointer group hover:bg-[#10B981] hover:border-[#10B981]"
+                      onClick={() => {
+                        toLink(d.link_ios);
+                      }}
+                    >
+                      <Image
+                        width={24}
+                        alt=""
+                        src={AppStore}
+                        className="group-hover:hidden 2xl:w-[24px] sm:w-[20px] w-[16px]"
+                      />
+                      <Image
+                        width={24}
+                        alt=""
+                        src={Download}
+                        className="hidden group-hover:block 2xl:w-[24px] sm:w-[20px] w-[16px]"
+                      />
+                    </span>
+                    <span
+                      className="2xl:w-[72px] 2xl:h-[72px] sm:w-[56px] sm:h-[56px] w-[48px] h-[48px] flex justify-center items-center border border-[#0000001F] rounded-[16px] mr-[24px] cursor-pointer group hover:bg-[#10B981] hover:border-[#10B981]"
+                      onClick={() => {
+                        toLink(d.link_android);
+                      }}
+                    >
+                      <Image
+                        width={24}
+                        alt=""
+                        className="group-hover:hidden 2xl:w-[24px] sm:w-[20px] w-[16px]"
+                        src={GooglePlay}
+                      />
+                      <Image
+                        width={24}
+                        alt=""
+                        src={Download}
+                        className="hidden group-hover:block 2xl:w-[24px] sm:w-[20px] w-[16px]"
+                      />
+                    </span>
+                  </div>
+                  <a href={d.more_link}>
+                    <div className="2xl:text-[24px] 2xl:w-[260px] 2xl:h-[64px] sm:w-[228px] sm:h-[56px] w-[190px] h-[48px] text-[22px]  rounded-full bg-[rgba(0,204,145,1)] hover:bg-[rgba(16,185,129,1)] transition-transform duration-300 hover:scale-110 flex items-center justify-center text-white ">
+                      {t("heroCta")}
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
