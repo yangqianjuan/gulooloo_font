@@ -106,10 +106,10 @@ export default function Tool() {
       className="w-full text-center pt-[120px] xl:mb-[112px] sm:mb-[128px] mb-[96px]"
       id="appDesc"
     >
-      <div className="font-semibold 2xl:text-[66px] sm:text-[44px] text-[24px]">
+      <div className="font-semibold 2xl:text-[66px] sm:text-[40px] text-[24px]">
         {t("productsMainTitle")}
       </div>
-      <div className="text-[rgba(4,30,84,0.48)] 2xl:text-[24px]  sm:text-[20px]  text-[15px]">
+      <div className="text-[rgba(4,30,84,0.48)] 2xl:text-[24px]  sm:text-[18px]  text-[15px]">
         {t("productsSubtitle")}
       </div>
       {list.map((d) => {
@@ -138,10 +138,10 @@ export default function Tool() {
             </div>
             <div className="2xl:w-[47%]  sm:w-[48%]  w-full px-[0px] flex items-center">
               <div>
-                <div className="font-semibold 2xl:text-[64px] sm:text-[40px] 2xl:mb-[24px] sm:mb-[16px] mb-[8px] text-[22px]">
+                <div className="font-semibold 2xl:text-[64px] sm:text-[32px] 2xl:mb-[24px] sm:mb-[16px] mb-[8px] text-[22px]">
                   {d.textInfo.title}
                 </div>
-                <div className="text-[rgba(4,30,84,1)] 2xl:text-[24px] sm:text-[20px] 2xl:mb-[40px]  sm:mb-[26px] mb-[16px] text-[16px]">
+                <div className="text-[rgba(4,30,84,1)] 2xl:text-[24px] sm:text-[18px] 2xl:mb-[40px]  sm:mb-[26px] mb-[16px] text-[16px]">
                   {d.textInfo.desc}
                 </div>
                 <ul className="2xl:mb-[24px] sm:mb-[16px] mb-[40px]">
@@ -157,7 +157,7 @@ export default function Tool() {
                           className="w-[24px] mr-[26px]"
                           loading="lazy"
                         />
-                        <div className="2xl:text-[24px] sm:text-[20px] text-[15px] ">
+                        <div className="2xl:text-[24px] sm:text-[18px] text-[15px] ">
                           {item}
                         </div>
                       </li>
