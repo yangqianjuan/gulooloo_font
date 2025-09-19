@@ -1,6 +1,4 @@
 "use client";
-export const runtime = "edge";
-export const dynamic = "force-static";
 import dynamic_ from "next/dynamic";
 import Header from "@/components/Header";
 import Banner from "./Banner";

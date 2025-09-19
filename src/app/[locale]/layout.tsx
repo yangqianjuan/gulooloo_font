@@ -7,11 +7,13 @@ import { routing } from "@/i18n/routing";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 
-// 字体加载
+// 字体加载优化
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["400", "600"],
   display: "swap",
+  preload: true,
+  variable: "--font-poppins",
 });
 
 // ✅ 动态设置 Metadata
@@ -68,9 +70,13 @@ export default async function LocaleLayout({
   );
 
   return (
-    <NextIntlClientProvider locale={locale} messages={messages}>
-      {children}
-      <SpeedInsights />
-    </NextIntlClientProvider>
+    <html lang={locale} className={poppins.variable}>
+      <body className={poppins.className}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
+          {children}
+          <SpeedInsights />
+        </NextIntlClientProvider>
+      </body>
+    </html>
   );
 }
