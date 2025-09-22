@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://gulooloo-font.vercel.app
+Host: https://guloolootech.com
 
 # Sitemaps
-Sitemap: https://gulooloo-font.vercel.app/sitemap.xml
+Sitemap: https://guloolootech.com/sitemap.xml
