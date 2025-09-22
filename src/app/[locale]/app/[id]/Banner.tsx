@@ -90,7 +90,7 @@ export default function Banner() {
       </div>
       <Image
         src={imagesMap[id]?.banner}
-        alt="top_banner_alt"
+        alt={t(`app_${id}_title`)}
         className="w-full h-auto hidden sm:block"
         priority
         width={3840}
@@ -102,7 +102,7 @@ export default function Banner() {
       ></Image>
       <Image
         src={imagesMap[id]?.m_banner}
-        alt=""
+        alt={t(`app_${id}_title`)}
         className="w-full h-auto block sm:hidden"
         width={1170}
         height={1140}
