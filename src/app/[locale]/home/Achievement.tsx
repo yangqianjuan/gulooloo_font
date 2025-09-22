@@ -5,7 +5,7 @@ import l_leaf from "@/assets/icon/left_leaf.svg";
 import r_leaf from "@/assets/icon/right_leaf.svg";
 import app_store from "@/assets/icon/appstore_logo.svg";
 import user_pic from "@/assets/icon/user_pic/user_pic_2x.webp";
-import google_bestapp from "@/assets/icon/google_bestapp.svg";
+import google_bestapp from "@/assets/icon/google_bestapp.png";
 export default function Achievement() {
   const t = useTranslations("home");
   return (
