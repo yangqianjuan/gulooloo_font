@@ -123,6 +123,7 @@ export default function Footer() {
                       <Link
                         className="hover:text-[rgba(4,30,84,1)]"
                         href={item.href ?? "#"}
+                        aria-label={item.label}
                       >
                         {item.label}
                       </Link>

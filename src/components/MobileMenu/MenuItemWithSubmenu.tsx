@@ -18,7 +18,12 @@ interface Props {
   onClose?: () => void;
 }
 
-const MenuItemWithSubmenu: React.FC<Props> = ({ item, isOpen, toggle, onClose }) => {
+const MenuItemWithSubmenu: React.FC<Props> = ({
+  item,
+  isOpen,
+  toggle,
+  onClose,
+}) => {
   const router = useRouter();
   const pathname = usePathname();
 
@@ -45,7 +50,10 @@ const MenuItemWithSubmenu: React.FC<Props> = ({ item, isOpen, toggle, onClose })
         {isOpen ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
       </button>
       {isOpen && (
-        <ul id={`submenu-${item.key}`} className="ml-4 mt-2 text-base text-gray-700 mb-[32px]">
+        <ul
+          id={`submenu-${item.key}`}
+          className="ml-4 mt-2 text-base text-gray-700 mb-[32px]"
+        >
           {item.children?.map((child) => (
             <li
               key={child.key}
@@ -60,7 +68,11 @@ const MenuItemWithSubmenu: React.FC<Props> = ({ item, isOpen, toggle, onClose })
                   {child.label}
                 </button>
               ) : (
-                <Link href={child.href ?? "#"} onClick={onClose}>
+                <Link
+                  href={child.href ?? "#"}
+                  aria-label={child.label}
+                  onClick={onClose}
+                >
                   {child.label}
                 </Link>
               )}

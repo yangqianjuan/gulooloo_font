@@ -59,7 +59,11 @@ const MenuItemWithSubmenu: React.FC<Props> = ({
                   {child.label}{" "}
                 </div>
               ) : (
-                <Link href={child.href ?? "#"} onClick={onClose}>
+                <Link
+                  href={child.href ?? "#"}
+                  aria-label={child.label}
+                  onClick={onClose}
+                >
                   {child.label}
                 </Link>
               )}
