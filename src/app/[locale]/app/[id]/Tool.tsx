@@ -196,7 +196,7 @@ export default function Tool() {
               <Image
                 src={d.img}
                 className="w-full sm:mb-[0px] mb-[40px]"
-                alt=""
+                alt={d.textInfo.title}
                 loading="lazy"
                 width={1384}
                 height={1560}
@@ -207,7 +207,7 @@ export default function Tool() {
               <div>
                 <Image
                   src={d.icon}
-                  alt=""
+                  alt="icon"
                   loading="lazy"
                   className="2xl:w-[80px] sm:w-[48px]  2xl:mb-[48px] sm:mb-[32px] sm:block hidden"
                 />

@@ -88,7 +88,7 @@ export default function Rate() {
                   <Image
                     width={32}
                     src={d.user_img}
-                    alt=""
+                    alt={d.user_name}
                     className="2xl:mr-[13px] mr-[4px] 2xl:w-[40px] w-[32px]"
                   ></Image>
                   <span>{d.user_name}</span>
@@ -97,7 +97,7 @@ export default function Rate() {
                   {Array.from({ length: d.star_num }, (_, i) => (
                     <Image
                       src={star}
-                      alt=""
+                      alt="star"
                       width={24}
                       key={i}
                       className="2xl:ml-[4px] ml-[3px] 2xl:w-[30px] w-[24px]"

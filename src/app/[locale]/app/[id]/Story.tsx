@@ -67,7 +67,7 @@ export default function Rate() {
                     <Image
                       width={32}
                       src={d.user_img}
-                      alt=""
+                      alt={d.user_name}
                       className="2xl:mr-[13px] mr-[4px] 2xl:w-[40px] w-[32px]"
                     ></Image>
                     <div className="2xl:text-[24px] text-[16px] font-medium text-[rgba(4,30,84,1)]">
