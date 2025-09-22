@@ -33,8 +33,18 @@ export async function generateMetadata({
     (m) => m.default
   );
   return {
-    title: messages.home?.metaTitle || "Default Title",
-    description: messages.home?.metaDescription || "Default description.",
+    title: messages.home?.metaTitle || "Gulooloo Tech – Best Notes, Fasting & Invoice Apps",
+    description: messages.home?.metaDescription || "Discover Easy Notes, GoFasting, Invoice Maker and more. Boost your productivity and wellness.",
+    metadataBase: new URL('https://guloolootech.com'),
+    robots: {
+      index: true,
+      follow: true,
+    },
+    openGraph: {
+      type: 'website',
+      title: messages.home?.metaTitle || "Gulooloo Tech – Best Notes, Fasting & Invoice Apps",
+      description: messages.home?.metaDescription || "Discover Easy Notes, GoFasting, Invoice Maker and more. Boost your productivity and wellness.",
+    },
     alternates: {
       languages: {
         en: "https://guloolootech.com/en",
@@ -71,6 +81,12 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className={poppins.variable}>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+      </head>
       <body className={poppins.className}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
