@@ -33,17 +33,25 @@ export async function generateMetadata({
     (m) => m.default
   );
   return {
-    title: messages.home?.metaTitle || "Gulooloo Tech – Best Notes, Fasting & Invoice Apps",
-    description: messages.home?.metaDescription || "Discover Easy Notes, GoFasting, Invoice Maker and more. Boost your productivity and wellness.",
-    metadataBase: new URL('https://guloolootech.com'),
+    title:
+      messages.home?.metaTitle ||
+      "Gulooloo Tech – Best Notes, Fasting & Invoice Apps",
+    description:
+      messages.home?.metaDescription ||
+      "Discover Easy Notes, GoFasting, Invoice Maker and more. Boost your productivity and wellness.",
+    metadataBase: new URL("https://guloolootech.com"),
     robots: {
       index: true,
       follow: true,
     },
     openGraph: {
-      type: 'website',
-      title: messages.home?.metaTitle || "Gulooloo Tech – Best Notes, Fasting & Invoice Apps",
-      description: messages.home?.metaDescription || "Discover Easy Notes, GoFasting, Invoice Maker and more. Boost your productivity and wellness.",
+      type: "website",
+      title:
+        messages.home?.metaTitle ||
+        "Gulooloo Tech – Best Notes, Fasting & Invoice Apps",
+      description:
+        messages.home?.metaDescription ||
+        "Discover Easy Notes, GoFasting, Invoice Maker and more. Boost your productivity and wellness.",
     },
     alternates: {
       languages: {
@@ -84,8 +92,27 @@ export default async function LocaleLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
         <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+        {/* Google tag (gtag.js) */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-H7WB9F6GQD"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-H7WB9F6GQD');
+            `,
+          }}
+        />
       </head>
       <body className={poppins.className}>
         <NextIntlClientProvider locale={locale} messages={messages}>
