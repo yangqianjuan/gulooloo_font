@@ -138,9 +138,9 @@ export default function Tool() {
             </div>
             <div className="2xl:w-[47%]  sm:w-[48%]  w-full px-[0px] flex items-center">
               <div>
-                <div className="font-semibold 2xl:text-[64px] sm:text-[32px] 2xl:mb-[24px] sm:mb-[16px] mb-[8px] text-[22px]">
+                <h2 className="font-semibold 2xl:text-[64px] sm:text-[32px] 2xl:mb-[24px] sm:mb-[16px] mb-[8px] text-[22px]">
                   {d.textInfo.title}
-                </div>
+                </h2>
                 <div className="text-[rgba(4,30,84,1)] 2xl:text-[24px] sm:text-[18px] 2xl:mb-[40px]  sm:mb-[26px] mb-[16px] text-[16px]">
                   {d.textInfo.desc}
                 </div>
