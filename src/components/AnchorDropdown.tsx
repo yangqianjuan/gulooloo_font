@@ -97,7 +97,7 @@ export default function AnchorDropdown({
               {isShowGlobal ? (
                 <div onClick={() => switchLang(opt.value)}>{opt.label} </div>
               ) : (
-                <Link href={`/${opt.value}`}>{opt.label}</Link>
+                <Link href={`/${opt.value}`} aria-label={opt.label}>{opt.label}</Link>
                 // opt.label
               )}
             </li>
