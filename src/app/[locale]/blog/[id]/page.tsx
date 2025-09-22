@@ -15,7 +15,11 @@ import { useParams } from "next/navigation";
 import productivity_01_detail from "@/assets/blog/productivity_01_detail/productivity_01_detail_2x.webp";
 import { useMemoizedFn } from "ahooks";
 import { useRouter } from "next/navigation";
+import Head from "next/head";
 import CopyPopover from "./CopyPopover";
+import JsonLd from "@/components/Schema/JsonLd";
+import HreflangLinks from "@/components/Schema/HreflangLinks";
+import { createArticleSchema, createBreadcrumbSchema, combineSchemas } from "@/components/Schema/schemas";
 
 type PageProps = {
   params: {
@@ -152,8 +156,29 @@ export default function BlogDetail() {
     }
   });
 
+  // Create JSON-LD schemas for the article
+  const articleTitle = t(`article${id}Title`);
+  const articleDescription = t(`article${id}BodyIntro`);
+  const articleSchema = createArticleSchema(id, articleTitle, articleDescription, locale);
+  const breadcrumbSchema = createBreadcrumbSchema([
+    { name: "Home", url: `https://guloolootech.com/${locale}` },
+    { name: "Blog", url: `https://guloolootech.com/${locale}/blog` },
+    { name: articleTitle, url: `https://guloolootech.com/${locale}/blog/${id}` }
+  ], locale);
+  const schemas = combineSchemas(articleSchema, breadcrumbSchema);
+
   return (
-    <div className="grid grid-rows-[auto_1fr_auto] justify-items-center min-h-screen max-w-[1920px] mx-auto sm:min-w-[1080px]">
+    <>
+      <Head>
+        <JsonLd data={schemas} />
+        <HreflangLinks
+          baseUrl="https://guloolootech.com"
+          currentLocale={locale}
+          pageType="blog"
+          pageId={id}
+        />
+      </Head>
+      <div className="grid grid-rows-[auto_1fr_auto] justify-items-center min-h-screen max-w-[1920px] mx-auto sm:min-w-[1080px]">
       <Header />
       <main className="flex flex-col row-start-2 sm:items-start w-full">
         <div className="leading-[1.5] 2xl:px-[200px] 2xl:py-[80px] sm:px-[80px] sm:py-[40px] px-[24px] py-[20px]">
@@ -247,6 +272,7 @@ export default function BlogDetail() {
         </div>
       </main>
       <Footer />
-    </div>
+      </div>
+    </>
   );
 }

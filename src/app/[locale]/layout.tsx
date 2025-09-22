@@ -6,6 +6,8 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
+import JsonLd from "@/components/Schema/JsonLd";
+import { createOrganizationSchema, createWebSiteSchema, combineSchemas } from "@/components/Schema/schemas";
 
 // 字体加载优化
 const poppins = Poppins({
@@ -54,16 +56,18 @@ export async function generateMetadata({
         "Discover Easy Notes, GoFasting, Invoice Maker and more. Boost your productivity and wellness.",
     },
     alternates: {
+      canonical: `https://guloolootech.com/${locale}`,
       languages: {
-        en: "https://guloolootech.com/en",
-        zh: "https://guloolootech.com/zh",
-        fr: "https://guloolootech.com/fr",
-        es: "https://guloolootech.com/es",
-        ja: "https://guloolootech.com/ja",
-        ko: "https://guloolootech.com/ko",
-        pt: "https://guloolootech.com/pt",
-        tw: "https://guloolootech.com/tw",
-        de: "https://guloolootech.com/de",
+        "en": "https://guloolootech.com/en",
+        "zh-CN": "https://guloolootech.com/zh",
+        "fr": "https://guloolootech.com/fr",
+        "es": "https://guloolootech.com/es",
+        "ja": "https://guloolootech.com/ja",
+        "ko": "https://guloolootech.com/ko",
+        "pt": "https://guloolootech.com/pt",
+        "zh-TW": "https://guloolootech.com/tw",
+        "de": "https://guloolootech.com/de",
+        "x-default": "https://guloolootech.com/en",
       },
     },
   };
@@ -87,6 +91,11 @@ export default async function LocaleLayout({
     (m) => m.default
   );
 
+  // Create JSON-LD schemas
+  const organizationSchema = createOrganizationSchema(locale);
+  const websiteSchema = createWebSiteSchema(locale);
+  const schemas = combineSchemas(organizationSchema, websiteSchema);
+
   return (
     <html lang={locale} className={poppins.variable}>
       <head>
@@ -98,6 +107,10 @@ export default async function LocaleLayout({
           crossOrigin="anonymous"
         />
         <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+
+        {/* JSON-LD Structured Data */}
+        <JsonLd data={schemas} />
+
         {/* Google tag (gtag.js) */}
         <script
           async
