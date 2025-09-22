@@ -110,7 +110,7 @@ export default function BlogDetail() {
     isCopy: boolean;
   };
   const link_list: LinkItem[] = useMemo(() => {
-    const herf = window?.location?.href;
+    const herf = typeof window !== 'undefined' ? window.location.href : '';
 
     return [
       {
@@ -144,10 +144,12 @@ export default function BlogDetail() {
         isCopy: true,
       },
     ];
-  }, [t, id, window]);
+  }, [t, id]);
 
   const handle_link = useMemoizedFn((item: LinkItem) => {
-    window.open(`${item.link}`, "_blank");
+    if (typeof window !== 'undefined') {
+      window.open(`${item.link}`, "_blank");
+    }
   });
 
   return (
