@@ -205,7 +205,7 @@ export default function Tool() {
                       />
                     </span>
                   </div>
-                  <a href={d.more_link}>
+                  <a href={d.more_link} aria-label={`${t("productsLearnMore")} - ${d.textInfo.title}`}>
                     <div className="2xl:text-[24px] 2xl:w-[260px] 2xl:h-[64px] sm:w-[228px] sm:h-[56px] w-[190px] h-[48px] sm:text-[20px] text-[16px]  rounded-full bg-[rgba(0,204,145,1)] hover:bg-[rgba(16,185,129,1)] transition-transform duration-300 hover:scale-110 flex items-center justify-center text-white mr-[24px]">
                       {t("productsLearnMore")}
                     </div>
