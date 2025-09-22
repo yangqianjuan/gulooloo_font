@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Header from "@/components/Header";
 import dynamic_ from "next/dynamic";
 import Banner from "./Banner";
@@ -13,12 +13,6 @@ const Footer = dynamic_(() => import("@/components/Footer"), { ssr: false });
 export default function BlogPage() {
   const t = useTranslations("blog");
   const [activeTab, setActiveTab] = useState<ActiveTab>("all");
-  useEffect(() => {
-    document.title = t("metaTitleBlog");
-    document
-      .querySelector('meta[name="description"]')
-      ?.setAttribute("content", t("metaDescriptionBlog"));
-  }, [t]);
 
   const tabList: BlogTabItem[] = [
     { label: t("blogFilterAll"), key: "all" },
