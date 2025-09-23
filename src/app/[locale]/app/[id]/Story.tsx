@@ -63,7 +63,7 @@ export default function Rate() {
 
               <div className="2xl:p-[40px] sm:p-[24px] p-[24px] pt-[20px] ">
                 <div className="flex justify-between 2xl:mb-[36px] mb-[16px]">
-                  <div className="sm:text-[24px] text-[16px] flex items-center">
+                  <div className="2xl:text-[24px] text-[16px] flex items-center">
                     <Image
                       width={32}
                       src={d.user_img}

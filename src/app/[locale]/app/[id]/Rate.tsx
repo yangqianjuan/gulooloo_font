@@ -84,7 +84,7 @@ export default function Rate() {
                 {d.desc}
               </div>
               <div className="flex justify-between ">
-                <div className="sm:text-[24px] text-[16px] flex items-center">
+                <div className="2xl:text-[24px] text-[16px] flex items-center">
                   <Image
                     width={32}
                     src={d.user_img}
