@@ -74,11 +74,14 @@ export default function Rate() {
                       {d.user_name}
                     </div>
                   </div>
-                  <div className="text-[rgba(0,204,145,1)] font-bold 2xl:text-[32px] text-[20px]">
+                  <div
+                    className="text-[rgba(0,204,145,1)] font-bold 2xl:text-[32px] text-[20px]"
+                    style={{ fontStyle: "italic" }}
+                  >
                     {d.kg}
                   </div>
                 </div>
-                <div className="2xl:text-[24px] text-[16px]  text-[rgba(4,30,84,1)] font-normal not-italic">
+                <div className="2xl:text-[24px] text-[16px]  text-[rgba(4,30,84,1)] font-normal">
                   {d.desc}
                 </div>
               </div>
