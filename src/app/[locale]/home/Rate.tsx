@@ -59,7 +59,7 @@ export default function Rate() {
                     width={32}
                     src={d.user_img}
                     alt=""
-                    className="2xl:mr-[13px] mr-[4px] 2xl:w-[40px] w-[32px]"
+                    className="2xl:mr-[12px] mr-[8px] 2xl:w-[40px] w-[32px]"
                   ></Image>
                   <span>{d.user_name}</span>
                 </div>
