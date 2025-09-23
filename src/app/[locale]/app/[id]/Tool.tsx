@@ -184,10 +184,10 @@ export default function Tool() {
         }
         2xl:py-[60px] sm:py-[40px] py-[32px]  sm:mb-[120px]  mb-[60px] sm:px-[120px] px-[24px]`}
       >
-        <div className="font-semibold 2xl:text-[64px] sm:text-[40px] text-[24px]">
+        <div className="font-semibold 2xl:text-[64px] sm:text-[40px] text-[24px] leading-[150%] 2xl:mb-[20px] sm:mb-[12px] mb-[4px]">
           {t(`app_${id}_hero_title`)}
         </div>
-        <div className="2xl:text-[24px]  sm:text-[16px]  text-[15px]">
+        <div className="2xl:text-[24px]  sm:text-[16px]  text-[15px] leading-[150%]">
           {t(`app_${id}_hero_description`)}
         </div>
       </div>
