@@ -187,7 +187,7 @@ export default function Tool() {
         <div className="font-semibold 2xl:text-[64px] sm:text-[40px] text-[24px]">
           {t(`app_${id}_hero_title`)}
         </div>
-        <div className="text-[rgba(4,30,84,0.48)] 2xl:text-[24px]  sm:text-[16px]  text-[15px]">
+        <div className="2xl:text-[24px]  sm:text-[16px]  text-[15px]">
           {t(`app_${id}_hero_description`)}
         </div>
       </div>
