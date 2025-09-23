@@ -171,7 +171,19 @@ export default function Tool() {
       className="w-full text-center 2xl:pb-[80px] sm:pb-[40px] pb-[20px]"
       id="appDesc"
     >
-      <div className="2xl:py-[60px] sm:py-[40px] py-[32px] bg-[rgba(209,249,233,1)] sm:mb-[120px]  mb-[60px] sm:px-[120px] px-[24px]">
+      <div
+        className={`${
+          (
+            {
+              gofasting: "bg-[rgba(209,249,233,1)]",
+              invoicemaker: "bg-[rgba(56,117,247,0.1)]",
+              easynotes: "bg-[rgba(255,247,232,1)]",
+              QRgenerator: "bg-[rgba(226,255,246,1)]",
+            } as Record<string, string>
+          )[id] || "bg-[rgba(209,249,233,1)]"
+        }
+        2xl:py-[60px] sm:py-[40px] py-[32px]  sm:mb-[120px]  mb-[60px] sm:px-[120px] px-[24px]`}
+      >
         <div className="font-semibold 2xl:text-[64px] sm:text-[40px] text-[24px]">
           {t(`app_${id}_hero_title`)}
         </div>
