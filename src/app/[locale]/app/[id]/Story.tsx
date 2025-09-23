@@ -2,9 +2,9 @@ import Image from "next/image";
 import gofasting_story1 from "@/assets/app/Gofasting/story-james/james_2x.webp";
 import gofasting_story2 from "@/assets/app/Gofasting/story-linda/linda_2x.webp";
 import gofasting_story3 from "@/assets/app/Gofasting/story-sarah/sarah_2x.webp";
-import gofasting_u1 from "@/assets/icon/u1.svg";
-import gofasting_u2 from "@/assets/icon/u2.svg";
-import gofasting_u3 from "@/assets/icon/u3.svg";
+import gofasting_u1 from "@/assets/app/Gofasting/Profile-0.png";
+import gofasting_u2 from "@/assets/app/Gofasting/Profile-1.png";
+import gofasting_u3 from "@/assets/app/Gofasting/Profile-2.png";
 
 import { useMemo } from "react";
 import { useTranslations } from "next-intl";
