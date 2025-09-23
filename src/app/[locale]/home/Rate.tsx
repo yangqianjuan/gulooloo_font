@@ -50,7 +50,7 @@ export default function Rate() {
               <div className="mb-[26px] 2xl:text-[32px] text-[20px] font-medium">
                 {d.title}
               </div>
-              <div className="2xl:text-[24px] text-[16px]  2xl:mb-[16px] mb-[8px] text-[rgba(4,30,84,0.64)]">
+              <div className="2xl:text-[24px] text-[16px]  2xl:mb-[34px] sm:mb-[24px] mb-[20px] text-[rgba(4,30,84,0.64)]">
                 {d.desc}
               </div>
               <div className="flex justify-between ">
