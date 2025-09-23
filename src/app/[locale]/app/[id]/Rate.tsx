@@ -67,7 +67,7 @@ export default function Rate() {
       <div className="2xl:text-[64px] font-semibold sm:text-[40px] text-[24px] text-center">
         {t_h("testimonialTitle")}
       </div>
-      <div className="sm:text-[24px] 2xl:mb-[80px] text-[20px] mb-[64px]  text-center text-[rgba(4,30,84,0.48)]">
+      <div className="2xl:text-[24px] 2xl:mb-[80px] sm:text-[16px] text-[15px] mb-[64px]  text-center text-[rgba(4,30,84,0.48)]">
         {t_h("testimonialSubtitle")}
       </div>
       <div className="flex justify-between sm:flex-row flex-col w-full">

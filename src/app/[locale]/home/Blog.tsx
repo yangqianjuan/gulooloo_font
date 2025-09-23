@@ -84,10 +84,10 @@ export default function Blog() {
   }, []);
   return (
     <div className=" 2xl:p-[80px] sm:p-[40px]  p-[24px]">
-      <div className="2xl:text-[64px] font-semibold sm:text-[48px] text-[24px] text-center">
+      <div className="2xl:text-[64px] font-semibold sm:text-[40px] text-[24px] text-center">
         {t("blogSectionTitle")}
       </div>
-      <div className="2xl:text-[24px] 2xl:mb-[80px] sm:text-[20px] sm:mb-[40px] text-[16px] mb-[38px] text-center text-[rgba(4,30,84,0.48)]">
+      <div className="2xl:text-[24px] 2xl:mb-[80px] sm:text-[18px] sm:mb-[40px] text-[16px] mb-[38px] text-center text-[rgba(4,30,84,0.48)]">
         {t("blogSectionSubtitle")}
       </div>
       <div className="flex justify-between flex-wrap">
