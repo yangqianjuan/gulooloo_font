@@ -100,7 +100,7 @@ export default function Rate() {
                       alt="star"
                       width={24}
                       key={i}
-                      className="2xl:w-[30px] w-[24px] 2xl:h-[30px] h-[24px]"
+                      className="2xl:w-[30px] w-[24px] 2xl:h-[30px] h-[24px] ml-[3px]"
                     ></Image>
                   ))}
                 </div>
