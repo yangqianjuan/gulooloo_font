@@ -23,7 +23,7 @@ export const andoridLink_go_fasting =
 export const iosLink_qr_generator =
   "https://apps.apple.com/us/app/qr-code-generator-qr-maker/id1574018167";
 export const andoridLink_qr_generator =
-  "https://play.google.com/store/apps/details?id=barcodegenerator.barcodecreator.barcodemaker.barcodescanner";
+  "https://play.google.com/store/apps/details?id=qrcodegenerator.qrcreator.qrmaker.createqrcode";
 
 export const linkMap = {
   gofasting: {

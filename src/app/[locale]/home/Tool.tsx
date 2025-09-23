@@ -23,7 +23,7 @@ import { useMemoizedFn } from "ahooks";
 export default function Tool() {
   const t = useTranslations("home");
   const toLink = useMemoizedFn((link: string) => {
-    window.open(link);
+    window.location.href = link;
   });
   const list = useMemo(() => {
     return [
