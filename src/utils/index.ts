@@ -25,6 +25,25 @@ export const iosLink_qr_generator =
 export const andoridLink_qr_generator =
   "https://play.google.com/store/apps/details?id=barcodegenerator.barcodecreator.barcodemaker.barcodescanner";
 
+export const linkMap = {
+  gofasting: {
+    link_ios: iosLink_go_fasting,
+    link_android: andoridLink_go_fasting,
+  },
+  invoicemaker: {
+    link_ios: iosLink_invoice_now,
+    link_android: andoridLink_invoice_now,
+  },
+  easynotes: {
+    link_ios: iosLink_easy_notes,
+    link_android: andoridLink_easy_notes,
+  },
+  QRgenerator: {
+    link_ios: iosLink_qr_generator,
+    link_android: andoridLink_qr_generator,
+  },
+};
+
 export const detectDeviceType = function () {
   const ua = navigator.userAgent;
   console.log(ua);

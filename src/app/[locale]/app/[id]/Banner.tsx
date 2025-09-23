@@ -1,3 +1,4 @@
+import { useMemoizedFn } from "ahooks";
 import Image from "next/image";
 import gofasting_banner from "@/assets/app/Gofasting/top_banner/top_banner_2x.webp";
 import gofasting_m_banner from "@/assets/app/Gofasting/top_banner_mobile/group_2610165_2x.webp";
@@ -19,6 +20,7 @@ import { useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
 import AppStore from "@/components/Svg/AppStore";
 import GooglePlay from "@/components/Svg/GooglePlay";
+import { linkMap } from "@/utils";
 
 const imagesMap = {
   gofasting: {
@@ -49,6 +51,9 @@ export default function Banner() {
     locale: string;
   }>();
   console.log("id", id);
+  const toLink = useMemoizedFn((link: string) => {
+    window.open(link);
+  });
 
   const t = useTranslations("app");
   return (
@@ -78,14 +83,14 @@ export default function Banner() {
         <div className="flex">
           <span
             onClick={() => {
-              // toLink(d.link_ios);
+              toLink(linkMap[id]?.link_ios);
             }}
           >
             <AppStore className="text-[rgba(0,0,0,1)] hover:text-[rgba(4,30,84,1)] 2xl:w-[270px] sm:w-[162px] 2xl:mr-[24px] w-[135px] mr-[20px] transition-transform duration-300 hover:scale-110" />
           </span>
           <span
             onClick={() => {
-              // toLink(d.link_android);
+              toLink(linkMap[id]?.link_android);
             }}
           >
             <GooglePlay className="text-[rgba(0,0,0,1)] hover:text-[rgba(4,30,84,1)] 2xl:w-[270px] sm:w-[162px]  w-[135px]  transition-transform duration-300 hover:scale-110" />
