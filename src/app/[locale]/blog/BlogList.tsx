@@ -123,7 +123,7 @@ export default function BlogList({ activeTab }: BlogListProps) {
               onClick={() => {
                 switchPath(item.row);
               }}
-              className="cursor-pointer font-medium text-[rgba(0,204,145,1)] hover:text-[rgba(82,220,180,1)] flex items-center 2xl:text-[24px] text-[16px] "
+              className="cursor-pointer font-medium text-[rgba(0,204,145,1)] hover:text-[rgba(16,185,129,1)] flex items-center 2xl:text-[24px] text-[16px] "
             >
               <span className="mr-[8px]">{tc("readMoreBtn")}</span>
               <ArrowRight className="w-[24px]" />

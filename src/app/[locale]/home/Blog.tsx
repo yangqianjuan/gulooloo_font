@@ -46,7 +46,7 @@ function CardItem({ d }: { d: CardItemProps }) {
         </div>
         <div
           onClick={() => switchPath(d.row)}
-          className="cursor-pointer font-medium text-[rgba(0,204,145,1)] hover:text-[rgba(82,220,180,1)] flex items-center 2xl:text-[24px] text-[16px]"
+          className="cursor-pointer font-medium text-[rgba(0,204,145,1)] hover:text-[rgba(16,185,129,1)] flex items-center 2xl:text-[24px] text-[16px]"
         >
           <span className="mr-[8px]">{t("readMoreBtn")}</span>
           <ArrowRight className="w-[24px]" />
