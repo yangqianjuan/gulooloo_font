@@ -67,9 +67,7 @@ export default function AnchorDropdown({
         aria-expanded={open}
       >
         {isShowGlobal && <Globe size={20} className="mr-[4px]" />}
-        <span className="mr-2 2xl:text-[20px] text-[18px]">
-          {placeholder}
-        </span>
+        <span className="mr-2 2xl:text-[20px] text-[18px]">{placeholder}</span>
         {isShowArrow &&
           (open ? (
             <ChevronUp
@@ -87,17 +85,19 @@ export default function AnchorDropdown({
       </button>
 
       {open && (
-        <ul className="absolute z-10 top-[80px] rounded-[24px] left-1/2 -translate-x-1/2 px-[20px]  py-[32px] w-[256px] bg-white  shadow-md transition-all duration-200 text-[20px]">
+        <ul className="absolute z-10 top-[86px] rounded-[24px] left-1/2 -translate-x-1/2 px-[20px]  py-[32px] w-[256px] bg-white  shadow-md transition-all duration-200 text-[20px]">
           {options.map((opt) => (
             <li
               key={opt.value}
-              className="px-4 py-2 rounded-[16px] hover:bg-[rgba(245,248,252,1)] cursor-pointer"
+              className="px-[20px] leading-[64px] rounded-[16px] hover:bg-[rgba(245,248,252,1)] cursor-pointer"
               role="option"
             >
               {isShowGlobal ? (
                 <div onClick={() => switchLang(opt.value)}>{opt.label} </div>
               ) : (
-                <Link href={`/${opt.value}`} aria-label={opt.label}>{opt.label}</Link>
+                <Link href={`/${opt.value}`} aria-label={opt.label}>
+                  {opt.label}
+                </Link>
                 // opt.label
               )}
             </li>

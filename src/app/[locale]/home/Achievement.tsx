@@ -17,12 +17,12 @@ export default function Achievement() {
         <div className="text-center 2xl:text-[64px] 2xl:pb-[80px] sm:text-[40px] sm:pb-[40px]  text-[24px] pb-[64px]">
           {t("whyUsTitle")}
         </div>
-        <div className="flex sm:flex-row flex-col justify-between items-center">
-          <div className="relative sm:w-[31%] w-full sm:mb-[0px] mb-[32px] sm:order-1 order-2">
+        <div className="flex sm:flex-row flex-col justify-between items-end">
+          <div className="relative h-full sm:w-[31%] w-full sm:mb-[0px] mb-[32px] sm:order-1 order-2">
             <Image
               src={l_leaf}
               alt=""
-              className="absolute left-0 top-0 2xl:w-[90px] w-[52px]"
+              className="absolute left-0 bottom-0 2xl:w-[90px] w-[52px]"
               loading="lazy"
             />
             <div className="flex flex-col items-center justify-center">
@@ -32,25 +32,25 @@ export default function Achievement() {
                 className="2xl:w-[94px] w-[48px]"
                 loading="lazy"
               />
-              <div className="2xl:text-[40px]  text-[24px]">
+              <div className="2xl:text-[40px]   text-[24px] 2xl:leading-[60px] leading-[36px] 2xl:mb-[16px] mb-[4px]">
                 {t("appleAward")}
               </div>
-              <div className="sm:text-[24px]   text-[16px] font-medium">
+              <div className="font-medium sm:text-[24px]   text-[16px]  2xl:leading-[32px] leading-[24px]">
                 {t("applePlatform")}
               </div>
             </div>
             <Image
               src={r_leaf}
               alt=""
-              className="absolute right-0 top-0 2xl:w-[90px] w-[52px]"
+              className="absolute right-0 bottom-0 2xl:w-[90px] w-[52px]"
               loading="lazy"
             />
           </div>
-          <div className="relative sm:w-[34%] w-full sm:mb-[0px] mb-[54px] sm:order-2 order-1">
+          <div className="relative h-full sm:w-[34%] w-full sm:mb-[0px] mb-[54px] sm:order-2 order-1">
             <Image
               src={l_leaf}
               alt=""
-              className="absolute left-0 top-0 2xl:w-[110px] sm:w-[58px] w-[52px]"
+              className="absolute left-0 bottom-0 2xl:w-[110px] sm:w-[58px] w-[52px]"
               loading="lazy"
             />
             <div className="flex flex-col items-center justify-center">
@@ -60,25 +60,25 @@ export default function Achievement() {
                 alt=""
                 loading="lazy"
               />
-              <div className="2xl:text-[88px] sm:text-[44px] text-[32px]">
+              <div className="2xl:text-[88px] sm:text-[44px] text-[32px] 2xl:leading-[132px] sm:leading-[66px] leading-[48px] ">
                 {t("downloadCount")}
               </div>
-              <div className="2xl:text-[32px] sm:text-[20px] text-[16px] font-medium">
+              <div className="2xl:text-[32px] sm:text-[20px] text-[16px] font-medium 2xl:leading-[48px] sm:leading-[30px] leading-[24px]">
                 {t("trustedUsers")}
               </div>
             </div>
             <Image
               src={r_leaf}
-              className="absolute right-0 top-0 2xl:w-[110px] sm:w-[58px] w-[52px]"
+              className="absolute right-0 bottom-0 2xl:w-[110px] sm:w-[58px] w-[52px]"
               alt=""
               loading="lazy"
             />
           </div>
-          <div className="relative items-center sm:w-[31%] w-full order-3">
+          <div className="relative h-full  sm:w-[31%] w-full order-3">
             <Image
               src={l_leaf}
               alt=""
-              className="absolute left-0 top-0 2xl:w-[90px] w-[52px]"
+              className="absolute left-0 bottom-0 2xl:w-[90px] w-[52px]"
               loading="lazy"
             />
             <div className="flex flex-col items-center justify-center">
@@ -87,10 +87,10 @@ export default function Achievement() {
                 alt={t("google_bestapp_alt")}
                 className="2xl:w-[94px] w-[48px]"
               />
-              <div className="2xl:text-[40px]  text-[24px]">
+              <div className="2xl:text-[40px]  text-[24px] 2xl:leading-[60px] leading-[36px] 2xl:mb-[16px] mb-[4px]">
                 {t("googleAward")}
               </div>
-              <div className="sm:text-[24px]   text-[16px] font-medium">
+              <div className="sm:text-[24px]   text-[16px] font-medium 2xl:leading-[32px] leading-[24px]">
                 {t("googlePlatform")}
               </div>
             </div>
@@ -98,7 +98,7 @@ export default function Achievement() {
               src={r_leaf}
               loading="lazy"
               alt=""
-              className="absolute right-0 top-0 2xl:w-[90px] w-[52px]"
+              className="absolute right-0 bottom-0 2xl:w-[90px] w-[52px]"
             />
           </div>
         </div>
