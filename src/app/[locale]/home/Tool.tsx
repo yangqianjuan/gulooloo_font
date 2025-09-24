@@ -106,10 +106,10 @@ export default function Tool() {
   }, []);
   return (
     <div
-      className="w-full text-center pt-[120px] xl:mb-[112px] sm:mb-[128px] mb-[96px]"
+      className="w-full text-center pt-[120px] xl:mb-[112px] 2xl:mb-[18px] sm:mb-[12px] mb-[96px]"
       id="appDesc"
     >
-      <div className="font-semibold 2xl:text-[66px] sm:text-[40px] text-[24px]">
+      <div className="font-semibold 2xl:text-[66px] sm:text-[40px] text-[24px] sm:mb-[18px] mb-[8px]">
         {t("productsMainTitle")}
       </div>
       <div className="text-[rgba(4,30,84,0.48)] 2xl:text-[24px]  sm:text-[18px]  text-[15px]">
