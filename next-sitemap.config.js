@@ -1,5 +1,5 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: "https://gulooloo-font.vercel.app",
+  siteUrl: "https://guloolootech.com",
   generateRobotsTxt: true, // ✅ 会自动生成 robots.txt
 };
