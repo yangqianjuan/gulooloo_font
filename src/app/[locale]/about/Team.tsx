@@ -20,7 +20,7 @@ function TeamValueItem({ icon, titleKey, descKey, t }: TeamValueItemProps) {
         width={80}
         className="2xl:w-[80px] 2xl:mb-[60px] sm:w-[56px] w-[48px] mb-[20px]"
       />
-      <div className="2xl:text-[40px]  sm:text-[27px] text-[24px] 2xl:mb-[60px] sm:mb-[20px] mb-[32px]">
+      <div className="2xl:text-[40px]  sm:text-[27px] text-[24px] 2xl:mb-[60px] sm:mb-[20px] mb-[32px] flex-1 flex items-start">
         {t(titleKey)}
       </div>
       <div className="text-[rgba(4,30,84,0.7)] 2xl:text-[24px] text-[16px] flex-1 flex items-start">
