@@ -3,9 +3,10 @@ import ic_user from "@/assets/about/ic_user.svg";
 import ic_quality from "@/assets/about/ic_quality.svg";
 import ic_stronger from "@/assets/about/ic_stronger.svg";
 import { useTranslations } from "next-intl";
+import { StaticImageData } from "next/image";
 
 interface TeamValueItemProps {
-  icon: any;
+  icon: StaticImageData;
   titleKey: string;
   descKey: string;
   t: (key: string) => string;
