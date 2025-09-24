@@ -59,7 +59,7 @@ export default function Banner() {
   return (
     <div className="relative w-full">
       <div
-        className={`absolute top-0 left-0 2xl:w-[828px] 2xl:ml-[120px] 2xl:mt-[120px] sm:w-[500px] sm:mt-[60px] sm:ml-[60px] sm:mr-[0px] sm:mb-[0px] m-[24px] ${
+        className={`absolute top-0 left-0 2xl:w-[1104px] 2xl:ml-[120px] 2xl:mt-[120px] sm:w-[628px] sm:mt-[60px] sm:ml-[60px] sm:mr-[0px] sm:mb-[0px] m-[24px] ${
           id === "invoicemaker" ? "text-white" : ""
         }`}
       >
