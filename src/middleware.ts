@@ -63,7 +63,7 @@ const intlMiddleware = createMiddleware({
   ...routing,
   localeDetection: true,
   // Custom locale detection
-  localePrefix: 'as-needed'
+  localePrefix: 'always'
 });
 
 export default function middleware(request: NextRequest) {
