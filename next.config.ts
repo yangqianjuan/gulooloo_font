@@ -84,25 +84,7 @@ const nextConfig: NextConfig = {
           },
         ],
       },
-      // 页面缓存配置
-      {
-        source: '/:locale(en|zh|fr|es|ja|ko|pt|tw|de)',
-        headers: [
-          {
-            key: 'Cache-Control',
-            value: 'public, s-maxage=3600, stale-while-revalidate=86400',
-          },
-        ],
-      },
-      {
-        source: '/:locale(en|zh|fr|es|ja|ko|pt|tw|de)/blog',
-        headers: [
-          {
-            key: 'Cache-Control',
-            value: 'public, s-maxage=1800, stale-while-revalidate=3600',
-          },
-        ],
-      },
+      // 页面缓存配置 - 按从具体到通用的顺序排列 (全部24小时缓存)
       {
         source: '/:locale(en|zh|fr|es|ja|ko|pt|tw|de)/blog/:id*',
         headers: [
@@ -112,13 +94,30 @@ const nextConfig: NextConfig = {
           },
         ],
       },
-      // 其他页面缓存配置
       {
-        source: '/:locale(en|zh|fr|es|ja|ko|pt|tw|de)/:path*',
+        source: '/:locale(en|zh|fr|es|ja|ko|pt|tw|de)/blog',
         headers: [
           {
             key: 'Cache-Control',
-            value: 'public, s-maxage=3600, stale-while-revalidate=86400',
+            value: 'public, s-maxage=86400, stale-while-revalidate=604800',
+          },
+        ],
+      },
+      {
+        source: '/:locale(en|zh|fr|es|ja|ko|pt|tw|de)/:path+',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, s-maxage=86400, stale-while-revalidate=604800',
+          },
+        ],
+      },
+      {
+        source: '/:locale(en|zh|fr|es|ja|ko|pt|tw|de)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, s-maxage=86400, stale-while-revalidate=604800',
           },
         ],
       },
