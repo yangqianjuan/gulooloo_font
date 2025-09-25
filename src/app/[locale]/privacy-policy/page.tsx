@@ -1,5 +1,8 @@
 // src/app/policy.tsx
 import Header from "@/components/Header";
+
+export const revalidate = 604800; // 7 days
+
 export default function Policy() {
   return (
     <div className="grid grid-rows-[auto_1fr_auto]  justify-items-center min-h-screen max-w-[1100px] mx-auto sm:min-w-[1080px]">

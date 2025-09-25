@@ -1,6 +1,9 @@
 // src/app/service.tsx
 import ScrollToTopButton from "@/components/ScrollToTopButton/page";
 import Header from "@/components/Header";
+
+export const revalidate = 604800; // 7 days
+
 export default function Terms() {
   return (
     <div className="grid grid-rows-[auto_1fr_auto]  justify-items-center min-h-screen max-w-[1280px] mx-auto sm:min-w-[1080px]">

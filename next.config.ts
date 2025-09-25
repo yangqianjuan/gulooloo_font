@@ -8,6 +8,10 @@ const nextConfig: NextConfig = {
   compress: true,
   poweredByHeader: false,
 
+  // 页面缓存配置
+  output: process.env.NODE_ENV === 'production' ? 'standalone' : undefined,
+  trailingSlash: false,
+
   // 图片优化配置
   images: {
     formats: ['image/webp', 'image/avif'],
@@ -61,12 +65,50 @@ const nextConfig: NextConfig = {
           }
         ],
       },
+      // 静态资源长期缓存
       {
         source: '/images/(.*)',
         headers: [
           {
             key: 'Cache-Control',
             value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      {
+        source: '/_next/static/(.*)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      // 页面缓存配置
+      {
+        source: '/:locale(en|zh|fr|es|ja|ko|pt|tw|de)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, s-maxage=3600, stale-while-revalidate=86400',
+          },
+        ],
+      },
+      {
+        source: '/:locale(en|zh|fr|es|ja|ko|pt|tw|de)/blog',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, s-maxage=1800, stale-while-revalidate=3600',
+          },
+        ],
+      },
+      {
+        source: '/:locale(en|zh|fr|es|ja|ko|pt|tw|de)/blog/:id*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, s-maxage=86400, stale-while-revalidate=604800',
           },
         ],
       },

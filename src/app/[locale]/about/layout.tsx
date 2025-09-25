@@ -3,6 +3,8 @@ import { hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 
+export const revalidate = 7200;
+
 // 为 about 页面动态生成 Metadata
 export async function generateMetadata({
   params,
