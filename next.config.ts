@@ -112,6 +112,16 @@ const nextConfig: NextConfig = {
           },
         ],
       },
+      // 其他页面缓存配置
+      {
+        source: '/:locale(en|zh|fr|es|ja|ko|pt|tw|de)/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, s-maxage=3600, stale-while-revalidate=86400',
+          },
+        ],
+      },
     ];
   },
 };
