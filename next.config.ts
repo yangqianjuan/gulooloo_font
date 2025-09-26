@@ -1,6 +1,11 @@
 import { NextConfig } from "next";
 import createNextIntlPlugin from "next-intl/plugin";
 
+// Bundle analyzer
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true',
+});
+
 const nextConfig: NextConfig = {
   //  output: "export"
 
@@ -22,29 +27,68 @@ const nextConfig: NextConfig = {
 
   // 实验性功能
   experimental: {
-    optimizePackageImports: ['lucide-react'],
+    optimizePackageImports: [
+      'lucide-react',
+      'ahooks',
+      '@vercel/speed-insights'
+    ],
     webpackBuildWorker: true,
   },
 
   // Webpack 优化
   webpack: (config, { dev, isServer }) => {
     if (!dev && !isServer) {
+      // 更细粒度的代码分割
       config.optimization.splitChunks.cacheGroups = {
         ...config.optimization.splitChunks.cacheGroups,
+        // React 相关库单独打包
+        react: {
+          test: /[\\/]node_modules[\\/](react|react-dom)[\\/]/,
+          name: 'react-vendor',
+          chunks: 'all',
+          priority: 30,
+        },
+        // Lucide React 图标库
         lucide: {
           test: /[\\/]node_modules[\\/]lucide-react[\\/]/,
           name: 'lucide',
           chunks: 'all',
+          priority: 25,
+        },
+        // Next.js 国际化相关
+        nextIntl: {
+          test: /[\\/]node_modules[\\/]next-intl[\\/]/,
+          name: 'next-intl',
+          chunks: 'all',
+          priority: 23,
+        },
+        // 其他工具库
+        utils: {
+          test: /[\\/]node_modules[\\/](ahooks|@vercel\/speed-insights)[\\/]/,
+          name: 'utils',
+          chunks: 'all',
           priority: 20,
         },
+        // 通用 vendor
         vendor: {
           test: /[\\/]node_modules[\\/]/,
           name: 'vendors',
           chunks: 'all',
           priority: 10,
+          minChunks: 1,
         },
       };
+
+      // 启用 tree shaking
+      config.optimization.usedExports = true;
+      config.optimization.sideEffects = false;
     }
+
+    // 模块路径解析优化
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      '@': require('path').resolve(__dirname, 'src'),
+    };
 
     return config;
   },
@@ -126,4 +170,4 @@ const nextConfig: NextConfig = {
 };
 
 const withNextIntl = createNextIntlPlugin();
-export default withNextIntl(nextConfig);
+export default withBundleAnalyzer(withNextIntl(nextConfig));

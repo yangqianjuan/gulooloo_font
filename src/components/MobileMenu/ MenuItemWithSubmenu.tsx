@@ -1,5 +1,5 @@
 // components/MenuItemWithSubmenu.tsx
-import { ChevronDown, ChevronUp, Divide } from "lucide-react";
+import { ChevronDown, ChevronUp } from "lucide-react";
 import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
 import { useMemoizedFn } from "ahooks";

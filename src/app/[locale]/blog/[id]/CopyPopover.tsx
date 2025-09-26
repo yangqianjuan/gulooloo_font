@@ -2,8 +2,7 @@
 
 import { useState, useRef, useEffect, ReactNode } from "react";
 import ic_success from "@/assets/blog/ic_success.svg";
-import Image, { StaticImageData } from "next/image";
-import Link from "@/components/Svg/Link";
+import Image from "next/image";
 
 interface CopyPopoverProps {
   url: string; // 需要复制的文字

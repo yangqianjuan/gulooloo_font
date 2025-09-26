@@ -7,7 +7,7 @@ import Banner from "./Banner";
 import Story from "./Story";
 import Rate from "./Rate";
 import Start from "./Start";
-import { use, useEffect } from "react";
+import React from "react";
 import Head from "next/head";
 import JsonLd from "@/components/Schema/JsonLd";
 import HreflangLinks from "@/components/Schema/HreflangLinks";

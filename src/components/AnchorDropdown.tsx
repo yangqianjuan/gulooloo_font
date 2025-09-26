@@ -2,8 +2,6 @@
 
 import { useState, useEffect, useRef } from "react";
 import { ChevronDown, ChevronUp, Globe } from "lucide-react";
-import Image from "next/image";
-import GlobalIcon from "@/assets/icon/global.svg";
 import { Link } from "@/i18n/navigation";
 import { useRouter, usePathname } from "next/navigation";
 import { useMemoizedFn } from "ahooks";

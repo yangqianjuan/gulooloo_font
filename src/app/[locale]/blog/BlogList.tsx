@@ -1,4 +1,4 @@
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import images from "./image";
 import { useEffect, useState } from "react";
